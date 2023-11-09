@@ -1,0 +1,16 @@
+services:
+    rstudio:
+        build:
+            context: .
+        environment:
+            - TZ=Asia/Tokyo
+            - DISABLE_AUTH=true
+        volumes:
+            - .:/home/rstudio/work
+            - renv:/home/rstudio/.cache/R/renv
+            - fonts:/usr/share/fonts
+volumes:
+  renv:
+    external: true
+  fonts:
+    external: true
