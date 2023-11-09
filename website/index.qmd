@@ -4,14 +4,18 @@ image: "image/profile.png"
 about: 
     template: jolla
     links: 
-      - icon: "{{< fa brands x-twitter>}}"
-        text: X
+      - text: "{{< fa brands x-twitter >}} X"
         href: https://twitter.com/shingo_nitta
       - icon: github
         text: Github
         href: https://github.com/sittaningo
-      - icon: "{{< iconify fluent triangle-right>}}"
-        text: Researchmap
+      - text: "{{< iconify fluent triangle-right-12-regular >}} Researchmap"
         href: https://researchmap.jp/shingonitta
+      - text: "{{< iconify simple-icons googlescholar >}} Google Scholar"
+        href: https://scholar.google.co.jp/citations?hl=ja&user=QJx5LRgAAAAJ&view_op=list_works&gmla=AJ1KiT3hvOAOFgTV7rGvKzHIwy0qyY5lPe862Uq5SSls-1Tt3EnTkvvSXrLEslQnNdjYkRVhtOVdJu66YaqL1jKputV2N0djHaETFidZdATIsCSaiotekpjfOzk
 ---
 
+日本学術振興会特別研究員PD（学習院大学法学部政治学科）
+
+**研究関心** \
+{{< iconify healthicons elderly >}} 高齢者の引退と就業　{{< iconify healthicons agriculture-worker >}} 労働市場の高齢化　{{< iconify heroicons scale >}} 健康格差　{{< iconify uil chart-line >}} 計量分析方法論
