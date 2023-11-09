@@ -1,0 +1,17 @@
+---
+title: "Shingo Nitta"
+image: "image/profile.png"
+about: 
+    template: jolla
+    links: 
+      - icon: "{{< fa brands x-twitter>}}"
+        text: X
+        href: https://twitter.com/shingo_nitta
+      - icon: github
+        text: Github
+        href: https://github.com/sittaningo
+      - icon: "{{< iconify fluent triangle-right>}}"
+        text: Researchmap
+        href: https://researchmap.jp/shingonitta
+---
+
