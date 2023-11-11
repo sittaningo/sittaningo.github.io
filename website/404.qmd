@@ -1,0 +1,5 @@
+---
+title: "ページが見つかりませんでした"
+---
+
+![](image/404.png){fig-align="center" width=300}

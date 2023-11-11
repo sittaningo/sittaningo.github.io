@@ -1,8 +1,37 @@
 ---
 title: Research
+# description: ""
+author: ""
+listing:
+  - id: working-papers
+    contents: "/*/index.qmd"
+    sort: "date desc"
+    template: working-papers.ejs
+    categories: true
+  - id: work-in-progress
+    contents: "/*/index.qmd"
+    sort: "date desc"
+    template: /working-papers.ejs
+    categories: true
+# title-block-banner: "#fff"
+page-layout: full
+toc: true
+toc-location: right
+toc-title: Contents
+date-format: "MMMM D, YYYY"
 ---
 
 過去すべてのの論文や学会報告、ワーキングペーパーについては<a href="https://github.com/sittaningo">Researchmap</a>、<a href="https://scholar.google.co.jp/citations?hl=ja&user=QJx5LRgAAAAJ&view_op=list_works&gmla=AJ1KiT3hvOAOFgTV7rGvKzHIwy0qyY5lPe862Uq5SSls-1Tt3EnTkvvSXrLEslQnNdjYkRVhtOVdJu66YaqL1jKputV2N0djHaETFidZdATIsCSaiotekpjfOzk">Google Scholar</a>をご参照ください。
+
+## WORKING PAPERS
+
+:::{#working-papers}
+:::
+
+## WORK IN PROGRESS
+
+:::{#work-in-progress}
+:::
 
 ## Work in Progress
 
