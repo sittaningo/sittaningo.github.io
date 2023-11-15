@@ -20,10 +20,13 @@ website:
         file: profile/index.qmd
       - text: Research
         file: research/index.qmd
-      - text: Blog
-        file: blog/index.qmd
+      - text: Notes
+        file: notes/index.qmd
 
 format:
   html:
-    theme: simplex
-    css: styles.css
+    theme: [simplex, format/custom.scss]
+    linkcolor: red
+    # - format/custom.scss
+
+# simplex

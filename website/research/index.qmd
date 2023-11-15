@@ -6,12 +6,12 @@ listing:
   - id: working-papers
     contents: "/*/index.qmd"
     sort: "date desc"
-    template: working-papers.ejs
+    template: ../format/research/working-papers.ejs
     categories: true
   - id: work-in-progress
     contents: "/*/index.qmd"
     sort: "date desc"
-    template: /working-papers.ejs
+    template: ../format/research/work-in-progress.ejs
     categories: true
 # title-block-banner: "#fff"
 page-layout: full
@@ -21,7 +21,7 @@ toc-title: Contents
 date-format: "MMMM D, YYYY"
 ---
 
-過去すべてのの論文や学会報告、ワーキングペーパーについては<a href="https://github.com/sittaningo">Researchmap</a>、<a href="https://scholar.google.co.jp/citations?hl=ja&user=QJx5LRgAAAAJ&view_op=list_works&gmla=AJ1KiT3hvOAOFgTV7rGvKzHIwy0qyY5lPe862Uq5SSls-1Tt3EnTkvvSXrLEslQnNdjYkRVhtOVdJu66YaqL1jKputV2N0djHaETFidZdATIsCSaiotekpjfOzk">Google Scholar</a>をご参照ください。
+過去すべてのの論文や学会報告、ワーキングペーパーについては<a href="https://researchmap.jp/shingonitta">Researchmap</a>、<a href="https://scholar.google.co.jp/citations?hl=ja&user=QJx5LRgAAAAJ&view_op=list_works&gmla=AJ1KiT3hvOAOFgTV7rGvKzHIwy0qyY5lPe862Uq5SSls-1Tt3EnTkvvSXrLEslQnNdjYkRVhtOVdJu66YaqL1jKputV2N0djHaETFidZdATIsCSaiotekpjfOzk">Google Scholar</a>をご参照ください。
 
 ## WORKING PAPERS
 
@@ -32,11 +32,3 @@ date-format: "MMMM D, YYYY"
 
 :::{#work-in-progress}
 :::
-
-## Work in Progress
-
-- Education Sets the Stage, Sex Draws the Pathway: Occupational Skill Allocation over the Life Course in Japan
-
-- Two Tales of Greying Labor Market in Japan: Aging Labor Force and Extending Working Lives
-
-- Covering The Long Shadow: The Gap-closing Approach of The Children’s Education on The Health Disparity by Social Origin

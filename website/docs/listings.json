@@ -2,6 +2,8 @@
   {
     "listing": "/research/index.html",
     "items": [
+      "/research/gapclose/index.html",
+      "/research/oas/index.html",
       "/research/skilltraj/index.html"
     ]
   }

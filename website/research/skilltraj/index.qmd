@@ -8,8 +8,8 @@ author:
     affiliation: Gakushuin University
 categories:
   - Life Course
-  - Occupational Skill
-  - Career
+  - Occupation
+  - Task/Skill
 status: work-in-progress
 pub-info:
   links:
@@ -21,13 +21,14 @@ pub-info:
     #   url: "seho2023_yanagimoto.pdf"
     #   local: true
     #   icon: fa-solid fa-chalkboard-user
-# pub-status: 
-#   status: Writing
-#   class: warning
-#   icon: fa-solid fa-pencil
-#   status: Under review
-#   class: success
-#   icon: fas fa-glasses
+hide-detail: true
+pub-status: 
+  # status: Writing
+  # class: warning
+  # icon: fa-solid fa-pencil
+  # status: Under review
+  # class: success
+  # icon: fas fa-glasses
 ---
 
 <!-- [{{< fa file-pdf >}} Working Paper](yanagimoto_why_2023.pdf) &nbsp;
@@ -35,15 +36,5 @@ pub-info:
 
 ## Abstract
 
-hoge
+Occupational allocation over the life course matters for inequality in the labor market. This study considers the long-term occupational ‘skill’ trajectory by education and sex. Using nationally representative retrospective data in Japan, the occupational skill level declined around pensionable age, but the degree of decline depends on one’s sex/education and the type of skills. Education matters for skill maintenance over the life course, and gender matters skill accumulation in early life and equalization in later life, except quantitative and engineering skills. I argue that inequality-generating process over the life course can be combined in one’s different life stages by investigating multidimensional career pathways through occupational skills.
 
-
-## BibTeX citation
-
-```bibtex
-@unpublished{Yanagimoto:2023,
-    Author = {Kazuharu Yanagimoto},
-    Note = {Working paper},
-    Title = {Why not Choose a Better Job? Flexibility, Social Norms, and Gender Gaps in Japan},
-    Year = {2023}}
-```

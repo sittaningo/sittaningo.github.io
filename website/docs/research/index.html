@@ -71,9 +71,9 @@ ul.task-list li input[type="checkbox"] {
     }
 
     const options = {
-      valueNames: ['listing-project','listing-website','listing-format','listing-language','listing-title','listing-subtitle','listing-date','listing-author','listing-categories','listing-status','listing-pub-info','listing-path','listing-outputHref','listing-date-modified','listing-description','listing-filename','listing-file-modified','listing-reading-time',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-date-modified-sort'] },{ data: ['listing-file-modified-sort'] },{ data: ['listing-reading-time-sort'] }],
+      valueNames: ['listing-project','listing-website','listing-format','listing-language','listing-title','listing-subtitle','listing-date','listing-author','listing-categories','listing-status','listing-pub-info','listing-hide-detail','listing-pub-status','listing-path','listing-outputHref','listing-date-modified','listing-description','listing-filename','listing-file-modified','listing-reading-time',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-date-modified-sort'] },{ data: ['listing-file-modified-sort'] },{ data: ['listing-reading-time-sort'] }],
       
-      searchColumns: ["listing-project","listing-website","listing-format","listing-language","listing-title","listing-subtitle","listing-date","listing-author","listing-categories","listing-status","listing-pub-info","listing-path","listing-outputHref","listing-date-modified","listing-description","listing-filename","listing-file-modified","listing-reading-time"],
+      searchColumns: ["listing-project","listing-website","listing-format","listing-language","listing-title","listing-subtitle","listing-date","listing-author","listing-categories","listing-status","listing-pub-info","listing-hide-detail","listing-pub-status","listing-path","listing-outputHref","listing-date-modified","listing-description","listing-filename","listing-file-modified","listing-reading-time"],
     };
 
     window['quarto-listings'] = window['quarto-listings'] || {};
@@ -99,9 +99,9 @@ ul.task-list li input[type="checkbox"] {
     }
 
     const options = {
-      valueNames: ['listing-project','listing-website','listing-format','listing-language','listing-title','listing-subtitle','listing-date','listing-author','listing-categories','listing-status','listing-pub-info','listing-path','listing-outputHref','listing-date-modified','listing-description','listing-filename','listing-file-modified','listing-reading-time',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-date-modified-sort'] },{ data: ['listing-file-modified-sort'] },{ data: ['listing-reading-time-sort'] }],
+      valueNames: ['listing-project','listing-website','listing-format','listing-language','listing-title','listing-subtitle','listing-date','listing-author','listing-categories','listing-status','listing-pub-info','listing-hide-detail','listing-pub-status','listing-path','listing-outputHref','listing-date-modified','listing-description','listing-filename','listing-file-modified','listing-reading-time',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-date-modified-sort'] },{ data: ['listing-file-modified-sort'] },{ data: ['listing-reading-time-sort'] }],
       
-      searchColumns: ["listing-project","listing-website","listing-format","listing-language","listing-title","listing-subtitle","listing-date","listing-author","listing-categories","listing-status","listing-pub-info","listing-path","listing-outputHref","listing-date-modified","listing-description","listing-filename","listing-file-modified","listing-reading-time"],
+      searchColumns: ["listing-project","listing-website","listing-format","listing-language","listing-title","listing-subtitle","listing-date","listing-author","listing-categories","listing-status","listing-pub-info","listing-hide-detail","listing-pub-status","listing-path","listing-outputHref","listing-date-modified","listing-description","listing-filename","listing-file-modified","listing-reading-time"],
     };
 
     window['quarto-listings'] = window['quarto-listings'] || {};
@@ -122,7 +122,6 @@ ul.task-list li input[type="checkbox"] {
   <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
   <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
 
-<link rel="stylesheet" href="../styles.css">
 </head>
 
 <body class="nav-fixed">
@@ -155,8 +154,8 @@ ul.task-list li input[type="checkbox"] {
  <span class="menu-text">Research</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="../blog/index.html" rel="" target="">
- <span class="menu-text">Blog</span></a>
+    <a class="nav-link" href="../notes/index.html" rel="" target="">
+ <span class="menu-text">Notes</span></a>
   </li>  
 </ul>
             <div class="quarto-navbar-tools ms-auto">
@@ -176,10 +175,9 @@ ul.task-list li input[type="checkbox"] {
   <ul>
   <li><a href="#working-papers" id="toc-working-papers" class="nav-link active" data-scroll-target="#working-papers">WORKING PAPERS</a></li>
   <li><a href="#work-in-progress" id="toc-work-in-progress" class="nav-link" data-scroll-target="#work-in-progress">WORK IN PROGRESS</a></li>
-  <li><a href="#work-in-progress-1" id="toc-work-in-progress-1" class="nav-link" data-scroll-target="#work-in-progress-1">Work in Progress</a></li>
   </ul>
 </nav>
-    <h5 class="quarto-listing-category-title">Categories</h5><div class="quarto-listing-category category-default"><div class="category" data-category="">All <span class="quarto-category-count">(2)</span></div><div class="category" data-category="Career">Career <span class="quarto-category-count">(2)</span></div><div class="category" data-category="Life Course">Life Course <span class="quarto-category-count">(2)</span></div><div class="category" data-category="Occupational Skill">Occupational Skill <span class="quarto-category-count">(2)</span></div></div></div>
+    <h5 class="quarto-listing-category-title">Categories</h5><div class="quarto-listing-category category-default"><div class="category" data-category="">All <span class="quarto-category-count">(6)</span></div><div class="category" data-category="Causal Inference">Causal Inference <span class="quarto-category-count">(2)</span></div><div class="category" data-category="Health">Health <span class="quarto-category-count">(2)</span></div><div class="category" data-category="Labor Market">Labor Market <span class="quarto-category-count">(2)</span></div><div class="category" data-category="Life Course">Life Course <span class="quarto-category-count">(2)</span></div><div class="category" data-category="Multigeneration">Multigeneration <span class="quarto-category-count">(2)</span></div><div class="category" data-category="Occupation">Occupation <span class="quarto-category-count">(4)</span></div><div class="category" data-category="Population Aging">Population Aging <span class="quarto-category-count">(2)</span></div><div class="category" data-category="Task/Skill">Task/Skill <span class="quarto-category-count">(2)</span></div></div></div>
 <!-- main -->
 <main class="content column-page-left" id="quarto-document-content">
 
@@ -200,7 +198,7 @@ ul.task-list li input[type="checkbox"] {
 
 </header>
 
-<p>過去すべてのの論文や学会報告、ワーキングペーパーについては<a href="https://github.com/sittaningo">Researchmap</a>、<a href="https://scholar.google.co.jp/citations?hl=ja&amp;user=QJx5LRgAAAAJ&amp;view_op=list_works&amp;gmla=AJ1KiT3hvOAOFgTV7rGvKzHIwy0qyY5lPe862Uq5SSls-1Tt3EnTkvvSXrLEslQnNdjYkRVhtOVdJu66YaqL1jKputV2N0djHaETFidZdATIsCSaiotekpjfOzk">Google Scholar</a>をご参照ください。</p>
+<p>過去すべてのの論文や学会報告、ワーキングペーパーについては<a href="https://researchmap.jp/shingonitta">Researchmap</a>、<a href="https://scholar.google.co.jp/citations?hl=ja&amp;user=QJx5LRgAAAAJ&amp;view_op=list_works&amp;gmla=AJ1KiT3hvOAOFgTV7rGvKzHIwy0qyY5lPe862Uq5SSls-1Tt3EnTkvvSXrLEslQnNdjYkRVhtOVdJu66YaqL1jKputV2N0djHaETFidZdATIsCSaiotekpjfOzk">Google Scholar</a>をご参照ください。</p>
 <section id="working-papers" class="level2">
 <h2 class="anchored" data-anchor-id="working-papers">WORKING PAPERS</h2>
 <div id="listing-working-papers" class="quarto-listing quarto-listing-container-custom">
@@ -215,19 +213,83 @@ No matching items
 <h2 class="anchored" data-anchor-id="work-in-progress">WORK IN PROGRESS</h2>
 <div id="listing-work-in-progress" class="quarto-listing quarto-listing-container-custom">
 <div class="list research">
+        <div class="research-entry" data-index="0" data-categories="Health,Multigeneration,Causal Inference" data-listing-date-sort="1700146800000" data-listing-file-modified-sort="1700024641633" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1">
+            <div class="body">
+                <p class="title listing-title">
+                        Covering The Long Shadow
+                </p>
+                <p class="subtitle listing-subtitle">
+                    The Gap-closing Approach to The Health Disparity by Social Origin of Child’s Education
+                </p>
+                <div class="item-categories listing-categories">
+                    <div class="item-category listing-category" onclick="window.quartoListingCategory('Health'); return false;">
+                        Health
+                    </div>
+                    <div class="item-category listing-category" onclick="window.quartoListingCategory('Multigeneration'); return false;">
+                        Multigeneration
+                    </div>
+                    <div class="item-category listing-category" onclick="window.quartoListingCategory('Causal Inference'); return false;">
+                        Causal Inference
+                    </div>
+                </div>
+                <ul class="research-links">
+                </ul>
+            </div>
+            <!--  -->
+        </div>
+        <div class="research-entry" data-index="1" data-categories="Labor Market,Occupation,Population Aging" data-listing-date-sort="1700146800000" data-listing-file-modified-sort="1700024645406" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1">
+            <div class="body">
+                <p class="title listing-title">
+                        Two Tales of Greying Labor Market in Japan
+                </p>
+                <p class="subtitle listing-subtitle">
+                    Aging Labor Force and Extending Working Lives
+                </p>
+                <div class="item-categories listing-categories">
+                    <div class="item-category listing-category" onclick="window.quartoListingCategory('Labor Market'); return false;">
+                        Labor Market
+                    </div>
+                    <div class="item-category listing-category" onclick="window.quartoListingCategory('Occupation'); return false;">
+                        Occupation
+                    </div>
+                    <div class="item-category listing-category" onclick="window.quartoListingCategory('Population Aging'); return false;">
+                        Population Aging
+                    </div>
+                </div>
+                <ul class="research-links">
+                </ul>
+            </div>
+            <!--  -->
+        </div>
+        <div class="research-entry" data-index="2" data-categories="Life Course,Occupation,Task/Skill" data-listing-date-sort="1700146800000" data-listing-file-modified-sort="1700024405811" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1">
+            <div class="body">
+                <p class="title listing-title">
+                        Education Sets the Stage, Sex Draws the Pathway
+                </p>
+                <p class="subtitle listing-subtitle">
+                    Occupational Skill Allocation over the Life Course in Japan
+                </p>
+                <div class="item-categories listing-categories">
+                    <div class="item-category listing-category" onclick="window.quartoListingCategory('Life Course'); return false;">
+                        Life Course
+                    </div>
+                    <div class="item-category listing-category" onclick="window.quartoListingCategory('Occupation'); return false;">
+                        Occupation
+                    </div>
+                    <div class="item-category listing-category" onclick="window.quartoListingCategory('Task/Skill'); return false;">
+                        Task/Skill
+                    </div>
+                </div>
+                <ul class="research-links">
+                </ul>
+            </div>
+            <!--  -->
+        </div>
 </div>
 <div class="listing-no-matching d-none">
 No matching items
 </div>
 </div>
-</section>
-<section id="work-in-progress-1" class="level2">
-<h2 class="anchored" data-anchor-id="work-in-progress-1">Work in Progress</h2>
-<ul>
-<li><p>Education Sets the Stage, Sex Draws the Pathway: Occupational Skill Allocation over the Life Course in Japan</p></li>
-<li><p>Two Tales of Greying Labor Market in Japan: Aging Labor Force and Extending Working Lives</p></li>
-<li><p>Covering The Long Shadow: The Gap-closing Approach of The Children’s Education on The Health Disparity by Social Origin</p></li>
-</ul>
 
 
 

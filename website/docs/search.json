@@ -46,7 +46,7 @@
     "href": "research/index.html#work-in-progress",
     "title": "Research",
     "section": "WORK IN PROGRESS",
-    "text": "WORK IN PROGRESS\n\n\n\n\nNo matching items"
+    "text": "WORK IN PROGRESS\n\n\n        \n            \n                \n                        Covering The Long Shadow\n                \n                \n                    The Gap-closing Approach to The Health Disparity by Social Origin of Child’s Education\n                \n                \n                    \n                        Health\n                    \n                    \n                        Multigeneration\n                    \n                    \n                        Causal Inference\n                    \n                \n                \n                \n            \n            \n        \n        \n            \n                \n                        Two Tales of Greying Labor Market in Japan\n                \n                \n                    Aging Labor Force and Extending Working Lives\n                \n                \n                    \n                        Labor Market\n                    \n                    \n                        Occupation\n                    \n                    \n                        Population Aging\n                    \n                \n                \n                \n            \n            \n        \n        \n            \n                \n                        Education Sets the Stage, Sex Draws the Pathway\n                \n                \n                    Occupational Skill Allocation over the Life Course in Japan\n                \n                \n                    \n                        Life Course\n                    \n                    \n                        Occupation\n                    \n                    \n                        Task/Skill\n                    \n                \n                \n                \n            \n            \n        \n\n\nNo matching items"
   },
   {
     "objectID": "research/index.html#working-papers",
@@ -88,14 +88,14 @@
     "href": "research/skilltraj/index.html",
     "title": "Education Sets the Stage, Sex Draws the Pathway",
     "section": "",
-    "text": "hoge"
+    "text": "Occupational allocation over the life course matters for inequality in the labor market. This study considers the long-term occupational ‘skill’ trajectory by education and sex. Using nationally representative retrospective data in Japan, the occupational skill level declined around pensionable age, but the degree of decline depends on one’s sex/education and the type of skills. Education matters for skill maintenance over the life course, and gender matters skill accumulation in early life and equalization in later life, except quantitative and engineering skills. I argue that inequality-generating process over the life course can be combined in one’s different life stages by investigating multidimensional career pathways through occupational skills."
   },
   {
     "objectID": "research/skilltraj/index.html#abstract",
     "href": "research/skilltraj/index.html#abstract",
     "title": "Education Sets the Stage, Sex Draws the Pathway",
     "section": "",
-    "text": "hoge"
+    "text": "Occupational allocation over the life course matters for inequality in the labor market. This study considers the long-term occupational ‘skill’ trajectory by education and sex. Using nationally representative retrospective data in Japan, the occupational skill level declined around pensionable age, but the degree of decline depends on one’s sex/education and the type of skills. Education matters for skill maintenance over the life course, and gender matters skill accumulation in early life and equalization in later life, except quantitative and engineering skills. I argue that inequality-generating process over the life course can be combined in one’s different life stages by investigating multidimensional career pathways through occupational skills."
   },
   {
     "objectID": "research/skilltraj/index.html#bibtex-citation",
@@ -103,5 +103,12 @@
     "title": "Education Sets the Stage, Sex Draws the Pathway",
     "section": "BibTeX citation",
     "text": "BibTeX citation\n@unpublished{Yanagimoto:2023,\n    Author = {Kazuharu Yanagimoto},\n    Note = {Working paper},\n    Title = {Why not Choose a Better Job? Flexibility, Social Norms, and Gender Gaps in Japan},\n    Year = {2023}}"
+  },
+  {
+    "objectID": "notes/index.html",
+    "href": "notes/index.html",
+    "title": "Notes",
+    "section": "",
+    "text": "職歴\n\n2024年4月-現在 日本学術振興会特別研究員PD（学習院大学法学部政治学科）\n\n\n\n 学歴\n\n2021年4月-2024年3月 東京大学大学院 人文社会系研究科 社会文化研究専攻 社会学専門分野博士課程，博士（社会学）\n2019年4月-2021年3月 東京大学大学院 人文社会系研究科 社会文化研究専攻 社会学専門分野修士課程，修士（社会学）\n2015年4月-2019年3月 早稲田大学 文化構想学部 現代人間論系"
   }
 ]
