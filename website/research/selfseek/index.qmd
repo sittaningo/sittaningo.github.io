@@ -6,11 +6,15 @@ author:
   - name: 新田真悟
     url: "https://shingonitta.com/"
     affiliation: 東京大学大学院
+  - name: 村山洋史
+  - name: 菅原育子
 categories:
   - Older Workers
   - Occupational Mobility
 status: peer-reviewed-papers
 pub-info:
+  coauthors: >-
+    村山洋史・菅原育子
   links:
   #   - name: Peer-reviewed Paper
   #     url: "https://www.jstage.jst.go.jp/article/rousha/44/3/44_231/_pdf/-char/ja"

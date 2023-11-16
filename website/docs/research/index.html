@@ -92,34 +92,6 @@ ul.task-list li input[type="checkbox"] {
   
 
   window.document.addEventListener("DOMContentLoaded", function (_event) {
-    const listingTargetEl = window.document.querySelector('#listing-working-papers .list');
-    if (!listingTargetEl) {
-      // No listing discovered, do not attach.
-      return; 
-    }
-
-    const options = {
-      valueNames: ['listing-project','listing-website','listing-format','listing-language','listing-title','listing-date','listing-author','listing-categories','listing-status','listing-pub-info','listing-hide-detail','listing-pub-status','listing-path','listing-outputHref','listing-date-modified','listing-description','listing-filename','listing-file-modified','listing-reading-time','listing-subtitle',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-date-modified-sort'] },{ data: ['listing-file-modified-sort'] },{ data: ['listing-reading-time-sort'] }],
-      
-      searchColumns: ["listing-project","listing-website","listing-format","listing-language","listing-title","listing-date","listing-author","listing-categories","listing-status","listing-pub-info","listing-hide-detail","listing-pub-status","listing-path","listing-outputHref","listing-date-modified","listing-description","listing-filename","listing-file-modified","listing-reading-time","listing-subtitle"],
-    };
-
-    window['quarto-listings'] = window['quarto-listings'] || {};
-    window['quarto-listings']['listing-working-papers'] = new List('listing-working-papers', options);
-
-    if (window['quarto-listing-loaded']) {
-      window['quarto-listing-loaded']();
-    }
-  });
-
-  window.addEventListener('hashchange',() => {
-    if (window['quarto-listing-loaded']) {
-      window['quarto-listing-loaded']();
-    }
-  })
-  
-
-  window.document.addEventListener("DOMContentLoaded", function (_event) {
     const listingTargetEl = window.document.querySelector('#listing-work-in-progress .list');
     if (!listingTargetEl) {
       // No listing discovered, do not attach.
@@ -202,11 +174,10 @@ ul.task-list li input[type="checkbox"] {
    
   <ul>
   <li><a href="#peer-reviewed-papers" id="toc-peer-reviewed-papers" class="nav-link active" data-scroll-target="#peer-reviewed-papers">PEER-REVIEWED PAPERS</a></li>
-  <li><a href="#working-papers" id="toc-working-papers" class="nav-link" data-scroll-target="#working-papers">WORKING PAPERS</a></li>
   <li><a href="#work-in-progress" id="toc-work-in-progress" class="nav-link" data-scroll-target="#work-in-progress">WORK IN PROGRESS</a></li>
   </ul>
 </nav>
-    <h5 class="quarto-listing-category-title">Categories</h5><div class="quarto-listing-category category-default"><div class="category" data-category="">All <span class="quarto-category-count">(18)</span></div><div class="category" data-category="Causal Inference">Causal Inference <span class="quarto-category-count">(3)</span></div><div class="category" data-category="Family">Family <span class="quarto-category-count">(3)</span></div><div class="category" data-category="Health">Health <span class="quarto-category-count">(3)</span></div><div class="category" data-category="Labor Market">Labor Market <span class="quarto-category-count">(3)</span></div><div class="category" data-category="Life Course">Life Course <span class="quarto-category-count">(3)</span></div><div class="category" data-category="Multigeneration">Multigeneration <span class="quarto-category-count">(3)</span></div><div class="category" data-category="Occupation">Occupation <span class="quarto-category-count">(6)</span></div><div class="category" data-category="Occupational Mobility">Occupational Mobility <span class="quarto-category-count">(6)</span></div><div class="category" data-category="Older Workers">Older Workers <span class="quarto-category-count">(9)</span></div><div class="category" data-category="Population Aging">Population Aging <span class="quarto-category-count">(3)</span></div><div class="category" data-category="Task/Skill">Task/Skill <span class="quarto-category-count">(6)</span></div></div></div>
+    <h5 class="quarto-listing-category-title">Categories</h5><div class="quarto-listing-category category-default"><div class="category" data-category="">All <span class="quarto-category-count">(12)</span></div><div class="category" data-category="Causal Inference">Causal Inference <span class="quarto-category-count">(2)</span></div><div class="category" data-category="Family">Family <span class="quarto-category-count">(2)</span></div><div class="category" data-category="Health">Health <span class="quarto-category-count">(2)</span></div><div class="category" data-category="Labor Market">Labor Market <span class="quarto-category-count">(2)</span></div><div class="category" data-category="Life Course">Life Course <span class="quarto-category-count">(2)</span></div><div class="category" data-category="Multigeneration">Multigeneration <span class="quarto-category-count">(2)</span></div><div class="category" data-category="Occupation">Occupation <span class="quarto-category-count">(4)</span></div><div class="category" data-category="Occupational Mobility">Occupational Mobility <span class="quarto-category-count">(4)</span></div><div class="category" data-category="Older Workers">Older Workers <span class="quarto-category-count">(6)</span></div><div class="category" data-category="Population Aging">Population Aging <span class="quarto-category-count">(2)</span></div><div class="category" data-category="Task/Skill">Task/Skill <span class="quarto-category-count">(4)</span></div></div></div>
 <!-- main -->
 <main class="content column-page-left" id="quarto-document-content">
 
@@ -283,10 +254,10 @@ ul.task-list li input[type="checkbox"] {
                 </ul>
             </div>
         </div>
-        <div class="research-entry" data-index="2" data-categories="Older Workers,Occupational Mobility" data-listing-date-sort="1660489200000" data-listing-file-modified-sort="1700124653762" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1">
+        <div class="research-entry" data-index="2" data-categories="Older Workers,Occupational Mobility" data-listing-date-sort="1660489200000" data-listing-file-modified-sort="1700125768084" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1">
             <div class="body">
                 <p class="title listing-title">
-                        <a href="../research/self-seek/index.html">移動経路にみる就業高年齢者の特徴と就業理由</a>
+                        <a href="../research/selfseek/index.html">移動経路にみる就業高年齢者の特徴と就業理由</a>
                 </p>
                 <p class="subtitle listing-subtitle">
                     自己開拓に着目して
@@ -299,6 +270,9 @@ ul.task-list li input[type="checkbox"] {
                         Occupational Mobility
                     </div>
                 </div>
+                <p class="research-coauthors">
+                    with 村山洋史・菅原育子
+                </p>
                 <ul class="research-links">
                 </ul>
             </div>
@@ -308,16 +282,10 @@ ul.task-list li input[type="checkbox"] {
 No matching items
 </div>
 </div>
-</section>
-<section id="working-papers" class="level2">
-<h2 class="anchored" data-anchor-id="working-papers">WORKING PAPERS</h2>
-<div id="listing-working-papers" class="quarto-listing quarto-listing-container-custom">
-<div class="list research">
-</div>
-<div class="listing-no-matching d-none">
-No matching items
-</div>
-</div>
+<!-- ## WORKING PAPERS
+
+:::{#working-papers}
+::: -->
 </section>
 <section id="work-in-progress" class="level2">
 <h2 class="anchored" data-anchor-id="work-in-progress">WORK IN PROGRESS</h2>

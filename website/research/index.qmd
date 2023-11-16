@@ -8,11 +8,11 @@ listing:
     sort: "date desc"
     template: ../format/research/peer-reviewed-papers.ejs
     categories: true
-  - id: working-papers
-    contents: "/*/index.qmd"
-    sort: "date desc"
-    template: ../format/research/working-papers.ejs
-    categories: true
+  # - id: working-papers
+  #   contents: "/*/index.qmd"
+  #   sort: "date desc"
+  #   template: ../format/research/working-papers.ejs
+  #   categories: true
   - id: work-in-progress
     contents: "/*/index.qmd"
     sort: "date desc"
@@ -33,10 +33,10 @@ date-format: "MMMM D, YYYY"
 :::{#peer-reviewed-papers}
 :::
 
-## WORKING PAPERS
+<!-- ## WORKING PAPERS
 
 :::{#working-papers}
-:::
+::: -->
 
 ## WORK IN PROGRESS
 
