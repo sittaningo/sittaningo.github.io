@@ -64,6 +64,34 @@ ul.task-list li input[type="checkbox"] {
 <script>
 
   window.document.addEventListener("DOMContentLoaded", function (_event) {
+    const listingTargetEl = window.document.querySelector('#listing-peer-reviewed-papers .list');
+    if (!listingTargetEl) {
+      // No listing discovered, do not attach.
+      return; 
+    }
+
+    const options = {
+      valueNames: ['listing-project','listing-website','listing-format','listing-language','listing-title','listing-date','listing-author','listing-categories','listing-status','listing-pub-info','listing-hide-detail','listing-pub-status','listing-path','listing-outputHref','listing-date-modified','listing-description','listing-filename','listing-file-modified','listing-reading-time','listing-subtitle',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-date-modified-sort'] },{ data: ['listing-file-modified-sort'] },{ data: ['listing-reading-time-sort'] }],
+      
+      searchColumns: ["listing-project","listing-website","listing-format","listing-language","listing-title","listing-date","listing-author","listing-categories","listing-status","listing-pub-info","listing-hide-detail","listing-pub-status","listing-path","listing-outputHref","listing-date-modified","listing-description","listing-filename","listing-file-modified","listing-reading-time","listing-subtitle"],
+    };
+
+    window['quarto-listings'] = window['quarto-listings'] || {};
+    window['quarto-listings']['listing-peer-reviewed-papers'] = new List('listing-peer-reviewed-papers', options);
+
+    if (window['quarto-listing-loaded']) {
+      window['quarto-listing-loaded']();
+    }
+  });
+
+  window.addEventListener('hashchange',() => {
+    if (window['quarto-listing-loaded']) {
+      window['quarto-listing-loaded']();
+    }
+  })
+  
+
+  window.document.addEventListener("DOMContentLoaded", function (_event) {
     const listingTargetEl = window.document.querySelector('#listing-working-papers .list');
     if (!listingTargetEl) {
       // No listing discovered, do not attach.
@@ -71,9 +99,9 @@ ul.task-list li input[type="checkbox"] {
     }
 
     const options = {
-      valueNames: ['listing-project','listing-website','listing-format','listing-language','listing-title','listing-subtitle','listing-date','listing-author','listing-categories','listing-status','listing-pub-info','listing-hide-detail','listing-pub-status','listing-path','listing-outputHref','listing-date-modified','listing-description','listing-filename','listing-file-modified','listing-reading-time',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-date-modified-sort'] },{ data: ['listing-file-modified-sort'] },{ data: ['listing-reading-time-sort'] }],
+      valueNames: ['listing-project','listing-website','listing-format','listing-language','listing-title','listing-date','listing-author','listing-categories','listing-status','listing-pub-info','listing-hide-detail','listing-pub-status','listing-path','listing-outputHref','listing-date-modified','listing-description','listing-filename','listing-file-modified','listing-reading-time','listing-subtitle',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-date-modified-sort'] },{ data: ['listing-file-modified-sort'] },{ data: ['listing-reading-time-sort'] }],
       
-      searchColumns: ["listing-project","listing-website","listing-format","listing-language","listing-title","listing-subtitle","listing-date","listing-author","listing-categories","listing-status","listing-pub-info","listing-hide-detail","listing-pub-status","listing-path","listing-outputHref","listing-date-modified","listing-description","listing-filename","listing-file-modified","listing-reading-time"],
+      searchColumns: ["listing-project","listing-website","listing-format","listing-language","listing-title","listing-date","listing-author","listing-categories","listing-status","listing-pub-info","listing-hide-detail","listing-pub-status","listing-path","listing-outputHref","listing-date-modified","listing-description","listing-filename","listing-file-modified","listing-reading-time","listing-subtitle"],
     };
 
     window['quarto-listings'] = window['quarto-listings'] || {};
@@ -99,9 +127,9 @@ ul.task-list li input[type="checkbox"] {
     }
 
     const options = {
-      valueNames: ['listing-project','listing-website','listing-format','listing-language','listing-title','listing-subtitle','listing-date','listing-author','listing-categories','listing-status','listing-pub-info','listing-hide-detail','listing-pub-status','listing-path','listing-outputHref','listing-date-modified','listing-description','listing-filename','listing-file-modified','listing-reading-time',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-date-modified-sort'] },{ data: ['listing-file-modified-sort'] },{ data: ['listing-reading-time-sort'] }],
+      valueNames: ['listing-project','listing-website','listing-format','listing-language','listing-title','listing-date','listing-author','listing-categories','listing-status','listing-pub-info','listing-hide-detail','listing-pub-status','listing-path','listing-outputHref','listing-date-modified','listing-description','listing-filename','listing-file-modified','listing-reading-time','listing-subtitle',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-date-modified-sort'] },{ data: ['listing-file-modified-sort'] },{ data: ['listing-reading-time-sort'] }],
       
-      searchColumns: ["listing-project","listing-website","listing-format","listing-language","listing-title","listing-subtitle","listing-date","listing-author","listing-categories","listing-status","listing-pub-info","listing-hide-detail","listing-pub-status","listing-path","listing-outputHref","listing-date-modified","listing-description","listing-filename","listing-file-modified","listing-reading-time"],
+      searchColumns: ["listing-project","listing-website","listing-format","listing-language","listing-title","listing-date","listing-author","listing-categories","listing-status","listing-pub-info","listing-hide-detail","listing-pub-status","listing-path","listing-outputHref","listing-date-modified","listing-description","listing-filename","listing-file-modified","listing-reading-time","listing-subtitle"],
     };
 
     window['quarto-listings'] = window['quarto-listings'] || {};
@@ -173,11 +201,12 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">Contents</h2>
    
   <ul>
-  <li><a href="#working-papers" id="toc-working-papers" class="nav-link active" data-scroll-target="#working-papers">WORKING PAPERS</a></li>
+  <li><a href="#peer-reviewed-papers" id="toc-peer-reviewed-papers" class="nav-link active" data-scroll-target="#peer-reviewed-papers">PEER-REVIEWED PAPERS</a></li>
+  <li><a href="#working-papers" id="toc-working-papers" class="nav-link" data-scroll-target="#working-papers">WORKING PAPERS</a></li>
   <li><a href="#work-in-progress" id="toc-work-in-progress" class="nav-link" data-scroll-target="#work-in-progress">WORK IN PROGRESS</a></li>
   </ul>
 </nav>
-    <h5 class="quarto-listing-category-title">Categories</h5><div class="quarto-listing-category category-default"><div class="category" data-category="">All <span class="quarto-category-count">(6)</span></div><div class="category" data-category="Causal Inference">Causal Inference <span class="quarto-category-count">(2)</span></div><div class="category" data-category="Health">Health <span class="quarto-category-count">(2)</span></div><div class="category" data-category="Labor Market">Labor Market <span class="quarto-category-count">(2)</span></div><div class="category" data-category="Life Course">Life Course <span class="quarto-category-count">(2)</span></div><div class="category" data-category="Multigeneration">Multigeneration <span class="quarto-category-count">(2)</span></div><div class="category" data-category="Occupation">Occupation <span class="quarto-category-count">(4)</span></div><div class="category" data-category="Population Aging">Population Aging <span class="quarto-category-count">(2)</span></div><div class="category" data-category="Task/Skill">Task/Skill <span class="quarto-category-count">(2)</span></div></div></div>
+    <h5 class="quarto-listing-category-title">Categories</h5><div class="quarto-listing-category category-default"><div class="category" data-category="">All <span class="quarto-category-count">(18)</span></div><div class="category" data-category="Causal Inference">Causal Inference <span class="quarto-category-count">(3)</span></div><div class="category" data-category="Family">Family <span class="quarto-category-count">(3)</span></div><div class="category" data-category="Health">Health <span class="quarto-category-count">(3)</span></div><div class="category" data-category="Labor Market">Labor Market <span class="quarto-category-count">(3)</span></div><div class="category" data-category="Life Course">Life Course <span class="quarto-category-count">(3)</span></div><div class="category" data-category="Multigeneration">Multigeneration <span class="quarto-category-count">(3)</span></div><div class="category" data-category="Occupation">Occupation <span class="quarto-category-count">(6)</span></div><div class="category" data-category="Occupational Mobility">Occupational Mobility <span class="quarto-category-count">(6)</span></div><div class="category" data-category="Older Workers">Older Workers <span class="quarto-category-count">(9)</span></div><div class="category" data-category="Population Aging">Population Aging <span class="quarto-category-count">(3)</span></div><div class="category" data-category="Task/Skill">Task/Skill <span class="quarto-category-count">(6)</span></div></div></div>
 <!-- main -->
 <main class="content column-page-left" id="quarto-document-content">
 
@@ -199,6 +228,87 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 <p>過去すべてのの論文や学会報告、ワーキングペーパーについては<a href="https://researchmap.jp/shingonitta">Researchmap</a>、<a href="https://scholar.google.co.jp/citations?hl=ja&amp;user=QJx5LRgAAAAJ&amp;view_op=list_works&amp;gmla=AJ1KiT3hvOAOFgTV7rGvKzHIwy0qyY5lPe862Uq5SSls-1Tt3EnTkvvSXrLEslQnNdjYkRVhtOVdJu66YaqL1jKputV2N0djHaETFidZdATIsCSaiotekpjfOzk">Google Scholar</a>をご参照ください。</p>
+<section id="peer-reviewed-papers" class="level2">
+<h2 class="anchored" data-anchor-id="peer-reviewed-papers">PEER-REVIEWED PAPERS</h2>
+<div id="listing-peer-reviewed-papers" class="quarto-listing quarto-listing-container-custom">
+<div class="list research">
+        <div class="research-entry" data-index="0" data-categories="Older Workers,Occupational Mobility,Task/Skill" data-listing-date-sort="1693407600000" data-listing-file-modified-sort="1700124859783" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1">
+            <div class="body">
+                <p class="title listing-title">
+                        <a href="../research/sktransfer/index.html">高年齢者の企業間移動と職業スキルの移転</a>
+                </p>
+                <p class="subtitle listing-subtitle">
+                </p>
+                <div class="item-categories listing-categories">
+                    <div class="item-category listing-category" onclick="window.quartoListingCategory('Older Workers'); return false;">
+                        Older Workers
+                    </div>
+                    <div class="item-category listing-category" onclick="window.quartoListingCategory('Occupational Mobility'); return false;">
+                        Occupational Mobility
+                    </div>
+                    <div class="item-category listing-category" onclick="window.quartoListingCategory('Task/Skill'); return false;">
+                        Task/Skill
+                    </div>
+                </div>
+                <ul class="research-links">
+                        <li class="research-link">
+                            <a href="https://www.jstage.jst.go.jp/article/ojjams/38/1/38_59/_pdf/-char/ja">
+                                <i class="fa6-solid:file-pdf"></i> Paper
+                            </a>
+                        </li>
+                </ul>
+            </div>
+        </div>
+        <div class="research-entry" data-index="1" data-categories="Older Workers,Family" data-listing-date-sort="1666191600000" data-listing-file-modified-sort="1700124886340" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1">
+            <div class="body">
+                <p class="title listing-title">
+                        <a href="../research/family/index.html">配偶者および子どもとの資源配分にみる高齢男性の就業選択</a>
+                </p>
+                <p class="subtitle listing-subtitle">
+                </p>
+                <div class="item-categories listing-categories">
+                    <div class="item-category listing-category" onclick="window.quartoListingCategory('Older Workers'); return false;">
+                        Older Workers
+                    </div>
+                    <div class="item-category listing-category" onclick="window.quartoListingCategory('Family'); return false;">
+                        Family
+                    </div>
+                </div>
+                <ul class="research-links">
+                        <li class="research-link">
+                            <a href="https://www.jstage.jst.go.jp/article/rousha/44/3/44_231/_pdf/-char/ja">
+                                <i class="fa6-solid:file-pdf"></i> Paper
+                            </a>
+                        </li>
+                </ul>
+            </div>
+        </div>
+        <div class="research-entry" data-index="2" data-categories="Older Workers,Occupational Mobility" data-listing-date-sort="1660489200000" data-listing-file-modified-sort="1700124653762" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1">
+            <div class="body">
+                <p class="title listing-title">
+                        <a href="../research/self-seek/index.html">移動経路にみる就業高年齢者の特徴と就業理由</a>
+                </p>
+                <p class="subtitle listing-subtitle">
+                    自己開拓に着目して
+                </p>
+                <div class="item-categories listing-categories">
+                    <div class="item-category listing-category" onclick="window.quartoListingCategory('Older Workers'); return false;">
+                        Older Workers
+                    </div>
+                    <div class="item-category listing-category" onclick="window.quartoListingCategory('Occupational Mobility'); return false;">
+                        Occupational Mobility
+                    </div>
+                </div>
+                <ul class="research-links">
+                </ul>
+            </div>
+        </div>
+</div>
+<div class="listing-no-matching d-none">
+No matching items
+</div>
+</div>
+</section>
 <section id="working-papers" class="level2">
 <h2 class="anchored" data-anchor-id="working-papers">WORKING PAPERS</h2>
 <div id="listing-working-papers" class="quarto-listing quarto-listing-container-custom">

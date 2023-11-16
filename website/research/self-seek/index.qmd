@@ -1,0 +1,30 @@
+---
+title: "移動経路にみる就業高年齢者の特徴と就業理由"
+subtitle: "自己開拓に着目して"
+date: 2022-08-15
+author:
+  - name: 新田真悟
+    url: "https://shingonitta.com/"
+    affiliation: 東京大学大学院
+categories:
+  - Older Workers
+  - Occupational Mobility
+status: peer-reviewed-papers
+pub-info:
+  links:
+  #   - name: Peer-reviewed Paper
+  #     url: "https://www.jstage.jst.go.jp/article/rousha/44/3/44_231/_pdf/-char/ja"
+  #     local: false
+  #     icon: fa6-solid:file-pdf
+hide-detail: false
+pub-status: 
+  # status: Writing
+  # class: warning
+  # icon: fa-solid fa-pencil
+  # status: Under review
+  # class: success
+  # icon: fas fa-glasses
+---
+
+## Abstract
+

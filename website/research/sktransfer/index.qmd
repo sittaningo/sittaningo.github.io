@@ -1,0 +1,32 @@
+---
+title: "高年齢者の企業間移動と職業スキルの移転"
+# subtitle: "Occupational Skill Allocation over the Life Course in Japan"
+date: 2023-08-31
+author:
+  - name: 新田真悟
+    url: "https://shingonitta.com/"
+    affiliation: 東京大学大学院
+categories:
+  - Older Workers
+  - Occupational Mobility
+  - Task/Skill
+status: peer-reviewed-papers
+pub-info:
+  links:
+    - name: Paper
+      url: "https://www.jstage.jst.go.jp/article/ojjams/38/1/38_59/_pdf/-char/ja"
+      local: false
+      icon: fa6-solid:file-pdf
+hide-detail: false
+pub-status: 
+  # status: Writing
+  # class: warning
+  # icon: fa-solid fa-pencil
+  # status: Under review
+  # class: success
+  # icon: fas fa-glasses
+---
+
+## Abstract
+
+人口高齢化に伴い，60 歳以降高年齢者の職業移動に関心が集まっている．高年齢者の職業移動を検討してきた既存の研究では職業大分類間での移動障壁を明らかにしてきたものの，職業大分類内部での差異や異なる集約の可能性について十分に検討されていない．そこで本稿では，近年関心を集めている職業スキルに着目し，高年齢者は企業間移動の前後でどの程度スキルを移転しているのか，いかなるスキルが移転されやすいのかを明らかにする．SSM2015―日本版 O-NET マッチングデータによる分析の結果，若年・壮年者と比べて高年齢者はあらゆるスキルについて移転されにくく，特に男性，大卒，正規雇用など，その職業経歴において相対的に高い地位にあると想定される属性でスキル水準が大きく低下していた．以上の結果からは，職業間の結節要素として取り上げられているスキルが，高年齢期の移動においては必ずしも有効でないこと，前職の職業スキルの水準にかかわらず，押し並べてスキル水準の低い職業に再配分されていることを示唆している．

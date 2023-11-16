@@ -3,6 +3,11 @@ title: Research
 # description: ""
 author: ""
 listing:
+  - id: peer-reviewed-papers
+    contents: "/*/index.qmd"
+    sort: "date desc"
+    template: ../format/research/peer-reviewed-papers.ejs
+    categories: true
   - id: working-papers
     contents: "/*/index.qmd"
     sort: "date desc"
@@ -22,6 +27,11 @@ date-format: "MMMM D, YYYY"
 ---
 
 過去すべてのの論文や学会報告、ワーキングペーパーについては<a href="https://researchmap.jp/shingonitta">Researchmap</a>、<a href="https://scholar.google.co.jp/citations?hl=ja&user=QJx5LRgAAAAJ&view_op=list_works&gmla=AJ1KiT3hvOAOFgTV7rGvKzHIwy0qyY5lPe862Uq5SSls-1Tt3EnTkvvSXrLEslQnNdjYkRVhtOVdJu66YaqL1jKputV2N0djHaETFidZdATIsCSaiotekpjfOzk">Google Scholar</a>をご参照ください。
+
+## PEER-REVIEWED PAPERS
+
+:::{#peer-reviewed-papers}
+:::
 
 ## WORKING PAPERS
 

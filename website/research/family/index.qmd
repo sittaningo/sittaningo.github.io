@@ -1,0 +1,31 @@
+---
+title: "配偶者および子どもとの資源配分にみる高齢男性の就業選択"
+# subtitle: "Occupational Skill Allocation over the Life Course in Japan"
+date: 2022-10-20
+author:
+  - name: 新田真悟
+    url: "https://shingonitta.com/"
+    affiliation: 東京大学大学院
+categories:
+  - Older Workers
+  - Family
+status: peer-reviewed-papers
+pub-info:
+  links:
+    - name: Paper
+      url: "https://www.jstage.jst.go.jp/article/rousha/44/3/44_231/_pdf/-char/ja"
+      local: false
+      icon: fa6-solid:file-pdf
+hide-detail: false
+pub-status: 
+  # status: Writing
+  # class: warning
+  # icon: fa-solid fa-pencil
+  # status: Under review
+  # class: success
+  # icon: fas fa-glasses
+---
+
+## Abstract
+
+本研究では65歳以上高齢男性の妻および子どもとの経済的・時間的資源の配分と高齢男性の就業行動との関連を，「家族についての全国調査」の個票データを用いて検証した．線形確率モデルに基づいた多変量解析の結果，学歴・健康状態などの社会人口学的属性を考慮してもなお，夫婦に占める妻の家事時間が高齢男性の就業確率と正の関連を，子どもへの非経済的援助の提供が負の関連をそれぞれ生じさせることが明らかになった．以上の結果からは，高齢者の就業選択には経済状況や就業機会だけでなく家族内の資源配分を考慮する必要があることを示唆した．
