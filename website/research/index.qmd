@@ -1,6 +1,6 @@
 ---
 title: Research
-# description: ""
+description: "過去すべての研究については[Researchmap](https://researchmap.jp/shingonitta)、[Google Scholar](https://scholar.google.co.jp/citations?hl=ja&user=QJx5LRgAAAAJ&view_op=list_works&gmla=AJ1KiT3hvOAOFgTV7rGvKzHIwy0qyY5lPe862Uq5SSls-1Tt3EnTkvvSXrLEslQnNdjYkRVhtOVdJu66YaqL1jKputV2N0djHaETFidZdATIsCSaiotekpjfOzk)をご参照ください。"
 author: ""
 listing:
   - id: peer-reviewed-papers
@@ -25,8 +25,6 @@ toc-location: right
 toc-title: Contents
 date-format: "MMMM D, YYYY"
 ---
-
-過去すべてのの論文や学会報告、ワーキングペーパーについては<a href="https://researchmap.jp/shingonitta">Researchmap</a>、<a href="https://scholar.google.co.jp/citations?hl=ja&user=QJx5LRgAAAAJ&view_op=list_works&gmla=AJ1KiT3hvOAOFgTV7rGvKzHIwy0qyY5lPe862Uq5SSls-1Tt3EnTkvvSXrLEslQnNdjYkRVhtOVdJu66YaqL1jKputV2N0djHaETFidZdATIsCSaiotekpjfOzk">Google Scholar</a>をご参照ください。
 
 ## PEER-REVIEWED PAPERS
 

@@ -9,5 +9,12 @@
       "/research/family/index.html",
       "/research/selfseek/index.html"
     ]
+  },
+  {
+    "listing": "/notes/index.html",
+    "items": [
+      "/notes/onetstandarization/index.html",
+      "/notes/bell2019/index.html"
+    ]
   }
 ]

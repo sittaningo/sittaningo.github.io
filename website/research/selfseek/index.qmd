@@ -15,11 +15,11 @@ status: peer-reviewed-papers
 pub-info:
   coauthors: >-
     村山洋史・菅原育子
-  links:
-  #   - name: Peer-reviewed Paper
-  #     url: "https://www.jstage.jst.go.jp/article/rousha/44/3/44_231/_pdf/-char/ja"
-  #     local: false
-  #     icon: fa6-solid:file-pdf
+  # links:
+  #   - name: Paper
+      # url: "https://www.jstage.jst.go.jp/article/rousha/44/3/44_231/_pdf/-char/ja"
+      # local: false
+      # icon: fa6-solid:file-pdf
 hide-detail: false
 pub-status: 
   # status: Writing

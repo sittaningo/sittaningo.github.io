@@ -1,12 +1,40 @@
 ---
 title: "Profile"
+# description: ""
 ---
 
-### {{< iconify fa-solid chalkboard-teacher >}} 職歴
+### 研究関心
+
+専門はエイジングとライフコースの社会学および社会階層論です。計量分析をもちいてエイジングの社会的過程や不平等の生成過程を研究しています。
+
+::: {.callout-caution appearance="minimal"}
+
+## {{< iconify healthicons elderly >}} [高齢者の引退と就業](../research/#category=Older%20Workers)
+
+高齢者の就業と引退の規定要因や、就業高齢者の実態についての研究
+:::
+
+::: {.callout-caution appearance="minimal"}
+
+## {{< iconify icon-park-twotone arena >}} [労働市場の高齢化](../research/#category=Labor%20Market)
+
+人口高齢化に伴う労働市場の変化とその帰結についての研究
+:::
+
+::: {.callout-caution appearance="minimal"}
+
+## {{< iconify heroicons scale >}} [健康格差](../research/#category=Health)
+
+健康の不平等の趨勢、規定要因、帰結の研究
+:::
+
+### 職歴
+ <!-- {{< iconify fa-solid chalkboard-teacher >}}  -->
 
 - 2024年4月-現在  日本学術振興会特別研究員PD（学習院大学法学部政治学科）
 
-### {{< iconify mdi education-outline >}} 学歴
+### 学歴
+ <!-- {{< iconify mdi education-outline >}} -->
 
 - 2021年4月-2024年3月  東京大学大学院 人文社会系研究科 社会文化研究専攻 社会学専門分野博士課程，博士（社会学）
 

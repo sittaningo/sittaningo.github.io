@@ -15,17 +15,21 @@ website:
   navbar:
     left:
       - href: index.qmd
-        text: Home
-      - text: Profile
+        text: "{{< iconify material-symbols home-outline >}}Home"
+      - text: "{{< iconify gg profile >}}Profile"
         file: profile/index.qmd
-      - text: Research
+      - text: "{{< iconify ph book-open-bold >}}Research"
         file: research/index.qmd
-      - text: Notes
+      - text: "{{< iconify ph pencil-line >}}Notes"
         file: notes/index.qmd
+
+# {{< iconify material-symbols home-outline >}}
 
 format:
   html:
-    theme: [simplex, format/custom.scss]
+    theme: 
+      light: [simplex, format/custom.scss]
+      dark: [darkly, format/custom.scss]
     linkcolor: red
     # - format/custom.scss
 
