@@ -12,15 +12,17 @@ website:
   # favicon: "{{< fluent animal-turtle-20-regular >}}"
   # site-url: https://shingonitta.com
   # repo-url: https://github.com/ningositta/ningositta.github.io
+
+
   navbar:
     left:
       - href: index.qmd
-        text: "{{< iconify material-symbols home-outline >}}Home"
-      - text: "{{< iconify gg profile >}}Profile"
+        text: "HOME"
+      - text: "PROFILE"
         file: profile/index.qmd
-      - text: "{{< iconify ph book-open-bold >}}Research"
+      - text: "RESEARCH"
         file: research/index.qmd
-      - text: "{{< iconify ph pencil-line >}}Notes"
+      - text: "NOTES"
         file: notes/index.qmd
 
 # {{< iconify material-symbols home-outline >}}
@@ -29,8 +31,7 @@ format:
   html:
     theme: 
       light: [simplex, format/custom.scss]
-      dark: [darkly, format/custom.scss]
-    linkcolor: red
+    # linkcolor: red
     # - format/custom.scss
 
 # simplex

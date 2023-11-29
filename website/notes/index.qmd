@@ -1,5 +1,5 @@
 ---
-title: "Notes"
+title: "NOTES"
 description: "読んだ論文の要約や研究についてのメモ"
 listing:
   - id: posts_2023
