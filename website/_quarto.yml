@@ -31,7 +31,4 @@ format:
   html:
     theme: 
       light: [simplex, format/custom.scss]
-    # linkcolor: red
-    # - format/custom.scss
-
-# simplex
+    mainfont: 'M PLUS 1P'

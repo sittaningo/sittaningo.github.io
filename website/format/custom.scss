@@ -1,9 +1,15 @@
 /*-- scss:defaults --*/
 
 @import url(http://fonts.googleapis.com/css?family=Montserrat&display=swap);
-// @import url(http://fonts.googleapis.com/css?family=Montserrat:wght@800&display=swap);
 @import url(https://fonts.googleapis.com/css2?family=M+PLUS+1p&display=swap);
-
+@import url(http://fonts.googleapis.com/css?family=M+PLUS+1p:wght@100&display=swap);
+@import url(http://fonts.googleapis.com/css?family=M+PLUS+1p:wght@200&display=swap);
+@import url(http://fonts.googleapis.com/css?family=M+PLUS+1p:wght@300&display=swap);
+@import url(http://fonts.googleapis.com/css?family=M+PLUS+1p:wght@400&display=swap);
+@import url(http://fonts.googleapis.com/css?family=M+PLUS+1p:wght@500&display=swap);
+@import url(http://fonts.googleapis.com/css?family=M+PLUS+1p:wght@600&display=swap);
+@import url(http://fonts.googleapis.com/css?family=M+PLUS+1p:wght@700&display=swap);
+@import url(http://fonts.googleapis.com/css?family=M+PLUS+1p:wght@800&display=swap);
 
 //
 // Color system
@@ -74,6 +80,7 @@ $body-font-family: $font-family-sans-serif !default;
 $navbar-font-family: $font-family-sans-serif !default;
 $toc-font-family: $font-family-sans-serif !default;
 
+// font-family: $font-family-sans-serif;
 
 /*-- scss:rules --*/
 
@@ -107,6 +114,8 @@ $toc-font-family: $font-family-sans-serif !default;
         }
     }
 }
+
+// Profile
 
 // Interest
 
