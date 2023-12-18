@@ -23,12 +23,42 @@
                     <% } %>
                 </div>
                 <% } %>
+
+                <!-- <% if (item.pubinfo) { %>
+                    <div class="research-coauthors">
+                        with <%= item["pub-info"].coauthors %>
+                    </div>
+                    <% if (item['pub-info'].journals) { %>
+                        <div class="research-journal">
+                            in
+                            <% for (const journal of item['pub-info'].journals) { %>
+                                <a href="<%- journal.url %>">
+                                    <%= journal.name %>
+                                </a>
+                        <% } %>
+                        </div>
+                    <% } %>
+                <% } %> -->
+    
+                <span class="research-journals">
+                    <% if (item['pub-info'].journals) { %>
+                        in
+                        <% for (const journal of item['pub-info'].journals) { %>
+                            <a href="<%- journal.url %>">
+                             <%= journal.name %>
+                            </a>
+                        <% } %>
+                    <% } %>
+                </span>
+
                 <% if (item['pub-info'].coauthors) { %>
-                <p class="research-coauthors">
+                <span class="research-coauthors">
                     with <%= item["pub-info"].coauthors %>
-                </p>
+                </span>
                 <% } %>
-                <ul class="research-links">
+                
+           
+                    <ul class="research-links">
                     <% if (item['pub-info'].links) { %>
                         <% for (const link of item['pub-info'].links) { %>
                         <li class="research-link">

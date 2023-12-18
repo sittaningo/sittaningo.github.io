@@ -11,11 +11,9 @@ categories:
   - Family
 status: peer-reviewed-papers
 pub-info:
-  links:
-    - name: Paper(OA)
-      url: "https://www.jstage.jst.go.jp/article/rousha/44/3/44_231/_pdf/-char/ja"
-      local: false
-      icon: fa6-solid:file-pdf
+  journals: 
+    - name: 老年社会科学
+    - url: "https://www.jstage.jst.go.jp/article/rousha/44/3/44_231/_article/-char/ja"
 hide-detail: false
 pub-status: 
   # status: Writing
