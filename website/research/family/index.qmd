@@ -1,6 +1,5 @@
 ---
 title: "配偶者および子どもとの資源配分にみる高齢男性の就業選択"
-# subtitle: "Occupational Skill Allocation over the Life Course in Japan"
 date: 2022-10-20
 author:
   - name: 新田真悟
@@ -10,10 +9,9 @@ categories:
   - Older Workers
   - Family
 status: peer-reviewed-papers
+paperlink: "https://doi.org/10.34393/rousha.44.3_231"
 pub-info:
-  journals: 
-    - name: 老年社会科学
-    - url: "https://www.jstage.jst.go.jp/article/rousha/44/3/44_231/_article/-char/ja"
+  journal: 老年社会科学
 hide-detail: false
 pub-status: 
   # status: Writing

@@ -11,15 +11,9 @@ categories:
   - Occupational Mobility
   - Task/Skill
 status: peer-reviewed-papers
+paperlink: "https://doi.org/10.11218/ojjams.38.59"
 pub-info:
-  journals: 
-    - name: 理論と方法
-    - url: "https://www.jstage.jst.go.jp/article/ojjams/38/1/38_59/_article/-char/ja/"
-  # links:
-  #   - name: Paper(OA)
-  #   - url: "https://www.jstage.jst.go.jp/article/ojjams/38/1/38_59/_pdf/-char/ja"
-  #   - local: false
-  #   - icon: fa6-solid:file-pdf
+  journal: 理論と方法
 hide-detail: false
 pub-status: 
   # status: Writing

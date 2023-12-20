@@ -148,13 +148,16 @@ $toc-font-family: $font-family-sans-serif !default;
 
 .callout-caution.callout {
     border-left-color: $orange;
+    border-right-style: none;
+    border-top-style: none;
+    border-bottom-style: none;
   }
 
-// Blog
 .profile {
     .anchored {
         font-weight: $font-weight-bold;
     }
+
 }
 
 
@@ -175,6 +178,10 @@ $toc-font-family: $font-family-sans-serif !default;
 
         .body {
             flex: 1 1 auto;
+            border-left-color: $orange;
+            border-left-style: solid;
+            border-left-width: 5px;
+            padding-left: 0.8em;
         }
 
         .thumbnail {
@@ -240,7 +247,7 @@ $toc-font-family: $font-family-sans-serif !default;
             margin-bottom: 0.5em;
             color: $gray-500;
         }
-        .research-journals {
+        .research-journal {
             font-weight: 500;
             font-size: 0.8em;
             margin-bottom: 0.5em;

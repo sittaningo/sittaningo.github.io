@@ -19,6 +19,7 @@ listing:
     template: ../format/research/work-in-progress.ejs
     categories: true
 # title-block-banner: "#fff"
+linkcolor: "#000"
 page-layout: full
 toc: true
 toc-location: right

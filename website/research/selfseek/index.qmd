@@ -15,23 +15,6 @@ status: peer-reviewed-papers
 pub-info:
   coauthors: >-
     村山洋史・菅原育子
-  journals: 
-    - name: 応用老年学
-    - url: "https://www.sag-j.org/organ/pdf/16.pdf"
-  # links:
-  #   - name: Paper
-      # url: "https://www.jstage.jst.go.jp/article/rousha/44/3/44_231/_pdf/-char/ja"
-      # local: false
-      # icon: fa6-solid:file-pdf
-hide-detail: false
-pub-status: 
-  # status: Writing
-  # class: warning
-  # icon: fa-solid fa-pencil
-  # status: Under review
-  # class: success
-  # icon: fas fa-glasses
+  journal: 応用老年学
+hide-detail: true
 ---
-
-## Abstract
-

@@ -8,7 +8,7 @@
                     <% if (item['hide-detail']) { %>
                         <%= item.title %>
                     <% } else { %>
-                        <a href="<%- item.path %>"><%= item.title %></a>
+                        <a href="<%- item['paperlink'] %>"><%= item.title %></a>
                     <% } %>
                 </p>
                 <p class="subtitle listing-subtitle">
@@ -23,31 +23,12 @@
                     <% } %>
                 </div>
                 <% } %>
-
-                <!-- <% if (item.pubinfo) { %>
-                    <div class="research-coauthors">
-                        with <%= item["pub-info"].coauthors %>
-                    </div>
-                    <% if (item['pub-info'].journals) { %>
-                        <div class="research-journal">
-                            in
-                            <% for (const journal of item['pub-info'].journals) { %>
-                                <a href="<%- journal.url %>">
-                                    <%= journal.name %>
-                                </a>
-                        <% } %>
-                        </div>
-                    <% } %>
-                <% } %> -->
     
-                <span class="research-journals">
-                    <% if (item['pub-info'].journals) { %>
-                        in
-                        <% for (const journal of item['pub-info'].journals) { %>
-                            <a href="<%- journal.url %>">
-                             <%= journal.name %>
-                            </a>
-                        <% } %>
+                <span class="research-journal">
+                    <% if (item['pub-info'].journal) { %>
+                        in <i> 
+                            <%= item["pub-info"].journal %>
+                           </i>
                     <% } %>
                 </span>
 
