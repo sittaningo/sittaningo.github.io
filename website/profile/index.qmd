@@ -30,9 +30,17 @@ title: "PROFILE"
 ### 職歴
  <!-- {{< iconify fa-solid chalkboard-teacher >}}  -->
 
-![](../image/career.svg){fig-align="left" width=700}
+- 2024年4月–現在: 日本学術振興会特別研究員PD（学習院大学法学部政治学科）
+
+<!-- ![](../image/career.svg){fig-align="left" width=700} -->
 
 ### 学歴
  <!-- {{< iconify mdi education-outline >}} -->
 
-![](../image/education.svg){fig-align="left" width=700}
+- 2021年4月–2024年3月: 東京大学大学院人文社会系研究科社会文化研究専攻社会学専門分野博士課程
+
+- 2019年4月–2021年3月: 東京大学大学院人文社会系研究科社会文化研究専攻社会学専門分野修士課程
+
+- 2015年4月–2019年3月: 早稲田大学文化構想学部現代人間論系
+
+<!-- ![](../image/education.svg){fig-align="left" width=700} -->
