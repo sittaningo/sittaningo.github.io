@@ -1,0 +1,50 @@
+{
+  "index.qmd": {
+    "index.html": "33272b37"
+  },
+  "about.qmd": {
+    "about.html": "b8d5e807"
+  },
+  "research/index.qmd": {
+    "index.html": "13f79e32"
+  },
+  "blog/index.qmd": {
+    "index.html": "c9bbd634"
+  },
+  "profile/index.qmd": {
+    "index.html": "5ba31dbd"
+  },
+  "404.qmd": {
+    "404.html": "cca986ee"
+  },
+  "profile/skilltraj/index.qmd": {
+    "index.html": "a1e8b470"
+  },
+  "research/skilltraj/index.qmd": {
+    "index.html": "631f8e19"
+  },
+  "research/gapclose/index.qmd": {
+    "index.html": "575f27cb"
+  },
+  "research/oas/index.qmd": {
+    "index.html": "65fc43c8"
+  },
+  "notes/index.qmd": {
+    "index.html": "60171ddb"
+  },
+  "research/sktransfer/index.qmd": {
+    "index.html": "1d9465b7"
+  },
+  "research/family/index.qmd": {
+    "index.html": "4c19a7a4"
+  },
+  "research/selfseek/index.qmd": {
+    "index.html": "2b38a5b8"
+  },
+  "notes/bell2019/index.qmd": {
+    "index.html": "09e67307"
+  },
+  "notes/onetstandarization/index.qmd": {
+    "index.html": "2c85f439"
+  }
+}
