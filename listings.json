@@ -1,0 +1,20 @@
+[
+  {
+    "listing": "/research/index.html",
+    "items": [
+      "/research/gapclose/index.html",
+      "/research/oas/index.html",
+      "/research/skilltraj/index.html",
+      "/research/sktransfer/index.html",
+      "/research/family/index.html",
+      "/research/selfseek/index.html"
+    ]
+  },
+  {
+    "listing": "/notes/index.html",
+    "items": [
+      "/notes/onetstandarization/index.html",
+      "/notes/bell2019/index.html"
+    ]
+  }
+]
