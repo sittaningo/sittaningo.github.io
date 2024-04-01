@@ -1,26 +1,5 @@
 [
   {
-    "objectID": "index.html",
-    "href": "index.html",
-    "title": "Shingo Nitta",
-    "section": "",
-    "text": "日本学術振興会特別研究員PD（学習院大学法学部政治学科）"
-  },
-  {
-    "objectID": "research/index.html",
-    "href": "research/index.html",
-    "title": "RESEARCH",
-    "section": "",
-    "text": "高年齢者の企業間移動と職業スキルの移転\n                \n                \n                \n                \n                    \n                        Older Workers\n                    \n                    \n                        Occupational Mobility\n                    \n                    \n                        Task/Skill\n                    \n                \n                \n                        in  \n                            理論と方法\n                           \n                \n                    \n                \n            \n        \n        \n            \n                \n                        配偶者および子どもとの資源配分にみる高齢男性の就業選択\n                \n                \n                \n                \n                    \n                        Older Workers\n                    \n                    \n                        Family\n                    \n                \n                \n                        in  \n                            老年社会科学\n                           \n                \n                    \n                \n            \n        \n        \n            \n                \n                        移動経路にみる就業高年齢者の特徴と就業理由\n                \n                \n                    自己開拓に着目して\n                \n                \n                    \n                        Older Workers\n                    \n                    \n                        Occupational Mobility\n                    \n                \n                \n                        in  \n                            応用老年学\n                           \n                \n                \n                    with 村山洋史・菅原育子\n                \n                    \n                \n            \n        \n\n\nNo matching items"
-  },
-  {
-    "objectID": "blog/index.html",
-    "href": "blog/index.html",
-    "title": "About",
-    "section": "",
-    "text": "About this site"
-  },
-  {
     "objectID": "profile/index.html",
     "href": "profile/index.html",
     "title": "PROFILE",
@@ -28,95 +7,32 @@
     "text": "研究関心\n専門はエイジングとライフコースの社会学および社会階層論です。計量分析をもちいてエイジングの社会的過程や不平等の生成過程を研究しています。\n\n\n\n\n\n\n 高齢者の引退と就業\n\n\n\n高齢者の就業と引退の規定要因や、就業高齢者の実態についての研究\n\n\n\n\n\n\n\n\n 労働市場の高齢化\n\n\n\n人口高齢化に伴う労働市場の変化とその帰結についての研究\n\n\n\n\n\n\n\n\n 健康格差\n\n\n\n健康の不平等の趨勢、規定要因、帰結の研究\n\n\n\n\n職歴\n\n\n2024年4月–現在: 日本学術振興会特別研究員PD（学習院大学法学部政治学科）\n\n\n\n\n学歴\n\n\n2021年4月–2024年3月: 東京大学大学院人文社会系研究科社会文化研究専攻社会学専門分野博士課程\n2019年4月–2021年3月: 東京大学大学院人文社会系研究科社会文化研究専攻社会学専門分野修士課程\n2015年4月–2019年3月: 早稲田大学文化構想学部現代人間論系"
   },
   {
-    "objectID": "profile/index.html#iconify-fa-solid-chalkboard-teacher-職歴",
-    "href": "profile/index.html#iconify-fa-solid-chalkboard-teacher-職歴",
-    "title": "Profile",
+    "objectID": "notes/onetstandarization/index.html",
+    "href": "notes/onetstandarization/index.html",
+    "title": "スキル指標の標準化と解釈に関するメモ",
     "section": "",
-    "text": "2024年4月-現在 日本学術振興会特別研究員PD（学習院大学法学部政治学科）"
+    "text": "はじめに\n最近、日本版O-NET（以下、たんにO-NET）を用いた研究プロジェクトに取り組んでいます。O-NETでは各職業に求められるスキル要件や各職業の仕事の性質、仕事の内容などを職業間で比較可能な形式で尋ねています。それゆえ、職業小分類を尋ねているデータとマッチングすることで、個人が持つ（と職業上は期待される）スキルを知ることができるようになります。\nO-NETで尋ねられている項目は比較可能形式といえど、厳密な意味では比較可能ではありません。というのも、尋ねている項目ごとに頻度や重要度、比率などその中身が異なるためです。\n表1. O-NETの調査内容と各選択肢のタイプ\n\n\n\n調査内容\n選択肢のタイプ\n\n\n\n\n職業興味\n合致度\n\n\n仕事価値観\n満足感\n\n\nスキル\nレベル\n\n\n知識\n重要度\n\n\n仕事の性質\n頻度A\n\n\n\n頻度B\n\n\n\n重要度\n\n\n\n責任の度合い\n\n\n\nその他\n\n\n仕事の内容\n重要度\n\n\n\nもちろん、選択肢のタイプが異なることは回答者の負担減のために行われていることなので、それ自体はごくふつうなことですが、O-NETの使用においては複数の調査項目を合算して用いることがままあるため、結果が選択肢のタイプによって歪まないように分析者が調査内容横断的な各項目を比較可能にすることがあります。それが標準化です。\n\n\n標準化の支配的アプローチ：Accemoglu and Autor\n多くの研究では、Accemoglu and Autor（2011）の手続きに倣って標準化が行われています。それは以下2回の標準化を行います。\n\nマッチング後に就業者数で重み付け標準化\n合算後に再標準化\n\n1の手続きについては、主として2つの目的があります。①上述した通り、項目を統計的な意味で比較可能にする、②職業を1単位とした水準から、マッチングしたデータの分析単位を1単位とした水準に各種指標を変換する、です。②は重み付けとして行われます。今回は重み付けの話は割愛します。2の手続きは主として解釈のために行われます。すなわち、平均0、標準偏差1とならすことで、値の正負や量について解釈を容易にするためになします。逆にいえば、2を行わなかったとしても、統計的な表現としては等価なものが出力されます（1回目の標準化後にサンプルの追加や欠損が一切なかった場合は、です）。\n\n\n標準化の実質的アプローチ\n※ここからはほとんど悩みと、暫定的な結論です。誤りなどの指摘を歓迎します。\nここで、1の手続きでは標準化は2回、2の手続きでは1回を行うはずです。1の手続きの1回目を1-1、2回目を1-2とします。はじめに、1-1ではそれぞれの項目について標準化します。1-1の標準化を通じて、値の大小をなくし、標準偏差として表現する形式にします。0〜100の閾値をとる比率も、1〜7の値を取る重要度も、平均0標準偏差1として表現されます。おそらく、1-1だけで標準化を終え、合算に進むのは誤りです。なぜなら、統計量としては比較可能になっているけれども、項目間では比較可能になっていないためです。項目同士を比較可能、合算可能にするためには、さらにすべての項目を1度で標準化する必要があります。言い換えれば、複数列にまたがるスキル項目を1つの列に集約し、その列について標準化を行わなければならない、ということです。これが1-2に相当します。標準化後は列を分解します。1-1と1-2を通じて、尺度をならしつつ、項目を比較可能な形式に整えます。2回の標準化を通して、はじめて項目が合算可能になります。\n問題関心次第ですが、合算後の指標は基本的に1列に集約して標準化してはいけません。それはなぜなら、指標の間で値が大きい（小さい）ということを表現してしまうためです。すなわち、「言語スキルは計算スキルより値が大きい（小さい）」といったような、指標間での値の大きさの話に帰着してしまうためです。いわゆる標準化回帰係数Bを考えてもらうと良いと思います。「どのスキル指標が最も大きいのか？」という問いでは良いのかもしれませんが、スキル水準についてとくに個人間・時代間などでの比較を行いたい場合は、余計な情報になってしまいます。したがって、合算後のスキル指標については指標ごとに標準化を行い、指標間の標準化は行わないべきでしょう。項目がすでに比較可能であり、二度目の標準化は解釈のために行われるというこれまでの話を踏まえれば、スキル指標は合算時点で比較可能な形式になっているはずです。\n\n\n複数時点でのスキル指標\nところで、自分はスキル移転の研究をしています。転職の前後でスキルはどう変化するのか、ということを記述的に明らかにしようとしています。このとき、標準化はどのように行うべきでしょうか。\nポイントは複数時点の職業情報がある点です（簡単のため、前職と現職とします）。このとき、前職と現職それぞれで標準化してしまうと、やはり前職と現職とが比較可能になりません。今度は前職と現職とを1列としてマッチングを行います。各職業に紐づいた項目から、1-1をはじめます。そして、1-2では前職と現職とが1列になっている状態で、さらに項目を1列とします。person-yearデータならぬperson-occupation-itemデータのような状況です(!?)。もしパーソンイヤーデータすべての職業について行う場合は・・・、ご想像にお任せします。笑\n\n\nおわりに\nO-NETは大きなポテンシャルを持つデータですが、自分自身取り扱いに苦労しています。こと標準化に関しては、やり方によっては結果を大きく変えてしまう危険性があるので、特に苦労しました。尺度の閾値の影響を取り除きつつ、厳密な意味で比較可能にすること、「項目同士」は比較可能にするけれども、「指標同士」は比較可能にしないこと、推定したい量を定義し、何と比較するのかを確定しておくことが、指標を取り扱う上では大事なのかなと思います。"
   },
   {
-    "objectID": "profile/index.html#iconify-mdi-education-outline-学歴",
-    "href": "profile/index.html#iconify-mdi-education-outline-学歴",
-    "title": "Profile",
-    "section": " 学歴",
-    "text": "学歴\n\n2021年4月-2024年3月 東京大学大学院 人文社会系研究科 社会文化研究専攻 社会学専門分野博士課程，博士（社会学）\n2019年4月-2021年3月 東京大学大学院 人文社会系研究科 社会文化研究専攻 社会学専門分野修士課程，修士（社会学）\n2015年4月-2019年3月 早稲田大学 文化構想学部 現代人間論系"
-  },
-  {
-    "objectID": "research/index.html#work-in-progress",
-    "href": "research/index.html#work-in-progress",
-    "title": "RESEARCH",
-    "section": "WORK IN PROGRESS",
-    "text": "WORK IN PROGRESS\n\n\n        \n            \n                \n                        Covering The Long Shadow\n                \n                \n                    The Gap-closing Approach to The Health Disparity by Social Origin of Child’s Education\n                \n                \n                    \n                        Health\n                    \n                    \n                        Multigeneration\n                    \n                    \n                        Causal Inference\n                    \n                \n                \n                \n            \n            \n        \n        \n            \n                \n                        Two Tales of Greying Labor Market in Japan\n                \n                \n                    Aging Labor Force and Extending Working Lives\n                \n                \n                    \n                        Labor Market\n                    \n                    \n                        Occupation\n                    \n                    \n                        Population Aging\n                    \n                \n                \n                \n            \n            \n        \n        \n            \n                \n                        Education Sets the Stage, Sex Draws the Pathway\n                \n                \n                    Occupational Skill Allocation over the Life Course in Japan\n                \n                \n                    \n                        Life Course\n                    \n                    \n                        Occupation\n                    \n                    \n                        Task/Skill\n                    \n                \n                \n                \n            \n            \n        \n\n\nNo matching items"
-  },
-  {
-    "objectID": "research/index.html#working-papers",
-    "href": "research/index.html#working-papers",
-    "title": "Research",
-    "section": "WORKING PAPERS",
-    "text": "WORKING PAPERS\n\n\n\n\nNo matching items"
-  },
-  {
-    "objectID": "research/index.html#work-in-progress-1",
-    "href": "research/index.html#work-in-progress-1",
-    "title": "Research",
-    "section": "Work in Progress",
-    "text": "Work in Progress\n\nEducation Sets the Stage, Sex Draws the Pathway: Occupational Skill Allocation over the Life Course in Japan\nTwo Tales of Greying Labor Market in Japan: Aging Labor Force and Extending Working Lives\nCovering The Long Shadow: The Gap-closing Approach of The Children’s Education on The Health Disparity by Social Origin"
-  },
-  {
-    "objectID": "profile/skilltraj/index.html",
-    "href": "profile/skilltraj/index.html",
-    "title": "Education Sets the Stage, Sex Draws the Pathway",
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Shingo Nitta",
     "section": "",
-    "text": "hoge"
+    "text": "日本学術振興会特別研究員PD（学習院大学法学部政治学科）"
   },
   {
-    "objectID": "profile/skilltraj/index.html#abstract",
-    "href": "profile/skilltraj/index.html#abstract",
-    "title": "Education Sets the Stage, Sex Draws the Pathway",
+    "objectID": "research/family/index.html",
+    "href": "research/family/index.html",
+    "title": "配偶者および子どもとの資源配分にみる高齢男性の就業選択",
     "section": "",
-    "text": "hoge"
+    "text": "本研究では65歳以上高齢男性の妻および子どもとの経済的・時間的資源の配分と高齢男性の就業行動との関連を，「家族についての全国調査」の個票データを用いて検証した．線形確率モデルに基づいた多変量解析の結果，学歴・健康状態などの社会人口学的属性を考慮してもなお，夫婦に占める妻の家事時間が高齢男性の就業確率と正の関連を，子どもへの非経済的援助の提供が負の関連をそれぞれ生じさせることが明らかになった．以上の結果からは，高齢者の就業選択には経済状況や就業機会だけでなく家族内の資源配分を考慮する必要があることを示唆した．"
   },
   {
-    "objectID": "profile/skilltraj/index.html#bibtex-citation",
-    "href": "profile/skilltraj/index.html#bibtex-citation",
-    "title": "Education Sets the Stage, Sex Draws the Pathway",
-    "section": "BibTeX citation",
-    "text": "BibTeX citation\n@unpublished{Yanagimoto:2023,\n    Author = {Kazuharu Yanagimoto},\n    Note = {Working paper},\n    Title = {Why not Choose a Better Job? Flexibility, Social Norms, and Gender Gaps in Japan},\n    Year = {2023}}"
-  },
-  {
-    "objectID": "research/skilltraj/index.html",
-    "href": "research/skilltraj/index.html",
-    "title": "Education Sets the Stage, Sex Draws the Pathway",
+    "objectID": "research/family/index.html#abstract",
+    "href": "research/family/index.html#abstract",
+    "title": "配偶者および子どもとの資源配分にみる高齢男性の就業選択",
     "section": "",
-    "text": "Occupational allocation over the life course matters for inequality in the labor market. This study considers the long-term occupational ‘skill’ trajectory by education and sex. Using nationally representative retrospective data in Japan, the occupational skill level declined around pensionable age, but the degree of decline depends on one’s sex/education and the type of skills. Education matters for skill maintenance over the life course, and gender matters skill accumulation in early life and equalization in later life, except quantitative and engineering skills. I argue that inequality-generating process over the life course can be combined in one’s different life stages by investigating multidimensional career pathways through occupational skills."
-  },
-  {
-    "objectID": "research/skilltraj/index.html#abstract",
-    "href": "research/skilltraj/index.html#abstract",
-    "title": "Education Sets the Stage, Sex Draws the Pathway",
-    "section": "",
-    "text": "Occupational allocation over the life course matters for inequality in the labor market. This study considers the long-term occupational ‘skill’ trajectory by education and sex. Using nationally representative retrospective data in Japan, the occupational skill level declined around pensionable age, but the degree of decline depends on one’s sex/education and the type of skills. Education matters for skill maintenance over the life course, and gender matters skill accumulation in early life and equalization in later life, except quantitative and engineering skills. I argue that inequality-generating process over the life course can be combined in one’s different life stages by investigating multidimensional career pathways through occupational skills."
-  },
-  {
-    "objectID": "research/skilltraj/index.html#bibtex-citation",
-    "href": "research/skilltraj/index.html#bibtex-citation",
-    "title": "Education Sets the Stage, Sex Draws the Pathway",
-    "section": "BibTeX citation",
-    "text": "BibTeX citation\n@unpublished{Yanagimoto:2023,\n    Author = {Kazuharu Yanagimoto},\n    Note = {Working paper},\n    Title = {Why not Choose a Better Job? Flexibility, Social Norms, and Gender Gaps in Japan},\n    Year = {2023}}"
-  },
-  {
-    "objectID": "notes/index.html",
-    "href": "notes/index.html",
-    "title": "NOTES",
-    "section": "",
-    "text": "Apr 4, 2022\n        \n        \n            スキル指標の標準化と解釈に関するメモ\n            \n                \n                    Data Analysis\n                \n                \n                    Japanese Onet\n                \n            \n            \n        \n    \n    \n                  \n            Mar 25, 2022\n        \n        \n            Bell et al.（2019）の要約\n            \n                \n                    Readings\n                \n                \n                    Quantitative Method\n                \n            \n            \n        \n    \n\n\nNo matching items"
-  },
-  {
-    "objectID": "research/index.html#peer-reviewed-papers",
-    "href": "research/index.html#peer-reviewed-papers",
-    "title": "RESEARCH",
-    "section": "",
-    "text": "高年齢者の企業間移動と職業スキルの移転\n                \n                \n                \n                \n                    \n                        Older Workers\n                    \n                    \n                        Occupational Mobility\n                    \n                    \n                        Task/Skill\n                    \n                \n                \n                        in  \n                            理論と方法\n                           \n                \n                    \n                \n            \n        \n        \n            \n                \n                        配偶者および子どもとの資源配分にみる高齢男性の就業選択\n                \n                \n                \n                \n                    \n                        Older Workers\n                    \n                    \n                        Family\n                    \n                \n                \n                        in  \n                            老年社会科学\n                           \n                \n                    \n                \n            \n        \n        \n            \n                \n                        移動経路にみる就業高年齢者の特徴と就業理由\n                \n                \n                    自己開拓に着目して\n                \n                \n                    \n                        Older Workers\n                    \n                    \n                        Occupational Mobility\n                    \n                \n                \n                        in  \n                            応用老年学\n                           \n                \n                \n                    with 村山洋史・菅原育子\n                \n                    \n                \n            \n        \n\n\nNo matching items"
+    "text": "本研究では65歳以上高齢男性の妻および子どもとの経済的・時間的資源の配分と高齢男性の就業行動との関連を，「家族についての全国調査」の個票データを用いて検証した．線形確率モデルに基づいた多変量解析の結果，学歴・健康状態などの社会人口学的属性を考慮してもなお，夫婦に占める妻の家事時間が高齢男性の就業確率と正の関連を，子どもへの非経済的援助の提供が負の関連をそれぞれ生じさせることが明らかになった．以上の結果からは，高齢者の就業選択には経済状況や就業機会だけでなく家族内の資源配分を考慮する必要があることを示唆した．"
   },
   {
     "objectID": "research/sktransfer/index.html",
@@ -133,18 +49,46 @@
     "text": "人口高齢化に伴い，60歳以降高年齢者の職業移動に関心が集まっている．高年齢者の職業移動を検討してきた既存の研究では職業大分類間での移動障壁を明らかにしてきたものの，職業大分類内部での差異や異なる集約の可能性について十分に検討されていない．そこで本稿では，近年関心を集めている職業スキルに着目し，高年齢者は企業間移動の前後でどの程度スキルを移転しているのか，いかなるスキルが移転されやすいのかを明らかにする．SSM2015―日本版 O-NET マッチングデータによる分析の結果，若年・壮年者と比べて高年齢者はあらゆるスキルについて移転されにくく，特に男性，大卒，正規雇用など，その職業経歴において相対的に高い地位にあると想定される属性でスキル水準が大きく低下していた．以上の結果からは，職業間の結節要素として取り上げられているスキルが，高年齢期の移動においては必ずしも有効でないこと，前職の職業スキルの水準にかかわらず，押し並べてスキル水準の低い職業に再配分されていることを示唆している．"
   },
   {
-    "objectID": "research/family/index.html",
-    "href": "research/family/index.html",
-    "title": "配偶者および子どもとの資源配分にみる高齢男性の就業選択",
+    "objectID": "research/skilltraj/index.html",
+    "href": "research/skilltraj/index.html",
+    "title": "Education Sets the Stage, Sex Draws the Pathway",
     "section": "",
-    "text": "本研究では65歳以上高齢男性の妻および子どもとの経済的・時間的資源の配分と高齢男性の就業行動との関連を，「家族についての全国調査」の個票データを用いて検証した．線形確率モデルに基づいた多変量解析の結果，学歴・健康状態などの社会人口学的属性を考慮してもなお，夫婦に占める妻の家事時間が高齢男性の就業確率と正の関連を，子どもへの非経済的援助の提供が負の関連をそれぞれ生じさせることが明らかになった．以上の結果からは，高齢者の就業選択には経済状況や就業機会だけでなく家族内の資源配分を考慮する必要があることを示唆した．"
+    "text": "Occupational allocation over the life course matters for inequality in the labor market. This study considers the long-term occupational ‘skill’ trajectory by education and sex. Using nationally representative retrospective data in Japan, the occupational skill level declined around pensionable age, but the degree of decline depends on one’s sex/education and the type of skills. Education matters for skill maintenance over the life course, and gender matters skill accumulation in early life and equalization in later life, except quantitative and engineering skills. I argue that inequality-generating process over the life course can be combined in one’s different life stages by investigating multidimensional career pathways through occupational skills."
   },
   {
-    "objectID": "research/family/index.html#abstract",
-    "href": "research/family/index.html#abstract",
-    "title": "配偶者および子どもとの資源配分にみる高齢男性の就業選択",
+    "objectID": "research/skilltraj/index.html#abstract",
+    "href": "research/skilltraj/index.html#abstract",
+    "title": "Education Sets the Stage, Sex Draws the Pathway",
     "section": "",
-    "text": "本研究では65歳以上高齢男性の妻および子どもとの経済的・時間的資源の配分と高齢男性の就業行動との関連を，「家族についての全国調査」の個票データを用いて検証した．線形確率モデルに基づいた多変量解析の結果，学歴・健康状態などの社会人口学的属性を考慮してもなお，夫婦に占める妻の家事時間が高齢男性の就業確率と正の関連を，子どもへの非経済的援助の提供が負の関連をそれぞれ生じさせることが明らかになった．以上の結果からは，高齢者の就業選択には経済状況や就業機会だけでなく家族内の資源配分を考慮する必要があることを示唆した．"
+    "text": "Occupational allocation over the life course matters for inequality in the labor market. This study considers the long-term occupational ‘skill’ trajectory by education and sex. Using nationally representative retrospective data in Japan, the occupational skill level declined around pensionable age, but the degree of decline depends on one’s sex/education and the type of skills. Education matters for skill maintenance over the life course, and gender matters skill accumulation in early life and equalization in later life, except quantitative and engineering skills. I argue that inequality-generating process over the life course can be combined in one’s different life stages by investigating multidimensional career pathways through occupational skills."
+  },
+  {
+    "objectID": "research/index.html",
+    "href": "research/index.html",
+    "title": "RESEARCH",
+    "section": "",
+    "text": "高年齢者の企業間移動と職業スキルの移転\n                    \n                \n                \n                    \n                \n                \n                \n                    \n                    \n                        Older Workers\n                    \n                    \n                    \n                        Occupational Mobility\n                    \n                    \n                    \n                        Task/Skill\n                    \n                    \n                \n                \n    \n                \n                    \n                        in  \n                            理論と方法\n                           \n                    \n                \n\n                \n                \n           \n                    \n                    \n                \n            \n            \n            \n        \n        \n    \n        \n        \n            \n                \n                    \n                        配偶者および子どもとの資源配分にみる高齢男性の就業選択\n                    \n                \n                \n                    \n                \n                \n                \n                    \n                    \n                        Older Workers\n                    \n                    \n                    \n                        Family\n                    \n                    \n                \n                \n    \n                \n                    \n                        in  \n                            老年社会科学\n                           \n                    \n                \n\n                \n                \n           \n                    \n                    \n                \n            \n            \n            \n        \n        \n    \n        \n        \n            \n                \n                    \n                        移動経路にみる就業高年齢者の特徴と就業理由\n                    \n                \n                \n                    自己開拓に着目して\n                \n                \n                \n                    \n                    \n                        Older Workers\n                    \n                    \n                    \n                        Occupational Mobility\n                    \n                    \n                \n                \n    \n                \n                    \n                        in  \n                            応用老年学\n                           \n                    \n                \n\n                \n                \n                    with 村山洋史・菅原育子\n                \n                \n                \n           \n                    \n                    \n                \n            \n            \n            \n        \n        \n    \n\n\nNo matching items"
+  },
+  {
+    "objectID": "research/index.html#peer-reviewed-papers",
+    "href": "research/index.html#peer-reviewed-papers",
+    "title": "RESEARCH",
+    "section": "",
+    "text": "高年齢者の企業間移動と職業スキルの移転\n                    \n                \n                \n                    \n                \n                \n                \n                    \n                    \n                        Older Workers\n                    \n                    \n                    \n                        Occupational Mobility\n                    \n                    \n                    \n                        Task/Skill\n                    \n                    \n                \n                \n    \n                \n                    \n                        in  \n                            理論と方法\n                           \n                    \n                \n\n                \n                \n           \n                    \n                    \n                \n            \n            \n            \n        \n        \n    \n        \n        \n            \n                \n                    \n                        配偶者および子どもとの資源配分にみる高齢男性の就業選択\n                    \n                \n                \n                    \n                \n                \n                \n                    \n                    \n                        Older Workers\n                    \n                    \n                    \n                        Family\n                    \n                    \n                \n                \n    \n                \n                    \n                        in  \n                            老年社会科学\n                           \n                    \n                \n\n                \n                \n           \n                    \n                    \n                \n            \n            \n            \n        \n        \n    \n        \n        \n            \n                \n                    \n                        移動経路にみる就業高年齢者の特徴と就業理由\n                    \n                \n                \n                    自己開拓に着目して\n                \n                \n                \n                    \n                    \n                        Older Workers\n                    \n                    \n                    \n                        Occupational Mobility\n                    \n                    \n                \n                \n    \n                \n                    \n                        in  \n                            応用老年学\n                           \n                    \n                \n\n                \n                \n                    with 村山洋史・菅原育子\n                \n                \n                \n           \n                    \n                    \n                \n            \n            \n            \n        \n        \n    \n\n\nNo matching items"
+  },
+  {
+    "objectID": "research/index.html#work-in-progress",
+    "href": "research/index.html#work-in-progress",
+    "title": "RESEARCH",
+    "section": "WORK IN PROGRESS",
+    "text": "WORK IN PROGRESS\n\n\n    \n        \n        \n            \n                \n                    \n                        Covering The Long Shadow\n                    \n                \n                \n                    The Gap-closing Approach to The Health Disparity by Social Origin of Child’s Education\n                \n                \n                \n                    \n                    \n                        Health\n                    \n                    \n                    \n                        Multigeneration\n                    \n                    \n                    \n                        Causal Inference\n                    \n                    \n                \n                \n                \n                \n                    \n                \n            \n            \n            \n        \n        \n    \n        \n        \n            \n                \n                    \n                        Two Tales of Greying Labor Market in Japan\n                    \n                \n                \n                    Aging Labor Force and Extending Working Lives\n                \n                \n                \n                    \n                    \n                        Labor Market\n                    \n                    \n                    \n                        Occupation\n                    \n                    \n                    \n                        Population Aging\n                    \n                    \n                \n                \n                \n                \n                    \n                \n            \n            \n            \n        \n        \n    \n        \n        \n            \n                \n                    \n                        Education Sets the Stage, Sex Draws the Pathway\n                    \n                \n                \n                    Occupational Skill Allocation over the Life Course in Japan\n                \n                \n                \n                    \n                    \n                        Life Course\n                    \n                    \n                    \n                        Occupation\n                    \n                    \n                    \n                        Task/Skill\n                    \n                    \n                \n                \n                \n                \n                    \n                \n            \n            \n            \n        \n        \n    \n        \n    \n        \n    \n        \n    \n\n\nNo matching items"
+  },
+  {
+    "objectID": "notes/index.html",
+    "href": "notes/index.html",
+    "title": "NOTES",
+    "section": "",
+    "text": "Apr 4, 2022\n        \n        \n            スキル指標の標準化と解釈に関するメモ\n            \n            \n                \n                \n                    Data Analysis\n                \n                \n                \n                    Japanese Onet\n                \n                \n            \n            \n            \n        \n    \n    \n    \n                  \n            Mar 25, 2022\n        \n        \n            Bell et al.（2019）の要約\n            \n            \n                \n                \n                    Readings\n                \n                \n                \n                    Quantitative Method\n                \n                \n            \n            \n            \n        \n    \n    \n\n\nNo matching items"
   },
   {
     "objectID": "notes/bell2019/index.html",
@@ -201,54 +145,5 @@
     "title": "Bell et al.（2019）の要約",
     "section": "結論：研究者は何をすべきか？",
     "text": "結論：研究者は何をすべきか？\n↑本論文の主張と同じ"
-  },
-  {
-    "objectID": "notes/onetstandarization/index.html",
-    "href": "notes/onetstandarization/index.html",
-    "title": "スキル指標の標準化と解釈に関するメモ",
-    "section": "",
-    "text": "はじめに\n最近、日本版O-NET（以下、たんにO-NET）を用いた研究プロジェクトに取り組んでいます。O-NETでは各職業に求められるスキル要件や各職業の仕事の性質、仕事の内容などを職業間で比較可能な形式で尋ねています。それゆえ、職業小分類を尋ねているデータとマッチングすることで、個人が持つ（と職業上は期待される）スキルを知ることができるようになります。\nO-NETで尋ねられている項目は比較可能形式といえど、厳密な意味では比較可能ではありません。というのも、尋ねている項目ごとに頻度や重要度、比率などその中身が異なるためです。\n表1. O-NETの調査内容と各選択肢のタイプ\n\n\n\n調査内容\n選択肢のタイプ\n\n\n\n\n職業興味\n合致度\n\n\n仕事価値観\n満足感\n\n\nスキル\nレベル\n\n\n知識\n重要度\n\n\n仕事の性質\n頻度A\n\n\n\n頻度B\n\n\n\n重要度\n\n\n\n責任の度合い\n\n\n\nその他\n\n\n仕事の内容\n重要度\n\n\n\nもちろん、選択肢のタイプが異なることは回答者の負担減のために行われていることなので、それ自体はごくふつうなことですが、O-NETの使用においては複数の調査項目を合算して用いることがままあるため、結果が選択肢のタイプによって歪まないように分析者が調査内容横断的な各項目を比較可能にすることがあります。それが標準化です。\n\n\n標準化の支配的アプローチ：Accemoglu and Autor\n多くの研究では、Accemoglu and Autor（2011）の手続きに倣って標準化が行われています。それは以下2回の標準化を行います。\n\nマッチング後に就業者数で重み付け標準化\n合算後に再標準化\n\n1の手続きについては、主として2つの目的があります。①上述した通り、項目を統計的な意味で比較可能にする、②職業を1単位とした水準から、マッチングしたデータの分析単位を1単位とした水準に各種指標を変換する、です。②は重み付けとして行われます。今回は重み付けの話は割愛します。2の手続きは主として解釈のために行われます。すなわち、平均0、標準偏差1とならすことで、値の正負や量について解釈を容易にするためになします。逆にいえば、2を行わなかったとしても、統計的な表現としては等価なものが出力されます（1回目の標準化後にサンプルの追加や欠損が一切なかった場合は、です）。\n\n\n標準化の実質的アプローチ\n※ここからはほとんど悩みと、暫定的な結論です。誤りなどの指摘を歓迎します。\nここで、1の手続きでは標準化は2回、2の手続きでは1回を行うはずです。1の手続きの1回目を1-1、2回目を1-2とします。はじめに、1-1ではそれぞれの項目について標準化します。1-1の標準化を通じて、値の大小をなくし、標準偏差として表現する形式にします。0〜100の閾値をとる比率も、1〜7の値を取る重要度も、平均0標準偏差1として表現されます。おそらく、1-1だけで標準化を終え、合算に進むのは誤りです。なぜなら、統計量としては比較可能になっているけれども、項目間では比較可能になっていないためです。項目同士を比較可能、合算可能にするためには、さらにすべての項目を1度で標準化する必要があります。言い換えれば、複数列にまたがるスキル項目を1つの列に集約し、その列について標準化を行わなければならない、ということです。これが1-2に相当します。標準化後は列を分解します。1-1と1-2を通じて、尺度をならしつつ、項目を比較可能な形式に整えます。2回の標準化を通して、はじめて項目が合算可能になります。\n問題関心次第ですが、合算後の指標は基本的に1列に集約して標準化してはいけません。それはなぜなら、指標の間で値が大きい（小さい）ということを表現してしまうためです。すなわち、「言語スキルは計算スキルより値が大きい（小さい）」といったような、指標間での値の大きさの話に帰着してしまうためです。いわゆる標準化回帰係数Bを考えてもらうと良いと思います。「どのスキル指標が最も大きいのか？」という問いでは良いのかもしれませんが、スキル水準についてとくに個人間・時代間などでの比較を行いたい場合は、余計な情報になってしまいます。したがって、合算後のスキル指標については指標ごとに標準化を行い、指標間の標準化は行わないべきでしょう。項目がすでに比較可能であり、二度目の標準化は解釈のために行われるというこれまでの話を踏まえれば、スキル指標は合算時点で比較可能な形式になっているはずです。\n\n\n複数時点でのスキル指標\nところで、自分はスキル移転の研究をしています。転職の前後でスキルはどう変化するのか、ということを記述的に明らかにしようとしています。このとき、標準化はどのように行うべきでしょうか。\nポイントは複数時点の職業情報がある点です（簡単のため、前職と現職とします）。このとき、前職と現職それぞれで標準化してしまうと、やはり前職と現職とが比較可能になりません。今度は前職と現職とを1列としてマッチングを行います。各職業に紐づいた項目から、1-1をはじめます。そして、1-2では前職と現職とが1列になっている状態で、さらに項目を1列とします。person-yearデータならぬperson-occupation-itemデータのような状況です(!?)。もしパーソンイヤーデータすべての職業について行う場合は・・・、ご想像にお任せします。笑\n\n\nおわりに\nO-NETは大きなポテンシャルを持つデータですが、自分自身取り扱いに苦労しています。こと標準化に関しては、やり方によっては結果を大きく変えてしまう危険性があるので、特に苦労しました。尺度の閾値の影響を取り除きつつ、厳密な意味で比較可能にすること、「項目同士」は比較可能にするけれども、「指標同士」は比較可能にしないこと、推定したい量を定義し、何と比較するのかを確定しておくことが、指標を取り扱う上では大事なのかなと思います。"
-  },
-  {
-    "objectID": "profile/index.html#iconify-healthicons-agriculture-worker-労働市場の高齢化-1",
-    "href": "profile/index.html#iconify-healthicons-agriculture-worker-労働市場の高齢化-1",
-    "title": "Profile",
-    "section": " 労働市場の高齢化",
-    "text": "労働市場の高齢化\n人口高齢化に伴う労働市場の変化とその帰結についての研究 :::\n\n職歴\n\n\n2024年4月-現在 日本学術振興会特別研究員PD（学習院大学法学部政治学科）\n\n\n\n学歴\n\n\n2021年4月-2024年3月 東京大学大学院 人文社会系研究科 社会文化研究専攻 社会学専門分野博士課程，博士（社会学）\n2019年4月-2021年3月 東京大学大学院 人文社会系研究科 社会文化研究専攻 社会学専門分野修士課程，修士（社会学）\n2015年4月-2019年3月 早稲田大学 文化構想学部 現代人間論系"
-  },
-  {
-    "objectID": "profile/index.html#iconify-healthicons-agriculture-worker-労働市場の高齢化-2",
-    "href": "profile/index.html#iconify-healthicons-agriculture-worker-労働市場の高齢化-2",
-    "title": "Profile",
-    "section": " 労働市場の高齢化",
-    "text": "労働市場の高齢化\n人口高齢化に伴う労働市場の変化とその帰結についての研究 :::\n\n職歴\n\n\n2024年4月-現在 日本学術振興会特別研究員PD（学習院大学法学部政治学科）\n\n\n\n学歴\n\n\n2021年4月-2024年3月 東京大学大学院 人文社会系研究科 社会文化研究専攻 社会学専門分野博士課程，博士（社会学）\n2019年4月-2021年3月 東京大学大学院 人文社会系研究科 社会文化研究専攻 社会学専門分野修士課程，修士（社会学）\n2015年4月-2019年3月 早稲田大学 文化構想学部 現代人間論系"
-  },
-  {
-    "objectID": "profile/index.html#iconify-healthicons-agriculture-worker-健康格差",
-    "href": "profile/index.html#iconify-healthicons-agriculture-worker-健康格差",
-    "title": "Profile",
-    "section": " 健康格差",
-    "text": "健康格差\n人口高齢化に伴う労働市場の変化とその帰結についての研究 :::"
-  },
-  {
-    "objectID": "profile/index.html#iconify-healthicons-elderly-高齢者の引退と就業",
-    "href": "profile/index.html#iconify-healthicons-elderly-高齢者の引退と就業",
-    "title": "Profile",
-    "section": " 高齢者の引退と就業",
-    "text": "高齢者の引退と就業\n高齢者の就業と引退の規定要因や、就業高齢者の実態についての研究"
-  },
-  {
-    "objectID": "profile/index.html#research-interest",
-    "href": "profile/index.html#research-interest",
-    "title": "PROFILE",
-    "section": "",
-    "text": "専門はエイジングとライフコースの社会学および社会階層論です。計量分析をもちいてエイジングの社会的過程や不平等の生成過程を研究しています。\n\n\n\n\n\n\n 高齢者の引退と就業\n\n\n\n高齢者の就業と引退の規定要因や、就業高齢者の実態についての研究\n\n\n\n\n\n\n\n\n 労働市場の高齢化\n\n\n\n人口高齢化に伴う労働市場の変化とその帰結についての研究\n\n\n\n\n\n\n\n\n 健康格差\n\n\n\n健康の不平等の趨勢、規定要因、帰結の研究\n\n\n\n\n\n\n2024年4月-現在 日本学術振興会特別研究員PD（学習院大学法学部政治学科）\n\n\n\n\n\n\n2021年4月-2024年3月 東京大学大学院 人文社会系研究科 社会文化研究専攻 社会学専門分野博士課程，博士（社会学）\n2019年4月-2021年3月 東京大学大学院 人文社会系研究科 社会文化研究専攻 社会学専門分野修士課程，修士（社会学）\n2015年4月-2019年3月 早稲田大学 文化構想学部 現代人間論系"
-  },
-  {
-    "objectID": "profile/index.html#研究関心",
-    "href": "profile/index.html#研究関心",
-    "title": "PROFILE",
-    "section": "",
-    "text": "専門はエイジングとライフコースの社会学および社会階層論です。計量分析をもちいてエイジングの社会的過程や不平等の生成過程を研究しています。\n\n\n\n\n\n\n 高齢者の引退と就業\n\n\n\n高齢者の就業と引退の規定要因や、就業高齢者の実態についての研究\n\n\n\n\n\n\n\n\n 労働市場の高齢化\n\n\n\n人口高齢化に伴う労働市場の変化とその帰結についての研究\n\n\n\n\n\n\n\n\n 健康格差\n\n\n\n健康の不平等の趨勢、規定要因、帰結の研究\n\n\n\n\n\n\n2024年4月-現在 日本学術振興会特別研究員PD（学習院大学法学部政治学科）\n\n\n\n\n\n\n2021年4月-2024年3月 東京大学大学院 人文社会系研究科 社会文化研究専攻 社会学専門分野博士課程，博士（社会学）\n2019年4月-2021年3月 東京大学大学院 人文社会系研究科 社会文化研究専攻 社会学専門分野修士課程，修士（社会学）\n2015年4月-2019年3月 早稲田大学 文化構想学部 現代人間論系"
   }
 ]

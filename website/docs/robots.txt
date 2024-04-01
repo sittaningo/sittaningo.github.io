@@ -1,1 +1,1 @@
-Sitemap: https://shingonitta.com/sitemap.xml
+Sitemap: https://sittaningo.github.io/Website/sitemap.xml
