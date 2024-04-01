@@ -10,8 +10,8 @@ project:
 website:
   title: "Shingo Nitta"
   favicon: "{{< fluent animal-turtle-20-regular >}}"
-  site-url: https://shingonitta.com
-  repo-url: https://github.com/ningositta/ningositta.github.io
+  # site-url: https://shingonitta.com
+  # repo-url: https://github.com/ningositta/ningositta.github.io
 
 
   navbar:
