@@ -1,0 +1,79 @@
+---
+title: "DAGを学ぶための論文10報（社会学向け）"
+date: 2024-02-21
+author: 新田真悟
+categories:
+  - Quantitative Method
+---
+
+# はじめに
+
+DAGとはDirected Acyclic Graphの略称で、日本語では有向非巡回グラフと呼ばれます。DAGはJudia Pearlが構造的因果モデルのなかで導出した概念で、因果効果の推論のために用いられてきました。近年ではDAGは因果効果の推論にとどまらず、科学コミュニケーションのツールとして発展しています。分析者が依拠する仮定やデータ生成過程のなかで生じるバイアスを明示化し、分析上の射程を明確にすることは、透明性の高い研究実践につながるため、DAGはますます使用されるようになってきています。
+
+他方、社会学分野ではDAGの受容はまだ十分ではないと考えています。その理由はたとえば、(1) 固定効果モデルやマルチレベルモデルなど、推定手法ベースで社会学の方法論は発達していったこと、(2)因果効果だけでなく概念の測定や現象の趨勢の記述に大きく研究関心がはらわれてきたこと、などがあると思います。DAGそれ自体を学んでも、具体的な推定値を統計ソフトが計算してくれるわけではないし、そもそも因果推論を目的としていないからDAGを使う必要はない、といった事情があるかもしれません（自分はそういうふうに考えていました）。
+
+ですが、推定手法ではなかったとしても、また因果推論を目的とした研究ではなかったとしても、DAGには研究上の意義があります。それは先述した通り科学コミュニケーションとしての使い方です。なにが本当に知りたいことで、なにが実際にデータから知れることなのか、その間にはどのようなギャップがあって、そのギャップを少しでも埋めるために何をするのか、それでも埋めきれないことはなにかを、DAGを使うことで共通の理解基盤をもって議論ができます。もちろんDAGを使わずともそれらをいちいち書き記せば良いのですが、グラフィカルに見せることで後続の研究にとっても、たとえば過去の研究Aのこの部分を克服したというように、系列的なコミュニケーションが可能になります。
+
+以上より、このポストではとくに社会学を学んでいる人を対象にして、DAGを学ぶうえで個人的に勉強になった論文を共有します。あくまでDAGを科学コミュニケーションのための道具として捉えているので、最新の構造的因果モデルの動向を学びたい、統計的因果推論を学びたい、といった人には参考にならないと思います。また、社会学を学んでいる人を念頭に置いていますが、紹介する論文は疫学なども含みます。なお、数式や数学的表現は普通に使われますので、まったく計量的手法に馴染みがないような人はすこし読むのが大変かもしれません。
+
+# 基礎
+
+[{{< fa newspaper >}} Digitale, Jean C., Jeffrey N. Martin, and Medellena Maria Glymour. 2022. “**Tutorial on Directed Acyclic Graphs.**” *Journal of Clinical Epidemiology* 142:264–67.](https://www.jclinepi.com/article/S0895-4356(21)00240-7/fulltext)
+
+そもそもDAGとはなにか、どのように使うのか、どんな強みと限界があるのかを端的にまとめています。因果推論の人が使う「交絡」「合流点」「子孫」「効果修飾」といったあまり馴染みのない表現もすべて説明されてあります。それだけでなく、科学コミュニケーションとしての強みや、DAGの限界なども書いています。4頁しかないのも入門としては魅力的です。
+
+# 実証研究における位置づけ
+
+[{{< fa newspaper >}} Lundberg, Ian, Rebecca Johnson, and Brandon M. Stewart. 2021. “**What Is Your Estimand? Defining the Target Quantity Connects Statistical Evidence to Theory.**” *American Sociological Review *86(3):532–65.](https://journals.sagepub.com/doi/abs/10.1177/00031224211004187)
+
+[{{< fa newspaper >}} Kohler, Ulrich, Fabian Class, and Tim Sawert. 2023. “**Control Variable Selection in Applied Quantitative Sociology: A Critical Review.**” *European Sociological Review*.](https://academic.oup.com/esr/advance-article-abstract/doi/10.1093/esr/jcac078/7026253)
+
+Lundberg et al.（2021）、Kohler et al.（2023）の二報はDAGだけでなく、一般に計量的手法を用いた社会学の実証研究にとっては金字塔となる論文ですが、やはりDAGを理解するうえでも役に立ちます。この二報は実証研究のなかでDAGはどこに位置づくのか？を知るうえで有効だと思います。
+
+Lundberg et al.（2021）は計量社会学の手続きを(1)理論的エスティマンド（解析者が本当に知りたい量）の設定、(2)実証的エスティマンド（実際のデータ生成過程のなかで知ることができる量）との接続、(3)実証的エスティマンドの推定という3つの段階に分けています。DAGはそのなかでも(2)実証的エスティマンドとの接続において役立つことをLundberg et al.（2021）は論じています。
+
+Kohler et al.（2023）はもう少し後述する変数調整の実践的な提案に近く、きちんと因果効果の推定を志向している論文が因果効果をきちんと識別しているのかを批判しています。個人的にKohler et al.（2023）の好きな箇所はmeaningful associationとして、因果効果を志向しているものの因果効果にまで実証的に十分には辿り着けていない論文をきちんと評価しているところです（そこで評価している例がドイツ語なのが非常にしょっぱいのですが…）。考えなしに独立変数を複数投入することが何をしているのかを図示している点でも勉強になります。
+
+# 変数調整の実践的な提案
+
+[{{< fa newspaper >}} Cinelli, Carlos, Andrew Forney, and Judea Pearl. 2022. “**A Crash Course in Good and Bad Controls.**” *Sociological Methods & Research* 004912412210995.](https://journals.sagepub.com/doi/full/10.1177/00491241221099552)
+
+[{{< fa newspaper >}} Grätz, Michael. 2022. “**When Less Conditioning Provides Better Estimates: Overcontrol and Endogenous Selection Biases in Research on Intergenerational Mobility.**” *Quality & Quantity* 56(5):3769–93.](https://link.springer.com/article/10.1007/s11135-021-01310-8)
+
+では実際にDAGをどのように書けばよいのでしょうか。Cinelli et al.（2022）とGrätz（2022）は実践的にDAGをかくためのよい例を提示しています。Cinelli et al.（2022）は本当に実践的な提案として調整変数の選択の良い例と悪い例を、Grätz（2022）は具体例として世代間移動を引き合いにしながら、世代間移動研究（伝統的にはOEDトライアングルで表現される）で参照されるパラメータについての仮定などを整理しています。
+
+いずれの論文も、「調整（統制）のし過ぎに注意」というメッセージを発していることが非常に好印象です。識別には交絡のみに関心がいきがちで、交絡として提案された特徴量が処置がアウトカムに与える影響のどの部分に位置するのかは存外言及されていません（最近だと状況が変わっている印象を受けますが）。もう少し腰を据えて特徴量の調整を検討するうえでも、具体的な指針と考え方を提供してくれる論文です。
+
+ちなみにある程度DAGを学ぶと、たとえば「中間変数は投入しない」というのはコモンセンスになってしまうがちですが、Cinelli et al.（2022）はそれ以上の刺激を与えてくれます。たとえば、合流点バイアスがあるときに処置（アウトカム）と合流点の間にある特徴量を調整すると、合流点バイアスを除去できる、など。結構ニッチなシチュエーションまで取り上げてくれて、考え方の幅が広がります。
+
+# DAGを用いた実証研究
+
+[{{< fa newspaper >}} Kratz, Fabian, Bettina Pettinger, and Michael Grätz. 2022. “**At Which Age Is Education the Great Equalizer? A Causal Mediation Analysis of the (In-)Direct Effects of Social Origin over the Life Course.**” *European Sociological Review* 38(6):866–81.](https://academic.oup.com/esr/article/38/6/866/6572116)
+
+[{{< fa newspaper >}} Klein, Markus, and Michael Kühhirt. 2021. “**Direct and Indirect Effects of Grandparent Education on Grandchildren’s Cognitive Development: The Role of Parental Cognitive Ability.**” *Sociological Science* 8:265–84.](https://sociologicalscience.com/articles-v8-13-265/)
+
+実際の論文でDAGをどのように書けば良いのかはKratz et al.（2022）とKlein and Kühhirt（2021）が提示しています。いずれも因果効果の推定を目指した論文、しかも因果媒介効果を推定した論文ですが、いずれも従来の方法パートのオルタナティブを描き出すうえではとても勉強になる論文です。Kratz et al.（2022）はデータの特徴と変数の操作化を述べた後、すぐに推定手法に行くのではなく、estimandと識別（identification）をしっかりと論じたうえで、推定手続きに入っています。Klein and Kühhirt（2021）はデータの特徴を述べるの前に分析戦略としてestimandとDAGを示しています。DAGを論文のどの部分で示すのかはいまだ確定されていない印象を受けますが、推定したい量を定義してから具体的な推定手続きを述べているうえでは、より望ましい実践としてとても勉強になります。
+
+# DAGと社会調査
+
+[{{< fa newspaper >}} Schuessler, Julian, and Peter Selb. 2023. “**Graphical Causal Models for Survey Inference.**” *Sociological Methods & Research* 004912412311768.](https://journals.sagepub.com/doi/abs/10.1177/00491241231176851)
+
+DAGはやはり因果推論で使われることがほとんどですが、因果推論以外でも使うことはできます。Schuessler and Selb（2023）は社会調査のプロセスをDAGで示し、調査拒否や無回答によって生じるバイアス（あるいは、真値とのズレ）をDAGで表現しています。このように、DAGは因果推論においてモデルに含める統制変数を決めるためだけでなく、データの収集という点においても役に立つということを示しています。
+
+# DAGの未来
+
+[{{< fa newspaper >}} Richardson, Thomas S., and James M. Robins. 2013. “**Single World Intervention Graphs: A Primer.**”](https://www.stats.ox.ac.uk/~evans/uai13/Richardson.pdf)
+
+[{{< fa newspaper >}} Balgi, Sourabh, Adel Daoud, Jose Pena, Geoffrey Wodtke, and Jesse Zhou. 2024. “**Deep Learning with DAGs.**”](https://osf.io/preprints/socarxiv/6375y)
+
+この2つはほとんどおまけのようなもので、DAGのさらなる発展に向けて考える余地がまだあるということを示すものです。
+
+Single World Intervention Graphs（SWIG）は潜在アウトカムをDAGで表現することを目指して提案された因果ダイアグラムです。潜在アウトカムがやっていることを構造的因果モデルから誕生したDAGによって表現することは難しく、齟齬が生じることがあります。このような問題を克服するために開発されたのがSWIGです。実際の社会学研究で用いられているところは見たことがなく、またしっかり統計的因果推論なのでとっつきにくさもありますが、まあこういう研究もあるということです。
+
+Balgi et al.（2024）はDAGをノンパラメトリックSEMとみなして、なるべく関数形の仮定を置くことなく推定値を得ることを目指しています。本当はDAGそれ自体から直接推定値が得たく、線形性仮定や変数間の無相関仮定は不必要な仮定であることをあらためて思い出させてくれる良い論文です。
+
+いずれも科学コミュニケーションのための、あるいは識別のためのDAGという見地からすると、執筆時点では必ずしも必要ではないアイディアです。因果推論という観点での発展ですね。
+
+# おわりに
+
+いざまとめてみると因果推論のために用いられてきた傾向がやはりつよく、記述志向の社会学者にとってはあまり実践的ではないな…と思いました。科学コミュニケーションツールとしてのDAGはいまだ発展途上なので、上述の論文で述べられたことが疑う余地なく正しいわけではないのですが、考えなしに交絡調整をしたり、つよい仮定を伴うモデルを無批判に組むよりはすこしだけ改善されている枠組みだと考えています。DAGの活用によって、円滑な科学コミュニケーション、ひいては透明で再現可能な社会学が発展するといいなと思います。

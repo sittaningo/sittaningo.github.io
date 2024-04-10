@@ -1,0 +1,28 @@
+---
+title: "職業的地位が高齢期の就業行動に与える影響"
+subtitle: "ジェンダーによる効果の異質性に着目して"
+date: 2024-04-07
+author:
+  - name: 新田真悟
+    url: "https://shingonitta.com/"
+    affiliation: 日本学術振興会、学習院大学
+categories:
+  - Older Workers
+  - Occupation
+  - Causal Inference
+status: peer-reviewed-papers
+# paperlink: "https://doi.org/10.11218/ojjams.38.59"
+pub-info:
+  journal: 社会学評論
+hide-detail: false
+pub-status: 
+  # status: Writing
+  # class: warning
+  # icon: fa-solid fa-pencil
+  # status: Under review
+  # class: success
+  # icon: fas fa-glasses
+---
+
+## Abstract
+
