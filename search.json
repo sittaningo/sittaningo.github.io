@@ -77,120 +77,120 @@
     "text": "はじめに\nDAGとはDirected Acyclic Graphの略称で、日本語では有向非巡回グラフと呼ばれます。DAGはJudia Pearlが構造的因果モデルのなかで導出した概念で、因果効果の推論のために用いられてきました。近年ではDAGは因果効果の推論にとどまらず、科学コミュニケーションのツールとして発展しています。分析者が依拠する仮定やデータ生成過程のなかで生じるバイアスを明示化し、分析上の射程を明確にすることは、透明性の高い研究実践につながるため、DAGはますます使用されるようになってきています。\n他方、社会学分野ではDAGの受容はまだ十分ではないと考えています。その理由はたとえば、(1) 固定効果モデルやマルチレベルモデルなど、推定手法ベースで社会学の方法論は発達していったこと、(2)因果効果だけでなく概念の測定や現象の趨勢の記述に大きく研究関心がはらわれてきたこと、などがあると思います。DAGそれ自体を学んでも、具体的な推定値を統計ソフトが計算してくれるわけではないし、そもそも因果推論を目的としていないからDAGを使う必要はない、といった事情があるかもしれません（自分はそういうふうに考えていました）。\nですが、推定手法ではなかったとしても、また因果推論を目的とした研究ではなかったとしても、DAGには研究上の意義があります。それは先述した通り科学コミュニケーションとしての使い方です。なにが本当に知りたいことで、なにが実際にデータから知れることなのか、その間にはどのようなギャップがあって、そのギャップを少しでも埋めるために何をするのか、それでも埋めきれないことはなにかを、DAGを使うことで共通の理解基盤をもって議論ができます。もちろんDAGを使わずともそれらをいちいち書き記せば良いのですが、グラフィカルに見せることで後続の研究にとっても、たとえば過去の研究Aのこの部分を克服したというように、系列的なコミュニケーションが可能になります。\n以上より、このポストではとくに社会学を学んでいる人を対象にして、DAGを学ぶうえで個人的に勉強になった論文を共有します。あくまでDAGを科学コミュニケーションのための道具として捉えているので、最新の構造的因果モデルの動向を学びたい、統計的因果推論を学びたい、といった人には参考にならないと思います。また、社会学を学んでいる人を念頭に置いていますが、紹介する論文は疫学なども含みます。なお、数式や数学的表現は普通に使われますので、まったく計量的手法に馴染みがないような人はすこし読むのが大変かもしれません。\n\n\n基礎\n Digitale, Jean C., Jeffrey N. Martin, and Medellena Maria Glymour. 2022. “Tutorial on Directed Acyclic Graphs.” Journal of Clinical Epidemiology 142:264–67.\nそもそもDAGとはなにか、どのように使うのか、どんな強みと限界があるのかを端的にまとめています。因果推論の人が使う「交絡」「合流点」「子孫」「効果修飾」といったあまり馴染みのない表現もすべて説明されてあります。それだけでなく、科学コミュニケーションとしての強みや、DAGの限界なども書いています。4頁しかないのも入門としては魅力的です。\n\n\n実証研究における位置づけ\n Lundberg, Ian, Rebecca Johnson, and Brandon M. Stewart. 2021. “What Is Your Estimand? Defining the Target Quantity Connects Statistical Evidence to Theory.” American Sociological Review 86(3):532–65.\n Kohler, Ulrich, Fabian Class, and Tim Sawert. 2023. “Control Variable Selection in Applied Quantitative Sociology: A Critical Review.” European Sociological Review.\nLundberg et al.（2021）、Kohler et al.（2023）の二報はDAGだけでなく、一般に計量的手法を用いた社会学の実証研究にとっては金字塔となる論文ですが、やはりDAGを理解するうえでも役に立ちます。この二報は実証研究のなかでDAGはどこに位置づくのか？を知るうえで有効だと思います。\nLundberg et al.（2021）は計量社会学の手続きを(1)理論的エスティマンド（解析者が本当に知りたい量）の設定、(2)実証的エスティマンド（実際のデータ生成過程のなかで知ることができる量）との接続、(3)実証的エスティマンドの推定という3つの段階に分けています。DAGはそのなかでも(2)実証的エスティマンドとの接続において役立つことをLundberg et al.（2021）は論じています。\nKohler et al.（2023）はもう少し後述する変数調整の実践的な提案に近く、きちんと因果効果の推定を志向している論文が因果効果をきちんと識別しているのかを批判しています。個人的にKohler et al.（2023）の好きな箇所はmeaningful associationとして、因果効果を志向しているものの因果効果にまで実証的に十分には辿り着けていない論文をきちんと評価しているところです（そこで評価している例がドイツ語なのが非常にしょっぱいのですが…）。考えなしに独立変数を複数投入することが何をしているのかを図示している点でも勉強になります。\n\n\n変数調整の実践的な提案\n Cinelli, Carlos, Andrew Forney, and Judea Pearl. 2022. “A Crash Course in Good and Bad Controls.” Sociological Methods & Research 004912412210995.\n Grätz, Michael. 2022. “When Less Conditioning Provides Better Estimates: Overcontrol and Endogenous Selection Biases in Research on Intergenerational Mobility.” Quality & Quantity 56(5):3769–93.\nでは実際にDAGをどのように書けばよいのでしょうか。Cinelli et al.（2022）とGrätz（2022）は実践的にDAGをかくためのよい例を提示しています。Cinelli et al.（2022）は本当に実践的な提案として調整変数の選択の良い例と悪い例を、Grätz（2022）は具体例として世代間移動を引き合いにしながら、世代間移動研究（伝統的にはOEDトライアングルで表現される）で参照されるパラメータについての仮定などを整理しています。\nいずれの論文も、「調整（統制）のし過ぎに注意」というメッセージを発していることが非常に好印象です。識別には交絡のみに関心がいきがちで、交絡として提案された特徴量が処置がアウトカムに与える影響のどの部分に位置するのかは存外言及されていません（最近だと状況が変わっている印象を受けますが）。もう少し腰を据えて特徴量の調整を検討するうえでも、具体的な指針と考え方を提供してくれる論文です。\nちなみにある程度DAGを学ぶと、たとえば「中間変数は投入しない」というのはコモンセンスになってしまうがちですが、Cinelli et al.（2022）はそれ以上の刺激を与えてくれます。たとえば、合流点バイアスがあるときに処置（アウトカム）と合流点の間にある特徴量を調整すると、合流点バイアスを除去できる、など。結構ニッチなシチュエーションまで取り上げてくれて、考え方の幅が広がります。\n\n\nDAGを用いた実証研究\n Kratz, Fabian, Bettina Pettinger, and Michael Grätz. 2022. “At Which Age Is Education the Great Equalizer? A Causal Mediation Analysis of the (In-)Direct Effects of Social Origin over the Life Course.” European Sociological Review 38(6):866–81.\n Klein, Markus, and Michael Kühhirt. 2021. “Direct and Indirect Effects of Grandparent Education on Grandchildren’s Cognitive Development: The Role of Parental Cognitive Ability.” Sociological Science 8:265–84.\n実際の論文でDAGをどのように書けば良いのかはKratz et al.（2022）とKlein and Kühhirt（2021）が提示しています。いずれも因果効果の推定を目指した論文、しかも因果媒介効果を推定した論文ですが、いずれも従来の方法パートのオルタナティブを描き出すうえではとても勉強になる論文です。Kratz et al.（2022）はデータの特徴と変数の操作化を述べた後、すぐに推定手法に行くのではなく、estimandと識別（identification）をしっかりと論じたうえで、推定手続きに入っています。Klein and Kühhirt（2021）はデータの特徴を述べるの前に分析戦略としてestimandとDAGを示しています。DAGを論文のどの部分で示すのかはいまだ確定されていない印象を受けますが、推定したい量を定義してから具体的な推定手続きを述べているうえでは、より望ましい実践としてとても勉強になります。\n\n\nDAGと社会調査\n Schuessler, Julian, and Peter Selb. 2023. “Graphical Causal Models for Survey Inference.” Sociological Methods & Research 004912412311768.\nDAGはやはり因果推論で使われることがほとんどですが、因果推論以外でも使うことはできます。Schuessler and Selb（2023）は社会調査のプロセスをDAGで示し、調査拒否や無回答によって生じるバイアス（あるいは、真値とのズレ）をDAGで表現しています。このように、DAGは因果推論においてモデルに含める統制変数を決めるためだけでなく、データの収集という点においても役に立つということを示しています。\n\n\nDAGの未来\n Richardson, Thomas S., and James M. Robins. 2013. “Single World Intervention Graphs: A Primer.”\n Balgi, Sourabh, Adel Daoud, Jose Pena, Geoffrey Wodtke, and Jesse Zhou. 2024. “Deep Learning with DAGs.”\nこの2つはほとんどおまけのようなもので、DAGのさらなる発展に向けて考える余地がまだあるということを示すものです。\nSingle World Intervention Graphs（SWIG）は潜在アウトカムをDAGで表現することを目指して提案された因果ダイアグラムです。潜在アウトカムがやっていることを構造的因果モデルから誕生したDAGによって表現することは難しく、齟齬が生じることがあります。このような問題を克服するために開発されたのがSWIGです。実際の社会学研究で用いられているところは見たことがなく、またしっかり統計的因果推論なのでとっつきにくさもありますが、まあこういう研究もあるということです。\nBalgi et al.（2024）はDAGをノンパラメトリックSEMとみなして、なるべく関数形の仮定を置くことなく推定値を得ることを目指しています。本当はDAGそれ自体から直接推定値が得たく、線形性仮定や変数間の無相関仮定は不必要な仮定であることをあらためて思い出させてくれる良い論文です。\nいずれも科学コミュニケーションのための、あるいは識別のためのDAGという見地からすると、執筆時点では必ずしも必要ではないアイディアです。因果推論という観点での発展ですね。\n\n\nおわりに\nいざまとめてみると因果推論のために用いられてきた傾向がやはりつよく、記述志向の社会学者にとってはあまり実践的ではないな…と思いました。科学コミュニケーションツールとしてのDAGはいまだ発展途上なので、上述の論文で述べられたことが疑う余地なく正しいわけではないのですが、考えなしに交絡調整をしたり、つよい仮定を伴うモデルを無批判に組むよりはすこしだけ改善されている枠組みだと考えています。DAGの活用によって、円滑な科学コミュニケーション、ひいては透明で再現可能な社会学が発展するといいなと思います。"
   },
   {
-    "objectID": "notes/preston_chapter12/manuscript.html",
-    "href": "notes/preston_chapter12/manuscript.html",
+    "objectID": "notes/preston_chapter12/index.html",
+    "href": "notes/preston_chapter12/index.html",
     "title": "人口学勉強会購読資料",
     "section": "",
     "text": "購読文献\n\n\n\nPreston, Samuel H. 2000. Demography: Measuring and Modeling Population Processes, Blackwell Publishing."
   },
   {
-    "objectID": "notes/preston_chapter12/manuscript.html#人口の意味",
-    "href": "notes/preston_chapter12/manuscript.html#人口の意味",
+    "objectID": "notes/preston_chapter12/index.html#人口の意味",
+    "href": "notes/preston_chapter12/index.html#人口の意味",
     "title": "人口学勉強会購読資料",
     "section": "1.1 人口の意味",
     "text": "1.1 人口の意味\n人口とは、ある時期ある地点で生存している人間の集合体であると同時に、構成員が変化しても存続するような集合体。人口学的分析は後者の持続的な集合性（サイズや伸び率、構成）に重点を置くと同時に、個人にとっての含意にも関心を持っている。その意味で、人口学とはミクロレベルとマクロレベルの分析を完全で満足のいくかたちで行う社会科学の一分野である。"
   },
   {
-    "objectID": "notes/preston_chapter12/manuscript.html#人口変化のバランス方程式",
-    "href": "notes/preston_chapter12/manuscript.html#人口変化のバランス方程式",
+    "objectID": "notes/preston_chapter12/index.html#人口変化のバランス方程式",
+    "href": "notes/preston_chapter12/index.html#人口変化のバランス方程式",
     "title": "人口学勉強会購読資料",
     "section": "1.2 人口変化のバランス方程式",
     "text": "1.2 人口変化のバランス方程式\n人口が増える経路は出生か移動(流入、in-migration)の2つしかない。人口がより社会的要素を含めるとき、移動は社会移動として言及される(高校の卒業証書を得ることで、「高卒」に移動する)。出生時に決まる属性(出身地など)は出生によってのみ決まる。\n人口が減る経路も死亡か流出(emigration)の2つの経路のみである。やはり出生時に決まる属性は死亡によってのみ決まる(国外へ流出しても出身地は変わらない)。\n以上を踏まえて、T時点の人口は@eq-balance のように表現できる。Equation 1 は近似ではなく恒等式という点で社会科学の最も基幹的な式であるものの、実際のデータでは閉鎖の誤差(error of closure)と呼ばれる誤差が生じることがある1。\n\\[\nN(T) = N(0) + B[0,T] - D[0,T] + I[0,T] - O[0,T]\n\\tag{1}\\]\n\n\n\n\n\n\nNotation\n\n\n\n\n\n\n\\(N(T)\\): T時点で生存している人々の数(本書では年を示すが、整数値とは限らない)\n\\(N(0)\\): 0時点で生存している人々の数\n\\(B[0,T]\\) 0からTまでの間に生まれた人々の数\n\\(D[0,T]\\): 0からTまでの間に死亡した人々の数\n\\(I[0,T]\\): 0からTまでの間に流入した人々の数\n\\(O[0,T]\\): 0からTまでの間に流出した人々の数"
   },
   {
-    "objectID": "notes/preston_chapter12/manuscript.html#人口率の構造",
-    "href": "notes/preston_chapter12/manuscript.html#人口率の構造",
+    "objectID": "notes/preston_chapter12/index.html#人口率の構造",
+    "href": "notes/preston_chapter12/index.html#人口率の構造",
     "title": "人口学勉強会購読資料",
     "section": "1.3 人口率の構造",
     "text": "1.3 人口率の構造\nEquation 1 で示された4つの要素のうち流入以外の3つのイベント(event)はその前の人口に依存する。死亡と流出は1人の人間に、出生は2人の人間(親)に関連する。イベントの発生数を人口サイズに関連づけるために人口’率’(demographic rate)を計算する。\n\\[\n率 = \\frac{イベントの発生数}{発生リスクへの曝露のパーソンイヤー}\n\\]\nここで人口学における’率’とは一般的な統計用語での発生率を指す。本書において率はつねに真値を差し、記録された率や推定された率ではない。人口が多いほど発生頻度は大きくなり、総発生数は、その「リスク」にさらされている人口集団がいる限りで高くなる。パーソンイヤーはイベントが生起するリスクに曝露される量を示しており、分母は生起率として表現できる。\nパーソンイヤーは人口学にとって中心的な概念。出生から死亡までの間に個人は関心となるイベント\\(\\theta_i\\)に曝露される。定義された集団\\(G\\)にたいして人生線は以下の通りに示される。\n\n\n\n集団\\(G\\)の人生線(life-line)\n\n\n集団\\(G\\)における率は下記式の通り。\n\\[\n率^G = \\frac{\\Sigma_{i \\in G} N_i}{\\Sigma_{i \\in G} T_i}\n\\]\n\n\n\n\n\n\nNotation\n\n\n\n\n\n\n\\(N_i\\): \\(i\\)の人生におけるイベントの生起数の総数\n\\(T_i\\): \\(A_i\\)から\\(B_i\\)までの期間\n\\(\\Sigma_{i \\in G}\\): \\(G\\)に属する\\(i\\)の総和"
   },
   {
-    "objectID": "notes/preston_chapter12/manuscript.html#期間率とパーソンイヤー",
-    "href": "notes/preston_chapter12/manuscript.html#期間率とパーソンイヤー",
+    "objectID": "notes/preston_chapter12/index.html#期間率とパーソンイヤー",
+    "href": "notes/preston_chapter12/index.html#期間率とパーソンイヤー",
     "title": "人口学勉強会購読資料",
     "section": "1.4 期間率とパーソンイヤー",
     "text": "1.4 期間率とパーソンイヤー\n特定の時間に率を拡張する。\n\\[\n率[0, T] = \\frac{0からT時点のイベントの発生数}{0からT時点の発生リスクへの曝露のパーソンイヤー}\n\\]\n0からT時点の発生リスクへの曝露のパーソンイヤーは Figure 1 のように示される。ある個人が0からTの間にずっと観察されれば1を取り、1クォーターだけ観察されれば\\(\\frac{1}{4}\\)を取る。aのように同じ個人を複数時点で観察してパーソンイヤーを算出する方法(個人からみる)と、bのように同じ時点で個人数を観察してパーソンイヤーを算出する方法(時点からみる)がある。\n\n\n\nFigure 1: 0からT時点のパーソンイヤーの観察方法"
   },
   {
-    "objectID": "notes/preston_chapter12/manuscript.html#人口学における主な期間率",
-    "href": "notes/preston_chapter12/manuscript.html#人口学における主な期間率",
+    "objectID": "notes/preston_chapter12/index.html#人口学における主な期間率",
+    "href": "notes/preston_chapter12/index.html#人口学における主な期間率",
     "title": "人口学勉強会購読資料",
     "section": "1.5 人口学における主な期間率",
     "text": "1.5 人口学における主な期間率\nこれまで論じた率を Equation 1 の4つの要素に拡張する。\n\n粗出生率(crude birth rate)\n\n\\[\nCBR[0, T] = \\frac{0からT時点の間の人口の出生数}{0からT時点の間の人口で観測されるパーソンイヤー}\n\\]\n\n粗死亡率(crude death rate)\n\n\\[\nCDR[0, T] = \\frac{0からT時点の間の人口の死亡数}{0からT時点の間の人口で観測されるパーソンイヤー}\n\\]\n\n粗流入率(crude rate of in-migration )\n\n\\[\nCRIM[0, T] = \\frac{0からT時点の間の人口の流入数}{0からT時点の間の人口で観測されるパーソンイヤー}\n\\]\n\n粗流出率(crude rate of out-migration)\n\n\\[\nCROM[0, T] = \\frac{0からT時点の間の人口の流出数}{0からT時点の間の人口で観測されるパーソンイヤー}\n\\]\n粗流入率の定義からも分かるように、人口学において暴露とイベントの結びつきはあまり厳密ではなく、恣意性が伴う(同じ人口に流入するリスクは0)。分母をパーソンイヤーとすることはほかの異なる関数や数式を発展させ、統合するための基盤となる。\n期間率についていくつか留意点がある。第一に、期間率を基準となる値が計算される期間と暴露時間の測定単位を区別することが重要である。慣習的には’年次’の率が計算される。第二に、期間率を算出するうえで何かしらの基準年は必ず必要である。「日本の粗出生率」という用語はあまり意味をなさない。"
   },
   {
-    "objectID": "notes/preston_chapter12/manuscript.html#人口学における成長率",
-    "href": "notes/preston_chapter12/manuscript.html#人口学における成長率",
+    "objectID": "notes/preston_chapter12/index.html#人口学における成長率",
+    "href": "notes/preston_chapter12/index.html#人口学における成長率",
     "title": "人口学勉強会購読資料",
     "section": "1.6 人口学における成長率",
     "text": "1.6 人口学における成長率\n\n1.6.1 粗成長率\n0からT時点での粗成長率\\(CGR\\)は Equation 2 のように定義される。\n\\[\nCGR[0, T] = CRNI[0, T] + CRNM[0, T]\n\\tag{2}\\]\n\n\n\n\n\n\n導出\n\n\n\n\n\n粗成長率は粗出生率から粗死亡率を減じ、粗流入率から粗流出率を減じた値の和。\n\\[\n  CGR[0, T]  = CBR[0, T] - CDR[0, T] + CRIM[0, T] - CROM[0, T]\n\\]\n\\[\n  \\frac{N(T) - N(0)}{PY[0, T]} = \\frac{B[0, T]}{PY[0, T]} - \\frac{D[0, T]}{PY[0, T]} + \\frac{I[0, T]}{PY[0, T]} - \\frac{O[0, T]}{PY[0, T]}\n\\]\n\n\n\n\n\n\n\n\n\nNotation\n\n\n\n\n\n\n\\(CRNI[0, T]\\): 粗自然増加率(crude rate of natural increase)\n\\(CRNM[0, T]\\): 粗純移動率(crude rate of net migration)\n\n\n\n\n\n\n1.6.2 瞬間成長率\n\\(0\\)から\\(T\\)までの代わりに、\\(t\\)から\\(t + \\Delta t\\)までの成長率は Equation 3 に示される。\n\\[\nr(t) = \\lim_{\\Delta t \\to 0} \\frac{\\Delta N(t)}{N(t) \\Delta t} = \\frac{\\frac{d N(t)}{dt}}{N(t)} = \\frac{d In [N(t)]}{dt}\n\\tag{3}\\]\n\n\n\n\n\n\nNotation\n\n\n\n\n\n\n\\(r(t)\\): \\(t\\)から\\(t + dt\\)までの成長率\n\n\n\n\nEquation 3 の概念を\\(0\\)から\\(T\\)時点の期間に拡張することで Equation 4 が得られる。 Equation 4 は\\(0\\)から\\(T\\)までの期間における人口の変化を瞬間成長率の総和として表現する。一般に使われる用語として「指数関数的増加(exponential term)」があるが、 Equation 4 が示すように、すべての成長は指数関数的といえる。一般的に用いられる「指数関数的成長」はマルサスでいうところの「幾何学的成長」あるいは「定常的成長」がより妥当である。もし瞬間成長率が\\(0\\)から\\(T\\)まで一定であれば、 Equation 4 は\\(N(T) = N(0) e^{r^{\\star} \\times T}\\)と表現できる。\\(r^{\\star}\\)は定常的成長率を示す。\n\\[\nN(T) = N(0) e^{\\int^T_0 r(t) dt}\n\\tag{4}\\]\n\n\n\n\n\n\n導出\n\n\n\n\n\n\\(0\\)から\\(T\\)までの期間における人口の変化。\n\\[\n\\int_{0}^{T} r(t) dt  = \\int_{0}^{T} \\frac{d In [N(t)]}{dt} dt = In N(T) ]^T_0 = In \\left( \\frac{N(T)}{N(0)} \\right)\n\\]\n両辺に対数を取る。\n\\[\ne^{\\int^T_0 r(t) dt} = \\frac{N(T)}{N(0)}\n\\]\n両辺に\\(N(0)\\)をかけて、 Equation 4 を得る。\n\n\n\n\n\n1.6.3 平均年間成長率\n\\(\\int_{0}^{T} r(t) dt = In \\left( \\frac{N(T)}{N(0)} \\right)\\)をTで割ることで\\(0\\)から\\(T\\)までの平均の瞬間成長率が得られる。\n\\[\n\\bar{r} [0, T] = \\frac{In \\left( \\frac{N(T)}{N(0)} \\right)}{T}\n\\]\n\n\n1.6.4 倍増時間\n\\(0\\)から\\(T\\)までに人口が2倍になる平均年間成長率は0.693に一致する（\\(In \\left( \\frac{N(T)}{N(0)} \\right) = In(2) = 0.693\\)）。定常的成長率\\(r^{\\star}\\)では\\(\\frac{0.693}{r^{\\star}}\\)となる。もし年間の定常成長率が0.03ならば、人口が2倍になる時間は\\(\\frac{0.693}{0.03} = 23.1\\)年となる。\n\n\n1.6.5 粗成長率と平均年間成長率の比較\n(網羅性のために入れたので、読み飛ばしても良い)\n\\(0\\)から\\(T\\)時点において、粗成長率と平均年間成長率は一致するものの、粗成長率の分母であるパーソンイヤーは成長率が増加する順序に依拠するため、成長率の分布において異なる。\n\\[\nCGR[0, T] = \\frac{N(T) - N(0)}{\\left[ \\frac{N(T) - N(0)}{r^{\\star}} \\right]} = r^{\\star}\n\\]\n\\[\nr^{\\star}[0, T] = \\int^T_0 r^{\\star} dt = r^{\\star}\n\\]\n\n\n\n粗成長率と平均年間成長率の比較"
   },
   {
-    "objectID": "notes/preston_chapter12/manuscript.html#パーソンイヤー期間の推定",
-    "href": "notes/preston_chapter12/manuscript.html#パーソンイヤー期間の推定",
+    "objectID": "notes/preston_chapter12/index.html#パーソンイヤー期間の推定",
+    "href": "notes/preston_chapter12/index.html#パーソンイヤー期間の推定",
     "title": "人口学勉強会購読資料",
     "section": "1.7 パーソンイヤー期間の推定",
     "text": "1.7 パーソンイヤー期間の推定\n人口の増え方\\(r(t)\\)(\\(N(t)\\))について知り得ない場合、我々は成長率の定常性を仮定して Equation 5 のようにパーソンイヤーを計算する。実際に定常性が満たされれば Equation 5 は真値と一致するが、それには\\(0\\)時点と\\(T\\)時点の観察が必要になる。普通は人口サイズ推定が特定の期間(1年の中ごろ)にのみ入手可能であることがままある。中ごろでの近似は人口の増え方\\(N(t)\\)が線形であれば真のパーソンイヤーと一致する。定常成長率の総積であっても誤差は非常に小さい。ただし、パーソンイヤーを推定する時間間隔が1年以上になると誤差は大きくなる。1年中ごろに着目することは簡単でかなり正確だけれどもそれはパーソンイヤーの代替物ではなく推定値であることには留意が必要。\n\\[\nPY[0, T] = \\frac{ \\left[ N(T) - N(0) \\right] \\times T}{In \\left[ \\frac{N(T)}{N(0)} \\right]}\n\\tag{5}\\]\n\n\n\n中点でパーソンイヤーを計算する際の誤差"
   },
   {
-    "objectID": "notes/preston_chapter12/manuscript.html#コホートの概念",
-    "href": "notes/preston_chapter12/manuscript.html#コホートの概念",
+    "objectID": "notes/preston_chapter12/index.html#コホートの概念",
+    "href": "notes/preston_chapter12/index.html#コホートの概念",
     "title": "人口学勉強会購読資料",
     "section": "1.8 コホートの概念",
     "text": "1.8 コホートの概念\nコホートとは特定の期間に特定の人口学的イベントを経験するすべての単位の集約。つねに特定の地理的参照軸を持つ。人間だけでなく特定の移行（結婚）なども含まれる。「日本の1942年コホート」「フランスの1990年女性結婚コホート」など。もっとも頻繁に使われるコホートは出生コホート。たとえば1942年に生まれたコホートは、1952年には同じ時期に10歳になる。特定のコホートにたいして人口率を計算するうえでは、たんにパーソンイヤーと生起件数を特定のコホートに限定すれば良い。"
   },
   {
-    "objectID": "notes/preston_chapter12/manuscript.html#イベントの生起確率",
-    "href": "notes/preston_chapter12/manuscript.html#イベントの生起確率",
+    "objectID": "notes/preston_chapter12/index.html#イベントの生起確率",
+    "href": "notes/preston_chapter12/index.html#イベントの生起確率",
     "title": "人口学勉強会購読資料",
     "section": "1.9 イベントの生起確率",
     "text": "1.9 イベントの生起確率\n確率probabilityとはそれが起きた割合rateというよりもむしろ、イベントが起こるかどうかの機会chanceに言及している。たとえば、ある結婚コホートが離婚に至る確率は\\(\\frac{離婚数}{結婚数}\\)となる。(全員の)観測された離婚の頻度の代わりに相対頻度アプローチを採用することで、離婚確率を推定する。統計学でいうところの最尤推定に近い2。\n\\[\n確率 = \\frac{イベントの発生数}{先行するイベント(施行)の数}\n\\]\n人口学において確率の表現は人口率の表現とは大きく異なる。率と異なり確率は1を超えないし、0を下回ることもない。人口それ自体は人口に含まれる関係しないかぎり確率を持たない(ある暦年の結婚件数と離婚件数を数えても確率は計算できない)。コホートと確率の概念は社会科学の縦断データとも密接に関係しており、不定形で未分化な個人を「位置付ける」ための集合レベルの測定として機能する。\n概念的な単純さにもかかわらず、実際のコホートの分析においては、(1)ある個人が死亡するまでの情報をすべて必要とする、(2)完全なデータを手に入れたとしても、それはかなり古いものになっているという問題が生じる。後者の問題については仮説的コホートという概念を後ほど導入して向き合う。"
   },
   {
-    "objectID": "notes/preston_chapter12/manuscript.html#期間年齢固有率",
-    "href": "notes/preston_chapter12/manuscript.html#期間年齢固有率",
+    "objectID": "notes/preston_chapter12/index.html#期間年齢固有率",
+    "href": "notes/preston_chapter12/index.html#期間年齢固有率",
     "title": "人口学勉強会購読資料",
     "section": "2.1 期間年齢固有率",
     "text": "2.1 期間年齢固有率\n\\[\n{}_n M_x [0, T] = \\frac{0からT時点の間の、xからx+nの年齢における死亡の数}{0からT時点の間の、xからx+nの年齢において生存していたパーソンイヤーの数}\n\\]\n\n\n\n\n\n\nNotation\n\n\n\n\n\n\n$ _n M_x [0, T]\\(: 年齢の開始時点\\)x\\(とその区間\\)n\\(における死亡\\)M$\n\n\n\n\n年齢の開始時点\\(x\\)とその区間\\(n\\)は一般的に聞かれる完了した年数(completed year、最後の誕生日での年齢とも呼ばれる)とは異なり、小数点以下を含める正確な年数(exact year)を示す3。\n\n\n\nFigure 2: 1992年のスウェーデンとカザフスタンの死亡率\n\n\nFigure 2 を確認する。この図からは、CDRはスウェーデンのほうが高い一方で、\\(M^\\star_i\\)はすべての年齢でスウェーデンが低いという矛盾が生じていることが見て取れる。この矛盾はCDRを Equation 6 のように分解することで理解できる。 Equation 6 より、粗死亡率は年齢固有の死亡率の集合と人口の年齢分布の関数、すなわち人口の年齢分布による年齢固有の死亡率の重みづけ平均となる。当然、\\(\\Sigma^{\\infty}_{x=0} {}_n C_x = 1\\)となる。スウェーデンは年齢固有死亡率の高い高齢者人口に死亡が集中しているため、粗死亡率が高くなる。\n\\[\nCDR = \\frac{D}{N} = \\frac{\\Sigma^{\\infty}_{x=0} {}_n D_x}{N} = \\frac{\\Sigma^{\\infty}_{x=0} \\frac{{}_n D_x}{{}_n N_x} {}_n N_x}{N} = \\Sigma^{\\infty}_{x=0} \\frac{{}_n D_x}{{}_n N_x} \\times \\frac{{}_n N_x}{N} = \\Sigma^{\\infty}_{x=0} {}_n M_x \\times {}_n C_x\n\\tag{6}\\]\n\n\n\n\n\n\nNotation\n\n\n\n\n\n\n\\({}_n C_x\\): 任意の年齢区間\\(x\\)から\\(x+n\\)に属する人口の割合\n\n\n\n\nEquation 6 のような分解は人口をあらゆるサブ集団に分割するときにも適用できるが、以下の4つの理由からとくに年齢構成にとって意義がある。\n\n死亡率は年齢によるばらつきを大きく示す\n人口集団において年齢構成は大きく異なる(たとえば、スウェーデンとカザフスタン)\n年齢分布それ自体が人口学的変数であり、人口の出生・死亡・移動の歴史によって規定される\n年齢固有の死亡と人口サイズはどちらもデータを入手できる\n\n人口のあらゆる割合はあるカテゴリに属する人口の割合で重みづけしたカテゴリ固有の割合として規定される。年齢固有率を表現するために、\\(i\\)番目の年齢グループを示す\\(i\\)を使うこともある。\\(i\\)を用いた粗死亡率は\\(CDR = \\Sigma^{\\infty}_{i=0} M_i \\times C_i\\)と表現できる。\\(i\\)を使う意義は等間隔でない年齢区間を示せることにある(0歳、1-4歳、5-9歳、など)。"
   },
   {
-    "objectID": "notes/preston_chapter12/manuscript.html#年齢標準化",
-    "href": "notes/preston_chapter12/manuscript.html#年齢標準化",
+    "objectID": "notes/preston_chapter12/index.html#年齢標準化",
+    "href": "notes/preston_chapter12/index.html#年齢標準化",
     "title": "人口学勉強会購読資料",
     "section": "2.2 年齢標準化",
     "text": "2.2 年齢標準化\n2つの人口集団(上の例におけるスウェーデンとカザフスタン)を比較するうえでは、年齢構成の影響は除去することが望ましい。それを達成する最も直接的な方法は2つの人口集団における年齢構成が同じであると仮定すること。より一般的には年齢分布を標準化してその影響を小さくする。人口それ自体の年齢分布ではなく’標準的な’人口の年齢分布によって重みづけする方法は年齢標準化と呼ばれ、ある人口\\(j\\)における年齢標準化粗死亡率(\\(ASCDR\\))は Equation 7 で表現される。このような標準化のアプローチは死亡率以外にも(e.g., 識字率)、年齢以外でも(e.g., 出生順序)適用できる。\n\\[\nASCDR^j = \\Sigma^{\\infty}_{i=1} M_i^j \\times C_i^s\n\\tag{7}\\]\n\n\n\n\n\n\nNotation\n\n\n\n\n\n\n\\(C^s_i\\): 標準的として選んだ人口における\\(i\\)番目の年齢区間に入る人口の割合、\\(\\Sigma^{\\infty}_{i=1} C^s_i = 1.00\\)が成り立つ\n\n\n\n\nいかなる人口(構造)を’標準的’とみなすかは、死亡率の2つの人口間での差の大きさだけでなく向きまでをも規定するものの、シンプルなルールは存在しない。だが恣意的になることはより望ましくないので、2つのルールを課す。\n\n2つだけの人口を比較する場合、その平均を標準とみなす。\n2つより多い人口を比較する場合、その人口構造の平均や中央値に近い値を標準的として用いる。\n\nこのルールは以下3つの条件が満たされるときに有用である。\n\n2つの人口集団のマクロレベルの変数(率や割合など)を比較する。\n各人口内のサブ集団ごとに異なる値を取る。\nそもそも、サブ集団による人口構成が比較に及ぼす影響を最小化したい。\n\n「人口Aの年齢分布が人口Bの年齢分布だった際の人口Aの粗死亡率」だけでなく、「人口Aの年齢固有死亡率が人口Bの年齢固有死亡率だった際の人口Aの粗死亡率」にも関心があることがある(とくに\\(A\\)に死亡率のデータがない場合)。このような関心には比較死亡比(Comparative Mortality Ratio、CMR)と呼ばれる、人口集団\\(A\\)の実際の死亡数と人口集団\\(B\\)の死亡率スケジュールの期待値の比をもとめて回答する。\n\\[\nCMR = \\frac{\\Sigma_i N^A_i \\times M^A_i}{\\Sigma_i N^A_i \\times M^B_i} = \\frac{D^A}{\\Sigma_i N^A_i \\times M^B_i}\n\\]\n\n\n\n\n\n\nNotation\n\n\n\n\n\n\n\\(D^A\\): \\(A\\)における全年齢の記録された死亡数\n\\(N^A_i\\): \\(A\\)における年齢区間\\(i\\)の人間数\n\\(M^B_i\\): \\(B\\)における年齢区間\\(i\\)の死亡率\n\n\n\n\nもしCMRが1より大きければ、人口集団\\(A\\)の年齢固有死亡率が\\(B\\)より高いことを(少なくとも1つの年齢区間においては)示す。このような人口学的方法は「間接的標準化」と呼ばれる。"
   },
   {
-    "objectID": "notes/preston_chapter12/manuscript.html#比率間の差異を分解する",
-    "href": "notes/preston_chapter12/manuscript.html#比率間の差異を分解する",
+    "objectID": "notes/preston_chapter12/index.html#比率間の差異を分解する",
+    "href": "notes/preston_chapter12/index.html#比率間の差異を分解する",
     "title": "人口学勉強会購読資料",
     "section": "2.3 比率間の差異を分解する",
     "text": "2.3 比率間の差異を分解する\n類似した問いとして、「\\(A\\)と\\(B\\)の死亡率の差は、どの程度年齢分布によってもたらされているのか？」がある。この問いには分解の方法でアプローチできる。人口集団\\(A\\)と\\(B\\)の粗死亡率の差\\(\\Delta\\)は年齢構成の差異の寄与と率スケジュールの差異の寄与で分解できる。この分解は残差や交互作用項を扱わなくて良い点で恣意性が低く、望ましいアプローチである。\n\n\n\n\n\n\n導出\n\n\n\n\n\nはじめに、粗死亡率を年齢固有死亡率と年齢分布に分解する。 \\[\n\\Delta = CDR^B - CDR^A = \\Sigma_i C^B_i \\times M^B_i - \\Sigma C^A_i \\times M^A_i\n\\]\nそれぞれの項を2で割り、人口集団\\(A\\)(\\(B\\))の年齢固有死亡率と人口集団\\(B\\)(\\(A\\))の年齢分布の積をくわえる。\n\\[\\begin{eqnarray}\n\\Delta &= \\frac{\\Sigma_i C^B_i \\times M^B_i}{2} + \\frac{\\Sigma_i C^B_i \\times M^B_i}{2} - \\frac{\\Sigma_i C^A_i \\times M^A_i}{2} - \\frac{\\Sigma_i C^A_i \\times M^A_i}{2} \\\\\n\n  &+ \\frac{\\Sigma_i C^B_i \\times M^A_i}{2} + \\frac{\\Sigma_i C^B_i \\times M^A_i}{2} - \\frac{\\Sigma_i C^A_i \\times M^B_i}{2} - \\frac{\\Sigma_i C^B_i \\times M^A_i}{2}\n\\end{eqnarray}\\]\n8つの項を\\(\\Sigma_i C^B_i\\)と\\(\\Sigma_i C^A_i\\)、\\(\\Sigma_i M^B_i\\)と\\(\\Sigma_i M^A_i\\)でそれぞれくくる。\n\\[\\begin{eqnarray}\n\\Delta &= \\Sigma_i C^B_i \\times \\left( \\frac{M^B_i + M^A_i}{2} \\right) - \\Sigma_i C^A_i \\times \\left( \\frac{M^B_i + M^A_i}{2} \\right) \\\\\n  &+ \\Sigma_i M^B_i \\times \\left( \\frac{C^B_i + C^A_i}{2} \\right) - \\Sigma_i M^A_i \\times \\left( \\frac{C^B_i + C^A_i}{2} \\right)\n\\end{eqnarray}\\]\n\\(\\frac{M^B_i + M^A_i}{2}\\)と\\(\\frac{C^B_i + C^A_i}{2}\\)でそれぞれくくる。\n\\[\n\\Delta = \\Sigma_i \\left( C^B_i - C^A_i \\right) \\times \\left( \\frac{M^B_i + M^A_i}{2} \\right) + \\Sigma_i \\left( M^B_i - M^A_i \\right) \\times \\left( \\frac{C^B_i + C^A_i}{2} \\right)\n\\]\nそれぞれ以下のように翻訳できる。\n\\[\n年齢構成の差異 \\times 年齢固有死亡率の重みづけ平均 + 死亡率スケジュールの差異 \\times 年齢構成の重みづけ平均\n\\]\n\n\n\n以上の方法は2集団間比較における手法である、それ以上の集団にて寄与する際にはより複雑なアプローチが求められる。やはり、死亡率や年齢以外でも適用できる。"
   },
   {
-    "objectID": "notes/preston_chapter12/manuscript.html#レクシスダイアグラム",
-    "href": "notes/preston_chapter12/manuscript.html#レクシスダイアグラム",
+    "objectID": "notes/preston_chapter12/index.html#レクシスダイアグラム",
+    "href": "notes/preston_chapter12/index.html#レクシスダイアグラム",
     "title": "人口学勉強会購読資料",
     "section": "2.4 レクシスダイアグラム",
     "text": "2.4 レクシスダイアグラム\n特定のコホートにイベントの生起(e.g., 死亡)を限定することで、コホートの年齢固有率を知ることができる。レクシスダイアグラムは一方の軸に年齢を、他方の軸に暦年をプロットする、コホートの暴露区分と期間の暴露区分の関係を示す図である。あるコホートの人生は45℃線で示される。イベントの発生のカウントを、年齢固有コホート率は\\(A-C\\)の範囲に、年齢固有期間率は\\(A-P\\)の範囲に、コホート固有期間率は\\(C-P\\)の範囲にそれぞれ限定することが読み取れる。\n\n\n\nFigure 3: レクシスダイアグラム"
   },
   {
-    "objectID": "notes/preston_chapter12/manuscript.html#年齢固有確率",
-    "href": "notes/preston_chapter12/manuscript.html#年齢固有確率",
+    "objectID": "notes/preston_chapter12/index.html#年齢固有確率",
+    "href": "notes/preston_chapter12/index.html#年齢固有確率",
     "title": "人口学勉強会購読資料",
     "section": "2.5 年齢固有確率",
     "text": "2.5 年齢固有確率\n率だけでなく確率も年齢固有に示すことができ、\\(x\\)から\\(x+n\\)までにイベントが生起する確率は慣習的に\\({}_n q_x\\)と表現する。レクシスダイアグラムで図示できる。 Figure 5 を例にあげる。1995年出生コホートが0歳から1歳までに死亡する確率は\\({}_1 q^{1995c}_0 = \\frac{2}{6} = 0.333\\)である。\n\n\n\nFigure 4: レクシスダイアグラム\n\n\n具体的な出生数とイベントの生起数を Figure 5 や Figure 6 のように表現することができる。\n\n\n\n\n\n\nFigure 5: 出生とイベント発生の表記\n\n\n\n\n\n\n\nFigure 6: 出生とイベント発生のノテーション\n\n\n\n\n\n\n\n\n\n\n\nNotation\n\n\n\n\n\n\n\\(B_0(95)\\): 1995年の出生数\n\\(B_1(95)\\): 1995年に1歳の誕生日を迎えた数\n\\(B_1(96)\\): 1996年に1歳の誕生日を迎えた数\n\\({}_S D_0 (95)\\): 同年に0歳に達した人に対する、1995年に0歳で死亡した人の数\n\\({}_P D_0 (95)\\): 前年に0歳に達した人に対する、1995年に0歳で死亡した人の数\n\\({}_P D_0 (96)\\): 前年に0歳に達した人に対する、1996年に0歳で死亡した人の数\n\n\n\n\n\\(Y\\)年\\(x\\)歳(最後の誕生日)における分離因子(\\(Y\\)年の間に\\(x\\)歳に達した人に起こった、\\(Y\\)年\\(x\\)歳における死亡の割合)は同年の死亡と前年の死亡に分解することで求める。\n\\[\nSF_x(Y) = \\frac{{}_S D_x (Y)}{D_x (Y)} = \\frac{{}_S D_x (Y)}{{}_S D_x (Y) + {}_P D_x (Y)}\n\\]"
   },
   {
-    "objectID": "notes/preston_chapter12/manuscript.html#単一暦年の死亡経験にもとづいた死亡確率",
-    "href": "notes/preston_chapter12/manuscript.html#単一暦年の死亡経験にもとづいた死亡確率",
+    "objectID": "notes/preston_chapter12/index.html#単一暦年の死亡経験にもとづいた死亡確率",
+    "href": "notes/preston_chapter12/index.html#単一暦年の死亡経験にもとづいた死亡確率",
     "title": "人口学勉強会購読資料",
     "section": "2.6 単一暦年の死亡経験にもとづいた死亡確率",
     "text": "2.6 単一暦年の死亡経験にもとづいた死亡確率\nある期間の死亡にはあるコホートの同年の死亡と別のコホートの前年の死亡の2つから構成されることがわかった。単一暦年の年齢固有死亡率(たとえば、乳幼児が1歳で死亡する確率)の推定を統合して算出するためには以下のような式を求める。\n\\[\\begin{eqnarray}\n{}_1 q_0 &= 乳幼児が出生暦年に死亡する確率 \\\\\n& + 乳幼児が出生暦年に生存する確率 \\\\\n& \\times 乳幼児が出生暦年に生存し、1歳に到達する前かつ次の暦年に死亡する確率\n\\end{eqnarray}\\]\n適切な要素をあてはめる。\n\\[\n{}_1 q^{Y_c}_0 = \\frac{{}_S D_0 (Y)}{B_0(Y)} + \\frac{B(Y) - {}_S D_0 (Y)}{B_0 (Y)} \\times \\frac{{}_P D_0 (Y+1)}{B_0(Y) - {}_S D_0 (Y)} = \\frac{{}_S D_0(Y) + {}_P D_0 (Y+1)}{B_0 (Y)}\n\\]\n合成の基本的な考え方は分子の死亡項を同じ暦年から取り出すことにある。暦年\\(Y\\)の0歳から1歳の死亡確率は以下のように示すことができる。類似した概念に乳幼児死亡率がある。\n\\[\n{}_1 q_0 (Y) = \\frac{{}_S D_0 (Y)}{B_0(Y)} + \\frac{B(Y) - {}_S D_0 (Y)}{B_0(Y)} \\times \\frac{{}_P D_0 (Y)}{B_0(Y-1) - {}_S D_0 (Y-1)}\n\\]"
   },
   {
-    "objectID": "notes/preston_chapter12/manuscript.html#footnotes",
-    "href": "notes/preston_chapter12/manuscript.html#footnotes",
+    "objectID": "notes/preston_chapter12/index.html#footnotes",
+    "href": "notes/preston_chapter12/index.html#footnotes",
     "title": "人口学勉強会購読資料",
     "section": "Footnotes",
     "text": "Footnotes\n\n\nたとえば、死亡を報告しないことや、移動を報告しないことに言及していると思われる。↩︎\nたとえば、カゴの中からボールを10個出して、うち赤玉が2つであったとする。このとき相対確率は0.2となる。最尤推定的にいえば、この0.2という数値はほかのどの割合よりもサンプルの中で生じやすい、ということを意味する。↩︎\n余談だが、年齢を30-35、35-40というふうに括るときには正確な年齢を、30-34、35-39というふうに括るときには最後の誕生日での年齢をそれぞれ指している。満年齢を尋ねている社会調査では後者を指し示すことのほうが多いと思う。↩︎"
@@ -200,7 +200,7 @@
     "href": "notes/index.html",
     "title": "NOTES",
     "section": "",
-    "text": "Feb 21, 2024\n        \n        \n            DAGを学ぶための論文10報（社会学向け）\n            \n                \n                    Quantitative Method\n                \n            \n            \n        \n    \n    \n                  \n            Apr 4, 2022\n        \n        \n            スキル指標の標準化と解釈に関するメモ\n            \n                \n                    Data Analysis\n                \n                \n                    Japanese Onet\n                \n            \n            \n        \n    \n    \n                  \n            Mar 25, 2022\n        \n        \n            Bell et al.（2019）の要約\n            \n                \n                    Readings\n                \n                \n                    Quantitative Method\n                \n            \n            \n        \n    \n\n\nNo matching items"
+    "text": "Jun 25, 2024\n        \n        \n            人口学勉強会購読資料\n            \n        \n    \n    \n                  \n            Feb 21, 2024\n        \n        \n            DAGを学ぶための論文10報（社会学向け）\n            \n                \n                    Quantitative Method\n                \n            \n            \n        \n    \n    \n                  \n            Apr 4, 2022\n        \n        \n            スキル指標の標準化と解釈に関するメモ\n            \n                \n                    Data Analysis\n                \n                \n                    Japanese Onet\n                \n            \n            \n        \n    \n    \n                  \n            Mar 25, 2022\n        \n        \n            Bell et al.（2019）の要約\n            \n                \n                    Readings\n                \n                \n                    Quantitative Method\n                \n            \n            \n        \n    \n\n\nNo matching items"
   },
   {
     "objectID": "notes/onetstandarization/index.html",
