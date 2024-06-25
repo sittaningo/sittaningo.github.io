@@ -1,0 +1,888 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.3.353">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+<meta name="author" content="Shingo Nitta">
+<meta name="dcterms.date" content="2024-06-25">
+
+<title>人口学勉強会購読資料</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+</style>
+
+
+<script src="manuscript_files/libs/clipboard/clipboard.min.js"></script>
+<script src="manuscript_files/libs/quarto-html/quarto.js"></script>
+<script src="manuscript_files/libs/quarto-html/popper.min.js"></script>
+<script src="manuscript_files/libs/quarto-html/tippy.umd.min.js"></script>
+<script src="manuscript_files/libs/quarto-html/anchor.min.js"></script>
+<link href="manuscript_files/libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="manuscript_files/libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="manuscript_files/libs/bootstrap/bootstrap.min.js"></script>
+<link href="manuscript_files/libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="manuscript_files/libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
+
+  <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
+
+</head>
+
+<body class="fullcontent">
+
+<div id="quarto-content" class="page-columns page-rows-contents page-layout-article">
+
+<main class="content" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<h1 class="title">人口学勉強会購読資料</h1>
+</div>
+
+
+<div class="quarto-title-meta-author">
+  <div class="quarto-title-meta-heading">Author</div>
+  <div class="quarto-title-meta-heading">Affiliation</div>
+  
+    <div class="quarto-title-meta-contents">
+    <p class="author">Shingo Nitta </p>
+  </div>
+    <div class="quarto-title-meta-contents">
+        <p class="affiliation">
+            University of Tokyo
+          </p>
+      </div>
+    </div>
+
+<div class="quarto-title-meta">
+
+      
+    <div>
+    <div class="quarto-title-meta-heading">Published</div>
+    <div class="quarto-title-meta-contents">
+      <p class="date">June 25, 2024</p>
+    </div>
+  </div>
+  
+    
+  </div>
+  
+
+</header>
+
+<div class="callout callout-style-simple callout-none no-icon callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon no-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+購読文献
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Preston, Samuel H. 2000. <em>Demography: Measuring and Modeling Population Processes</em>, Blackwell Publishing.</p>
+</div>
+</div>
+<section id="基本的な概念と測定" class="level1" data-number="1">
+<h1 data-number="1"><span class="header-section-number">1</span> 基本的な概念と測定</h1>
+<section id="人口の意味" class="level2" data-number="1.1">
+<h2 data-number="1.1" class="anchored" data-anchor-id="人口の意味"><span class="header-section-number">1.1</span> 人口の意味</h2>
+<p>人口とは、ある時期ある地点で生存している人間の集合体であると同時に、構成員が変化しても存続するような集合体。人口学的分析は後者の持続的な集合性（サイズや伸び率、構成）に重点を置くと同時に、個人にとっての含意にも関心を持っている。その意味で、人口学とはミクロレベルとマクロレベルの分析を完全で満足のいくかたちで行う社会科学の一分野である。</p>
+</section>
+<section id="人口変化のバランス方程式" class="level2" data-number="1.2">
+<h2 data-number="1.2" class="anchored" data-anchor-id="人口変化のバランス方程式"><span class="header-section-number">1.2</span> 人口変化のバランス方程式</h2>
+<p>人口が増える経路は出生か移動(流入、in-migration)の2つしかない。人口がより社会的要素を含めるとき、移動は社会移動として言及される(高校の卒業証書を得ることで、「高卒」に移動する)。出生時に決まる属性(出身地など)は出生によってのみ決まる。</p>
+<p>人口が減る経路も死亡か流出(emigration)の2つの経路のみである。やはり出生時に決まる属性は死亡によってのみ決まる(国外へ流出しても出身地は変わらない)。</p>
+<p>以上を踏まえて、T時点の人口は@eq-balance のように表現できる。<a href="#eq-balance">Equation&nbsp;1</a> は近似ではなく恒等式という点で社会科学の最も基幹的な式であるものの、実際のデータでは閉鎖の誤差(error of closure)と呼ばれる誤差が生じることがある<a href="#fn1" class="footnote-ref" id="fnref1" role="doc-noteref"><sup>1</sup></a>。</p>
+<p><span id="eq-balance"><span class="math display">\[
+N(T) = N(0) + B[0,T] - D[0,T] + I[0,T] - O[0,T]
+\tag{1}\]</span></span></p>
+<div class="callout callout-style-simple callout-none no-icon callout-titled">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-2-contents" aria-controls="callout-2" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon no-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Notation
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-2" class="callout-2-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<ul>
+<li><p><span class="math inline">\(N(T)\)</span>: T時点で生存している人々の数(本書では年を示すが、整数値とは限らない)</p></li>
+<li><p><span class="math inline">\(N(0)\)</span>: 0時点で生存している人々の数</p></li>
+<li><p><span class="math inline">\(B[0,T]\)</span> 0からTまでの間に生まれた人々の数</p></li>
+<li><p><span class="math inline">\(D[0,T]\)</span>: 0からTまでの間に死亡した人々の数</p></li>
+<li><p><span class="math inline">\(I[0,T]\)</span>: 0からTまでの間に流入した人々の数</p></li>
+<li><p><span class="math inline">\(O[0,T]\)</span>: 0からTまでの間に流出した人々の数</p></li>
+</ul>
+</div>
+</div>
+</div>
+</section>
+<section id="人口率の構造" class="level2" data-number="1.3">
+<h2 data-number="1.3" class="anchored" data-anchor-id="人口率の構造"><span class="header-section-number">1.3</span> 人口率の構造</h2>
+<p><a href="#eq-balance">Equation&nbsp;1</a> で示された4つの要素のうち流入以外の3つのイベント(event)はその前の人口に依存する。死亡と流出は1人の人間に、出生は2人の人間(親)に関連する。イベントの発生数を人口サイズに関連づけるために人口’率’(demographic rate)を計算する。</p>
+<p><span class="math display">\[
+率 = \frac{イベントの発生数}{発生リスクへの曝露のパーソンイヤー}
+\]</span></p>
+<p>ここで人口学における’率’とは一般的な統計用語での発生率を指す。本書において率はつねに真値を差し、記録された率や推定された率ではない。人口が多いほど発生頻度は大きくなり、総発生数は、その「リスク」にさらされている人口集団がいる限りで高くなる。パーソンイヤーはイベントが生起するリスクに曝露される量を示しており、分母は生起率として表現できる。</p>
+<p>パーソンイヤーは人口学にとって中心的な概念。出生から死亡までの間に個人は関心となるイベント<span class="math inline">\(\theta_i\)</span>に曝露される。定義された集団<span class="math inline">\(G\)</span>にたいして人生線は以下の通りに示される。</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="fig/lifeline_group.png" class="img-fluid figure-img"></p>
+<figcaption class="figure-caption">集団<span class="math inline">\(G\)</span>の人生線(life-line)</figcaption>
+</figure>
+</div>
+<p>集団<span class="math inline">\(G\)</span>における率は下記式の通り。</p>
+<p><span class="math display">\[
+率^G = \frac{\Sigma_{i \in G} N_i}{\Sigma_{i \in G} T_i}
+\]</span></p>
+<div class="callout callout-style-simple callout-none no-icon callout-titled">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-3-contents" aria-controls="callout-3" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon no-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Notation
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-3" class="callout-3-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<ul>
+<li><p><span class="math inline">\(N_i\)</span>: <span class="math inline">\(i\)</span>の人生におけるイベントの生起数の総数</p></li>
+<li><p><span class="math inline">\(T_i\)</span>: <span class="math inline">\(A_i\)</span>から<span class="math inline">\(B_i\)</span>までの期間</p></li>
+<li><p><span class="math inline">\(\Sigma_{i \in G}\)</span>: <span class="math inline">\(G\)</span>に属する<span class="math inline">\(i\)</span>の総和</p></li>
+</ul>
+</div>
+</div>
+</div>
+</section>
+<section id="期間率とパーソンイヤー" class="level2" data-number="1.4">
+<h2 data-number="1.4" class="anchored" data-anchor-id="期間率とパーソンイヤー"><span class="header-section-number">1.4</span> 期間率とパーソンイヤー</h2>
+<p>特定の時間に率を拡張する。</p>
+<p><span class="math display">\[
+率[0, T] = \frac{0からT時点のイベントの発生数}{0からT時点の発生リスクへの曝露のパーソンイヤー}
+\]</span></p>
+<p>0からT時点の発生リスクへの曝露のパーソンイヤーは <a href="#fig-pyrate">Figure&nbsp;1</a> のように示される。ある個人が0からTの間にずっと観察されれば1を取り、1クォーターだけ観察されれば<span class="math inline">\(\frac{1}{4}\)</span>を取る。aのように同じ個人を複数時点で観察してパーソンイヤーを算出する方法(個人からみる)と、bのように同じ時点で個人数を観察してパーソンイヤーを算出する方法(時点からみる)がある。</p>
+<div id="fig-pyrate" class="quarto-figure quarto-figure-center anchored">
+<figure class="figure">
+<p><img src="fig/py_demonstration.png" class="img-fluid figure-img"></p>
+<figcaption class="figure-caption">Figure&nbsp;1: 0からT時点のパーソンイヤーの観察方法</figcaption>
+</figure>
+</div>
+</section>
+<section id="人口学における主な期間率" class="level2" data-number="1.5">
+<h2 data-number="1.5" class="anchored" data-anchor-id="人口学における主な期間率"><span class="header-section-number">1.5</span> 人口学における主な期間率</h2>
+<p>これまで論じた率を <a href="#eq-balance">Equation&nbsp;1</a> の4つの要素に拡張する。</p>
+<ul>
+<li>粗出生率(crude birth rate)</li>
+</ul>
+<p><span class="math display">\[
+CBR[0, T] = \frac{0からT時点の間の人口の出生数}{0からT時点の間の人口で観測されるパーソンイヤー}
+\]</span></p>
+<ul>
+<li>粗死亡率(crude death rate)</li>
+</ul>
+<p><span class="math display">\[
+CDR[0, T] = \frac{0からT時点の間の人口の死亡数}{0からT時点の間の人口で観測されるパーソンイヤー}
+\]</span></p>
+<ul>
+<li>粗流入率(crude rate of in-migration )</li>
+</ul>
+<p><span class="math display">\[
+CRIM[0, T] = \frac{0からT時点の間の人口の流入数}{0からT時点の間の人口で観測されるパーソンイヤー}
+\]</span></p>
+<ul>
+<li>粗流出率(crude rate of out-migration)</li>
+</ul>
+<p><span class="math display">\[
+CROM[0, T] = \frac{0からT時点の間の人口の流出数}{0からT時点の間の人口で観測されるパーソンイヤー}
+\]</span></p>
+<p>粗流入率の定義からも分かるように、人口学において暴露とイベントの結びつきはあまり厳密ではなく、恣意性が伴う(同じ人口に流入するリスクは0)。分母をパーソンイヤーとすることはほかの異なる関数や数式を発展させ、統合するための基盤となる。</p>
+<p>期間率についていくつか留意点がある。第一に、期間率を基準となる値が計算される期間と暴露時間の測定単位を区別することが重要である。慣習的には’年次’の率が計算される。第二に、期間率を算出するうえで何かしらの基準年は必ず必要である。「日本の粗出生率」という用語はあまり意味をなさない。</p>
+</section>
+<section id="人口学における成長率" class="level2" data-number="1.6">
+<h2 data-number="1.6" class="anchored" data-anchor-id="人口学における成長率"><span class="header-section-number">1.6</span> 人口学における成長率</h2>
+<section id="粗成長率" class="level3" data-number="1.6.1">
+<h3 data-number="1.6.1" class="anchored" data-anchor-id="粗成長率"><span class="header-section-number">1.6.1</span> 粗成長率</h3>
+<p>0からT時点での粗成長率<span class="math inline">\(CGR\)</span>は <a href="#eq-cgr">Equation&nbsp;2</a> のように定義される。</p>
+<p><span id="eq-cgr"><span class="math display">\[
+CGR[0, T] = CRNI[0, T] + CRNM[0, T]
+\tag{2}\]</span></span></p>
+<div class="callout callout-style-simple callout-none no-icon callout-titled">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-4-contents" aria-controls="callout-4" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon no-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+導出
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-4" class="callout-4-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<p>粗成長率は粗出生率から粗死亡率を減じ、粗流入率から粗流出率を減じた値の和。</p>
+<p><span class="math display">\[
+  CGR[0, T]  = CBR[0, T] - CDR[0, T] + CRIM[0, T] - CROM[0, T]
+\]</span></p>
+<p><span class="math display">\[
+  \frac{N(T) - N(0)}{PY[0, T]} = \frac{B[0, T]}{PY[0, T]} - \frac{D[0, T]}{PY[0, T]} + \frac{I[0, T]}{PY[0, T]} - \frac{O[0, T]}{PY[0, T]}
+\]</span></p>
+</div>
+</div>
+</div>
+<div class="callout callout-style-simple callout-none no-icon callout-titled">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-5-contents" aria-controls="callout-5" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon no-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Notation
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-5" class="callout-5-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<ul>
+<li><p><span class="math inline">\(CRNI[0, T]\)</span>: 粗自然増加率(crude rate of natural increase)</p></li>
+<li><p><span class="math inline">\(CRNM[0, T]\)</span>: 粗純移動率(crude rate of net migration)</p></li>
+</ul>
+</div>
+</div>
+</div>
+</section>
+<section id="瞬間成長率" class="level3" data-number="1.6.2">
+<h3 data-number="1.6.2" class="anchored" data-anchor-id="瞬間成長率"><span class="header-section-number">1.6.2</span> 瞬間成長率</h3>
+<p><span class="math inline">\(0\)</span>から<span class="math inline">\(T\)</span>までの代わりに、<span class="math inline">\(t\)</span>から<span class="math inline">\(t + \Delta t\)</span>までの成長率は <a href="#eq-instantaneous-growth">Equation&nbsp;3</a> に示される。</p>
+<p><span id="eq-instantaneous-growth"><span class="math display">\[
+r(t) = \lim_{\Delta t \to 0} \frac{\Delta N(t)}{N(t) \Delta t} = \frac{\frac{d N(t)}{dt}}{N(t)} = \frac{d In [N(t)]}{dt}
+\tag{3}\]</span></span></p>
+<div class="callout callout-style-simple callout-none no-icon callout-titled">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-6-contents" aria-controls="callout-6" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon no-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Notation
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-6" class="callout-6-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<ul>
+<li><span class="math inline">\(r(t)\)</span>: <span class="math inline">\(t\)</span>から<span class="math inline">\(t + dt\)</span>までの成長率</li>
+</ul>
+</div>
+</div>
+</div>
+<p><a href="#eq-instantaneous-growth">Equation&nbsp;3</a> の概念を<span class="math inline">\(0\)</span>から<span class="math inline">\(T\)</span>時点の期間に拡張することで <a href="#eq-ntincrease">Equation&nbsp;4</a> が得られる。 <a href="#eq-ntincrease">Equation&nbsp;4</a> は<span class="math inline">\(0\)</span>から<span class="math inline">\(T\)</span>までの期間における人口の変化を瞬間成長率の総和として表現する。一般に使われる用語として「指数関数的増加(exponential term)」があるが、 <a href="#eq-ntincrease">Equation&nbsp;4</a> が示すように、すべての成長は指数関数的といえる。一般的に用いられる「指数関数的成長」はマルサスでいうところの「幾何学的成長」あるいは「定常的成長」がより妥当である。もし瞬間成長率が<span class="math inline">\(0\)</span>から<span class="math inline">\(T\)</span>まで一定であれば、 <a href="#eq-ntincrease">Equation&nbsp;4</a> は<span class="math inline">\(N(T) = N(0) e^{r^{\star} \times T}\)</span>と表現できる。<span class="math inline">\(r^{\star}\)</span>は定常的成長率を示す。</p>
+<p><span id="eq-ntincrease"><span class="math display">\[
+N(T) = N(0) e^{\int^T_0 r(t) dt}
+\tag{4}\]</span></span></p>
+<div class="callout callout-style-simple callout-none no-icon callout-titled">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-7-contents" aria-controls="callout-7" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon no-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+導出
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-7" class="callout-7-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<p><span class="math inline">\(0\)</span>から<span class="math inline">\(T\)</span>までの期間における人口の変化。</p>
+<p><span class="math display">\[
+\int_{0}^{T} r(t) dt  = \int_{0}^{T} \frac{d In [N(t)]}{dt} dt = In N(T) ]^T_0 = In \left( \frac{N(T)}{N(0)} \right)
+\]</span></p>
+<p>両辺に対数を取る。</p>
+<p><span class="math display">\[
+e^{\int^T_0 r(t) dt} = \frac{N(T)}{N(0)}
+\]</span></p>
+<p>両辺に<span class="math inline">\(N(0)\)</span>をかけて、 <a href="#eq-ntincrease">Equation&nbsp;4</a> を得る。</p>
+</div>
+</div>
+</div>
+</section>
+<section id="平均年間成長率" class="level3" data-number="1.6.3">
+<h3 data-number="1.6.3" class="anchored" data-anchor-id="平均年間成長率"><span class="header-section-number">1.6.3</span> 平均年間成長率</h3>
+<p><span class="math inline">\(\int_{0}^{T} r(t) dt = In \left( \frac{N(T)}{N(0)} \right)\)</span>をTで割ることで<span class="math inline">\(0\)</span>から<span class="math inline">\(T\)</span>までの平均の瞬間成長率が得られる。</p>
+<p><span class="math display">\[
+\bar{r} [0, T] = \frac{In \left( \frac{N(T)}{N(0)} \right)}{T}
+\]</span></p>
+</section>
+<section id="倍増時間" class="level3" data-number="1.6.4">
+<h3 data-number="1.6.4" class="anchored" data-anchor-id="倍増時間"><span class="header-section-number">1.6.4</span> 倍増時間</h3>
+<p><span class="math inline">\(0\)</span>から<span class="math inline">\(T\)</span>までに人口が2倍になる平均年間成長率は0.693に一致する（<span class="math inline">\(In \left( \frac{N(T)}{N(0)} \right) = In(2) = 0.693\)</span>）。定常的成長率<span class="math inline">\(r^{\star}\)</span>では<span class="math inline">\(\frac{0.693}{r^{\star}}\)</span>となる。もし年間の定常成長率が0.03ならば、人口が2倍になる時間は<span class="math inline">\(\frac{0.693}{0.03} = 23.1\)</span>年となる。</p>
+</section>
+<section id="粗成長率と平均年間成長率の比較" class="level3" data-number="1.6.5">
+<h3 data-number="1.6.5" class="anchored" data-anchor-id="粗成長率と平均年間成長率の比較"><span class="header-section-number">1.6.5</span> 粗成長率と平均年間成長率の比較</h3>
+<p>(網羅性のために入れたので、読み飛ばしても良い)</p>
+<p><span class="math inline">\(0\)</span>から<span class="math inline">\(T\)</span>時点において、粗成長率と平均年間成長率は一致するものの、粗成長率の分母であるパーソンイヤーは成長率が増加する順序に依拠するため、成長率の分布において異なる。</p>
+<p><span class="math display">\[
+CGR[0, T] = \frac{N(T) - N(0)}{\left[ \frac{N(T) - N(0)}{r^{\star}} \right]} = r^{\star}
+\]</span></p>
+<p><span class="math display">\[
+r^{\star}[0, T] = \int^T_0 r^{\star} dt = r^{\star}
+\]</span></p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="fig/cgr_vs_aagr.png" class="img-fluid figure-img" style="width:100.0%"></p>
+<figcaption class="figure-caption">粗成長率と平均年間成長率の比較</figcaption>
+</figure>
+</div>
+</section>
+</section>
+<section id="パーソンイヤー期間の推定" class="level2" data-number="1.7">
+<h2 data-number="1.7" class="anchored" data-anchor-id="パーソンイヤー期間の推定"><span class="header-section-number">1.7</span> パーソンイヤー期間の推定</h2>
+<p>人口の増え方<span class="math inline">\(r(t)\)</span>(<span class="math inline">\(N(t)\)</span>)について知り得ない場合、我々は成長率の定常性を仮定して <a href="#eq-pyestimation">Equation&nbsp;5</a> のようにパーソンイヤーを計算する。実際に定常性が満たされれば <a href="#eq-pyestimation">Equation&nbsp;5</a> は真値と一致するが、それには<span class="math inline">\(0\)</span>時点と<span class="math inline">\(T\)</span>時点の観察が必要になる。普通は人口サイズ推定が特定の期間(1年の中ごろ)にのみ入手可能であることがままある。中ごろでの近似は人口の増え方<span class="math inline">\(N(t)\)</span>が線形であれば真のパーソンイヤーと一致する。定常成長率の総積であっても誤差は非常に小さい。ただし、パーソンイヤーを推定する時間間隔が1年以上になると誤差は大きくなる。1年中ごろに着目することは簡単でかなり正確だけれどもそれはパーソンイヤーの代替物ではなく<strong>推定値</strong>であることには留意が必要。</p>
+<p><span id="eq-pyestimation"><span class="math display">\[
+PY[0, T] = \frac{ \left[ N(T) - N(0) \right] \times T}{In \left[ \frac{N(T)}{N(0)} \right]}
+\tag{5}\]</span></span></p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="fig/midpointestimate.png" class="img-fluid figure-img" style="width:100.0%"></p>
+<figcaption class="figure-caption">中点でパーソンイヤーを計算する際の誤差</figcaption>
+</figure>
+</div>
+</section>
+<section id="コホートの概念" class="level2" data-number="1.8">
+<h2 data-number="1.8" class="anchored" data-anchor-id="コホートの概念"><span class="header-section-number">1.8</span> コホートの概念</h2>
+<p>コホートとは特定の期間に特定の人口学的イベントを経験するすべての単位の集約。つねに特定の地理的参照軸を持つ。人間だけでなく特定の移行（結婚）なども含まれる。「日本の1942年コホート」「フランスの1990年女性結婚コホート」など。もっとも頻繁に使われるコホートは出生コホート。たとえば1942年に生まれたコホートは、1952年には同じ時期に10歳になる。特定のコホートにたいして人口率を計算するうえでは、たんにパーソンイヤーと生起件数を特定のコホートに限定すれば良い。</p>
+</section>
+<section id="イベントの生起確率" class="level2" data-number="1.9">
+<h2 data-number="1.9" class="anchored" data-anchor-id="イベントの生起確率"><span class="header-section-number">1.9</span> イベントの生起確率</h2>
+<p>確率probabilityとはそれが起きた割合rateというよりもむしろ、イベントが起こるかどうかの機会chanceに言及している。たとえば、ある結婚コホートが離婚に至る確率は<span class="math inline">\(\frac{離婚数}{結婚数}\)</span>となる。(全員の)観測された離婚の頻度の代わりに相対頻度アプローチを採用することで、離婚確率を推定する。統計学でいうところの最尤推定に近い<a href="#fn2" class="footnote-ref" id="fnref2" role="doc-noteref"><sup>2</sup></a>。</p>
+<p><span class="math display">\[
+確率 = \frac{イベントの発生数}{先行するイベント(施行)の数}
+\]</span></p>
+<p>人口学において確率の表現は人口率の表現とは大きく異なる。率と異なり確率は1を超えないし、0を下回ることもない。人口それ自体は人口に含まれる関係しないかぎり確率を持たない(ある暦年の結婚件数と離婚件数を数えても確率は計算できない)。コホートと確率の概念は社会科学の縦断データとも密接に関係しており、不定形で未分化な個人を「位置付ける」ための集合レベルの測定として機能する。</p>
+<p>概念的な単純さにもかかわらず、実際のコホートの分析においては、(1)ある個人が死亡するまでの情報をすべて必要とする、(2)完全なデータを手に入れたとしても、それはかなり古いものになっているという問題が生じる。後者の問題については仮説的コホートという概念を後ほど導入して向き合う。</p>
+</section>
+</section>
+<section id="年齢固有の率と確率" class="level1" data-number="2">
+<h1 data-number="2"><span class="header-section-number">2</span> 年齢固有の率と確率</h1>
+<p>1章で説明した粗人口率は年齢によるばらつきを考慮できていない。とくに死亡や出生などでは、その年齢でのばらつきは生理学的な容量を主として反映しているし、移動の年齢による違いは社会的・経済的成長性を示している。以上の理由から、本章では年齢特有の率と確率を定義する。</p>
+<section id="期間年齢固有率" class="level2" data-number="2.1">
+<h2 data-number="2.1" class="anchored" data-anchor-id="期間年齢固有率"><span class="header-section-number">2.1</span> 期間年齢固有率</h2>
+<p><span class="math display">\[
+{}_n M_x [0, T] = \frac{0からT時点の間の、xからx+nの年齢における死亡の数}{0からT時点の間の、xからx+nの年齢において生存していたパーソンイヤーの数}
+\]</span></p>
+<div class="callout callout-style-simple callout-none no-icon callout-titled">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-8-contents" aria-controls="callout-8" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon no-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Notation
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-8" class="callout-8-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<ul>
+<li>$ _n M_x [0, T]<span class="math inline">\(: 年齢の開始時点\)</span>x<span class="math inline">\(とその区間\)</span>n<span class="math inline">\(における死亡\)</span>M$</li>
+</ul>
+</div>
+</div>
+</div>
+<p>年齢の開始時点<span class="math inline">\(x\)</span>とその区間<span class="math inline">\(n\)</span>は一般的に聞かれる完了した年数(completed year、最後の誕生日での年齢とも呼ばれる)とは異なり、小数点以下を含める正確な年数(exact year)を示す<a href="#fn3" class="footnote-ref" id="fnref3" role="doc-noteref"><sup>3</sup></a>。</p>
+<div id="fig-agespecificrate" class="quarto-figure quarto-figure-center anchored">
+<figure class="figure">
+<p><img src="fig/agespecificrate.png" class="img-fluid figure-img" style="width:100.0%"></p>
+<figcaption class="figure-caption">Figure&nbsp;2: 1992年のスウェーデンとカザフスタンの死亡率</figcaption>
+</figure>
+</div>
+<p><a href="#fig-agespecificrate">Figure&nbsp;2</a> を確認する。この図からは、CDRはスウェーデンのほうが高い一方で、<span class="math inline">\(M^\star_i\)</span>はすべての年齢でスウェーデンが低いという矛盾が生じていることが見て取れる。この矛盾はCDRを <a href="#eq-cdr_asr">Equation&nbsp;6</a> のように分解することで理解できる。 <a href="#eq-cdr_asr">Equation&nbsp;6</a> より、粗死亡率は年齢固有の死亡率の集合と人口の年齢分布の関数、すなわち人口の年齢分布による年齢固有の死亡率の重みづけ平均となる。当然、<span class="math inline">\(\Sigma^{\infty}_{x=0} {}_n C_x = 1\)</span>となる。スウェーデンは年齢固有死亡率の高い高齢者人口に死亡が集中しているため、粗死亡率が高くなる。</p>
+<p><span id="eq-cdr_asr"><span class="math display">\[
+CDR = \frac{D}{N} = \frac{\Sigma^{\infty}_{x=0} {}_n D_x}{N} = \frac{\Sigma^{\infty}_{x=0} \frac{{}_n D_x}{{}_n N_x} {}_n N_x}{N} = \Sigma^{\infty}_{x=0} \frac{{}_n D_x}{{}_n N_x} \times \frac{{}_n N_x}{N} = \Sigma^{\infty}_{x=0} {}_n M_x \times {}_n C_x
+\tag{6}\]</span></span></p>
+<div class="callout callout-style-simple callout-none no-icon callout-titled">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-9-contents" aria-controls="callout-9" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon no-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Notation
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-9" class="callout-9-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<ul>
+<li><span class="math inline">\({}_n C_x\)</span>: 任意の年齢区間<span class="math inline">\(x\)</span>から<span class="math inline">\(x+n\)</span>に属する人口の割合</li>
+</ul>
+</div>
+</div>
+</div>
+<p><a href="#eq-cdr_asr">Equation&nbsp;6</a> のような分解は人口をあらゆるサブ集団に分割するときにも適用できるが、以下の4つの理由からとくに年齢構成にとって意義がある。</p>
+<ol type="1">
+<li><p>死亡率は年齢によるばらつきを大きく示す</p></li>
+<li><p>人口集団において年齢構成は大きく異なる(たとえば、スウェーデンとカザフスタン)</p></li>
+<li><p>年齢分布それ自体が人口学的変数であり、人口の出生・死亡・移動の歴史によって規定される</p></li>
+<li><p>年齢固有の死亡と人口サイズはどちらもデータを入手できる</p></li>
+</ol>
+<p>人口のあらゆる割合はあるカテゴリに属する人口の割合で重みづけしたカテゴリ固有の割合として規定される。年齢固有率を表現するために、<span class="math inline">\(i\)</span>番目の年齢グループを示す<span class="math inline">\(i\)</span>を使うこともある。<span class="math inline">\(i\)</span>を用いた粗死亡率は<span class="math inline">\(CDR = \Sigma^{\infty}_{i=0} M_i \times C_i\)</span>と表現できる。<span class="math inline">\(i\)</span>を使う意義は等間隔でない年齢区間を示せることにある(0歳、1-4歳、5-9歳、など)。</p>
+</section>
+<section id="年齢標準化" class="level2" data-number="2.2">
+<h2 data-number="2.2" class="anchored" data-anchor-id="年齢標準化"><span class="header-section-number">2.2</span> 年齢標準化</h2>
+<p>2つの人口集団(上の例におけるスウェーデンとカザフスタン)を比較するうえでは、年齢構成の影響は除去することが望ましい。それを達成する最も直接的な方法は2つの人口集団における年齢構成が同じであると仮定すること。より一般的には年齢分布を標準化してその影響を小さくする。人口それ自体の年齢分布ではなく’標準的な’人口の年齢分布によって重みづけする方法は年齢標準化と呼ばれ、ある人口<span class="math inline">\(j\)</span>における年齢標準化粗死亡率(<span class="math inline">\(ASCDR\)</span>)は <a href="#eq-agestandardized_cdr">Equation&nbsp;7</a> で表現される。このような標準化のアプローチは死亡率以外にも(e.g., 識字率)、年齢以外でも(e.g., 出生順序)適用できる。</p>
+<p><span id="eq-agestandardized_cdr"><span class="math display">\[
+ASCDR^j = \Sigma^{\infty}_{i=1} M_i^j \times C_i^s
+\tag{7}\]</span></span></p>
+<div class="callout callout-style-simple callout-none no-icon callout-titled">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-10-contents" aria-controls="callout-10" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon no-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Notation
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-10" class="callout-10-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<ul>
+<li><span class="math inline">\(C^s_i\)</span>: 標準的として選んだ人口における<span class="math inline">\(i\)</span>番目の年齢区間に入る人口の割合、<span class="math inline">\(\Sigma^{\infty}_{i=1} C^s_i = 1.00\)</span>が成り立つ</li>
+</ul>
+</div>
+</div>
+</div>
+<p>いかなる人口(構造)を’標準的’とみなすかは、死亡率の2つの人口間での差の大きさだけでなく向きまでをも規定するものの、シンプルなルールは存在しない。だが恣意的になることはより望ましくないので、2つのルールを課す。</p>
+<ol type="a">
+<li><p>2つだけの人口を比較する場合、その平均を標準とみなす。</p></li>
+<li><p>2つより多い人口を比較する場合、その人口構造の平均や中央値に近い値を標準的として用いる。</p></li>
+</ol>
+<p>このルールは以下3つの条件が満たされるときに有用である。</p>
+<ol type="1">
+<li><p>2つの人口集団のマクロレベルの変数(率や割合など)を比較する。</p></li>
+<li><p>各人口内のサブ集団ごとに異なる値を取る。</p></li>
+<li><p>そもそも、サブ集団による人口構成が比較に及ぼす影響を最小化したい。</p></li>
+</ol>
+<p>「人口Aの年齢分布が人口Bの年齢分布だった際の人口Aの粗死亡率」だけでなく、「人口Aの年齢固有死亡率が人口Bの年齢固有死亡率だった際の人口Aの粗死亡率」にも関心があることがある(とくに<span class="math inline">\(A\)</span>に死亡率のデータがない場合)。このような関心には比較死亡比(Comparative Mortality Ratio、CMR)と呼ばれる、人口集団<span class="math inline">\(A\)</span>の実際の死亡数と人口集団<span class="math inline">\(B\)</span>の死亡率スケジュールの期待値の比をもとめて回答する。</p>
+<p><span class="math display">\[
+CMR = \frac{\Sigma_i N^A_i \times M^A_i}{\Sigma_i N^A_i \times M^B_i} = \frac{D^A}{\Sigma_i N^A_i \times M^B_i}
+\]</span></p>
+<div class="callout callout-style-simple callout-none no-icon callout-titled">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-11-contents" aria-controls="callout-11" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon no-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Notation
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-11" class="callout-11-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<ul>
+<li><p><span class="math inline">\(D^A\)</span>: <span class="math inline">\(A\)</span>における全年齢の記録された死亡数</p></li>
+<li><p><span class="math inline">\(N^A_i\)</span>: <span class="math inline">\(A\)</span>における年齢区間<span class="math inline">\(i\)</span>の人間数</p></li>
+<li><p><span class="math inline">\(M^B_i\)</span>: <span class="math inline">\(B\)</span>における年齢区間<span class="math inline">\(i\)</span>の死亡率</p></li>
+</ul>
+</div>
+</div>
+</div>
+<p>もしCMRが1より大きければ、人口集団<span class="math inline">\(A\)</span>の年齢固有死亡率が<span class="math inline">\(B\)</span>より高いことを(少なくとも1つの年齢区間においては)示す。このような人口学的方法は「間接的標準化」と呼ばれる。</p>
+</section>
+<section id="比率間の差異を分解する" class="level2" data-number="2.3">
+<h2 data-number="2.3" class="anchored" data-anchor-id="比率間の差異を分解する"><span class="header-section-number">2.3</span> 比率間の差異を分解する</h2>
+<p>類似した問いとして、「<span class="math inline">\(A\)</span>と<span class="math inline">\(B\)</span>の死亡率の差は、どの程度年齢分布によってもたらされているのか？」がある。この問いには分解の方法でアプローチできる。人口集団<span class="math inline">\(A\)</span>と<span class="math inline">\(B\)</span>の粗死亡率の差<span class="math inline">\(\Delta\)</span>は<strong>年齢構成の差異の寄与</strong>と<strong>率スケジュールの差異の寄与</strong>で分解できる。この分解は残差や交互作用項を扱わなくて良い点で恣意性が低く、望ましいアプローチである。</p>
+<div class="callout callout-style-simple callout-none no-icon callout-titled">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-12-contents" aria-controls="callout-12" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon no-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+導出
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-12" class="callout-12-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<p>はじめに、粗死亡率を年齢固有死亡率と年齢分布に分解する。 <span class="math display">\[
+\Delta = CDR^B - CDR^A = \Sigma_i C^B_i \times M^B_i - \Sigma C^A_i \times M^A_i
+\]</span></p>
+<p>それぞれの項を2で割り、人口集団<span class="math inline">\(A\)</span>(<span class="math inline">\(B\)</span>)の年齢固有死亡率と人口集団<span class="math inline">\(B\)</span>(<span class="math inline">\(A\)</span>)の年齢分布の積をくわえる。</p>
+<p><span class="math display">\[\begin{eqnarray}
+\Delta &amp;= \frac{\Sigma_i C^B_i \times M^B_i}{2} + \frac{\Sigma_i C^B_i \times M^B_i}{2} - \frac{\Sigma_i C^A_i \times M^A_i}{2} - \frac{\Sigma_i C^A_i \times M^A_i}{2} \\
+
+  &amp;+ \frac{\Sigma_i C^B_i \times M^A_i}{2} + \frac{\Sigma_i C^B_i \times M^A_i}{2} - \frac{\Sigma_i C^A_i \times M^B_i}{2} - \frac{\Sigma_i C^B_i \times M^A_i}{2}
+\end{eqnarray}\]</span></p>
+<p>8つの項を<span class="math inline">\(\Sigma_i C^B_i\)</span>と<span class="math inline">\(\Sigma_i C^A_i\)</span>、<span class="math inline">\(\Sigma_i M^B_i\)</span>と<span class="math inline">\(\Sigma_i M^A_i\)</span>でそれぞれくくる。</p>
+<p><span class="math display">\[\begin{eqnarray}
+\Delta &amp;= \Sigma_i C^B_i \times \left( \frac{M^B_i + M^A_i}{2} \right) - \Sigma_i C^A_i \times \left( \frac{M^B_i + M^A_i}{2} \right) \\
+  &amp;+ \Sigma_i M^B_i \times \left( \frac{C^B_i + C^A_i}{2} \right) - \Sigma_i M^A_i \times \left( \frac{C^B_i + C^A_i}{2} \right)
+\end{eqnarray}\]</span></p>
+<p><span class="math inline">\(\frac{M^B_i + M^A_i}{2}\)</span>と<span class="math inline">\(\frac{C^B_i + C^A_i}{2}\)</span>でそれぞれくくる。</p>
+<p><span class="math display">\[
+\Delta = \Sigma_i \left( C^B_i - C^A_i \right) \times \left( \frac{M^B_i + M^A_i}{2} \right) + \Sigma_i \left( M^B_i - M^A_i \right) \times \left( \frac{C^B_i + C^A_i}{2} \right)
+\]</span></p>
+<p>それぞれ以下のように翻訳できる。</p>
+<p><span class="math display">\[
+年齢構成の差異 \times 年齢固有死亡率の重みづけ平均 + 死亡率スケジュールの差異 \times 年齢構成の重みづけ平均
+\]</span></p>
+</div>
+</div>
+</div>
+<p>以上の方法は2集団間比較における手法である、それ以上の集団にて寄与する際にはより複雑なアプローチが求められる。やはり、死亡率や年齢以外でも適用できる。</p>
+</section>
+<section id="レクシスダイアグラム" class="level2" data-number="2.4">
+<h2 data-number="2.4" class="anchored" data-anchor-id="レクシスダイアグラム"><span class="header-section-number">2.4</span> レクシスダイアグラム</h2>
+<p>特定のコホートにイベントの生起(e.g., 死亡)を限定することで、コホートの年齢固有率を知ることができる。レクシスダイアグラムは一方の軸に年齢を、他方の軸に暦年をプロットする、コホートの暴露区分と期間の暴露区分の関係を示す図である。あるコホートの人生は45℃線で示される。イベントの発生のカウントを、年齢固有コホート率は<span class="math inline">\(A-C\)</span>の範囲に、年齢固有期間率は<span class="math inline">\(A-P\)</span>の範囲に、コホート固有期間率は<span class="math inline">\(C-P\)</span>の範囲にそれぞれ限定することが読み取れる。</p>
+<div id="fig-lexisdiagram" class="quarto-figure quarto-figure-center anchored">
+<figure class="figure">
+<p><img src="fig/lexisdiagram.png" class="img-fluid figure-img" style="width:100.0%"></p>
+<figcaption class="figure-caption">Figure&nbsp;3: レクシスダイアグラム</figcaption>
+</figure>
+</div>
+</section>
+<section id="年齢固有確率" class="level2" data-number="2.5">
+<h2 data-number="2.5" class="anchored" data-anchor-id="年齢固有確率"><span class="header-section-number">2.5</span> 年齢固有確率</h2>
+<p>率だけでなく確率も年齢固有に示すことができ、<span class="math inline">\(x\)</span>から<span class="math inline">\(x+n\)</span>までにイベントが生起する確率は慣習的に<span class="math inline">\({}_n q_x\)</span>と表現する。レクシスダイアグラムで図示できる。 <a href="#fig-agespecificprob">Figure&nbsp;5</a> を例にあげる。1995年出生コホートが0歳から1歳までに死亡する確率は<span class="math inline">\({}_1 q^{1995c}_0 = \frac{2}{6} = 0.333\)</span>である。</p>
+<div id="fig-agespecificprob" class="quarto-figure quarto-figure-center anchored">
+<figure class="figure">
+<p><img src="fig/agespecificprob.png" class="img-fluid figure-img" style="width:50.0%"></p>
+<figcaption class="figure-caption">Figure&nbsp;4: レクシスダイアグラム</figcaption>
+</figure>
+</div>
+<p>具体的な出生数とイベントの生起数を <a href="#fig-agespecificprob">Figure&nbsp;5</a> や <a href="#fig-agespecificnotation">Figure&nbsp;6</a> のように表現することができる。</p>
+<div class="quarto-layout-panel">
+<div class="quarto-layout-row quarto-layout-valign-top">
+<div class="quarto-layout-cell" style="flex-basis: 50.0%;justify-content: center;">
+<div id="fig-agespecificprob" class="quarto-figure quarto-figure-center anchored">
+<figure class="figure">
+<p><img src="fig/lexis_number.png" class="img-fluid figure-img"></p>
+<figcaption class="figure-caption">Figure&nbsp;5: 出生とイベント発生の表記</figcaption>
+</figure>
+</div>
+</div>
+<div class="quarto-layout-cell" style="flex-basis: 50.0%;justify-content: center;">
+<div id="fig-agespecificnotation" class="quarto-figure quarto-figure-center anchored">
+<figure class="figure">
+<p><img src="fig/lexis_occurance.png" class="img-fluid figure-img"></p>
+<figcaption class="figure-caption">Figure&nbsp;6: 出生とイベント発生のノテーション</figcaption>
+</figure>
+</div>
+</div>
+</div>
+</div>
+<div class="callout callout-style-simple callout-none no-icon callout-titled">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-13-contents" aria-controls="callout-13" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon no-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Notation
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-13" class="callout-13-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<ul>
+<li><p><span class="math inline">\(B_0(95)\)</span>: 1995年の出生数</p></li>
+<li><p><span class="math inline">\(B_1(95)\)</span>: 1995年に1歳の誕生日を迎えた数</p></li>
+<li><p><span class="math inline">\(B_1(96)\)</span>: 1996年に1歳の誕生日を迎えた数</p></li>
+<li><p><span class="math inline">\({}_S D_0 (95)\)</span>: 同年に0歳に達した人に対する、1995年に0歳で死亡した人の数</p></li>
+<li><p><span class="math inline">\({}_P D_0 (95)\)</span>: 前年に0歳に達した人に対する、1995年に0歳で死亡した人の数</p></li>
+<li><p><span class="math inline">\({}_P D_0 (96)\)</span>: 前年に0歳に達した人に対する、1996年に0歳で死亡した人の数</p></li>
+</ul>
+</div>
+</div>
+</div>
+<p><span class="math inline">\(Y\)</span>年<span class="math inline">\(x\)</span>歳(最後の誕生日)における分離因子(<span class="math inline">\(Y\)</span>年の間に<span class="math inline">\(x\)</span>歳に達した人に起こった、<span class="math inline">\(Y\)</span>年<span class="math inline">\(x\)</span>歳における死亡の割合)は同年の死亡と前年の死亡に分解することで求める。</p>
+<p><span class="math display">\[
+SF_x(Y) = \frac{{}_S D_x (Y)}{D_x (Y)} = \frac{{}_S D_x (Y)}{{}_S D_x (Y) + {}_P D_x (Y)}
+\]</span></p>
+</section>
+<section id="単一暦年の死亡経験にもとづいた死亡確率" class="level2" data-number="2.6">
+<h2 data-number="2.6" class="anchored" data-anchor-id="単一暦年の死亡経験にもとづいた死亡確率"><span class="header-section-number">2.6</span> 単一暦年の死亡経験にもとづいた死亡確率</h2>
+<p>ある期間の死亡にはあるコホートの同年の死亡と別のコホートの前年の死亡の2つから構成されることがわかった。単一暦年の年齢固有死亡率(たとえば、乳幼児が1歳で死亡する確率)の推定を統合して算出するためには以下のような式を求める。</p>
+<p><span class="math display">\[\begin{eqnarray}
+{}_1 q_0 &amp;= 乳幼児が出生暦年に死亡する確率 \\
+&amp; + 乳幼児が出生暦年に生存する確率 \\
+&amp; \times 乳幼児が出生暦年に生存し、1歳に到達する前かつ次の暦年に死亡する確率
+\end{eqnarray}\]</span></p>
+<p>適切な要素をあてはめる。</p>
+<p><span class="math display">\[
+{}_1 q^{Y_c}_0 = \frac{{}_S D_0 (Y)}{B_0(Y)} + \frac{B(Y) - {}_S D_0 (Y)}{B_0 (Y)} \times \frac{{}_P D_0 (Y+1)}{B_0(Y) - {}_S D_0 (Y)} = \frac{{}_S D_0(Y) + {}_P D_0 (Y+1)}{B_0 (Y)}
+\]</span></p>
+<p>合成の基本的な考え方は分子の死亡項を同じ暦年から取り出すことにある。暦年<span class="math inline">\(Y\)</span>の0歳から1歳の死亡確率は以下のように示すことができる。類似した概念に乳幼児死亡率がある。</p>
+<p><span class="math display">\[
+{}_1 q_0 (Y) = \frac{{}_S D_0 (Y)}{B_0(Y)} + \frac{B(Y) - {}_S D_0 (Y)}{B_0(Y)} \times \frac{{}_P D_0 (Y)}{B_0(Y-1) - {}_S D_0 (Y-1)}
+\]</span></p>
+</section>
+</section>
+<section id="コメント" class="level1 unnumbered unlisted">
+<h1 class="unnumbered unlisted">コメント</h1>
+<ul>
+<li><p>(当たり前だが)人口という対象を論じているので全体的に理解しやすい印象を持った(たとえば、WooldridgeのIntroductory econometricsは具体例がad hocなので、なんのために数式が展開されているのかが理解し難いところがある)。人口のサイズと構成の変化を理解したいというモチベーションがあるので、数式の(より広い含意としての)行き着く先が見えやすい。</p></li>
+<li><p>理論の話とデータの話がうまく組み合わさっていると感じた。当然毎秒の死亡や出生のデータを持っているわけではないので、よくあるデータのパターンとそれが真値をどう歪めるのか、という話があることが良い。</p></li>
+<li><p>人口集団間の関係が明示されていない部分が多少あった。たとえば流入は関心となる人口集団外の人口を所与とするので、実際の流入数は関心となる人口集団の人口に条件づけされる。人口集団の比較だけでなく、その依存関係についても言及があるとより良いと思う。</p></li>
+</ul>
+</section>
+
+
+<div id="quarto-appendix" class="default"><section id="footnotes" class="footnotes footnotes-end-of-document" role="doc-endnotes"><h2 class="anchored quarto-appendix-heading">Footnotes</h2>
+
+<ol>
+<li id="fn1"><p>たとえば、死亡を報告しないことや、移動を報告しないことに言及していると思われる。<a href="#fnref1" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn2"><p>たとえば、カゴの中からボールを10個出して、うち赤玉が2つであったとする。このとき相対確率は0.2となる。最尤推定的にいえば、この0.2という数値はほかのどの割合よりもサンプルの中で生じやすい、ということを意味する。<a href="#fnref2" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn3"><p>余談だが、年齢を30-35、35-40というふうに括るときには正確な年齢を、30-34、35-39というふうに括るときには最後の誕生日での年齢をそれぞれ指している。満年齢を尋ねている社会調査では後者を指し示すことのほうが多いと思う。<a href="#fnref3" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+</ol>
+</section></div></main>
+<!-- /main column -->
+<script id="quarto-html-after-body" type="application/javascript">
+window.document.addEventListener("DOMContentLoaded", function (event) {
+  const toggleBodyColorMode = (bsSheetEl) => {
+    const mode = bsSheetEl.getAttribute("data-mode");
+    const bodyEl = window.document.querySelector("body");
+    if (mode === "dark") {
+      bodyEl.classList.add("quarto-dark");
+      bodyEl.classList.remove("quarto-light");
+    } else {
+      bodyEl.classList.add("quarto-light");
+      bodyEl.classList.remove("quarto-dark");
+    }
+  }
+  const toggleBodyColorPrimary = () => {
+    const bsSheetEl = window.document.querySelector("link#quarto-bootstrap");
+    if (bsSheetEl) {
+      toggleBodyColorMode(bsSheetEl);
+    }
+  }
+  toggleBodyColorPrimary();  
+  const icon = "";
+  const anchorJS = new window.AnchorJS();
+  anchorJS.options = {
+    placement: 'right',
+    icon: icon
+  };
+  anchorJS.add('.anchored');
+  const isCodeAnnotation = (el) => {
+    for (const clz of el.classList) {
+      if (clz.startsWith('code-annotation-')) {                     
+        return true;
+      }
+    }
+    return false;
+  }
+  const clipboard = new window.ClipboardJS('.code-copy-button', {
+    text: function(trigger) {
+      const codeEl = trigger.previousElementSibling.cloneNode(true);
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+    }
+  });
+  clipboard.on('success', function(e) {
+    // button target
+    const button = e.trigger;
+    // don't keep focus
+    button.blur();
+    // flash "checked"
+    button.classList.add('code-copy-button-checked');
+    var currentTitle = button.getAttribute("title");
+    button.setAttribute("title", "Copied!");
+    let tooltip;
+    if (window.bootstrap) {
+      button.setAttribute("data-bs-toggle", "tooltip");
+      button.setAttribute("data-bs-placement", "left");
+      button.setAttribute("data-bs-title", "Copied!");
+      tooltip = new bootstrap.Tooltip(button, 
+        { trigger: "manual", 
+          customClass: "code-copy-button-tooltip",
+          offset: [0, -8]});
+      tooltip.show();    
+    }
+    setTimeout(function() {
+      if (tooltip) {
+        tooltip.hide();
+        button.removeAttribute("data-bs-title");
+        button.removeAttribute("data-bs-toggle");
+        button.removeAttribute("data-bs-placement");
+      }
+      button.setAttribute("title", currentTitle);
+      button.classList.remove('code-copy-button-checked');
+    }, 1000);
+    // clear code selection
+    e.clearSelection();
+  });
+  function tippyHover(el, contentFn) {
+    const config = {
+      allowHTML: true,
+      content: contentFn,
+      maxWidth: 500,
+      delay: 100,
+      arrow: false,
+      appendTo: function(el) {
+          return el.parentElement;
+      },
+      interactive: true,
+      interactiveBorder: 10,
+      theme: 'quarto',
+      placement: 'bottom-start'
+    };
+    window.tippy(el, config); 
+  }
+  const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+  for (var i=0; i<noterefs.length; i++) {
+    const ref = noterefs[i];
+    tippyHover(ref, function() {
+      // use id or data attribute instead here
+      let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+      try { href = new URL(href).hash; } catch {}
+      const id = href.replace(/^#\/?/, "");
+      const note = window.document.getElementById(id);
+      return note.innerHTML;
+    });
+  }
+      let selectedAnnoteEl;
+      const selectorForAnnotation = ( cell, annotation) => {
+        let cellAttr = 'data-code-cell="' + cell + '"';
+        let lineAttr = 'data-code-annotation="' +  annotation + '"';
+        const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+        return selector;
+      }
+      const selectCodeLines = (annoteEl) => {
+        const doc = window.document;
+        const targetCell = annoteEl.getAttribute("data-target-cell");
+        const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+        const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+        const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+        const lineIds = lines.map((line) => {
+          return targetCell + "-" + line;
+        })
+        let top = null;
+        let height = null;
+        let parent = null;
+        if (lineIds.length > 0) {
+            //compute the position of the single el (top and bottom and make a div)
+            const el = window.document.getElementById(lineIds[0]);
+            top = el.offsetTop;
+            height = el.offsetHeight;
+            parent = el.parentElement.parentElement;
+          if (lineIds.length > 1) {
+            const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+            const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+            height = bottom - top;
+          }
+          if (top !== null && height !== null && parent !== null) {
+            // cook up a div (if necessary) and position it 
+            let div = window.document.getElementById("code-annotation-line-highlight");
+            if (div === null) {
+              div = window.document.createElement("div");
+              div.setAttribute("id", "code-annotation-line-highlight");
+              div.style.position = 'absolute';
+              parent.appendChild(div);
+            }
+            div.style.top = top - 2 + "px";
+            div.style.height = height + 4 + "px";
+            let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+            if (gutterDiv === null) {
+              gutterDiv = window.document.createElement("div");
+              gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+              gutterDiv.style.position = 'absolute';
+              const codeCell = window.document.getElementById(targetCell);
+              const gutter = codeCell.querySelector('.code-annotation-gutter');
+              gutter.appendChild(gutterDiv);
+            }
+            gutterDiv.style.top = top - 2 + "px";
+            gutterDiv.style.height = height + 4 + "px";
+          }
+          selectedAnnoteEl = annoteEl;
+        }
+      };
+      const unselectCodeLines = () => {
+        const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+        elementsIds.forEach((elId) => {
+          const div = window.document.getElementById(elId);
+          if (div) {
+            div.remove();
+          }
+        });
+        selectedAnnoteEl = undefined;
+      };
+      // Attach click handler to the DT
+      const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+      for (const annoteDlNode of annoteDls) {
+        annoteDlNode.addEventListener('click', (event) => {
+          const clickedEl = event.target;
+          if (clickedEl !== selectedAnnoteEl) {
+            unselectCodeLines();
+            const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+            if (activeEl) {
+              activeEl.classList.remove('code-annotation-active');
+            }
+            selectCodeLines(clickedEl);
+            clickedEl.classList.add('code-annotation-active');
+          } else {
+            // Unselect the line
+            unselectCodeLines();
+            clickedEl.classList.remove('code-annotation-active');
+          }
+        });
+      }
+  const findCites = (el) => {
+    const parentEl = el.parentElement;
+    if (parentEl) {
+      const cites = parentEl.dataset.cites;
+      if (cites) {
+        return {
+          el,
+          cites: cites.split(' ')
+        };
+      } else {
+        return findCites(el.parentElement)
+      }
+    } else {
+      return undefined;
+    }
+  };
+  var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+  for (var i=0; i<bibliorefs.length; i++) {
+    const ref = bibliorefs[i];
+    const citeInfo = findCites(ref);
+    if (citeInfo) {
+      tippyHover(citeInfo.el, function() {
+        var popup = window.document.createElement('div');
+        citeInfo.cites.forEach(function(cite) {
+          var citeDiv = window.document.createElement('div');
+          citeDiv.classList.add('hanging-indent');
+          citeDiv.classList.add('csl-entry');
+          var biblioDiv = window.document.getElementById('ref-' + cite);
+          if (biblioDiv) {
+            citeDiv.innerHTML = biblioDiv.innerHTML;
+          }
+          popup.appendChild(citeDiv);
+        });
+        return popup.innerHTML;
+      });
+    }
+  }
+});
+</script>
+</div> <!-- /content -->
+
+
+
+</body></html>
