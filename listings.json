@@ -2,6 +2,7 @@
   {
     "listing": "/research/index.html",
     "items": [
+      "/research/jsei_work/index.html",
       "/research/gapclose/index.html",
       "/research/oas/index.html",
       "/research/skilltraj/index.html",
@@ -13,6 +14,7 @@
   {
     "listing": "/notes/index.html",
     "items": [
+      "/notes/dag_sociology/index.html",
       "/notes/onetstandarization/index.html",
       "/notes/bell2019/index.html"
     ]
