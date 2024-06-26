@@ -1,0 +1,244 @@
+
+@article{Athey.2016zq5, 
+year = {2016}, 
+keywords = {heterogeneous treatment effect,causal inference}, 
+title = {{Recursive partitioning for heterogeneous causal effects}}, 
+author = {Athey, Susan and Imbens, Guido}, 
+journal = {Proceedings of the National Academy of Sciences}, 
+issn = {0027-8424}, 
+doi = {10.1073/pnas.1510489113}, 
+pmid = {27382149}, 
+pmcid = {PMC4941430}, 
+eprint = {1504.01132}, 
+abstract = {{In this paper we propose methods for estimating heterogeneity in causal effects in experimental and observational studies and for conducting hypothesis tests about the magnitude of differences in treatment effects across subsets of the population. We provide a data-driven approach to partition the data into subpopulations that differ in the magnitude of their treatment effects. The approach enables the construction of valid confidence intervals for treatment effects, even with many covariates relative to the sample size, and without “sparsity” assumptions. We propose an “honest” approach to estimation, whereby one sample is used to construct the partition and another to estimate treatment effects for each subpopulation. Our approach builds on regression tree methods, modified to optimize for goodness of fit in treatment effects and to account for honest estimation. Our model selection criterion anticipates that bias will be eliminated by honest estimation and also accounts for the effect of making additional splits on the variance of treatment effect estimates within each subpopulation. We address the challenge that the “ground truth” for a causal effect is not observed for any individual unit, so that standard approaches to cross-validation must be modified. Through a simulation study, we show that for our preferred method honest estimation results in nominal coverage for 90\% confidence intervals, whereas coverage ranges between 74\% and 84\% for nonhonest approaches. Honest estimation requires estimating the model with a smaller sample size; the cost in terms of mean squared error of treatment effects for our preferred method ranges between 7–22\%.}}, 
+pages = {7353--7360}, 
+number = {27}, 
+volume = {113}, 
+note = {本論文では、実験・観察研究における因果効果の不均一性を推定し、母集団の部分集合間の治療効果の違いの大きさに関する仮説検定を実施するための方法を提案する。治療効果の大きさが異なる部分集団にデータを分割するためのデータ駆動型アプローチを提供する。このアプローチにより、標本サイズに比して共変量が多くても、また「スパース性」の仮定がなくても、治療効果に対する有効な信頼区間を構築することが可能になる。我々は、1つの標本が分割を構築するために使用され、もう1つの標本が各サブ集団の治療効果を推定するために使用される、推定への "正直な "アプローチを提案する。このアプローチは、治療効果の適合度を最適化し、正直な推定を考慮するように修正された回帰木法に基づくものである。我々のモデル選択基準は、正直な推定によってバイアスが除去されることを予期し、また、各サブ集団内の治療効果推定値の分散に対する追加分割の効果を説明する。我々は、因果効果の「グランドトゥルース」が個々のユニットで観測されないという課題に取り組み、クロスバリデーションへの標準的なアプローチを修正する必要がある。シミュレーション研究を通じて、我々の好ましい方法である誠実な推定では、90\%の信頼区間に対する公称カバレッジが得られるが、誠実でないアプローチでは、カバレッジは74\%から84\%であることを示す。正直な推定では、より小さいサンプルサイズでモデルを推定することが必要であり、我々の好ましい方法では、治療効果の平均2乗誤差に換算したコストは7-22％の間である。}, 
+local-url = {file://localhost/Volumes/HD-ADU3/Papers%20Library/Athey_2016_Recursive%20partitioning%20for%20heterogeneous%20causal%20effects_Proceedings%20of%20the%20National%20Academy%20of%20Sciences_2.pdf}
+}
+@article{Hu.2022, 
+year = {2023}, 
+keywords = {causal forest,causal inference,heterogeneous treatment effect,gam,machine learning}, 
+title = {{Heterogeneous treatment effects analysis for social scientists: A review}}, 
+author = {Hu, Anning}, 
+journal = {Social Science Research}, 
+issn = {0049-089X}, 
+doi = {10.1016/j.ssresearch.2022.102810}, 
+pmid = {36470639}, 
+abstract = {{Social scientists have long been interested in the varying responses to a specific intervention, motivating the enterprise of heterogeneous treatment effects (HTE) analysis. Over the past five decades, the rapid development of HTE methods, from conventional multiplicative interactions in linear models to explorations based on machine learning techniques, has been witnessed. This article presents a systematic review of major HTE methods, including multiplicative interaction modeling, generalized additive modeling, propensity-score-based methods, marginal treatment effect, separate LASSO constraints, causal trees, causal forests, Bayesian additive regression trees, and meta-learners (i.e., the S-learner, T-learner, X-learner, and R-learner). These methods, as described roughly in a chronological order to emphasize methodological developments, are addressed to highlight their respective strengths and limitations. Following an illustrative example, this article reflects on future methodological developments.}}, 
+pages = {102810}, 
+volume = {109}, 
+note = {先行研究確認済み ----Title----
+社会科学者のための異種混合治療効果分析： レビュー
+
+----Abstract----
+社会科学者は長い間、特定の介入に対する様々な反応に関心を持ち、異質な治療効果（Heterogeneous Treatment Effect：HTE）分析という事業を動機づけてきた。過去50年の間に、線形モデルにおける従来の乗法的相互作用から機械学習技術に基づく探索まで、HTE手法の急速な発展が見られた。本稿では、乗法的相互作用モデリング、一般化加法モデリング、傾向スコアに基づく手法、限界治療効果、分離LASSO制約、因果の木、因果の森、ベイズ加法回帰木、メタラーナー（すなわち、S-ラーナー、T-ラーナー、X-ラーナー、R-ラーナー）を含む主要なHTE手法の系統的レビューを行う。これらの方法は、方法論的発展を強調するために、大まかに年代順に説明され、それぞれの長所と限界を強調するために取り上げられる。例示的な例に続いて、本稿は今後の方法論的発展について考察する。
+
+----Content----
+(1)線形モデルまたはそのノンパラメトリック拡張によって推定されるHTE、(2)傾向スコア（または治療抵抗性）を中心とするHTE、(3)既存のまたは修正された機械学習（ML）アルゴリズムを導入するHTE、(4)アルゴリズムにとらわれないHTE。その中で、2つの文化が強調されている。最初の2つは、治療効果のモデレーターが理論的プライアによって決定されることが多いという意味で確証的であり、他の2つは、HTEがデータマイニングの方法で推定または予測されることから探索的である。
+
+-
+
+確認的文化に関しては、線形モデルにおける乗法的交互作用、一般化加法モデリング（Hastie and Tibshirani 2017）、傾向スコアに基づく手法（Brand and Simon Thomas., 2013; Xie et al. 2012）、および限界治療効果（Heckman and Vytlacil 2007a, 2007b）を検討する。
+
+-
+
+探索的文化に関しては、分離最小絶対縮小・選択演算子（LASSO）制約（Imai and Ratkovic 2013）、因果木（Athey and Guido, 2016）、因果森（Wager and Athey 2018）、ベイズ加法回帰木（BART）（Chipman et al. 2010）、および一連のメタ学習器（Künzel et al.） メタ学習器は、もともと回帰や分類のために構築されたML手法（ベース学習器）の出力を組み合わせることで、CATEを予測するために利用できるため、HTEに関連している（Jacob 2021）。
+
+-
+
+HTEは、被治療者の治療効果(TT)と未治療者の治療効果(TUT)の相対的な関係に関して記述することができる(Brand and Simon Thomas., 2013; Morgan and Todd 2008)。TT＞TUTの場合、HTEは正の選択のパターンを示し、治療効果が治療に選択されやすい人ほど大きくなる。TT＜TUTの場合、HTEは負の選択のパターンを示し、治療効果が治療に選択されにくい人ほど強くなる。
+
+-
+
+MTEでは、治療効果は治療のマージンで検討される。マージンは、治療に対する抵抗性を表す潜在変数の分位数として定義できる。言い換えれば、MTEは、治療するかしないかに無関心な人々に対する治療効果を反映する。
+
+-
+
+Atheyら(2019)が提案する因果木モデルは、Yの葉内分散を最小化することを追求する代わりに、各葉内の推定治療効果の分散が小さく、葉間変動が大きくなるようにデータを分割する。明らかに、前者は治療効果推定の正確さ（モデルの適合度）に関係し、後者はHTEを反映している。
+
+-
+
+因果ツリーモデルを使用する場合の1つの潜在的な懸念は、ツリーモデルの全体的なパフォーマンスと同様に、後続の分割を考慮することなく、各分割がリーフ間の治療効果を最もよく区別する共変量のみを考慮するという意味で、ツリー分割のプロセスが貪欲であるということです。この場合、1つの木は最適でない可能性があり、異なる分割を行った方が全体的な予測力が向上する可能性がある。この懸念は、因果の森という手法に私たちを導く。簡単に言えば、因果の森は樹木のバッチで構成され、それらの出力を平均することで、最良の葉固有のHTEが計算される。
+
+-
+
+因果フォレストのもう1つの利点は、共変量の重要性が、サブサンプル間での相対的な使用頻度を観察することによって決定できることである。したがって、より重要な共変量は、CATE を予測するときにより頻繁に使用される。
+
+-
+
+BARTは、GAM（Chipman et al. 2010; Green and Kern 2012; 系統的レビューについては、Hill et al.） 前述したように、GAMは、共変量と結果の間の関係の線形性の制限を、平滑化を使って緩和する。そのようなスムーザーの1つが木モデルである。しかし，加法回帰木を構築するために木モデルを直接適用することには限界がある．正則化がないと，研究者は，最終的な集計結果を支配する1つまたは限られた数の非常に複雑な木モデルを構築したくなるかもしれない．この点、BARTは、各樹木が弱い学習者であることを保証するためにベイズ・アプローチを使うことによって、この懸念に対処します。
+
+-
+
+2つの注意点がある。第一に、実践的な研究者にとって、特定の手法と特定の実質的な研究課題を対応させることは難しい。図示されているように、この論文で検討された異なる手法が、同じ実証例で使用されることがある。基本的に、これらの方法はすべて、治療と他の共変量との間の相互作用を調べるものであり、主な違いは、「他の変数」が何を指すかにある。研究課題が治療を受ける可能性によるHTEに関するものであれば、傾向スコアに基づく方法がより直接的に適用可能であり、研究課題が探索的なものであれば、アルゴリズム駆動法やアルゴリズム不可知論的方法が、最もデータに敏感な治療と他の共変量との間の相互作用を明らかにするだろう。第二に、HTE手法がどんなに洗練されているように見えても、無知性や共通支持といった因果推論のための基本的な前提条件は常にチェックし、満たすべきであり、必要であれば感度分析を行うべきであることを再確認したい。このステップは、現在のML法の適用において見落とされることがあるが、共変量の数が多いからといって、自動的にこれらの因果推論の前提が満たされるわけではないので、避けるべきである。
+
+----Comment----
+
+}, 
+local-url = {file://localhost/Volumes/HD-ADU3/Papers%20Library/Hu_2023_Heterogeneous%20treatment%20effects%20analysis%20for%20social%20scientists-%20A%20review_Social%20Science%20Research.pdf}
+}
+@article{Künzel.2019, 
+year = {2019}, 
+keywords = {heterogeneous treatment effect,machine learning,metalearner}, 
+title = {{Metalearners for estimating heterogeneous treatment effects using machine learning}}, 
+author = {Künzel, Sören R. and Sekhon, Jasjeet S. and Bickel, Peter J. and Yu, Bin}, 
+journal = {Proceedings of the National Academy of Sciences}, 
+issn = {0027-8424}, 
+doi = {10.1073/pnas.1804597116}, 
+pmid = {30770453}, 
+pmcid = {PMC6410831}, 
+eprint = {1706.03461}, 
+abstract = {{There is growing interest in estimating and analyzing heterogeneous treatment effects in experimental and observational studies. We describe a number of metaalgorithms that can take advantage of any supervised learning or regression method in machine learning and statistics to estimate the conditional average treatment effect (CATE) function. Metaalgorithms build on base algorithms—such as random forests (RFs), Bayesian additive regression trees (BARTs), or neural networks—to estimate the CATE, a function that the base algorithms are not designed to estimate directly. We introduce a metaalgorithm, the X-learner, that is provably efficient when the number of units in one treatment group is much larger than in the other and can exploit structural properties of the CATE function. For example, if the CATE function is linear and the response functions in treatment and control are Lipschitz-continuous, the X-learner can still achieve the parametric rate under regularity conditions. We then introduce versions of the X-learner that use RF and BART as base learners. In extensive simulation studies, the X-learner performs favorably, although none of the metalearners is uniformly the best. In two persuasion field experiments from political science, we demonstrate how our X-learner can be used to target treatment regimes and to shed light on underlying mechanisms. A software package is provided that implements our methods.}}, 
+pages = {4156--4165}, 
+number = {10}, 
+volume = {116}, 
+note = {先行研究未確認 ----Title----
+機械学習を用いた異質な治療効果推定のためのメタリアーナ
+
+----Abstract----
+実験・観察研究における異種遺伝子治療効果の推定・分析への関心が高まっている。本論文では、条件付き平均年齢治療効果（CATE）関数を推定するために、機械学習や統計学における教師あり学習や回帰手法の利点を活用できるメタアルゴリズムについて述べる。メタアルゴリズムは、ランダムフォレスト(RF)、ベイズ加法回帰木(BART)、またはニューラルネットワークなどの基本アルゴリズムの上に構築され、基本アルゴリズムが直接推定するように設計されていない関数であるCATEを推定する。このメタアルゴリズムは、一方の治療群のユニット数が他方の治療群のユニット数よりはるかに多く、CATE関数の構造的特性を利用できる場合に、証明可能なほど効率的である。例えば、CATE関数が線形であり、治療とコントロールの応答関数がリプシッツ連続である場合、X-learnerは規則性条件下でパラメトリック率を達成することができる。Wethenは、RFとBARTを基本学習器とするX-learnerのバージョンを紹介する。広範なシミュレーション研究において、X学習器は良好な性能を示したが、どの金属学習器も一概に最良とは言えない。政治科学における2つの説得実験において、我々のX-learnerが、どのように治療レジームをターゲットとし、基礎となるメカニズムに光を当てるために使用できるかを実証する。我々の方法を実装したソフトウェアパッケージを提供する。
+
+----Content----
+異質な治療効果を推定するための最も一般的なメタアルゴリズムは、2つのステップを踏む。第1に、いわゆるベース学習器を用いて、統制下のユニットと治療下のユニットについて別々に結果の条件付き期待値を推定する。第2に、これらの推定値の差をとる。このアプローチは、基本学習器が線形回帰法(3)や樹木ベース法(4)の場合に分析されている。したがって，反応関数を別々に推定する一般的なメカニズムを "T-learner "と呼ぶことにする。"T "は "two "の略である。
+
+-
+
+T-learner と密接に関連するのは，治療指標に特別な役割を与えずに，すべての特徴と治療指標を用いて結果を推定するという考え方である．
+
+-
+
+その代わりに、治療レジームを個別化し、因果メカニズムをよりよく理解するために、条件付きATE（CATE）を推定しようとすることが多い。我々は、X-learnerと呼ばれる推定量を導入し、統一されたmetalearnerの枠組みの中で、この推定量と他の多くのCATE推定量を特徴付ける。その性能を、広範なシミュレーション、理論、および政治学における無作為化実地実験の2つのデータセットを用いて比較する。
+
+-
+
+個人治療効果（ITE）を直接観測できたとする。そして、ITEの差を共変量に回帰することで、CATE関数を推定することができる。CATE関数に関する構造的知識（例えば，線形性，スパース性，滑らかさ）は，CATEのための特定の回帰推定量を選ぶか，これらの構造的特徴を学習できる適応推定量を使うことによって，考慮に入れることができる．
+
+-
+
+観測データをD = (Yi , Xi , Wi )1≤i≤N とし，Yi = Yi (Wi )とする．Dの分布はPで指定される。
+
+-
+
+X-learnerはCATEの他の推定量に対して2つの重要な利点がある。第一に、CATEのスパース性や平滑性などの構造的特性に証明的に適応できる。これは、CATEがゼロであるか、ほぼ線形であることが多いので、特に有用である(9, 10)。第2に、一方の治療群（通常は対照群）のユニット数が他方の治療群よりはるかに多い場合に、特に効果的である。これは、（対照）アウトカムや共変量が、行政機関、電子カルテシステム、オンラインプラットフォームなどで収集されたデータを用いることで容易に得られるためである。
+
+-
+
+その代わりに，τ (x ) := E [D|X = x ]= E [Y (1) - Y (0)|X = x ]として定義されるCATE関数を推定し，CATEの最良推定量は，平均二乗誤差（MSE）の点で，ITEの最良推定量でもあることに注意する。
+
+-
+
+最後の式の第 1 項に影響を与えることはできないので、i の ITE の MSE を最小化する推定量は、xi での CATE の MSE も最小化する。
+
+-
+
+TラーナーとXラーナーの違いを直感的に理解しよう。T-ラーナーは、CATEを推定する問題を、µ0とµ1を別々に推定する2つのサブ問題に分割する。
+
+-
+
+一方、X-learnerは、2つの推定量τˆ0とτˆ1の局所加重平均と見なすことができる（式9）。ここではτˆ1を取り上げる。これは，m -aµ の割合を達成する管理下のアウトカムの推定量と，直感的には n -aτ の割合を達成するはずの帰属された治療効果の推定量からなる．
+
+----Comment----
+}, 
+local-url = {file://localhost/Volumes/HD-ADU3/Papers%20Library/Künzel_2019_Metalearners%20for%20estimating%20heterogeneous%20treatment%20effects%20using%20machine%20learning_Proceedings%20of%20the%20National%20Academy%20of%20Sciences.pdf}
+}
+
+
+@article{Lundberg.2021, 
+year = {2021}, 
+keywords = {causal inference,estimand,quantitative method}, 
+title = {{What Is Your Estimand? Defining the Target Quantity Connects Statistical Evidence to Theory}}, 
+author = {Lundberg, Ian and Johnson, Rebecca and Stewart, Brandon M.}, 
+journal = {American Sociological Review}, 
+issn = {0003-1224}, 
+doi = {10.1177/00031224211004187}, 
+abstract = {{We make only one point in this article. Every quantitative study must be able to answer the question: what is your estimand? The estimand is the target quantity—the purpose of the statistical analysis. Much attention is already placed on how to do estimation; a similar degree of care should be given to defining the thing we are estimating. We advocate that authors state the central quantity of each analysis—the theoretical estimand—in precise terms that exist outside of any statistical model. In our framework, researchers do three things: (1) set a theoretical estimand, clearly connecting this quantity to theory; (2) link to an empirical estimand, which is informative about the theoretical estimand under some identification assumptions; and (3) learn from data. Adding precise estimands to research practice expands the space of theoretical questions, clarifies how evidence can speak to those questions, and unlocks new tools for estimation. By grounding all three steps in a precise statement of the target quantity, our framework connects statistical evidence to theory.}}, 
+pages = {532--565}, 
+number = {3}, 
+volume = {86}, 
+note = {----Title---- あなたの推定値は何ですか？統計的根拠と理論を結びつける目標数量の定義
+
+----Abstract----
+この記事では1つのポイントだけを紹介します。すべての定量的研究は、「推定量は何か」という質問に答えられなければなりません。 エスティマンドとは、統計分析の目的となる目標量のことです。推定の方法にはすでに多くの注意が払われていますが，推定対象の定義にも同様の注意が払われるべきです。 私たちは、著者が各分析の中心となる量-理論的な推定値-を、統計モデルの外に存在する正確な言葉で述べることを提唱します。私たちのフレームワークでは、研究者は次の3つのことを行います。(1)理論的な推定量を設定し、この量を理論に明確に結びつける。(2)経験的な推定量に結びつけ、これはある識別仮定の下で理論的な推定量について情報を提供する。研究の実践に正確な推定値を加えることで、理論的な疑問の余地が広がり、それらの疑問に対して証拠がどのように語りかけることができるかが明確になり、推定のための新たなツールが使えるようになります。3つのステップすべてを対象量の正確な記述に基づいて行うことで、我々のフレームワークは統計的証拠を理論に結びつけます。
+
+----Content----
+方法論的なアプローチは同語反復的になります。つまり、推定すべきものが統計モデルの中で定義されると、同じ目的を達成することができる、より幅広いクラスのモデルの生産的な検討が遮断されてしまうのです。
+
+推定値とは？estimandとは調査対象のことであり、推論を導くためにデータを集めた正確な量のことである。
+
+私たちのフレームワークは、現在の定量的調査の主流である「回帰係数に関する仮説」とは対照的です。
+
+研究目標が特定のモデルの係数である場合、あなたはそのモデルにコミットすることになり、目標を達成するために他のアプローチを考えることができなくなります。
+
+理論的な推定値と経験的な推定値の違いは微妙ですが、重要です。前者には反事実のような観察不可能な量が含まれることがありますが、後者には観察可能なデータしか含まれません。
+
+理論の範囲はもはや、他のすべてを一定とした場合の2つの変数間の条件付き関連性に対する最良の線形近似を含む質問の空間に縛られていない
+
+理論的な推定値は2つの要素で構成されています。
+1つ目は単位固有の量で、実現結果（人iが雇用されているかどうか）、潜在的結果（職業訓練を受ければ人iが雇用されるかどうか）、あるいは潜在的結果の差（人iの雇用に対する職業訓練の効果）などである。
+理論的な推定値の選択には、理論と目標に関する実質的な議論が必要であり、経験的な推定値の選択には、未観測データに関する概念的な議論が必要である。
+研究論文では、豊かな理論のページの後に、データに適用した手順のページが続き、両者の関連性が曖昧になっていることがよくあります。
+理論的な推定値の第二の要素は、対象となる人口です。誰に対して、あるいは何に対して、その単位固有の量を集約するのか。
+統計モデルの外に存在する理論的推定値を示すためには、推定または測定しようとしているものを定義しなければなりません（Katz, King, and Rosenblatt 2020）。
+
+俗に言う「中庸」という言葉は、観察型デザインとPager (2003)デザインの両方の研究目標を表すことができますが、2つの推定値の意味は異なります。
+
+実験において、対象となる人口は広く認識されている問題である。例えば、Pager(2003:965)は、"オーディット研究デザインの重要な制限の一つは、単一の都市圏に集中していることである "と明確に指摘しています。
+理論的な推定値は、いかなる統計モデルの外にも存在し、複雑な研究課題を正確にするために私たちを解放してくれます。記述的推定値は、人口の一部がすべての調査を拒否したり、行政記録から構造的に欠落していたりしても、記載することができます。
+実験やIVのように、フリーランチはありません。対象者の記述は、著者が論文のページに困難さを記載し、それにどのように対処するかを明確にする機会となります。
+
+本フレームワークの第2ステップでは、理論的な推定値を経験的な推定値に結びつけます。
+
+対象集団を設定することで、著者はこの緊張関係を直接的に回避することができます。つまり、特定した部分集団が一般集団について情報を提供するものであると主張したり、それ自体が理論的に重要であると主張したりすることができるのです。
+
+私たちは、研究目標（理論的な仮定）と統計分析の具体的な対象（経験的な推定）の両方を明確に示すことで、より広範な質問において同定の仮定が必要であることを明確にすることができると主張します。
+
+もし著者が、ユニット固有の量についての推論を導き出そうとするf fユニットの母集団を述べれば、理論と証拠の間のリンクは大幅に改善されるだろう。
+
+米国の死亡率と、米国の年齢分布で集計したメキシコ人の死亡率との比較（Preston, Heuveline, and Guillot 2000）。この時点で、少なくとも2つの可能な理論的推定値がある。
+
+一つは、米国の死亡率と米国の年齢分布に集約されたメキシコの死亡率との間の記述的な格差である。メキシコは米国のような年齢分布ではないので、なぜメキシコ人の再加重を気にするのか。
+
+一つの理由は、社会学的な調査の対象が、表面上は記述的なサンプル量であるように見え、それはより弱い仮定のもとで有効であるかもしれないということです。しかし、記述的な経験的規則性や様式化された事実（Hirschman 2016）と思われる結果は、しばしば識別のための仮定の下でのみ理論的な意味を持ちます。
+
+第2の理論的推定値は、米国の死亡率と、メキシコに移住させる介入を行った場合に米国の個人が経験するであろう反事実上の死亡率との間の因果関係の差である。これにより、米国の年齢分布を集計する理由が明確になります。
+
+これらの例は、対象となる数量が一見して因果関係がないように見えても、理論的な推定量、経験的な推定量、そして両者が等しくなるような同定の仮定を述べる必要があることを強調しています。理論的推定量を正確に示すことで、その推定量を特定するための仮定を知ることができます。
+
+人口統計学者が目標を明確に因果関係のある言葉で表現することはほとんどないが、「反実例」の人口では「何が起こるか」を議論することはあるだろう。このような明示的な記述がなければ、目標は不明確です。
+
+社会学者も同様の問題を抱えており、例えば、KitagawaBlinder-Oaxaca分解（Kitagawa 1955）やその関連手法を用いて、共変量が異なる値をとる反事実上の集団で何が起こるかを議論しています。
+
+理論を更新するために記述を使用する際の鍵は、理論を世界についての暗示に変換することです。
+
+一般化された線形モデルは、量的社会学にお ける主要な推定ツールであるが、多くの社会 学者は、これらのモデルの関数形の仮定が完全で はないことを認めている。
+
+モデルのパラメータを推定することを考えるのではなく、推定アルゴリズムを、経験的な推定量に現れる未知の成分（例えば、条件付き平均）を推定するツールとして考えなければならない。
+
+理論的な推定値と経験的な推定値の間には、概念的な議論が中心となりますが、推定戦略の選択は主にデータに基づいて行われます。
+
+経験的な推定量を示すことで、モデル選択の指標を改善する機会がさらに増える。
+
+その場合、低分散の推定値が得られますが、それは疑わしい仮定の下でのみです。理論だけで線形または二次関数形を擁護することは困難です。このように、推定量の選択には経験的な証拠が非常に有効なのです。
+
+社会科学の目標のために機械学習ツールを修正するには、その目標を正確に特定する必要があります。
+
+むしろ、研究目標を正確に示すことで、最適な経験的近似値についての推論を始めることができます。
+
+層化推定量の使用は、推定の仮定を弱めますが、同定の仮定を弱めることはできません。
+
+インタラクティブなパラメトリックモデルと柔軟な機械学習アプローチは、社会科学に多くの貢献をしています。
+
+要約すると、私たちが提案する研究フレームワークには、3つの重要な選択があります。
+(1) 理論的な推定対象を選択し、その一般的な理論との関係を守る
+(2) 一連の同定仮定によって理論的推定値にリンクさせることができる経験的推定値を選択する。
+(3) データから経験的推定量を学習するための推定戦略を選択する。
+
+我々の主張は、エスティマントにもっと注意を払うことで、実質的な主張に革命を起こし、方法論の指針を再構築することができるということです。 
+
+----Comment----
+
+}, 
+local-url = {file://localhost/Volumes/HD-ADU3/Papers%20Library/Lundberg_2021_What%20Is%20Your%20Estimand-%20Defining%20the%20Target%20Quantity%20Connects%20Statistical%20Evidence%20to%20Theory_American%20Sociological%20Review_1.pdf}
+}
