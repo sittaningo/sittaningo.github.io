@@ -2,17 +2,10 @@
 title: 人口学勉強会購読資料
 author:
   - name: Shingo Nitta
-    affiliations:
-      - University of Tokyo
 date: today
 format: html
 number-sections: true
 number-depth: 3
-# format:
-#   docx:
-#     number-sections: true
-#     highlight-style: github
-#     reference-doc: custom-reference-doc.docx
 execute: 
   echo: false
 # bibliography: references.bib
@@ -74,7 +67,7 @@ $$
 
 パーソンイヤーは人口学にとって中心的な概念。出生から死亡までの間に個人は関心となるイベント$\theta_i$に曝露される。定義された集団$G$にたいして人生線は以下の通りに示される。
 
-![集団$G$の人生線(life-line)](fig/lifeline_group.png)
+![集団$G$の人生線(life-line)<br>Source: Preston(2000) 4頁より引用](fig/lifeline_group.png)
 
 集団$G$における率は下記式の通り。
 
@@ -103,7 +96,7 @@ $$
 
 0からT時点の発生リスクへの曝露のパーソンイヤーは @fig-pyrate のように示される。ある個人が0からTの間にずっと観察されれば1を取り、1クォーターだけ観察されれば$\frac{1}{4}$を取る。aのように同じ個人を複数時点で観察してパーソンイヤーを算出する方法(個人からみる)と、bのように同じ時点で個人数を観察してパーソンイヤーを算出する方法(時点からみる)がある。
 
-![0からT時点のパーソンイヤーの観察方法](fig/py_demonstration.png){#fig-pyrate}
+![0からT時点のパーソンイヤーの観察方法<br>Source: Preston(2000) Figure1.1より引用](fig/py_demonstration.png){#fig-pyrate}
 
 ## 人口学における主な期間率
 
@@ -164,9 +157,6 @@ $$
 
 
 :::
-
-
-
 
 :::{.callout collapse="true"}
 ## Notation
@@ -245,7 +235,7 @@ $$
 r^{\star}[0, T] = \int^T_0 r^{\star} dt = r^{\star}
 $$
 
-![粗成長率と平均年間成長率の比較](fig/cgr_vs_aagr.png){width=100%}
+![粗成長率と平均年間成長率の比較<br>Source: Preston(2000) Figure1.2より引用](fig/cgr_vs_aagr.png){width=100%}
 
 ## パーソンイヤー期間の推定
 
@@ -255,7 +245,7 @@ $$
 PY[0, T] = \frac{ \left[ N(T) - N(0) \right] \times T}{In \left[ \frac{N(T)}{N(0)} \right]}
 $$ {#eq-pyestimation}
 
-![中点でパーソンイヤーを計算する際の誤差](fig/midpointestimate.png){width=100%}
+![中点でパーソンイヤーを計算する際の誤差<br>Source: Preston(2000) Figure1.3より引用](fig/midpointestimate.png){width=100%}
 
 ## コホートの概念
 
@@ -297,7 +287,7 @@ $$
 
 [^3]: 余談だが、年齢を30-35、35-40というふうに括るときには正確な年齢を、30-34、35-39というふうに括るときには最後の誕生日での年齢をそれぞれ指している。満年齢を尋ねている社会調査では後者を指し示すことのほうが多いと思う。
 
- ![1992年のスウェーデンとカザフスタンの死亡率](fig/agespecificrate.png){width=100% #fig-agespecificrate}
+ ![1992年のスウェーデンとカザフスタンの死亡率<br>Source: Preston(2000) Table2.1より引用](fig/agespecificrate.png){width=100% #fig-agespecificrate}
 
 @fig-agespecificrate を確認する。この図からは、CDRはスウェーデンのほうが高い一方で、$M^\star_i$はすべての年齢でスウェーデンが低いという矛盾が生じていることが見て取れる。この矛盾はCDRを @eq-cdr_asr のように分解することで理解できる。 @eq-cdr_asr より、粗死亡率は年齢固有の死亡率の集合と人口の年齢分布の関数、すなわち人口の年齢分布による年齢固有の死亡率の重みづけ平均となる。当然、$\Sigma^{\infty}_{x=0} {}_n C_x = 1$となる。スウェーデンは年齢固有死亡率の高い高齢者人口に死亡が集中しているため、粗死亡率が高くなる。
 
@@ -419,21 +409,21 @@ $$
 
 特定のコホートにイベントの生起(e.g., 死亡)を限定することで、コホートの年齢固有率を知ることができる。レクシスダイアグラムは一方の軸に年齢を、他方の軸に暦年をプロットする、コホートの暴露区分と期間の暴露区分の関係を示す図である。あるコホートの人生は45℃線で示される。イベントの発生のカウントを、年齢固有コホート率は$A-C$の範囲に、年齢固有期間率は$A-P$の範囲に、コホート固有期間率は$C-P$の範囲にそれぞれ限定することが読み取れる。
 
-![レクシスダイアグラム](fig/lexisdiagram.png){width=100% #fig-lexisdiagram}
+![レクシスダイアグラム<br>Source: Preston(2000) Figure2.1より引用](fig/lexisdiagram.png){width=100% #fig-lexisdiagram}
 
 ## 年齢固有確率
 
 率だけでなく確率も年齢固有に示すことができ、$x$から$x+n$までにイベントが生起する確率は慣習的に${}_n q_x$と表現する。レクシスダイアグラムで図示できる。 @fig-agespecificprob を例にあげる。1995年出生コホートが0歳から1歳までに死亡する確率は${}_1 q^{1995c}_0 = \frac{2}{6} = 0.333$である。
 
-![レクシスダイアグラム](fig/agespecificprob.png){width=50% #fig-agespecificprob}
+![レクシスダイアグラム<br>Source: Preston(2000) Figure2.2aより引用](fig/agespecificprob.png){width=50% #fig-agespecificprob}
 
 具体的な出生数とイベントの生起数を @fig-agespecificprob や @fig-agespecificnotation のように表現することができる。
 
 ::: {layout-ncol=2}
 
-![出生とイベント発生の表記](fig/lexis_number.png){width=50% #fig-agespecificprob}
+![出生とイベント発生の表記<br>Source: Preston(2000) Figure2.2bより引用](fig/lexis_number.png){width=50% #fig-agespecificprob}
 
-![出生とイベント発生のノテーション](fig/lexis_occurance.png){width=50% #fig-agespecificnotation}
+![出生とイベント発生のノテーション<br>Source: Preston(2000) Figure2.2cより引用](fig/lexis_occurance.png){width=50% #fig-agespecificnotation}
 
 :::
 

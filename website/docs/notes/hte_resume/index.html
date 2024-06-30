@@ -7,9 +7,9 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 <meta name="author" content="Shingo Nitta">
-<meta name="dcterms.date" content="2024-06-26">
+<meta name="dcterms.date" content="2024-06-30">
 
-<title>Shingo Nitta - RCIS文献購読資料</title>
+<title>Shingo Nitta - 読書メモ：Brand et al.(2021)</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -136,35 +136,29 @@ div.csl-indent {
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">RCIS文献購読資料</h1>
+<h1 class="title">読書メモ：Brand et al.(2021)</h1>
   <div class="quarto-categories">
     <div class="quarto-category">Readings</div>
     <div class="quarto-category">Social Inequality</div>
+    <div class="quarto-category">Quantitative Method</div>
   </div>
   </div>
 
 
-<div class="quarto-title-meta-author">
-  <div class="quarto-title-meta-heading">Author</div>
-  <div class="quarto-title-meta-heading">Affiliation</div>
-  
-    <div class="quarto-title-meta-contents">
-    <p class="author">Shingo Nitta </p>
-  </div>
-    <div class="quarto-title-meta-contents">
-        <p class="affiliation">
-            University of Tokyo
-          </p>
-      </div>
-    </div>
 
 <div class="quarto-title-meta">
 
-      
+    <div>
+    <div class="quarto-title-meta-heading">Author</div>
+    <div class="quarto-title-meta-contents">
+             <p>Shingo Nitta </p>
+          </div>
+  </div>
+    
     <div>
     <div class="quarto-title-meta-heading">Published</div>
     <div class="quarto-title-meta-contents">
-      <p class="date">June 26, 2024</p>
+      <p class="date">June 30, 2024</p>
     </div>
   </div>
   
@@ -285,7 +279,7 @@ e(x) = pr(W_i = 1 \mid X_i = x)
 <div id="fig-covpart" class="quarto-figure quarto-figure-center anchored">
 <figure class="figure">
 <p><img src="fig/fig1.jpg" class="img-fluid figure-img" style="width:80.0%"></p>
-<figcaption class="figure-caption">Figure&nbsp;1: オネスト推定の具体的な手続き</figcaption>
+<figcaption class="figure-caption">Figure&nbsp;1: オネスト推定の具体的な手続き<br>Source: <span class="citation" data-cites="Brand.2021">Brand et al. (<a href="#ref-Brand.2021" role="doc-biblioref">2021</a>)</span> Figure1より引用</figcaption>
 </figure>
 </div>
 <p>細々した議論。因果木には交絡なしの仮定が伴う。また、共変量は処置の前にあるもののみを含める必要がある。コモンサポート（マッチングにおいて、マッチしない集団が分析から除外されてしまうこと）の問題もなお残る。</p>
@@ -302,7 +296,7 @@ e(x) = pr(W_i = 1 \mid X_i = x)
 <li><p>処置効果の推定値は、分割間の未観測交絡に対してどの程度敏感か？</p></li>
 </ol>
 <table class="table">
-<caption>大学修了が低賃金労働に与える総効果。括弧内は標準誤差。IPWは逆確率重み付けを示す。</caption>
+<caption>大学修了が低賃金労働に与える総効果。括弧内は標準誤差。IPWは逆確率重み付けを示す。<br>Source: <span class="citation" data-cites="Brand.2021">Brand et al. (<a href="#ref-Brand.2021" role="doc-biblioref">2021</a>)</span> Table2より引用</caption>
 <colgroup>
 <col style="width: 35%">
 <col style="width: 15%">
@@ -333,20 +327,20 @@ e(x) = pr(W_i = 1 \mid X_i = x)
 <div id="fig-covpart" class="quarto-figure quarto-figure-center anchored">
 <figure class="figure">
 <p><img src="fig/fig2.jpg" class="img-fluid figure-img" style="width:60.0%"></p>
-<figcaption class="figure-caption">Figure&nbsp;2: 傾向スコアおよび共変量でたんに分割したCATE</figcaption>
+<figcaption class="figure-caption">Figure&nbsp;2: 傾向スコアおよび共変量でたんに分割したCATE<br>Source: <span class="citation" data-cites="Brand.2021">Brand et al. (<a href="#ref-Brand.2021" role="doc-biblioref">2021</a>)</span> Figure2より引用</figcaption>
 </figure>
 </div>
 <div id="fig-causaltree" class="quarto-figure quarto-figure-center anchored">
 <figure class="figure">
 <p><img src="fig/fig4.jpg" class="img-fluid figure-img" style="width:60.0%"></p>
-<figcaption class="figure-caption">Figure&nbsp;3: 因果木のアルゴリズムにもとづいて分割したCATE</figcaption>
+<figcaption class="figure-caption">Figure&nbsp;3: 因果木のアルゴリズムにもとづいて分割したCATE<br>Source: <span class="citation" data-cites="Brand.2021">Brand et al. (<a href="#ref-Brand.2021" role="doc-biblioref">2021</a>)</span> Figure4より引用</figcaption>
 </figure>
 </div>
 <p>因果木の安定性を鑑みて、4000本の因果フォレストをおこない、各特徴量の相対的な重要度を <a href="#fig-importance">Figure&nbsp;4</a> に示した。上6つの変数が <a href="#fig-causaltree">Figure&nbsp;3</a> で選択共変量と大きく重なっており、 <a href="#fig-causaltree">Figure&nbsp;3</a> の因果木が重要な共変量を選択していることがわかる。</p>
 <div id="fig-importance" class="quarto-figure quarto-figure-center anchored">
 <figure class="figure">
 <p><img src="fig/fig6.jpg" class="img-fluid figure-img" style="width:60.0%"></p>
-<figcaption class="figure-caption">Figure&nbsp;4: 因果フォレストによる相対的重要度のプロット</figcaption>
+<figcaption class="figure-caption">Figure&nbsp;4: 因果フォレストによる相対的重要度のプロット<br>Source: <span class="citation" data-cites="Brand.2021">Brand et al. (<a href="#ref-Brand.2021" role="doc-biblioref">2021</a>)</span> Figure6より引用</figcaption>
 </figure>
 </div>
 </section>
@@ -354,19 +348,19 @@ e(x) = pr(W_i = 1 \mid X_i = x)
 <h2 class="anchored" data-anchor-id="議論">議論</h2>
 <p>全員が処置の効果を均等に受けるとはかぎらない。異質性は長らく検討されてきた議題だが、社会学者は伝統的に先見的にサブ集団への分割をしてきた（もちろん、それ自体が理論的関心となるからだが）。ただし、つねに異質性を完全に把握できるとは限らない。社会学者は何百もの回帰を走らせてデータドリブンな異質性を把握してきたが、それはp-hackingの見地からは疑わしい。</p>
 <p>本論文で用いたcausal treeはオネスト推定を用いることで、葉内の予測力を最大化する仕方で感応的なサブ集団を同定する。本論文では社会学の主要な研究課題である大学の賃金への効果に応用した。当然、実証タスクの自動化は共変量のインバランス、交絡、結果の解釈の責任から逃れられるわけではない。我々は、効果の異質性に関心のある社会学者に対して、因果木を応用して、より明確な探索を用い、効果の異質性を探求するための研究実践を改善するよう促している。</p>
+<!-- # コメント
+
+- 引退が健康に与える影響の異質性について研究しようと考えていたのでこの論文を選定した。この論文の2年前にmeta-learnerと呼ばれるより良い手法が開発されているらしい[@Künzel.2019; @Hu.2022]。だが、meta-learnerは共変量分割ができない＝どの共変量がどのようなパターンとして効果の異質性を生じさせているのかがわからないため[@Hu.2022]、因果木の方が解釈可能性という点で優れているという印象を持った。
+
+- 最初は共変量の重要度は介入の順序を同定するとか、理論間の重要性を比較するような枠組みにも使えるかなと思っていたが、本論文ではあくまで因果木のロバストネスチェックとして使われていた。因果木のキモがある意味での三重、四重交互作用の同定にあるのであれば、1つの変数の重要度を見るだけでは意味がないのかもしれないと思ったので、介入の順序を同定するとか、理論間の重要性を比較するというのは因果木では難しいと考え直した(その点、解釈可能なAIの枠組みにおけるSharpley valueとの差分になるのかもと思った)。
+
+- reference groupの設定が難しい。@fig-causaltree で分割したグループのうち$-.34$と$-.086$の差はなんとなくありそうだが、それ(最大-最小)を比較するべきなのか。あるいは、平均処置効果との距離から異質性を評価するべきなのか、ということについても議論が欲しかった。
+
+- 因果木を使うとより透明な仕方で探索ができると書かれているが、それは誤っていると考えた。あらゆるデータにおいて共変量は(たった!)有限個であり、それを使って探索するというのは、確証的な探索的分析に過ぎないのではないか。そういう意味ではいかなる特徴量でデータが条件づけられているのかを分析に先立って明示的に述べておく(@Lundberg.2021 でいうところの実証的エスティマンド、link to observables)ことが探索的分析においても重要だと思った。 -->
+
+
+
 </section>
-</section>
-<section id="コメント" class="level1">
-<h1>コメント</h1>
-<ul>
-<li><p>引退が健康に与える影響の異質性について研究しようと考えていたのでこの論文を選定した。この論文の2年前にmeta-learnerと呼ばれるより良い手法が開発されているらしい<span class="citation" data-cites="Künzel.2019 Hu.2022">(<a href="#ref-Künzel.2019" role="doc-biblioref">Künzel et al. 2019</a>; <a href="#ref-Hu.2022" role="doc-biblioref">Hu 2023</a>)</span>。だが、meta-learnerは共変量分割ができない＝どの共変量がどのようなパターンとして効果の異質性を生じさせているのかがわからないため<span class="citation" data-cites="Hu.2022">(<a href="#ref-Hu.2022" role="doc-biblioref">Hu 2023</a>)</span>、因果木の方が解釈可能性という点で優れているという印象を持った。</p></li>
-<li><p>最初は共変量の重要度は介入の順序を同定するとか、理論間の重要性を比較するような枠組みにも使えるかなと思っていたが、本論文ではあくまで因果木のロバストネスチェックとして使われていた。因果木のキモがある意味での三重、四重交互作用の同定にあるのであれば、1つの変数の重要度を見るだけでは意味がないのかもしれないと思ったので、介入の順序を同定するとか、理論間の重要性を比較するというのは因果木では難しいと考え直した(その点、解釈可能なAIの枠組みにおけるSharpley valueとの差分になるのかもと思った)。</p></li>
-<li><p>reference groupの設定が難しい。<a href="#fig-causaltree">Figure&nbsp;3</a> で分割したグループのうち<span class="math inline">\(-.34\)</span>と<span class="math inline">\(-.086\)</span>の差はなんとなくありそうだが、それ(最大-最小)を比較するべきなのか。あるいは、平均処置効果との距離から異質性を評価するべきなのか、ということについても議論が欲しかった。</p></li>
-<li><p>因果木を使うとより透明な仕方で探索ができると書かれているが、それは誤っていると考えた。あらゆるデータにおいて共変量は(たった!)有限個であり、それを使って探索するというのは、確証的な探索的分析に過ぎないのではないか。そういう意味ではいかなる特徴量でデータが条件づけられているのかを分析に先立って明示的に述べておく(<span class="citation" data-cites="Lundberg.2021">Lundberg, Johnson, and Stewart (<a href="#ref-Lundberg.2021" role="doc-biblioref">2021</a>)</span> でいうところの実証的エスティマンド、link to observables)ことが探索的分析においても重要だと思った。</p></li>
-</ul>
-
-
-
 </section>
 
 
@@ -374,14 +368,8 @@ e(x) = pr(W_i = 1 \mid X_i = x)
 <div id="ref-Athey.2016zq5" class="csl-entry" role="listitem">
 Athey, Susan, and Guido Imbens. 2016. <span>“<span class="nocase">Recursive partitioning for heterogeneous causal effects</span>.”</span> <em>Proceedings of the National Academy of Sciences</em> 113 (27): 7353–60. <a href="https://doi.org/10.1073/pnas.1510489113">https://doi.org/10.1073/pnas.1510489113</a>.
 </div>
-<div id="ref-Hu.2022" class="csl-entry" role="listitem">
-Hu, Anning. 2023. <span>“<span class="nocase">Heterogeneous treatment effects analysis for social scientists: A review</span>.”</span> <em>Social Science Research</em> 109: 102810. <a href="https://doi.org/10.1016/j.ssresearch.2022.102810">https://doi.org/10.1016/j.ssresearch.2022.102810</a>.
-</div>
-<div id="ref-Künzel.2019" class="csl-entry" role="listitem">
-Künzel, Sören R., Jasjeet S. Sekhon, Peter J. Bickel, and Bin Yu. 2019. <span>“<span class="nocase">Metalearners for estimating heterogeneous treatment effects using machine learning</span>.”</span> <em>Proceedings of the National Academy of Sciences</em> 116 (10): 4156–65. <a href="https://doi.org/10.1073/pnas.1804597116">https://doi.org/10.1073/pnas.1804597116</a>.
-</div>
-<div id="ref-Lundberg.2021" class="csl-entry" role="listitem">
-Lundberg, Ian, Rebecca Johnson, and Brandon M. Stewart. 2021. <span>“<span class="nocase">What Is Your Estimand? Defining the Target Quantity Connects Statistical Evidence to Theory</span>.”</span> <em>American Sociological Review</em> 86 (3): 532–65. <a href="https://doi.org/10.1177/00031224211004187">https://doi.org/10.1177/00031224211004187</a>.
+<div id="ref-Brand.2021" class="csl-entry" role="listitem">
+Brand, Jennie E., Jiahui Xu, Bernard Koch, and Pablo Geraldo. 2021. <span>“<span>Uncovering Sociological Effect Heterogeneity Using Tree-Based Machine Learning</span>.”</span> <em>Sociological Methodology</em> 51 (2): 189–223. <a href="https://doi.org/10.1177/0081175021993503">https://doi.org/10.1177/0081175021993503</a>.
 </div>
 </div></section><section id="footnotes" class="footnotes footnotes-end-of-document" role="doc-endnotes"><h2 class="anchored quarto-appendix-heading">Footnotes</h2>
 
