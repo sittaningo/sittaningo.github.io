@@ -14,14 +14,7 @@ status: peer-reviewed-papers
 # paperlink: "https://doi.org/10.11218/ojjams.38.59"
 pub-info:
   journal: 社会学評論
-hide-detail: false
-pub-status: 
-  # status: Writing
-  # class: warning
-  # icon: fa-solid fa-pencil
-  # status: Under review
-  # class: success
-  # icon: fas fa-glasses
+hide-detail: true
 ---
 
 ## Abstract
