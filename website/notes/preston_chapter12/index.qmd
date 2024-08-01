@@ -1,5 +1,5 @@
 ---
-title: 人口学勉強会購読資料
+title: 人口学勉強会購読資料(1,2章)
 author:
   - name: Shingo Nitta
 date: today
@@ -9,6 +9,7 @@ number-depth: 3
 categories:
   - Readings
   - Quantitative Method
+  - Demography
 execute: 
   echo: false
 # bibliography: references.bib
