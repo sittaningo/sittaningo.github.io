@@ -200,7 +200,7 @@
     "href": "notes/index.html",
     "title": "NOTES",
     "section": "",
-    "text": "Aug 1, 2024\n        \n        \n            読書メモ：Brand et al.(2021)\n            \n                \n                    Readings\n                \n                \n                    Social Inequality\n                \n                \n                    Quantitative Method\n                \n            \n            \n        \n    \n    \n                  \n            Aug 1, 2024\n        \n        \n            人口学勉強会購読資料(1,2章)\n            \n                \n                    Readings\n                \n                \n                    Quantitative Method\n                \n                \n                    Demography\n                \n            \n            \n        \n    \n    \n                  \n            Feb 21, 2024\n        \n        \n            DAGを学ぶための論文10報（社会学向け）\n            \n                \n                    Quantitative Method\n                \n            \n            \n        \n    \n    \n                  \n            Apr 4, 2022\n        \n        \n            スキル指標の標準化と解釈に関するメモ\n            \n                \n                    Data Analysis\n                \n                \n                    Japanese Onet\n                \n            \n            \n        \n    \n    \n                  \n            Mar 25, 2022\n        \n        \n            Bell et al.（2019）の要約\n            \n                \n                    Readings\n                \n                \n                    Quantitative Method\n                \n            \n            \n        \n    \n\n\nNo matching items"
+    "text": "Aug 1, 2024\n        \n        \n            読書メモ：Brand et al.(2021)\n            \n                \n                    Readings\n                \n                \n                    Social Inequality\n                \n                \n                    Quantitative Method\n                \n            \n            \n        \n    \n    \n                  \n            Aug 1, 2024\n        \n        \n            人口学勉強会購読資料(1,2章)\n            \n                \n                    Readings\n                \n                \n                    Quantitative Method\n                \n                \n                    Demography\n                \n            \n            \n        \n    \n    \n                  \n            Aug 1, 2024\n        \n        \n            人口学勉強会購読資料(5,6章)\n            \n                \n                    Readings\n                \n                \n                    Quantitative Method\n                \n                \n                    Demography\n                \n            \n            \n        \n    \n    \n                  \n            Feb 21, 2024\n        \n        \n            DAGを学ぶための論文10報（社会学向け）\n            \n                \n                    Quantitative Method\n                \n            \n            \n        \n    \n    \n                  \n            Apr 4, 2022\n        \n        \n            スキル指標の標準化と解釈に関するメモ\n            \n                \n                    Data Analysis\n                \n                \n                    Japanese Onet\n                \n            \n            \n        \n    \n    \n                  \n            Mar 25, 2022\n        \n        \n            Bell et al.（2019）の要約\n            \n                \n                    Readings\n                \n                \n                    Quantitative Method\n                \n            \n            \n        \n    \n\n\nNo matching items"
   },
   {
     "objectID": "notes/onetstandarization/index.html",
@@ -266,106 +266,106 @@
     "text": "結論：研究者は何をすべきか？\n↑本論文の主張と同じ"
   },
   {
-    "objectID": "notes/preston_chapter56/manuscript.html",
-    "href": "notes/preston_chapter56/manuscript.html",
+    "objectID": "notes/preston_chapter56/index.html",
+    "href": "notes/preston_chapter56/index.html",
     "title": "人口学勉強会購読資料(5,6章)",
     "section": "",
     "text": "購読文献\n\n\n\nPreston, Samuel H. 2000. Demography: Measuring and Modeling Population Processes, Blackwell Publishing."
   },
   {
-    "objectID": "notes/preston_chapter56/manuscript.html#年出生率",
-    "href": "notes/preston_chapter56/manuscript.html#年出生率",
+    "objectID": "notes/preston_chapter56/index.html#年出生率",
+    "href": "notes/preston_chapter56/index.html#年出生率",
     "title": "人口学勉強会購読資料(5,6章)",
     "section": "5.1 年出生率",
     "text": "5.1 年出生率\nはじめに粗出生率の再掲。\n\\[\nCBR[0, T] = \\frac{0からT時点の間の人口の出生数}{0からT時点の間の人口で観測されるパーソンイヤー}\n\\]\n実際には再生産可能なCBRは出産可能な年齢(伝統的には15から50)の女性を対象に計算する。これを一般出生率(general fertility rate, GFR)と呼ぶ。\n\\[\nGFR[0, T] = \\frac{0からT時点の間の人口の出生数}{0からT時点の間の15歳以上50歳未満の女性で観測されるパーソンイヤー}\n\\]\nCBRとGFRとの関係。\\({}_{35} C^F_{15} [0, T]\\) は人口に占める15歳以上50歳未満の女性のパーソンイヤーの割合を指す。\n\\[\nCBR[0, T] = GFR[0, T] \\times {}_{35} C^F_{15} [0, T] \\tag{5.1}\n\\]\n年齢固有の出生率は死亡率のように示すことができる。\n\\[\n{}_n F_x [0, T] = \\frac{0からT時点の間のxからx+n歳の女性の出生数}{0からT時点の間のxからx+n歳の女性で観測されるパーソンイヤー}\n\\]\n年齢や性別の分布の影響を小さくするために標準化を適用することもできる。\\(C^S_i\\) は人口全体に占める年齢集団\\(i\\) に属する女性の割合を、\\(F_i\\) は\\(i\\) 番目の年齢区間特有のの出生率を指す。\n\\[\nASCBR[0, T] = \\Sigma^I_{i=1} F_i \\times C^S_i\n\\]\n年齢固有の出生率を統合した指標がTFR（total fertility rate, 合計特殊出生率）。\\(\\alpha\\) と\\(\\beta\\) はそれぞれ出産の最小年齢と最大年齢を示す。\\(n\\) をかけるのは、女性がn歳ごとの年齢区間で\\(n\\)年間を過ごし、その間年率\\({}_n F_x\\) で子どもを産むため。\\(\\beta - n\\) なのは、\\(x\\)から\\(x+n\\)歳の間の年齢固有出生率を計算しているため。\n\\[\nTFR[0, T] = n \\times \\Sigma^{\\beta - n}_{x = \\alpha} {}_n F_x [0, T]\\tag{5.2}\n\\]\nTFRは女性が出産可能な年齢まで生存し、それぞれの年齢で年齢固有の出生率を経験した際の子どもの平均人数を示している。TFRはCBRより若年層に反応的ではなく(なぜなら加齢につれて人数が減るため)、結婚年齢や初産年齢の変化に反応的でない。\n年齢でなくとも、婚姻状態やピルの使用別に出生率を計算することもできる。既婚者に限定したTFRをTFMR（total marital fertility rate, 合計婚姻特殊出生率）と呼ぶ。\n\\[\n{}_n F^L_x [0, T] = \\frac{0からT時点の間のxからx+n歳の既婚女性の出生数}{0からT時点の間のxからx+n歳の既婚女性で観測されるパーソンイヤー}\n\\]\nTFRとTMFRとを比較することで、結婚パターンが出生に寄与する程度を知ることができる。\\({}_n \\Phi_x\\) は\\(x\\) から\\(x+n\\) 歳の女性の結婚率を示す。Coale（1969）は年齢固有出生率が計算できない状況でのTFRの推定方法を示している（方法は割愛）。\n\\[\n\\frac{TFR}{TMFR} = \\frac{n \\times \\Sigma^{\\beta}_{x=\\alpha} {}_n F^L_x \\times {}_n \\Phi_x}{n \\times \\Sigma^{\\beta}_{x=\\alpha} {}_n F^L_x} = \\Sigma^{\\beta}_{x=\\alpha} \\left( \\frac{{}_n F^L_x}{\\Sigma^{\\beta}_{x=\\alpha} {}_n F^L_x} \\right) \\times {}_n \\Phi_x \\tag{5.3}\\label{eq-tfrtfmr}\n\\]"
   },
   {
-    "objectID": "notes/preston_chapter56/manuscript.html#年出生率の分解",
-    "href": "notes/preston_chapter56/manuscript.html#年出生率の分解",
+    "objectID": "notes/preston_chapter56/index.html#年出生率の分解",
+    "href": "notes/preston_chapter56/index.html#年出生率の分解",
     "title": "人口学勉強会購読資料(5,6章)",
     "section": "5.2 年出生率の分解",
     "text": "5.2 年出生率の分解\n年出生率を多様な側面に分解することは多くの人口学者が試みてきていた。\n\nGrabill, Kiser and Whelpton(1958)\n\n\\[\nB(T) = W(T) \\times \\frac{M(T)}{W(T)} \\times \\frac{O(T)}{M(T)} \\times \\frac{B(T)}{O(T)}\n\\]\n\n\n\n\n\n\nNotation\n\n\n\n\n\n\n\\(B(T)\\): T年における出生数\n\\(W(T)\\): T年における15歳から49歳までの女性人口\n\\(M(T)\\): T年における15歳から49歳までの既婚女性人口\n\\(O(T)\\): T年における15歳から49歳までの母親人口\n\n\n\n\nそれぞれ以下の構成要素に分解している。\n\n15歳から49歳までの女性\n15歳から49歳までの全女性に占める既婚女性の割合\n15歳から49歳までの全既婚女性に占める母親の割合\n15歳から49歳までの母親あたりの平均出生数\n\n\nBongaarts(1978)\n\n\\[\nTFR = \\frac{TFR}{TMFR} \\times \\frac{TMFR}{TNFR} \\times \\frac{TNFR}{MTFR} \\times MTFR = C_m \\times (C_c \\times C_a) \\times C_i \\times 15.3 \\tag{5.6}\n\\]\n\n\n\n\n\n\nNotation\n\n\n\n\n\n\n\\(TNFR\\): 合計自然特殊出生率、産後無月経期間を考慮したTFR\n\\(MTFR\\): 最大潜在出生率(それならMPFRでは？)\n\n\n\n\n\n最大潜在出生率MTFRを15.3と設定する\n\\(C_i\\): MTFRと合計自然特殊出生率TNFRを比較した指標\n\\(C_c\\): TNFRと避妊薬服用時の合計婚姻特殊出生率TMFRを比較した指標\n\\(C_a\\): TNFRと人口中絶時の合計婚姻特殊出生率TMFRを比較した指標\n\\(C_a\\): TMFRとTFRを比較した指標(式\\(\\ref{eq-tfrtfmr}\\) と同義)\n\nこれらの指標はより詳しく以下のように計算される。避妊薬服用による出生率の減少は\\(C_c = 1 - 1.08 \\cdot u \\cdot e\\) （\\(u\\)は避妊薬を服用する女性の割合、\\(e\\)は避妊薬の平均的な効用をそれぞれ示す）として推定される。人口中絶による出生率の減少は\\(C_a = \\frac{TFR}{TFR + 0.4 (1+u) TA}\\) （\\(TA\\)は総中絶割合を示す）として推定される。産後無月経期間による出生率の減少は\\(C_i = \\frac{20}{18.5 + i}\\)（\\(i = 1.753 \\exp (.1396 \\bar{BF} - .001872 \\bar{BF}^2)\\)は産後無月経期間を、\\(\\bar{BF}\\)は授乳の平均期間をそれぞれ示す）として推定される。"
   },
   {
-    "objectID": "notes/preston_chapter56/manuscript.html#コホート出生率",
-    "href": "notes/preston_chapter56/manuscript.html#コホート出生率",
+    "objectID": "notes/preston_chapter56/index.html#コホート出生率",
+    "href": "notes/preston_chapter56/index.html#コホート出生率",
     "title": "人口学勉強会購読資料(5,6章)",
     "section": "5.3 コホート出生率",
     "text": "5.3 コホート出生率\n出生の分析にコホートの視点を取り入れることは、合計出生が累積的なプロセスであり、女性の過去の出生経歴が将来の出生に影響を与える点で重要。コホートの年齢固有出生率の総和はコホートの合計出生率を示し、コホートのTFRはある出生コホートの女性の間で生まれた子どもの平均数を示す。コホートのTFRはある出生コホートの女性が出生可能期間まで生き残ってはじめて計算できる。すべての年齢での出生率がつねに一定であればコホート出生率と年出生率は一致するが、そうでないと出生をコホートからみることと年次からみることは異なる視点を提示する。\n出生率のコホート変化はタイミングの変化とボリュームの変化に分解できる：\n\\[\nTFR^P = \\Sigma^I_{i=1} F^P_i = \\Sigma^I_{i=1} \\frac{F^P_i}{TFR^{C_i}} \\times TFR^{C_i} =  \\Sigma^I_{i=1} p^P_i \\times TFR^{C_i}\n\\]\n\n\n\n\n\n\nNotation\n\n\n\n\n\n\n\\(TFR^{C_i}\\): ある時点\\(P\\)のある年齢区間\\(i\\)における任意のコホート\\(C_i\\)のTFR(ボリューム)\n\\(p^P_i\\): 任意のコホート\\(C_i\\)におけるある時点\\(P\\)で実際に生まれた子どもの合計数の割合(タイミング)\n\n\n\n\nタイミングの変化を捨象して実際の年TFRと仮説的な年TFRを比較するためにタイミング標準化年TFRを使用することがあるが、タイミングの標準化は年TFRの変化量を大幅に減らす可能性があり、出生経歴情報が完全に存在している必要がある。そして、このアプローチはタイミングの変化とボリュームの変化にたいする説明には寄与しない。コホート出生率と年出生率はのどちらが適切かは測定的な問題よりも概念的な問題であり、解釈において注意深く求められる。コホートの出生率は出産回数を尋ねることで推定できる。\n出生プロセスは年齢の変化だけでなく出産回数の変化からも表現できる。\\(P_i\\)は出産回数\\(i\\)を示す。50歳以上の女性に回顧的に調査して出産回数を調べる。\n\\[\nPPR_{(i, i + 1)} = \\frac{出産回数がi+1以上の女性の数}{出産回数がi以上の女性の数} = \\frac{P_i + 1}{P_i}\n\\]\n出産回数によるTFRは式\\(\\ref{eq-tfrparity}\\)のように計算できる。\\(W\\)は女性の合計を指す。出産回数経過比は人口における出生制限行動のパターンを研究する上でとくに有用。\n\\[\\begin{eqnarray}\nTFR^C &= \\frac{P_1}{W} + \\frac{P_2}{W} + \\frac{P_3}{W} + \\cdots = \\frac{P_1}{W} + \\frac{P_1}{W} \\cdot \\frac{P_2}{P_1} + \\frac{P_1}{W} \\cdot \\frac{P_2}{P_1} \\cdot \\frac{P_2}{P_1} + \\cdots \\\\\n      &= PPR_{(0,1)} + PPR_{(0,1)} \\cdot PPR_{(1,2)} + PPR_{(0,1)} \\cdot PPR_{(1,2)} \\cdot PPR_{(2,3)} + \\cdots  \\tag{5.11}\\label{eq-tfrparity}\n\\end{eqnarray}\\]\n母親の側でなく子どもの側から出生のボリュームを考えることもできる。母親から生まれる子どもの平均数\\(\\bar{C}\\)は平均出産回数\\(\\bar{P}\\)だけでなく子どもが女性間でどのように分布されているか（女性内の出産回数のばらつき\\(\\sigma^2\\)）にも依存する。\n\\[\n\\bar{C} = \\bar{P} + \\frac{\\sigma^2}{\\bar{P}}\n\\]"
   },
   {
-    "objectID": "notes/preston_chapter56/manuscript.html#出産区間分析",
-    "href": "notes/preston_chapter56/manuscript.html#出産区間分析",
+    "objectID": "notes/preston_chapter56/index.html#出産区間分析",
+    "href": "notes/preston_chapter56/index.html#出産区間分析",
     "title": "人口学勉強会購読資料(5,6章)",
     "section": "5.4 出産区間分析",
     "text": "5.4 出産区間分析\n年齢固有出生率を足し合わせて合計出生率を計算する代わりに、出産区間分析は女性の再生産可能な年齢でのある出産から次の出産への進展について検討する。出生区間それ自体は無月経期間（妊娠期間と授乳期間がほとんどを占める無排卵期間をふくむ）、待機期間（女性が受胎するまでの期間）、追加期間（受胎して出産に至らないリスク）に分解できる。出産区間は生命表の技術を通じて学習できる；出産は死亡と等価であり、時間は年齢ではなく出産区間（最後の出産からの時間の長さ）で表現される。\n出産区間の長さの重要な生物学的要因として受胎可能性fecundabilityがあり、避妊と無月経がないときの月次妊娠確率と定義される。受胎確率は既婚で妊娠しておらず避妊もしていない女性の間で観察された妊娠の数をリスクへの暴露のの女性月(women-month)で割ることで推定できるが、その推定値はグループ間で受胎可能性が異なる場合、結婚からの期間が経つほど過小に推定される問題を持つ。下記表はグループ1が受胎可能性0.1の集団、グループ2が受胎可能性0.3の集団の\\(l_x\\)（\\(x\\)ヶ月で生き延びている数）と\\({}_n d_x\\)（\\(x\\)から\\(x+n\\)までに出産した数）をそれぞれ示している。1ヶ月目には\\(400/2000 = 0.2\\)で真値と一致するが、3ヶ月目では\\([(400+300+228) / (2000+1600+1300)] = 0.189\\)と小さくなる。\n\n受胎可能性別の妊娠までの待機期間\n\n\n\n\n\n\n\n\n\n\n\n結婚からの期間（月）\nグループ1\n\nグループ2\n\n合計\n\n\n\n\n\n\n\\(l_x\\)\n\\({}_n d_x\\)\n\\(l_x\\)\n\\({}_n d_x\\)\n\\(l_x\\)\n\\({}_n d_x\\)\n\n\n0\n1000\n100\n1000\n300\n2000\n400\n\n\n1\n900\n90\n70\n210\n1600\n300\n\n\n2\n810\n81\n490\n147\n1300\n228\n\n\n3\n729\n73\n343\n103\n1072\n176\n\n\n4\n656\n66\n240\n72\n896\n138\n\n\n5\n590\n59\n168\n50\n758\n109\n\n\n6\n531\n53\n118\n35\n649\n88\n\n\n\nひとたび受胎可能性が推定されれば、平均待機期間\\(W\\)＝出産の寿命も推定できる。\\(W\\)が女性と出生年齢で一定であれば\\(W=1/p\\)が成り立つ(\\(p\\)は受胎可能性)。\\(n\\)ヶ月待機する確率はその月に妊娠する確率に、その前の\\(n-1\\)ヶ月間に妊娠しなかった確率を掛けることで計算できる（\\(p \\cdot(1-p)^{n-1}\\)）。したがって、\n\\[\nP[W=n] = p \\cdot (1-p)^{n-1}\n\\]\n\n\n\n\n\n\n平均待機期間の式展開\n\n\n\n\n\n待機期間の平均値は以下の通り(厳密には\\(\\Sigma^{\\infty}_{n=1} n \\cdot p^{\\mathbf{n}} \\cdot (1-p)^{n-1}\\)ではない？)。\n\\[\nE[W] = \\Sigma^{\\infty}_{n=1} n \\cdot P[W=n] = \\Sigma^{\\infty}_{n=1} n \\cdot p \\cdot (1-p)^{n-1}\n\\]\nこのようにも表現できる(結婚期間からの経過月次を示す\\(x\\)を1で減じて2乗して逆数を取る、とは何をしているのか)；\n\\[\n\\Sigma^{\\infty}_{n=1} n x^{n-1} = \\frac{1}{(1-x)^2}\n\\]\nそうすると；\n\\[\nE[W] = p \\cdot \\frac{1}{[1-(1-p)]^2} = \\frac{1}{p}\n\\]\n女性が異質であるときには受胎可能性\\(p\\)にピアソン分布を仮定する(\\(q=1-p\\)と\\(a\\)、\\(b\\)は任意のパラメータ)；\n\\[\nf(p) = \\frac{p^{a-1}q^{b-1}}{\\int^1_0 p^{a-1}q^{b-1} dp}\n\\]\nピアソン分布仮定のもと、平均待機期間を\\(f(p)\\)の統合平均として計算する；\n\\[\nE[W] = \\int^1_0 \\frac{1}{p} f(p) dp\n\\]\n\n\n\n結婚から出産までの期間より第一子出産から第二子出産までの期間の方が、妊娠期間にくわえて無月経期間\\(s_b\\)が含まれるため、\\((1/p) + 9 + s_b\\)だけ長い。すなわち、平均すると出産は結婚して\\((1/p) + 9\\)ヶ月後に起き、それ以降は\\((1/p) + 9 + s_b\\)ヶ月づつ生起する。したがって、TMFRは以下のように計算できる(なぜ？)；\n\\[\nTMFR = 1 + \\frac{\\beta - \\alpha - (\\frac{1}{p} + 9)}{\\frac{1}{p} + 9 + s_b}\n\\]\nすべての女性が\\(\\alpha_m\\)歳に結婚し（＝出産の分母に入り）、その後離婚や非嫡出子の出生がないとすると、TFRは式\\(\\ref{eq-tfrbirthinterval}\\)のように計算できる。\n\\[\nTFR = \\frac{\\beta - \\alpha_m + s_b}{I_b = \\frac{1}{p} + 9 + s_b} \\tag{5.12}\\label{eq-tfrbirthinterval}\n\\]\n出産につながる妊娠と自然流産を区別する。自然流産のたびに出産期間は\\((1/p) + s_w\\)だけ長くなる（\\(s_w\\)は妊娠に伴う無月経期間、\\(s_b\\)とどのように異なる？）。妊娠が生児出産に至る確率を\\(\\omega\\)とすると、生児出産の平均期間は以下のようになる(???)；\n\\[\\begin{eqnarray}\nI_b &= \\frac{1}{p} + 9 + s_b + \\omega \\left(\\frac{1}{p} + s_w \\right) + \\omega^n \\left(\\frac{1}{p} + s_w \\right) + \\cdots \\\\\n    &= \\frac{1}{p} + 9 + s_b + \\frac{\\omega}{1 - \\omega}\\left( \\frac{1}{p} + s_w \\right)\\\\\n    &= \\frac{1}{p(1-\\omega)} + 9 + s_b + \\frac{s_w \\omega}{1 - \\omega}\n\\end{eqnarray}\\]\n\n毎月の妊娠確率の比例的減少として定義される避妊効率\\(e\\)について考える。避妊したときの出生確率\\(p(1-e)\\)とすると、出産区間は式\\(\\ref{eq-contraception}\\)のようになる。\n\\[\nI_b = \\frac{1}{p(1-e)(1 - \\omega)} + 9 + s_b + \\frac{s_w \\omega}{1 - \\omega} \\tag{5.13}\\label{eq-contraception}\n\\]\n（自然／人口）中絶は\\((1/p[1-e]) + s_w\\)だけ出産区間を伸ばし、それだけTFRの絶対量を式\\(\\ref{eq-abortion}\\)の程度下げる。\n\\[\n\\frac{\\frac{1}{p(1-e)} + s_w}{\\frac{1}{p(1-e)(1 - \\omega)} + 9 + s_b + \\frac{s_w \\omega}{1 - \\omega}} \\tag{5.15}\\label{eq-abortion}\n\\]\nこれらのモデルはシンプルで出生の規定要因の影響を理解するうえで役立つが、注意点もある：離死別のような現象は考慮されていない、再生産可能な期間を通じて再生産のパラメータは一定である、異質性は考慮されていない、など。異質性を考慮することも分布に敏感であったりデータが不十分といった問題を抱えているものの、出生の規定要因とその相互関連を理解するうえでは有用な分析道具となる。\n\n出生区間には「閉鎖的」と「開放的」がある。閉鎖的な出生区間は2つの観測されたイベント間の区間(e.g., 第一子出産から第二子出産)であり、開放的な区間は調査期間で「打ち切り」になるような区間(e.g., 出産からの年齢や年月など)を指す。"
   },
   {
-    "objectID": "notes/preston_chapter56/manuscript.html#再生産の測定",
-    "href": "notes/preston_chapter56/manuscript.html#再生産の測定",
+    "objectID": "notes/preston_chapter56/index.html#再生産の測定",
+    "href": "notes/preston_chapter56/index.html#再生産の測定",
     "title": "人口学勉強会購読資料(5,6章)",
     "section": "5.5 再生産の測定",
     "text": "5.5 再生産の測定\n粗出生率と粗死亡率の和は自然増加率。もう1つの人口増加をみる方法は後続世代のサイズを比較すること。女性から娘がどれだけ産まれるかが分かれば、女性自身の再生産について測定できる。年齢固有の娘の出生率を以下とする。\n\\[\n{}_n F^F_x [0, T] = \\frac{0からT時点の間の娘の出生数}{0からT時点の間の人口で観測されるパーソンイヤー}\n\\]\nTFR同様、一般再生産率(general reproduction rate、GRR)を式\\(\\ref{eq-grrdef}\\)のように定義する。\n\\[\nGRR [0, T] = n \\cdot \\Sigma^{\\beta - n}_{x = \\alpha} {}_n F^F_x [0, T] \\tag{5.17}\\label{eq-grrdef}\n\\]\n死亡の影響を考慮した純再生産率(net reproduction rate、NRR)は\\({}_n L^F_x\\)(\\(x\\)歳から\\(x+n\\)歳までに生きている女性のパーソンイヤー)と\\(l_0\\)(0歳で生き延びている数)を考慮する。NRRはある出生コホートの女性が再生産可能な期間に生む娘の平均人数を示す。NRRが1を超えると再生産したコホートよりも後続のコホートのサイズが大きくなる。もしすべての女性が\\(\\beta\\)歳まで生存すると\\(\\frac{{}_n L^F_x}{l_0} = n\\)となり、\\(GRR = NRR\\)となる。\n\\[\nNRR[0, t] = n \\cdot \\Sigma^{\\beta - n}_{x = \\alpha} {}_n F^F_x [0, T] \\cdot \\frac{{}_n L^F_x}{l_0} \\tag{5.18}\n\\]\nGRRとNRRの関係は、出産関数の平均年齢に生存する確率\\(p(A_m)\\)と\\(GRR\\)に分解して表現する。\n\\[\nNRR \\simeq p(A_M) \\cdot GRR \\tag{5.20}\n\\]\n\n\n\n\n\n\n導出\n\n\n\n\n\nNRRを出産関数\\(m(a)\\)と\\(a\\)歳まで生存する確率\\(p(a)\\)の積の和で表す。\n\\[\nNRR = \\int^\\beta_\\alpha m(a) p(a) da \\tag{5.19}\n\\]\n\\(\\alpha\\)歳から\\(\\beta\\)歳までの生存関数\\(p(a)\\)の出産関数\\(m(a)\\)による重みづけ平均(第一項)と\\(GRR\\)に分解する。\n\\[\nNRR = \\frac{\\int^\\beta_\\alpha m(a) p(a) da}{\\int^\\beta_\\alpha m(a) da} \\cdot \\int^\\beta_\\alpha m(a) da\n\\]\n\\(p(a)\\)を\\(\\alpha\\)歳から\\(\\beta\\)歳まで線形と仮定すると、\\(p(a) = \\alpha_0 + \\alpha_1\\)が成り立ち、\n\\[\n\\frac{\\int^\\beta_\\alpha m(a) p(a) da}{\\int^\\beta_\\alpha m(a) da} = \\frac{\\int^\\beta_\\alpha m(a) (\\alpha0 + \\alpha_1 \\cdot a) da}{\\int^\\beta_\\alpha m(a) da} = \\alpha_0 + \\alpha_1 \\cdot \\frac{\\int^\\beta_\\alpha m(a) \\cdot a da}{\\int^\\beta_\\alpha m(a) da} = p(A_M)\n\\]\nが成り立つ。なお、離散的には\\(A_M\\)は以下のように表現できる。\n\\[\nA_M = \\frac{\\int^\\beta_\\alpha m(a) \\cdot a da}{\\int^\\beta_\\alpha m(a) da} = \\frac{\\Sigma^{\\beta - n}_{x = \\alpha} {}_n F^F_x \\cdot \\left( x + \\frac{n}{2} \\right)}{\\Sigma^{\\beta - n}_{x = \\alpha} {}_n F^F_x}\n\\]\n\n\n\nTFRとGRR、NRRの関係は式\\(\\ref{eq-tfrgrrnrr}\\)の通り。SRB(sex ratio birth)は出生における息子と娘の比であり、年齢によってばらつかないという仮定を置く。\n\\[\nTFR = (1 + SRB) \\cdot GRR = \\frac{(1 + SRB)}{p(A_M)} \\cdot NRR \\tag{5.22}\\label{eq-tfrgrrnrr}\n\\]\n\\(NRR=1\\)が代替水準の出生力と定義されるため、\\(TFR \\simeq (1+SRB) / p(A_M)\\)、\\(GRR \\simeq 1 / p(A_M)\\)がそれぞれ代替水準の出生力となる。NRRはどのくらい速く人口が増加するかは論じ得ない。成長率と再生産指標との関係は7章で、出生と再生産、および成長との関係は6章で論じる。"
   },
   {
-    "objectID": "notes/preston_chapter56/manuscript.html#予測と予報",
-    "href": "notes/preston_chapter56/manuscript.html#予測と予報",
+    "objectID": "notes/preston_chapter56/index.html#予測と予報",
+    "href": "notes/preston_chapter56/index.html#予測と予報",
     "title": "人口学勉強会購読資料(5,6章)",
     "section": "6.1 予測と予報",
     "text": "6.1 予測と予報\n人口予測projectionとは「出生率、死亡率、移動の将来の動きについて一定の仮定を置いた場合の人口の将来的な発展を示す計算」。予報forcastsとは「人口が将来どのように発展していくかという現実的な見通しを得るための仮定を考慮した予測」。すなわち、予測は内的妥当性(予測が人口学的変数間の関係を適切かつ一貫してモデル化できているか)を重視し、予報は外的妥当性(予測がその後のイベントとどれだけよく一致するか)を示す。人口予測は将来どうなるのかだけでなく、「もし〇〇なら(e.g., 死亡率が1900年と同じなら)」といった純粋に仮説的な状況にも適用できる。"
   },
   {
-    "objectID": "notes/preston_chapter56/manuscript.html#人口予測の方法論",
-    "href": "notes/preston_chapter56/manuscript.html#人口予測の方法論",
+    "objectID": "notes/preston_chapter56/index.html#人口予測の方法論",
+    "href": "notes/preston_chapter56/index.html#人口予測の方法論",
     "title": "人口学勉強会購読資料(5,6章)",
     "section": "6.2 人口予測の方法論",
     "text": "6.2 人口予測の方法論\n予測の方法を選択する基準として、内的妥当性があるか、必要なインプット(変数)と到達可能なアウトプット(結果)があるか、データは予測に耐えうるか、などがある。\n0からTまでの人口サイズについて考える。1章より以下のように表現される。\n\\[\nN(T) = N(0) e^{\\int^T_0 r(t) dt}\n\\]\n成長率\\(r\\)が定常的だと仮定すると式\\(\\ref{eq-popgrowthconstant}\\)が成り立つ。ただし、式\\(\\ref{eq-popgrowthconstant}\\)は出生、死亡、移動が予測期間に大きく変わらないと仮定されており、かつ年齢分布が一定と仮定しており、それらを明示的にモデリングすることが現代的な人口予測では求められている。\n\\[\nN(T) = N(0) e^{r \\cdot t} \\tag{6.1}\\label{eq-popgrowthconstant}\n\\]"
   },
   {
-    "objectID": "notes/preston_chapter56/manuscript.html#コホートコンポーネント法",
-    "href": "notes/preston_chapter56/manuscript.html#コホートコンポーネント法",
+    "objectID": "notes/preston_chapter56/index.html#コホートコンポーネント法",
+    "href": "notes/preston_chapter56/index.html#コホートコンポーネント法",
     "title": "人口学勉強会購読資料(5,6章)",
     "section": "6.3 コホートコンポーネント法",
     "text": "6.3 コホートコンポーネント法\nコホートコンポーネント法は人口を出生、死亡、移動についてそれぞれ異なるリスクに暴露されるサブ集団に分節化し、それぞれのサブ集団について別々に時間経過による変化を計算する手法。サブ集団は主には年齢と性別によって区別されるが、人種や国籍、地域や教育、宗教によって分割されることもある。コホートコンポーネント法は人口ダイナミクスの離散時間モデルである。コホートコンポーネント法は等間隔の予測区間を分割し、3つのステップで予測をする。\n\n次の区間の開始時にまだ生存している数を推定するために、区間開始時の各サブ集団の人口を予測する。\n\nもし年齢と性別のみで区切られているならば、単一減少生命表を作成することに等しい。\nそれ以外の変数が含まれる場合は12章で説明される増加–減少生命表を適用する必要がある。\n\n区間の各サブグループの出生数を計算し、グループ間でその和を取り、次の間隔の初めまで生存している出生数を計算する。\n\n理想的にはカップルの形成と解消が明示的に扱われたいが、現実的には女性のみを扱うことが多い。\n\n区間中の各サブグループの流入者の足し、流出者を減算する、そして、区間のこれら移動者の出生数を計算する、最後に、次の区間の初めまで生き残る移動者の数とその出生数を前方に予測する。\n\nどのくらいそれぞれの予測区間で移動者がいるのかだけでなく、区間内のタイミングも予測する必要がある。\n\n\n\n6.3.1 閉鎖女性人口の予測\n年齢区間を5歳刻み(\\(x\\)歳から\\(x+5\\)歳)、予測区間を5年刻み(\\({}_5 N^F_x(t)\\)から\\({}_5 N^F_x(t+5)\\))として、コホートコンポーネント法のステップを適用する。\nまず、静止人口において5年後に生存する\\(x-5\\)歳の者\\(x\\)歳の者との比を示す生存比をかけて示す。ただし最も若い年齢集団と最高齢の年齢集団には適用されない。\n\\[\n{}_5 N^F_x(t+5) = {}_5 N^F_x(t) \\cdot \\frac{{}_5 L_x}{{}_5 L_{x-5}} \\tag{6.2}\\label{eq-closedfemalepopulationstep1}\n\\]\n最高齢の年齢集団(オープンエンド)については、\\(\\ref{eq-closedfemalepopulationstep1}\\)に最高齢の年齢集団の生存数を足す。\n\\[\n{}_\\infty N^F_x(t+5) = \\left( {}_5 N^F_x(t) \\cdot \\frac{{}_5 L_x}{{}_5 L_{x-5}} \\right) + \\left( {}_\\infty N^F_x \\cdot \\frac{T_{x+5}}{T_x} \\right)\n\\]\n最も若い年齢集団については区間中の出生数を予測する。\n\\[\n{}_5 F_x \\cdot 5 \\cdot \\left[ \\frac{{}_5 N^F_x (t) + {}_5 N^F_x (t+5)}{2} \\right] = {}_5 F_x \\cdot 5 \\cdot  \\left[ \\frac{{}_5 N^F_x (t) + {}_5 N^F_{x-5} (t) \\cdot \\frac{{}_5 L_x}{{}_5 L_{x-5}}}{2} \\right] \\tag{6.3}\\label{eq-cfpyoungest}\n\\]\n式\\(\\ref{eq-cfpyoungest}\\)をすべての年齢集団についてたし合わせて、式\\(\\ref{eq-cfpbirthnumber}\\)が得られる。\n\\[\nB[t, t+5] = \\Sigma^{\\beta - 5}_{x = \\alpha} \\frac{5}{2} \\cdot {}_5 F_x \\cdot \\left( {}_5 N^F_x (t) + {}_5 N^F_{-5} (t) \\cdot \\frac{{}_5 L_x}{{}_5 L_{x-5}} \\right) \\tag{6.4}\\label{eq-cfpbirthnumber}\n\\]\n娘の出生を性出生比を用いて計算する。\n\\[\nB^F[t, t+5] = \\frac{1}{1 + SRB} \\cdot B[t, t+5] \\tag{6.5}\\label{eq-cfpfembirth}\n\\]\n最後に、予測区間の最後の出生数を計算する。\\(\\frac{{}_5 L_0}{5 \\cdot l_0}\\)は0-4歳の人々と5年間の出生数の比を示す。\n\\[\n{}_5 N_0 (t+5) = \\frac{B[t, t+5] \\cdot {}_5 L_0}{5 \\cdot l_0} \\tag{6.6}\\label{eq-cfpfinalbirth}\n\\]\n\n\n6.3.2 閉鎖男女人口の予測\n女性人口の予測とほぼ同義のため割愛。\n\n\n6.3.3 開放人口の予測\n流出は人口の減少プロセスとみなされ、性別・年齢別に流出割合を計算し、死亡のリスクと流出のリスクを合わせた多重減少過程として扱われる。流入は既存の人口では発生しない、性別や年齢で割合を算出する利点がない、流入した者も死亡や出生のリスクを持つという点で困難を抱える。連続的な移動プロセスを捉えるため、移動者を予測区間の前半に移動する者と後半に移動する者に分けて考える。(1) \\(x\\)歳から\\(x+5\\)歳の増加は単純に加算する(式\\(\\ref{eq-opmigration}\\)第二項)、(2) \\(x-5\\)歳から\\(x\\)歳の増加は 式\\(\\ref{eq-closedfemalepopulationstep1}\\)の要領で生存比を考慮する(式\\(\\ref{eq-opmigration}\\)第一項)。\n\\[\n{}_5 N^F_x (t+5) = \\left[ \\left( {}_5 N^F_{-5} (t) + \\frac{{}_5 I^F_{x-5} [t, t+5]}{2} \\right) \\cdot \\frac{{}_5 L_x}{{}_5 L_{x-5}} \\right] + \\frac{{}_5 I^F_{x} [t, t+5]}{2} \\tag{6.7}\\label{eq-opmigration}\n\\]\n移動による追加的な出生数は式\\(\\ref{eq-opmigrationbirth}\\)で計算される(式\\(\\ref{eq-cfpbirthnumber}\\)の\\({}_5 N^F_x (t) = {}_5 N^F_x (t) + [{}_5 I^F_x [t, t+5] / 2]\\)になるから\\(\\frac{5}{4}\\)になる？)。\n\\[\n\\Delta B [t, t+5] = \\Sigma^{\\beta - 5}_{x = \\alpha} \\frac{5}{4} \\cdot {}_5 F_x \\cdot \\left( {}_5 I^F_x (t) + {}_5 I^F_{x-5} (t) \\cdot \\frac{{}_5 L_x}{{}_5 L_{x-5}} \\right) \\tag{6.8}\\label{eq-opmigrationbirth}\n\\]\n0-4歳での流入数を式\\(\\ref{eq-cfpyoungest}\\)に加算する。\n\\[\n{}_5 N^F_0 (t+5) = B^F[t, t+5] \\cdot \\frac{{}_5 L_0}{5 \\cdot l_0} + \\frac{{}_5 I^F_0 [t, t+5]}{2}\n\\]\nこの調整法は純増加として表現されるが、流入と流出は同じ原因や制約を共有しているわけではない、流出の方が多重減少過程として扱いやすいといった点で、分析的には混乱を招きうる。\n\n\n6.3.4 さらなる非集約化\nコホートコンポーネント法はそのほかの生得的な特徴のみについて非集約化できる。その際、出生が母親として同じサブ集団に属し、性出生比を算出できることが条件。時間によって変わる特徴は用いることができないが、なんらかの規則性を持って変化する場合は年齢と性別で予測し、その特性に年齢パターンを当てはめるという可能性もある。"
   },
   {
-    "objectID": "notes/preston_chapter56/manuscript.html#行列表記による予測",
-    "href": "notes/preston_chapter56/manuscript.html#行列表記による予測",
+    "objectID": "notes/preston_chapter56/index.html#行列表記による予測",
+    "href": "notes/preston_chapter56/index.html#行列表記による予測",
     "title": "人口学勉強会購読資料(5,6章)",
     "section": "6.4 行列表記による予測",
     "text": "6.4 行列表記による予測\nコホートコンポーネント法は行列でも表記可能である。行列で表記することはコンピューターの使用を促し人口ダイナミクスの重要な関係を明示する。\n閉鎖的な女性のみの集団を\\(W\\)とし、年齢集団を5つに分割する(\\(i \\in \\{1, 2, 3, 4, 5 \\}\\)、1から5はそれぞれ0-14歳、15-29歳、30-44歳、45-59歳、60歳以上とし、\\(6\\)は75歳以上とする)。\\(i=2,3,4\\)について、\\(t+15\\)年後の生存人口は以下の通り。\n\\[\nW_i (t+15) = W_{i-1} (t) \\cdot \\frac{L_i}{L_{i-1}}\n\\]\n\\(i=5\\)について；\n\\[\nW_5 (t+15) = \\left( W_4 (t) \\cdot \\frac{L_5}{L_4} \\right) + \\left( W_5 (t) \\cdot \\frac{T_6}{T_5} \\right)\n\\]\n\\(i=1\\)について；\n\\[\\begin{eqnarray}\nW_1 (t+15) &= B[t, t+15] \\cdot \\frac{1}{1+SRB} \\cdot \\frac{L_1}{15 \\cdot l_0} \\\\\n\n          &= k \\cdot \\left( F_2 \\cdot \\frac{L_2}{L_1} \\cdot W_1(t) + \\left[ F_2 + F_3 \\cdot \\frac{L_3}{L_2} \\right] \\cdot W_2(t) + F_3 \\cdot W_3(t) \\right)\n\\end{eqnarray}\\]\nただし、\\(k = (1 / (1 + SRB)) (L_1 / (2 \\cdot l_0))\\)。\n行列で表記する。\n\\[\\begin{equation}\n\n\\begin{pmatrix}\nW_1(t+15) \\\\\nW_2(t+15) \\\\\nW_3(t+15) \\\\\nW_4(t+15) \\\\\nW_5(t+15) \\\\\n\\end{pmatrix}\n=\n\n\\begin{pmatrix}\nk \\cdot F_2 \\cdot \\frac{L_2}{L_1} & k \\cdot [F_2 + F_3 \\cdot \\frac{L_3}{L_2}] & k \\cdot F_3 & 0 & 0 \\\\\n\\frac{L_2}{L_1} & 0 & 0 & 0 & 0 \\\\\n0 & \\frac{L_3}{L_2} & 0 & 0 & 0 \\\\\n0 & 0 & \\frac{L_4}{L_3} & 0 & 0 \\\\\n0 & 0 & 0 & \\frac{L_5}{L_4} & \\frac{T_6}{T_5} \\\\\n\\end{pmatrix}\n\\cdot\n\n\\begin{pmatrix}\nW_1(t) \\\\\nW_2(t) \\\\\nW_3(t) \\\\\nW_4(t) \\\\\nW_5(t) \\\\\n\\end{pmatrix}\n\n\\tag{6.10}\\label{ccmmatrix}\n\\end{equation}\\]\n式\\(\\ref{ccmmatrix}\\)の\\(W_i(t)\\)を\\(\\mathbf{W}(t)\\)とし、\\(t\\)から\\(t+15\\)までの予測行列を\\(\\mathbf{L}[t, t+15]\\)とすると、以下のように簡略化できる。\n\\[\n\\mathbf{W}(t+15) = \\mathbf{L}[t, t+15] \\cdot \\mathbf{W}(t)\n\\]\nこの予測行列が15年間隔の連続した予測期間に適用可能であるとすると、以下のように表現できる。ここから、\\(\\mathbf{L}\\)を十分高次にn乗すると、\\(\\mathbf{W}(t+15 \\cdot n)\\)の人口年齢構造が一定になり、各予測区間中の人口増加率が一定になる。\n\\[\n\\mathbf{W}(t+15 \\cdot n) = \\mathbf{L^n} \\cdot \\mathbf{W}(t)\n\\]"
   },
   {
-    "objectID": "notes/preston_chapter56/manuscript.html#人口予報",
-    "href": "notes/preston_chapter56/manuscript.html#人口予報",
+    "objectID": "notes/preston_chapter56/index.html#人口予報",
+    "href": "notes/preston_chapter56/index.html#人口予報",
     "title": "人口学勉強会購読資料(5,6章)",
     "section": "6.5 人口予報",
     "text": "6.5 人口予報\nコホートコンポーネント法による人口予報の肝は、各予測区間において、年齢固有の死亡率と出生率のセットと年齢および性別ごと流入者と流出者のセットを定義することにある。国連では性別ごとに17の年齢集団に分割し、36(出生から最初の年齢までを含む)の生存比、6つの年齢固有出生率(15-19歳から40-44歳)、性出生比1つ、34の年齢および性別ごとの流入数および流出数についての情報(36+6+1+34+34=111)を必要とする。\n将来の出生・死亡・移動についての仮定を整理する。平均寿命は多くの人口で増加率と水準が線型に増加すると仮定されている。そのため、近年の増加が速ければ速く、すでに高水準であれば遅くなる。これは人口はいずれ平均寿命の最大値に達するという仮定を置いているが、その上限が存在するかどうかは不明。Lee and Kanter(1992)は以下の関数を死亡率に当てはめている。\\(a_x\\)は固定された年齢の効果、\\(b_x\\)は死亡率変化の年齢パターン、\\(K(t)\\)は\\(t\\)時点での死亡水準をそれぞれ示している。\n\\[\nIn [M (x, t)] = a_x + K(t) \\cdot b_x\n\\]\n出生の変化は死亡ほど単純ではない。たとえば、TFRが低い国は出生移行期の最中とみなして傾向を線型に外挿し、TFRが安定的な国では出生低下が始まる日時を同定し、それに達したら線形の低下をあてがう。\n流入と流出は最も予測の難しい人口学的要素である。移動を外生的な要因とみなす研究もあるが、この立場は実証的証拠というよりも移動の規定要因に対する理解の不足による。移動は一時的かもしれないし(e.g., 難民受入)、移民政策は外生的でないかもしれないし、流出は国内の経済成長の鈍化によるかもしれない。"
   },
   {
-    "objectID": "notes/preston_chapter56/manuscript.html#米国人口の統計局予測",
-    "href": "notes/preston_chapter56/manuscript.html#米国人口の統計局予測",
+    "objectID": "notes/preston_chapter56/index.html#米国人口の統計局予測",
+    "href": "notes/preston_chapter56/index.html#米国人口の統計局予測",
     "title": "人口学勉強会購読資料(5,6章)",
     "section": "6.6 米国人口の統計局予測",
     "text": "6.6 米国人口の統計局予測\n米国統計局では将来人口を予測するために10の仮定（出生・死亡・移動が高い／中くらい／低い＋移動なし）を置いている。この仮定は先進国向けのそれに沿ったものである。"
   },
   {
-    "objectID": "notes/preston_chapter56/manuscript.html#そのほかの予報手法",
-    "href": "notes/preston_chapter56/manuscript.html#そのほかの予報手法",
+    "objectID": "notes/preston_chapter56/index.html#そのほかの予報手法",
+    "href": "notes/preston_chapter56/index.html#そのほかの予報手法",
     "title": "人口学勉強会購読資料(5,6章)",
     "section": "6.7 そのほかの予報手法",
     "text": "6.7 そのほかの予報手法\nコホートコンポーネント法は内的妥当性の高い実践的な方法論だが、年齢区間内の安定性、区間のはじめと終わりの平均としてパーソンイヤーが計算される、出生性比が一定である、といった仮定を置いている。コホートコンポーネント法に依拠するかぎり、過去の実績を検証することはあまり意味がない。たとえば、年齢固有出生率のばらつきが再生産可能な年齢の女性の割合によって補われれば、粗出生率のばらつきが年齢固有出生率の時系列でのばらつきより規則的で平滑になるかもしれない。人口ダイナミクスのモデルはモデルは個人を基礎としているが、世帯や両性モデルでも用いることができる。"
   },
   {
-    "objectID": "notes/preston_chapter56/manuscript.html#正確さと不確実さ",
-    "href": "notes/preston_chapter56/manuscript.html#正確さと不確実さ",
+    "objectID": "notes/preston_chapter56/index.html#正確さと不確実さ",
+    "href": "notes/preston_chapter56/index.html#正確さと不確実さ",
     "title": "人口学勉強会購読資料(5,6章)",
     "section": "6.8 正確さと不確実さ",
     "text": "6.8 正確さと不確実さ\n人口予報の正確さは予後にのみ評価できる。もっともインスタントな正確さの指標は、たとえば人口サイズを例に挙げると、予報したサイズと実際のサイズの差である。ただし、その差の程度も長期でみるか短期で見るかでことなる。そのため、以下の指標を用いる。\\(N^P(T)\\)は\\(T\\)時点の予測された人口サイズを、\\(N(0)\\)および\\(N(T)\\)は実際の\\(0\\)時点および\\(T\\)時点の実際の人口サイズをそれぞれ示している。\n\\[\nE = \\frac{N(T) - N^P(T)}{N(T) - N(0)}\n\\]\n同様に成長率を比較する方法もある。\n\\[\n\\epsilon = \\bar{r}^P [0, T] - \\bar{r} [0, T] = \\frac{In \\left( \\frac{N^P(T)}{N(T)} \\right)}{T}\n\\]\nそのほか、人口率を確率的プロセスとみなしたり、時系列分析の手法を用いたりして信頼区間を算出する方法もある。"
   },
   {
-    "objectID": "notes/preston_chapter56/manuscript.html#人口予測の他の使用法",
-    "href": "notes/preston_chapter56/manuscript.html#人口予測の他の使用法",
+    "objectID": "notes/preston_chapter56/index.html#人口予測の他の使用法",
+    "href": "notes/preston_chapter56/index.html#人口予測の他の使用法",
     "title": "人口学勉強会購読資料(5,6章)",
     "section": "6.9 人口予測の他の使用法",
     "text": "6.9 人口予測の他の使用法\n人口予測における人口学的変数間の相互関係のセットそれ自体も重要な分析上の目的となる。1つの使い方は人口学的モメンタム(既存の年齢構造が将来の人口成長をどのように条件づけるのか)を示すことにある。また、人口予測は理論的な動機からも使うことがある。人口予測は、出生率と死亡率の条件を固定した人口が安定状態に収束することを示すことができる。"
