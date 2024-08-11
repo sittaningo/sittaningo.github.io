@@ -1,6 +1,6 @@
 ---
-title: "Education Sets the Stage, Sex Draws the Pathway"
-subtitle: "Occupational Skill Allocation over the Life Course in Japan"
+title: "Later-life Careers as a Volatile and Equalizing Trajectory"
+subtitle: "A Long-term Perspective on Analytical Skill Usage across the Life Course in Japan"
 date: 2023-11-17
 author:
   - name: Shingo Nitta
@@ -10,29 +10,15 @@ categories:
   - Life Course
   - Occupation
   - Task/Skill
-status: work-in-progress
+status: working-papers
+paperlink: "https://osf.io/preprints/socarxiv/9d42f"
 pub-info:
-  links:
-    # - name: Working Paper
-    #   url: "yanagimoto_why_2023.pdf"
-    #   local: true
-    #   icon: fa-solid fa-file-pdf
-    # - name: Slides (SEHO2023)
-    #   url: "seho2023_yanagimoto.pdf"
-    #   local: true
-    #   icon: fa-solid fa-chalkboard-user
-hide-detail: true
-pub-status: 
-  # status: Writing
-  # class: warning
-  # icon: fa-solid fa-pencil
-  # status: Under review
-  # class: success
-  # icon: fas fa-glasses
+#   links:
+#     - name: Working Paper
+#       local: true
+#       icon: fa-solid fa-file-pdf
+hide-detail: false
 ---
-
-<!-- [{{< fa file-pdf >}} Working Paper](yanagimoto_why_2023.pdf) &nbsp;
-[ {{< fa chalkboard-teacher >}} Slides (SEHO2023)](seho2023_yanagimoto.pdf) -->
 
 ## Abstract
 

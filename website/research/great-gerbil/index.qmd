@@ -1,15 +1,15 @@
 ---
-title: "Two Tales of Greying Labor Market in Japan"
-subtitle: "Aging Labor Force and Extending Working Lives"
-date: 2023-11-17
+title: "就労女性における壮年期の雇用形態の軌跡とそのコホート変化"
+# subtitle: "The Gap-closing Approach to The Health Disparity by Social Origin of Child’s Education"
+date: 2024-08-11
 author:
   - name: Shingo Nitta
     url: "https://shingonitta.com/"
     affiliation: Gakushuin University
 categories:
+  - Gender
+  - Life Course
   - Labor Market
-  - Occupation
-  - Population Aging
 status: work-in-progress
 pub-info:
   links:
@@ -30,11 +30,3 @@ pub-status:
   # class: success
   # icon: fas fa-glasses
 ---
-
-<!-- [{{< fa file-pdf >}} Working Paper](yanagimoto_why_2023.pdf) &nbsp;
-[ {{< fa chalkboard-teacher >}} Slides (SEHO2023)](seho2023_yanagimoto.pdf) -->
-
-## Abstract
-
-<!-- hoge -->
-

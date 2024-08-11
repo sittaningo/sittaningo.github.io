@@ -1,15 +1,15 @@
 ---
-title: "Covering The Long Shadow"
-subtitle: "The Moderating Role of Children’s Education to Health Disparity by Social Origin in Japan"
-date: 2023-11-17
+title: "No Widening Educational Inequality on All-cause Mortality among Japanese Older Adults, 1893-1936"
+# subtitle: "The Gap-closing Approach to The Health Disparity by Social Origin of Child’s Education"
+date: 2024-08-11
 author:
   - name: Shingo Nitta
     url: "https://shingonitta.com/"
     affiliation: Gakushuin University
 categories:
   - Health
-  - Multigeneration
-  - Causal Inference
+  - Mortality
+  - Social Inequality
 status: work-in-progress
 pub-info:
   links:
@@ -30,11 +30,3 @@ pub-status:
   # class: success
   # icon: fas fa-glasses
 ---
-
-<!-- [{{< fa file-pdf >}} Working Paper](yanagimoto_why_2023.pdf) &nbsp;
-[ {{< fa chalkboard-teacher >}} Slides (SEHO2023)](seho2023_yanagimoto.pdf) -->
-
-## Abstract
-
-<!-- hoge -->
-

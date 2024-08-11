@@ -6,7 +6,6 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
-<meta name="author" content="">
 <meta name="description" content="過去すべての研究についてはResearchmap、Google Scholarをご参照ください。">
 
 <title>Shingo Nitta - RESEARCH</title>
@@ -66,7 +65,7 @@ ul.task-list li input[type="checkbox"] {
 <script>
 
   window.document.addEventListener("DOMContentLoaded", function (_event) {
-    const listingTargetEl = window.document.querySelector('#listing-peer-reviewed-papers .list');
+    const listingTargetEl = window.document.querySelector('#listing-projects .list');
     if (!listingTargetEl) {
       // No listing discovered, do not attach.
       return; 
@@ -79,35 +78,7 @@ ul.task-list li input[type="checkbox"] {
     };
 
     window['quarto-listings'] = window['quarto-listings'] || {};
-    window['quarto-listings']['listing-peer-reviewed-papers'] = new List('listing-peer-reviewed-papers', options);
-
-    if (window['quarto-listing-loaded']) {
-      window['quarto-listing-loaded']();
-    }
-  });
-
-  window.addEventListener('hashchange',() => {
-    if (window['quarto-listing-loaded']) {
-      window['quarto-listing-loaded']();
-    }
-  })
-  
-
-  window.document.addEventListener("DOMContentLoaded", function (_event) {
-    const listingTargetEl = window.document.querySelector('#listing-work-in-progress .list');
-    if (!listingTargetEl) {
-      // No listing discovered, do not attach.
-      return; 
-    }
-
-    const options = {
-      valueNames: ['listing-project','listing-website','listing-format','listing-language','listing-title','listing-date','listing-author','listing-categories','listing-status','listing-paperlink','listing-pub-info','listing-hide-detail','listing-pub-status','listing-path','listing-outputHref','listing-date-modified','listing-description','listing-filename','listing-file-modified','listing-reading-time','listing-subtitle',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-date-modified-sort'] },{ data: ['listing-file-modified-sort'] },{ data: ['listing-reading-time-sort'] }],
-      
-      searchColumns: ["listing-project","listing-website","listing-format","listing-language","listing-title","listing-date","listing-author","listing-categories","listing-status","listing-paperlink","listing-pub-info","listing-hide-detail","listing-pub-status","listing-path","listing-outputHref","listing-date-modified","listing-description","listing-filename","listing-file-modified","listing-reading-time","listing-subtitle"],
-    };
-
-    window['quarto-listings'] = window['quarto-listings'] || {};
-    window['quarto-listings']['listing-work-in-progress'] = new List('listing-work-in-progress', options);
+    window['quarto-listings']['listing-projects'] = new List('listing-projects', options);
 
     if (window['quarto-listing-loaded']) {
       window['quarto-listing-loaded']();
@@ -171,15 +142,8 @@ ul.task-list li input[type="checkbox"] {
 <!-- sidebar -->
 <!-- margin-sidebar -->
     <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
-        <nav id="TOC" role="doc-toc" class="toc-active">
-    <h2 id="toc-title">Contents</h2>
-   
-  <ul>
-  <li><a href="#peer-reviewed-papers" id="toc-peer-reviewed-papers" class="nav-link active" data-scroll-target="#peer-reviewed-papers">PEER-REVIEWED PAPERS</a></li>
-  <li><a href="#work-in-progress" id="toc-work-in-progress" class="nav-link" data-scroll-target="#work-in-progress">WORK IN PROGRESS</a></li>
-  </ul>
-</nav>
-    <h5 class="quarto-listing-category-title">Categories</h5><div class="quarto-listing-category category-default"><div class="category" data-category="">All <span class="quarto-category-count">(14)</span></div><div class="category" data-category="Causal Inference">Causal Inference <span class="quarto-category-count">(4)</span></div><div class="category" data-category="Family">Family <span class="quarto-category-count">(2)</span></div><div class="category" data-category="Health">Health <span class="quarto-category-count">(2)</span></div><div class="category" data-category="Labor Market">Labor Market <span class="quarto-category-count">(2)</span></div><div class="category" data-category="Life Course">Life Course <span class="quarto-category-count">(2)</span></div><div class="category" data-category="Multigeneration">Multigeneration <span class="quarto-category-count">(2)</span></div><div class="category" data-category="Occupation">Occupation <span class="quarto-category-count">(6)</span></div><div class="category" data-category="Occupational Mobility">Occupational Mobility <span class="quarto-category-count">(4)</span></div><div class="category" data-category="Older Workers">Older Workers <span class="quarto-category-count">(8)</span></div><div class="category" data-category="Population Aging">Population Aging <span class="quarto-category-count">(2)</span></div><div class="category" data-category="Task/Skill">Task/Skill <span class="quarto-category-count">(4)</span></div></div></div>
+        
+    <h5 class="quarto-listing-category-title">Categories</h5><div class="quarto-listing-category category-default"><div class="category" data-category="">All <span class="quarto-category-count">(8)</span></div><div class="category" data-category="Causal Inference">Causal Inference <span class="quarto-category-count">(2)</span></div><div class="category" data-category="Family">Family <span class="quarto-category-count">(1)</span></div><div class="category" data-category="Gender">Gender <span class="quarto-category-count">(1)</span></div><div class="category" data-category="Health">Health <span class="quarto-category-count">(2)</span></div><div class="category" data-category="Labor Market">Labor Market <span class="quarto-category-count">(1)</span></div><div class="category" data-category="Life Course">Life Course <span class="quarto-category-count">(2)</span></div><div class="category" data-category="Mortality">Mortality <span class="quarto-category-count">(1)</span></div><div class="category" data-category="Multigeneration">Multigeneration <span class="quarto-category-count">(1)</span></div><div class="category" data-category="Occupation">Occupation <span class="quarto-category-count">(2)</span></div><div class="category" data-category="Occupational Mobility">Occupational Mobility <span class="quarto-category-count">(2)</span></div><div class="category" data-category="Older Workers">Older Workers <span class="quarto-category-count">(4)</span></div><div class="category" data-category="Social Inequality">Social Inequality <span class="quarto-category-count">(1)</span></div><div class="category" data-category="Task/Skill">Task/Skill <span class="quarto-category-count">(2)</span></div></div></div>
 <!-- main -->
 <main class="content column-page-left" id="quarto-document-content">
 
@@ -205,203 +169,185 @@ ul.task-list li input[type="checkbox"] {
 
 </header>
 
-<section id="peer-reviewed-papers" class="level2">
-<h2 class="anchored" data-anchor-id="peer-reviewed-papers">PEER-REVIEWED PAPERS</h2>
-<div id="listing-peer-reviewed-papers" class="quarto-listing quarto-listing-container-custom">
+<div id="listing-projects" class="quarto-listing quarto-listing-container-custom">
 <div class="list research">
-        <div class="research-entry" data-index="0" data-categories="Older Workers,Occupation,Causal Inference" data-listing-date-sort="1712415600000" data-listing-file-modified-sort="1722490834271" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1">
-            <div class="body">
-                <p class="title listing-title">
-                        職業的地位が高齢期の就業行動に与える影響
-                </p>
-                <p class="subtitle listing-subtitle">
-                    ジェンダーによる効果の異質性に着目して
-                </p>
-                <div class="item-categories listing-categories">
-                    <div class="item-category listing-category" onclick="window.quartoListingCategory('Older Workers'); return false;">
-                        Older Workers
-                    </div>
-                    <div class="item-category listing-category" onclick="window.quartoListingCategory('Occupation'); return false;">
-                        Occupation
-                    </div>
-                    <div class="item-category listing-category" onclick="window.quartoListingCategory('Causal Inference'); return false;">
-                        Causal Inference
-                    </div>
-                </div>
-                <span class="research-journal">
-                        in <i> 
-                            社会学評論
-                           </i>
-                </span>
-                    <ul class="research-links">
-                </ul>
-            </div>
-        </div>
-        <div class="research-entry" data-index="1" data-categories="Older Workers,Occupational Mobility,Task/Skill" data-listing-date-sort="1693407600000" data-listing-file-modified-sort="1719296285112" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1">
-            <div class="body">
-                <p class="title listing-title">
-                        <a href="https://doi.org/10.11218/ojjams.38.59">高年齢者の企業間移動と職業スキルの移転</a>
-                </p>
-                <p class="subtitle listing-subtitle">
-                </p>
-                <div class="item-categories listing-categories">
-                    <div class="item-category listing-category" onclick="window.quartoListingCategory('Older Workers'); return false;">
-                        Older Workers
-                    </div>
-                    <div class="item-category listing-category" onclick="window.quartoListingCategory('Occupational Mobility'); return false;">
-                        Occupational Mobility
-                    </div>
-                    <div class="item-category listing-category" onclick="window.quartoListingCategory('Task/Skill'); return false;">
-                        Task/Skill
+                <h2 class="anchored">PEER-REVIEWED PAPERS</h2>
+                <div class="research-entry" data-index="0" data-categories="Older Workers,Occupation,Causal Inference" data-listing-date-sort="1712415600000" data-listing-file-modified-sort="1722490834271" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1">
+                    <div class="body">
+                        <p class="title listing-title">
+                                職業的地位が高齢期の就業行動に与える影響
+                        </p>
+                        <p class="subtitle listing-subtitle">
+                            ジェンダーによる効果の異質性に着目して
+                        </p>
+                            <div class="item-categories listing-categories">
+                                <div class="item-category listing-category" onclick="window.quartoListingCategory('Older Workers'); return false;">
+                                    Older Workers
+                                </div>
+                                <div class="item-category listing-category" onclick="window.quartoListingCategory('Occupation'); return false;">
+                                    Occupation
+                                </div>
+                                <div class="item-category listing-category" onclick="window.quartoListingCategory('Causal Inference'); return false;">
+                                    Causal Inference
+                                </div>
+                            </div>
+                        <ul class="research-links">
+                        </ul>
                     </div>
                 </div>
-                <span class="research-journal">
-                        in <i> 
-                            理論と方法
-                           </i>
-                </span>
-                    <ul class="research-links">
-                </ul>
-            </div>
-        </div>
-        <div class="research-entry" data-index="2" data-categories="Older Workers,Family" data-listing-date-sort="1666191600000" data-listing-file-modified-sort="1719296285106" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1">
-            <div class="body">
-                <p class="title listing-title">
-                        <a href="https://doi.org/10.34393/rousha.44.3_231">配偶者および子どもとの資源配分にみる高齢男性の就業選択</a>
-                </p>
-                <p class="subtitle listing-subtitle">
-                </p>
-                <div class="item-categories listing-categories">
-                    <div class="item-category listing-category" onclick="window.quartoListingCategory('Older Workers'); return false;">
-                        Older Workers
-                    </div>
-                    <div class="item-category listing-category" onclick="window.quartoListingCategory('Family'); return false;">
-                        Family
+                <div class="research-entry" data-index="1" data-categories="Older Workers,Occupational Mobility,Task/Skill" data-listing-date-sort="1693407600000" data-listing-file-modified-sort="1719296285112" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1">
+                    <div class="body">
+                        <p class="title listing-title">
+                                <a href="https://doi.org/10.11218/ojjams.38.59">高年齢者の企業間移動と職業スキルの移転</a>
+                        </p>
+                        <p class="subtitle listing-subtitle">
+                        </p>
+                            <div class="item-categories listing-categories">
+                                <div class="item-category listing-category" onclick="window.quartoListingCategory('Older Workers'); return false;">
+                                    Older Workers
+                                </div>
+                                <div class="item-category listing-category" onclick="window.quartoListingCategory('Occupational Mobility'); return false;">
+                                    Occupational Mobility
+                                </div>
+                                <div class="item-category listing-category" onclick="window.quartoListingCategory('Task/Skill'); return false;">
+                                    Task/Skill
+                                </div>
+                            </div>
+                        <ul class="research-links">
+                        </ul>
                     </div>
                 </div>
-                <span class="research-journal">
-                        in <i> 
-                            老年社会科学
-                           </i>
-                </span>
-                    <ul class="research-links">
-                </ul>
-            </div>
-        </div>
-        <div class="research-entry" data-index="3" data-categories="Older Workers,Occupational Mobility" data-listing-date-sort="1660489200000" data-listing-file-modified-sort="1719296285110" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1">
-            <div class="body">
-                <p class="title listing-title">
-                        移動経路にみる就業高年齢者の特徴と就業理由
-                </p>
-                <p class="subtitle listing-subtitle">
-                    自己開拓に着目して
-                </p>
-                <div class="item-categories listing-categories">
-                    <div class="item-category listing-category" onclick="window.quartoListingCategory('Older Workers'); return false;">
-                        Older Workers
-                    </div>
-                    <div class="item-category listing-category" onclick="window.quartoListingCategory('Occupational Mobility'); return false;">
-                        Occupational Mobility
+                <div class="research-entry" data-index="2" data-categories="Older Workers,Family" data-listing-date-sort="1666191600000" data-listing-file-modified-sort="1719296285106" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1">
+                    <div class="body">
+                        <p class="title listing-title">
+                                <a href="https://doi.org/10.34393/rousha.44.3_231">配偶者および子どもとの資源配分にみる高齢男性の就業選択</a>
+                        </p>
+                        <p class="subtitle listing-subtitle">
+                        </p>
+                            <div class="item-categories listing-categories">
+                                <div class="item-category listing-category" onclick="window.quartoListingCategory('Older Workers'); return false;">
+                                    Older Workers
+                                </div>
+                                <div class="item-category listing-category" onclick="window.quartoListingCategory('Family'); return false;">
+                                    Family
+                                </div>
+                            </div>
+                        <ul class="research-links">
+                        </ul>
                     </div>
                 </div>
-                <span class="research-journal">
-                        in <i> 
-                            応用老年学
-                           </i>
-                </span>
-                <span class="research-coauthors">
-                    with 村山洋史・菅原育子
-                </span>
-                    <ul class="research-links">
-                </ul>
-            </div>
-        </div>
-</div>
-<div class="listing-no-matching d-none">
-No matching items
-</div>
-</div>
-<!-- ## WORKING PAPERS
-
-:::{#working-papers}
-::: -->
-</section>
-<section id="work-in-progress" class="level2">
-<h2 class="anchored" data-anchor-id="work-in-progress">WORK IN PROGRESS</h2>
-<div id="listing-work-in-progress" class="quarto-listing quarto-listing-container-custom">
-<div class="list research">
-        <div class="research-entry" data-index="0" data-categories="Health,Multigeneration,Causal Inference" data-listing-date-sort="1700146800000" data-listing-file-modified-sort="1719296285107" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1">
-            <div class="body">
-                <p class="title listing-title">
-                        Covering The Long Shadow
-                </p>
-                <p class="subtitle listing-subtitle">
-                    The Gap-closing Approach to The Health Disparity by Social Origin of Child’s Education
-                </p>
-                <div class="item-categories listing-categories">
-                    <div class="item-category listing-category" onclick="window.quartoListingCategory('Health'); return false;">
-                        Health
-                    </div>
-                    <div class="item-category listing-category" onclick="window.quartoListingCategory('Multigeneration'); return false;">
-                        Multigeneration
-                    </div>
-                    <div class="item-category listing-category" onclick="window.quartoListingCategory('Causal Inference'); return false;">
-                        Causal Inference
+                <div class="research-entry" data-index="3" data-categories="Older Workers,Occupational Mobility" data-listing-date-sort="1660489200000" data-listing-file-modified-sort="1719296285110" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1">
+                    <div class="body">
+                        <p class="title listing-title">
+                                移動経路にみる就業高年齢者の特徴と就業理由
+                        </p>
+                        <p class="subtitle listing-subtitle">
+                            自己開拓に着目して
+                        </p>
+                            <div class="item-categories listing-categories">
+                                <div class="item-category listing-category" onclick="window.quartoListingCategory('Older Workers'); return false;">
+                                    Older Workers
+                                </div>
+                                <div class="item-category listing-category" onclick="window.quartoListingCategory('Occupational Mobility'); return false;">
+                                    Occupational Mobility
+                                </div>
+                            </div>
+                        <ul class="research-links">
+                        </ul>
                     </div>
                 </div>
-                <ul class="research-links">
-                </ul>
-            </div>
-            <!--  -->
-        </div>
-        <div class="research-entry" data-index="1" data-categories="Labor Market,Occupation,Population Aging" data-listing-date-sort="1700146800000" data-listing-file-modified-sort="1719296285109" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1">
-            <div class="body">
-                <p class="title listing-title">
-                        Two Tales of Greying Labor Market in Japan
-                </p>
-                <p class="subtitle listing-subtitle">
-                    Aging Labor Force and Extending Working Lives
-                </p>
-                <div class="item-categories listing-categories">
-                    <div class="item-category listing-category" onclick="window.quartoListingCategory('Labor Market'); return false;">
-                        Labor Market
-                    </div>
-                    <div class="item-category listing-category" onclick="window.quartoListingCategory('Occupation'); return false;">
-                        Occupation
-                    </div>
-                    <div class="item-category listing-category" onclick="window.quartoListingCategory('Population Aging'); return false;">
-                        Population Aging
-                    </div>
-                </div>
-                <ul class="research-links">
-                </ul>
-            </div>
-            <!--  -->
-        </div>
-        <div class="research-entry" data-index="2" data-categories="Life Course,Occupation,Task/Skill" data-listing-date-sort="1700146800000" data-listing-file-modified-sort="1719296285111" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1">
-            <div class="body">
-                <p class="title listing-title">
-                        Education Sets the Stage, Sex Draws the Pathway
-                </p>
-                <p class="subtitle listing-subtitle">
-                    Occupational Skill Allocation over the Life Course in Japan
-                </p>
-                <div class="item-categories listing-categories">
-                    <div class="item-category listing-category" onclick="window.quartoListingCategory('Life Course'); return false;">
-                        Life Course
-                    </div>
-                    <div class="item-category listing-category" onclick="window.quartoListingCategory('Occupation'); return false;">
-                        Occupation
-                    </div>
-                    <div class="item-category listing-category" onclick="window.quartoListingCategory('Task/Skill'); return false;">
-                        Task/Skill
+                <h2 class="anchored">WORKING PAPERS</h2>
+                <div class="research-entry" data-index="4" data-categories="Life Course,Occupation,Task/Skill" data-listing-date-sort="1700146800000" data-listing-file-modified-sort="1723380083106" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1">
+                    <div class="body">
+                        <p class="title listing-title">
+                                <a href="https://osf.io/preprints/socarxiv/9d42f">Later-life Careers as a Volatile and Equalizing Trajectory</a>
+                        </p>
+                        <p class="subtitle listing-subtitle">
+                            A Long-term Perspective on Analytical Skill Usage across the Life Course in Japan
+                        </p>
+                            <div class="item-categories listing-categories">
+                                <div class="item-category listing-category" onclick="window.quartoListingCategory('Life Course'); return false;">
+                                    Life Course
+                                </div>
+                                <div class="item-category listing-category" onclick="window.quartoListingCategory('Occupation'); return false;">
+                                    Occupation
+                                </div>
+                                <div class="item-category listing-category" onclick="window.quartoListingCategory('Task/Skill'); return false;">
+                                    Task/Skill
+                                </div>
+                            </div>
+                        <ul class="research-links">
+                        </ul>
                     </div>
                 </div>
-                <ul class="research-links">
-                </ul>
-            </div>
-            <!--  -->
-        </div>
+                <h2 class="anchored">WORK IN PROGRESS</h2>
+                <div class="research-entry" data-index="5" data-categories="Gender,Life Course,Labor Market" data-listing-date-sort="1723302000000" data-listing-file-modified-sort="1723380023752" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1">
+                    <div class="body">
+                        <p class="title listing-title">
+                                就労女性における壮年期の雇用形態の軌跡とそのコホート変化
+                        </p>
+                        <p class="subtitle listing-subtitle">
+                        </p>
+                            <div class="item-categories listing-categories">
+                                <div class="item-category listing-category" onclick="window.quartoListingCategory('Gender'); return false;">
+                                    Gender
+                                </div>
+                                <div class="item-category listing-category" onclick="window.quartoListingCategory('Life Course'); return false;">
+                                    Life Course
+                                </div>
+                                <div class="item-category listing-category" onclick="window.quartoListingCategory('Labor Market'); return false;">
+                                    Labor Market
+                                </div>
+                            </div>
+                        <ul class="research-links">
+                        </ul>
+                    </div>
+                </div>
+                <div class="research-entry" data-index="6" data-categories="Health,Mortality,Social Inequality" data-listing-date-sort="1723302000000" data-listing-file-modified-sort="1723379929583" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1">
+                    <div class="body">
+                        <p class="title listing-title">
+                                No Widening Educational Inequality on All-cause Mortality among Japanese Older Adults, 1893-1936
+                        </p>
+                        <p class="subtitle listing-subtitle">
+                        </p>
+                            <div class="item-categories listing-categories">
+                                <div class="item-category listing-category" onclick="window.quartoListingCategory('Health'); return false;">
+                                    Health
+                                </div>
+                                <div class="item-category listing-category" onclick="window.quartoListingCategory('Mortality'); return false;">
+                                    Mortality
+                                </div>
+                                <div class="item-category listing-category" onclick="window.quartoListingCategory('Social Inequality'); return false;">
+                                    Social Inequality
+                                </div>
+                            </div>
+                        <ul class="research-links">
+                        </ul>
+                    </div>
+                </div>
+                <div class="research-entry" data-index="7" data-categories="Health,Multigeneration,Causal Inference" data-listing-date-sort="1700146800000" data-listing-file-modified-sort="1723380165333" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1">
+                    <div class="body">
+                        <p class="title listing-title">
+                                Covering The Long Shadow
+                        </p>
+                        <p class="subtitle listing-subtitle">
+                            The Moderating Role of Children’s Education to Health Disparity by Social Origin in Japan
+                        </p>
+                            <div class="item-categories listing-categories">
+                                <div class="item-category listing-category" onclick="window.quartoListingCategory('Health'); return false;">
+                                    Health
+                                </div>
+                                <div class="item-category listing-category" onclick="window.quartoListingCategory('Multigeneration'); return false;">
+                                    Multigeneration
+                                </div>
+                                <div class="item-category listing-category" onclick="window.quartoListingCategory('Causal Inference'); return false;">
+                                    Causal Inference
+                                </div>
+                            </div>
+                        <ul class="research-links">
+                        </ul>
+                    </div>
+                </div>
 </div>
 <div class="listing-no-matching d-none">
 No matching items
@@ -410,7 +356,6 @@ No matching items
 
 
 
-</section>
 
 </main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">

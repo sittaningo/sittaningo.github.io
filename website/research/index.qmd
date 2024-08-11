@@ -1,25 +1,13 @@
 ---
 title: RESEARCH
 description: "過去すべての研究については[Researchmap](https://researchmap.jp/shingonitta)、[Google Scholar](https://scholar.google.co.jp/citations?hl=ja&user=QJx5LRgAAAAJ&view_op=list_works&gmla=AJ1KiT3hvOAOFgTV7rGvKzHIwy0qyY5lPe862Uq5SSls-1Tt3EnTkvvSXrLEslQnNdjYkRVhtOVdJu66YaqL1jKputV2N0djHaETFidZdATIsCSaiotekpjfOzk)をご参照ください。"
-author: ""
 listing:
-  - id: peer-reviewed-papers
+  - id: projects
     contents: "/*/index.qmd"
     sort: "date desc"
-    template: ../format/research/peer-reviewed-papers.ejs
+    template: ../format/research/listing.ejs
     categories: true
-  # - id: working-papers
-  #   contents: "/*/index.qmd"
-  #   sort: "date desc"
-  #   template: ../format/research/working-papers.ejs
-  #   categories: true
-  - id: work-in-progress
-    contents: "/*/index.qmd"
-    sort: "date desc"
-    template: ../format/research/work-in-progress.ejs
-    categories: true
-# title-block-banner: "#fff"
-linkcolor: "#000"
+# linkcolor: "#000"
 page-layout: full
 toc: true
 toc-location: right
@@ -27,17 +15,5 @@ toc-title: Contents
 date-format: "MMMM D, YYYY"
 ---
 
-## PEER-REVIEWED PAPERS
-
-:::{#peer-reviewed-papers}
-:::
-
-<!-- ## WORKING PAPERS
-
-:::{#working-papers}
-::: -->
-
-## WORK IN PROGRESS
-
-:::{#work-in-progress}
+:::{#projects}
 :::
