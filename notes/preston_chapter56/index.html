@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 <meta name="author" content="Shingo Nitta">
-<meta name="dcterms.date" content="2024-08-01">
+<meta name="dcterms.date" content="2024-08-11">
 
 <title>Shingo Nitta - 人口学勉強会購読資料(5,6章)</title>
 <style>
@@ -139,7 +139,7 @@ ul.task-list li input[type="checkbox"] {
     <div>
     <div class="quarto-title-meta-heading">Published</div>
     <div class="quarto-title-meta-contents">
-      <p class="date">August 1, 2024</p>
+      <p class="date">August 11, 2024</p>
     </div>
   </div>
   
@@ -478,21 +478,6 @@ I_b = \frac{1}{p(1-e)(1 - \omega)} + 9 + s_b + \frac{s_w \omega}{1 - \omega} \ta
 \frac{\frac{1}{p(1-e)} + s_w}{\frac{1}{p(1-e)(1 - \omega)} + 9 + s_b + \frac{s_w \omega}{1 - \omega}} \tag{5.15}\label{eq-abortion}
 \]</span></p>
 <p>これらのモデルはシンプルで出生の規定要因の影響を理解するうえで役立つが、注意点もある：離死別のような現象は考慮されていない、再生産可能な期間を通じて再生産のパラメータは一定である、異質性は考慮されていない、など。異質性を考慮することも分布に敏感であったりデータが不十分といった問題を抱えているものの、出生の規定要因とその相互関連を理解するうえでは有用な分析道具となる。</p>
-<!-- 異質性の影響を確認する。
-
-| 避妊           | 授乳         | 出産区間(1) | 結婚年齢 | TFR(2) | 
-| -------------- | ------------ | ----------- | -------- | ------ | 
-| ×              | ×            | 18          | 20       | 16.75  | 
-| $p=.2$         | $s_b$ = 1.5  |             | 30       | 10.08  | 
-|                | ⚪︎         | 30          | 20       | 10.45  | 
-|                | $s_b$ = 13.5 |             | 30       | 6.45   | 
-| ⚪︎           | ×            | 74.25       | 20       | 4.06   | 
-| $p(1-e)=.02$   | $s_b$ = 1.5  |             | 30       | 2.44   | 
-|                | ⚪︎         | 86.25       | 20       | 3.63   | 
-|                | $s_b$ = 13.5 |             | 30       | 2.24   | 
-| 平均           | $s_b$ = 7.5  | 29.11       | 25       | 8.50   | 
-| $p(1-e_m)=.11$ |              |             |          |        | 
-: 異質な人口のもとでのTFR -->
 <p>出生区間には「閉鎖的」と「開放的」がある。閉鎖的な出生区間は2つの観測されたイベント間の区間(e.g., 第一子出産から第二子出産)であり、開放的な区間は調査期間で「打ち切り」になるような区間(e.g., 出産からの年齢や年月など)を指す。</p>
 </section>
 <section id="再生産の測定" class="level2" data-number="5.5">
@@ -550,19 +535,6 @@ TFR = (1 + SRB) \cdot GRR = \frac{(1 + SRB)}{p(A_M)} \cdot NRR \tag{5.22}\label{
 \]</span></p>
 <p><span class="math inline">\(NRR=1\)</span>が代替水準の出生力と定義されるため、<span class="math inline">\(TFR \simeq (1+SRB) / p(A_M)\)</span>、<span class="math inline">\(GRR \simeq 1 / p(A_M)\)</span>がそれぞれ代替水準の出生力となる。NRRはどのくらい速く人口が増加するかは論じ得ない。成長率と再生産指標との関係は7章で、出生と再生産、および成長との関係は6章で論じる。</p>
 </section>
-</section>
-<section id="コメント" class="level1 unnumbered unlisted">
-<h1 class="unnumbered unlisted">コメント</h1>
-<ul>
-<li><p>出産区間分析の部分でかなりくじけてしまった。先進諸国では1人か2人しか子どもを産まないからそもそもの意義もうまく入ってこない。</p>
-<ul>
-<li><p>平均待機期間の導出は連続的に表現するところはそのまま理解できるが、<span class="math inline">\(\frac{1}{(1 - x)^2}\)</span>が何をしているのかよくわからない。</p></li>
-<li><p><span class="math inline">\(s_w\)</span>と<span class="math inline">\(s_b\)</span>の違いが不明。</p></li>
-<li><p>式<span class="math inline">\(\ref{eq-contraception}\)</span>の前の<span class="math inline">\(I_b\)</span>の導出、<span class="math inline">\(\frac{1}{p}\)</span>はどこに消えた？</p></li>
-</ul></li>
-<li><p>最初に言われているように出生には考慮するべき要因が多々あり、だからこそ半端に現実を考慮している感じが煩悶としてしまった。結婚や避妊、中絶だけでなく、不妊（男性も含む）や意欲なども同じくらい考慮する必要があり、なおかつそれらの相互作用もある(e.g., 女性が避妊薬を服用しかつ男性がコンドームを使用するとより出産リスクは低減する)。現実を考慮する手前の理論モデルが明示化されると良かった。</p></li>
-<li><p>出生率のコホート変化のうち、タイミングの変化とボリュームの変化に分解しているが、これらがそこまで綺麗に分解できるのか疑問に感じた。タイミングが遅れるという変化（出生年齢の高まり）は女性の最大出生可能数に影響を与え、結果としてボリュームの変化にも影響を与える、ということが考えられるのではないか。実際タイミングの変化には<span class="math inline">\(TFR^{C_i}\)</span>が使われていることからもそういえる。</p></li>
-</ul>
 </section>
 <section id="人口予測" class="level1" data-number="6">
 <h1 data-number="6"><span class="header-section-number">6</span> 人口予測</h1>
@@ -745,16 +717,9 @@ E = \frac{N(T) - N^P(T)}{N(T) - N(0)}
 <section id="人口予測の他の使用法" class="level2" data-number="6.9">
 <h2 data-number="6.9" class="anchored" data-anchor-id="人口予測の他の使用法"><span class="header-section-number">6.9</span> 人口予測の他の使用法</h2>
 <p>人口予測における人口学的変数間の相互関係のセットそれ自体も重要な分析上の目的となる。1つの使い方は人口学的モメンタム(既存の年齢構造が将来の人口成長をどのように条件づけるのか)を示すことにある。また、人口予測は理論的な動機からも使うことがある。人口予測は、出生率と死亡率の条件を固定した人口が安定状態に収束することを示すことができる。</p>
-</section>
-</section>
-<section id="コメント-1" class="level1 unnumbered unlisted">
-<h1 class="unnumbered unlisted">コメント</h1>
-<ul>
-<li><p>コホートコンポーネント法にもかかわらずコホートの概念がでてこなかったことは意外だった。どちらかというとエイジコンポーネント法というべきでは…。</p></li>
-<li><p>内的妥当性と外的妥当性という区別で予測のaccuracyを考えるというアイデアはとても勉強になった。機械学習のアプローチはデータを訓練データと検証データに無作為に分けて平均二乗誤差を算出するという手続きを踏んでいる。社会科学の関心にはコホート変化や年齢変化など時間経過による変化が多分に含まれるため、訓練データと検証データを古いコホートと新しいコホートに分けるというアプローチもありかもしれない(ただしそこで得られるestimandはcohort-wide accuracyであり、cohort changeではないが)。</p></li>
-</ul>
 
 
+</section>
 </section>
 
 </main> <!-- /main -->
