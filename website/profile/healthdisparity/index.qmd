@@ -1,0 +1,6 @@
+---
+title: 健康格差
+description: "健康の不平等の趨勢、規定要因、帰結の研究"
+interestlink: "../research/index.html#category=Health"
+# icon: {{< iconify heroicons scale >}}
+---

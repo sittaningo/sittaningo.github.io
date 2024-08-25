@@ -7,7 +7,6 @@ listing:
     sort: "date desc"
     template: ../format/research/listing.ejs
     categories: true
-# linkcolor: "#000"
 page-layout: full
 toc: true
 toc-location: right

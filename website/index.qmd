@@ -16,6 +16,3 @@ about:
 ---
 
 日本学術振興会特別研究員PD（学習院大学法学部政治学科）
-
-<!-- **研究関心** \
-{{< iconify healthicons elderly >}} 高齢者の引退と就業　{{< iconify healthicons agriculture-worker >}} 労働市場の高齢化　{{< iconify heroicons scale >}} 健康格差 -->

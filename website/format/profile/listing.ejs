@@ -1,0 +1,16 @@
+```{=html}
+<div class="list profile">
+    <% for (const item of items) { %>
+        <div class="research-interest" id="col" <%= metadataAttrs(item) %>>
+                <a href="<%- item['interestlink'] %>" class="body">
+                            <p class="title">
+                                <%= item.icon %> <%= item.title %>
+                            </p>
+                            <span class="description">
+                                <%= item.description %>
+                            </span>
+                </a>
+        </div>
+            <% } %>
+</div>
+```

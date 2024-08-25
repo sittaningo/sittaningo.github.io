@@ -1,0 +1,6 @@
+---
+title: 労働市場の高齢化
+description: "人口高齢化に伴う労働市場の変化とその帰結についての研究"
+interestlink: "../research/index.html#category=Labor%20Market"
+# icon: {{< iconify icon-park-twotone arena >}}
+---
