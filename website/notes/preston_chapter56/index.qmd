@@ -2,7 +2,7 @@
 title: 人口学勉強会購読資料(5,6章)
 author:
   - name: Shingo Nitta
-date: today
+date: 2024/8/2
 number-sections: true
 number-offset: 4
 number-depth: 3
