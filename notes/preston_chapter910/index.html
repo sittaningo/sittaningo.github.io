@@ -319,7 +319,7 @@ r(a) = L n(a) exp [-\sigma d^{\star} (a)] \tag{9.8}\label{eq:9.8}
 </section>
 <section id="移動の年齢パターン" class="level2" data-number="9.4">
 <h2 data-number="9.4" class="anchored" data-anchor-id="移動の年齢パターン"><span class="header-section-number">9.4</span> 移動の年齢パターン</h2>
-<p>移動も進学や転職、引退で起こると考えると年齢パターンが存在する。移動は青年期に最も多く生起し、わずかに引退期にも生起する。RogerとCastroは移動モデルにたいして11個のパラメータを提起した。<span class="math inline">\(\alpha_1\)</span>は就労以前の下降率、<span class="math inline">\(\lambda_2\)</span>は就労中の上昇率、<span class="math inline">\(\alpha_2\)</span>は就労中の下降率、<span class="math inline">\(\lambda_3\)</span>は引退後の上昇率、<span class="math inline">\(\alpha_3\)</span>は引退後の下降率、<span class="math inline">\(x_l\)</span>は最も低いポイント、<span class="math inline">\(x_h\)</span>は最も高いポイント、<span class="math inline">\(x_r\)</span>は引退での最も高いポイント、<span class="math inline">\(x\)</span>は労働力んおいフォウ、<span class="math inline">\(A\)</span>は親の移動、<span class="math inline">\(B\)</span>はジャンプ、<span class="math inline">\(c\)</span>は定数項をそれぞれ示している。</p>
+<p>移動も進学や転職、引退で起こると考えると年齢パターンが存在する。移動は青年期に最も多く生起し、わずかに引退期にも生起する。RogerとCastroは移動モデルにたいして11個のパラメータを提起した。<span class="math inline">\(\alpha_1\)</span>は就労以前の下降率、<span class="math inline">\(\lambda_2\)</span>は就労中の上昇率、<span class="math inline">\(\alpha_2\)</span>は就労中の下降率、<span class="math inline">\(\lambda_3\)</span>は引退後の上昇率、<span class="math inline">\(\alpha_3\)</span>は引退後の下降率、<span class="math inline">\(x_l\)</span>は最も低いポイント、<span class="math inline">\(x_h\)</span>は最も高いポイント、<span class="math inline">\(x_r\)</span>は引退での最も高いポイント、<span class="math inline">\(x\)</span>は労働力シフト、<span class="math inline">\(A\)</span>は親の移動、<span class="math inline">\(B\)</span>はジャンプ、<span class="math inline">\(c\)</span>は定数項をそれぞれ示している。</p>
 <div id="fig-elephant" class="quarto-figure quarto-figure-center anchored">
 <figure class="figure">
 <p><img src="fig/migration_schedule.png" class="img-fluid figure-img" style="width:90.0%"></p>
@@ -332,15 +332,6 @@ m(x) &amp;= a_1 \text{ exp} (\alpha_1 x) + a_2 \text{ exp} \{-\alpha_2 (x - \mu_
 &amp;+ a_3 \text{ exp} \{-\alpha_3 (x - \mu_3) \text{exp} [-\lambda_3 (x - \mu_3)]\} +c \tag{ns23}
 \end{eqnarray}\]</span></p>
 </section>
-</section>
-<section id="コメント" class="level1 unnumbered unlisted">
-<h1 class="unnumbered unlisted">コメント</h1>
-<ul>
-<li><p>モデリングをする際の理論セットという意味でとても勉強になった。現実的には理論セットをそのまま適用するのではなく、理論セットと現実データのズレを踏まえて現実を理解する、というアプローチは重要であると考えた。</p></li>
-<li><p>超恥ずかしいのですが、畳み込み(convolution)ってなんでしたっけ・・・複数の関数の積を取る、くらいにしか理解してません。</p></li>
-</ul>
-<!-- - 実際の人口を表現する方法なのでスプラインで学習すればいいのに・・・ -->
-<!-- - 理論が帰納的に打ち立てられている印象。実際のデータを用いてモデルを構築することが重要である -->
 </section>
 <section id="データクオリティを評価する方法" class="level1" data-number="10">
 <h1 data-number="10"><span class="header-section-number">10</span> データクオリティを評価する方法</h1>
@@ -524,17 +515,11 @@ C_{it} = \alpha_a \tau_t X_{it} + \epsilon_{it} \tag{10.14}\label{eq:10.14}
 Min \Sigma_i \Sigma_t (C_{it} - \alpha_a \tau_t (\gamma_i - D_{it}))^2 \tag{10.15}\label{eq:10.15}
 \]</span></p>
 <p>この方法は死亡登録が正確であるという仮定にもとづいているが、出生登録が正確である仮定は必要ではない。このほか複数回の国勢調査を用いる方法としてLuther and Retherford(1988)の方法なども挙げられる。</p>
-</section>
-</section>
-</section>
-</section>
-<section id="コメント-1" class="level1 unnumbered unlisted">
-<h1 class="unnumbered unlisted">コメント</h1>
-<ul>
-<li>一般的に国勢調査の方が社会調査データより信頼性があると思っていたのだが、発展途上国ではそうではない、というのはすこし意外だった。</li>
-</ul>
 
 
+</section>
+</section>
+</section>
 </section>
 
 
