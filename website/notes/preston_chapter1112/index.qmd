@@ -1,5 +1,5 @@
 ---
-title: 人口学勉強会購読資料
+title: 人口学勉強会購読資料(11,12章)
 author:
   - name: Shingo Nitta
 date: 2024/10/2
