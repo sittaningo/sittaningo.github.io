@@ -1,0 +1,22 @@
+---
+title: "Feature-wide Effect Heterogeneity of Retirement on Subsequent Health through Causal Forests"
+date: 2024-10-26
+author:
+  - name: Shingo Nitta
+    url: "https://shingonitta.com/"
+    affiliation: Gakushuin University
+categories:
+  - Health
+  - Causal Inference
+  - Retirement
+status: work-in-progress
+pub-info:
+hide-detail: true
+pub-status: 
+  # status: Writing
+  # class: warning
+  # icon: fa-solid fa-pencil
+  # status: Under review
+  # class: success
+  # icon: fas fa-glasses
+---

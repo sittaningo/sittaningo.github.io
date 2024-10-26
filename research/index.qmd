@@ -1,6 +1,6 @@
 ---
 title: RESEARCH
-description: "過去すべての研究については[Researchmap](https://researchmap.jp/shingonitta)、[Google Scholar](https://scholar.google.co.jp/citations?hl=ja&user=QJx5LRgAAAAJ&view_op=list_works&gmla=AJ1KiT3hvOAOFgTV7rGvKzHIwy0qyY5lPe862Uq5SSls-1Tt3EnTkvvSXrLEslQnNdjYkRVhtOVdJu66YaqL1jKputV2N0djHaETFidZdATIsCSaiotekpjfOzk)をご参照ください。"
+description: "過去すべての研究については[Researchmap](https://researchmap.jp/shingonitta)、[Google Scholar](https://scholar.google.com/citations?user=KrrAMdcAAAAJ&hl=ja)をご参照ください。"
 listing:
   - id: projects
     contents: "/*/index.qmd"

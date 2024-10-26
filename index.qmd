@@ -12,7 +12,8 @@ about:
       - text: "{{< iconify fluent triangle-right-12-regular >}} Researchmap"
         href: https://researchmap.jp/shingonitta
       - text: "{{< iconify simple-icons googlescholar >}} Google Scholar"
-        href: https://scholar.google.co.jp/citations?hl=ja&user=QJx5LRgAAAAJ&view_op=list_works&gmla=AJ1KiT3hvOAOFgTV7rGvKzHIwy0qyY5lPe862Uq5SSls-1Tt3EnTkvvSXrLEslQnNdjYkRVhtOVdJu66YaqL1jKputV2N0djHaETFidZdATIsCSaiotekpjfOzk
+        href: https://scholar.google.com/citations?user=KrrAMdcAAAAJ&hl=ja
 ---
 
 日本学術振興会特別研究員PD（学習院大学法学部政治学科）
+

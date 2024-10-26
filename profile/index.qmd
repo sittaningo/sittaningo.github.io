@@ -7,21 +7,21 @@ listing:
     template: ../format/profile/listing.ejs
 ---
 
-### 研究関心
+### RESEARCH INTEREST
 
 専門はエイジングとライフコースの社会学および社会階層論です。計量分析をもちいてエイジングの社会的過程や不平等の生成過程を研究しています。
 
 ::: {#interests}
 :::
 
-### 職歴
+### CAREER
  <!-- {{< iconify fa-solid chalkboard-teacher >}}  -->
 
 - 2024年4月–現在: 日本学術振興会特別研究員PD（学習院大学法学部政治学科）
 
 <!-- ![](../image/career.svg){fig-align="left" width=700} -->
 
-### 学歴
+### EDUCATION
  <!-- {{< iconify mdi education-outline >}} -->
 
 - 2021年4月–2024年3月: 東京大学大学院人文社会系研究科社会文化研究専攻社会学専門分野博士課程
