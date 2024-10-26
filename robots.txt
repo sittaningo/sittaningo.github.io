@@ -1,1 +1,1 @@
-Sitemap: https://sittaningo.github.io/Website/sitemap.xml
+Sitemap: https://sittaningo.github.io/sitemap.xml

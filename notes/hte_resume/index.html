@@ -2,14 +2,14 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.3.353">
+<meta name="generator" content="quarto-1.5.57">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 <meta name="author" content="Shingo Nitta">
 <meta name="dcterms.date" content="2024-06-26">
 
-<title>Shingo Nitta - 読書メモ：Brand et al.(2021)</title>
+<title>読書メモ：Brand et al.(2021) – Shingo Nitta</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -26,6 +26,7 @@ ul.task-list li input[type="checkbox"] {
 div.csl-bib-body { }
 div.csl-entry {
   clear: both;
+  margin-bottom: 0em;
 }
 .hanging-indent div.csl-entry {
   margin-left:2em;
@@ -67,7 +68,13 @@ div.csl-indent {
   "collapse-after": 3,
   "panel-placement": "end",
   "type": "overlay",
-  "limit": 20,
+  "limit": 50,
+  "keyboard-shortcut": [
+    "f",
+    "/",
+    "s"
+  ],
+  "show-item-context": false,
   "language": {
     "search-no-results-text": "No results",
     "search-matching-documents-text": "matching documents",
@@ -76,13 +83,42 @@ div.csl-indent {
     "search-more-match-text": "more match in this document",
     "search-more-matches-text": "more matches in this document",
     "search-clear-button-title": "Clear",
+    "search-text-placeholder": "",
     "search-detached-cancel-button-title": "Cancel",
-    "search-submit-button-title": "Submit"
+    "search-submit-button-title": "Submit",
+    "search-label": "Search"
   }
 }</script>
 
-  <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
   <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN") {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
 
 </head>
 
@@ -90,39 +126,39 @@ div.csl-indent {
 
 <div id="quarto-search-results"></div>
   <header id="quarto-header" class="headroom fixed-top">
-    <nav class="navbar navbar-expand-lg navbar-dark ">
+    <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
       <div class="navbar-container container-fluid">
-      <div class="navbar-brand-container">
+      <div class="navbar-brand-container mx-auto">
     <a class="navbar-brand" href="../../index.html">
     <span class="navbar-title">Shingo Nitta</span>
     </a>
   </div>
             <div id="quarto-search" class="" title="Search"></div>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" role="menu" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
   <span class="navbar-toggler-icon"></span>
 </button>
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll me-auto">
   <li class="nav-item">
-    <a class="nav-link" href="../../index.html" rel="" target="">
- <span class="menu-text">HOME</span></a>
+    <a class="nav-link" href="../../index.html"> 
+<span class="menu-text">HOME</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="../../profile/index.html" rel="" target="">
- <span class="menu-text">PROFILE</span></a>
+    <a class="nav-link" href="../../profile/index.html"> 
+<span class="menu-text">PROFILE</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="../../research/index.html" rel="" target="">
- <span class="menu-text">RESEARCH</span></a>
+    <a class="nav-link" href="../../research/index.html"> 
+<span class="menu-text">RESEARCH</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="../../notes/index.html" rel="" target="">
- <span class="menu-text">NOTES</span></a>
+    <a class="nav-link" href="../../notes/index.html"> 
+<span class="menu-text">NOTES</span></a>
   </li>  
 </ul>
-            <div class="quarto-navbar-tools ms-auto">
-</div>
           </div> <!-- /navcollapse -->
+            <div class="quarto-navbar-tools">
+</div>
       </div> <!-- /container-fluid -->
     </nav>
 </header>
@@ -166,7 +202,9 @@ div.csl-indent {
   </div>
   
 
+
 </header>
+
 
 <div class="callout callout-style-simple callout-none no-icon callout-titled">
 <div class="callout-header d-flex align-content-center">
@@ -216,7 +254,7 @@ Notation
 </div>
 <section id="平均因果効果の定義" class="level3">
 <h3 class="anchored" data-anchor-id="平均因果効果の定義">平均因果効果の定義</h3>
-<p>因果効果の定義は <a href="#eq-ite">Equation&nbsp;1</a> の通り。同じ個人に対して処置を与えた場合と与えなかった場合のアウトカムの差。</p>
+<p>因果効果の定義は <a href="#eq-ite" class="quarto-xref">Equation&nbsp;1</a> の通り。同じ個人に対して処置を与えた場合と与えなかった場合のアウトカムの差。</p>
 <p><span id="eq-ite"><span class="math display">\[
 \tau_i = Y^1_i - Y^0_i
 \tag{1}\]</span></span></p>
@@ -224,14 +262,14 @@ Notation
 <p><span id="eq-unconfoundedness"><span class="math display">\[
 W_i \coprod (Y^1_i, Y^0_i) \mid X_i
 \tag{2}\]</span></span></p>
-<p><a href="#eq-unconfoundedness">Equation&nbsp;2</a> を完全にノンパラメトリックに行うのは不可能<a href="#fn1" class="footnote-ref" id="fnref1" role="doc-noteref"><sup>1</sup></a>。その代わりに共変量が’近い’個体をマッチさせて因果効果を推定する。そのアプローチの1つが傾向スコア(共変量を条件づけたときに個体が処置を受ける確率)であり、<span class="math inline">\(e(x)\)</span>として <a href="#eq-propensityscore">Equation&nbsp;3</a> のように 表現される。</p>
+<p><a href="#eq-unconfoundedness" class="quarto-xref">Equation&nbsp;2</a> を完全にノンパラメトリックに行うのは不可能<a href="#fn1" class="footnote-ref" id="fnref1" role="doc-noteref"><sup>1</sup></a>。その代わりに共変量が’近い’個体をマッチさせて因果効果を推定する。そのアプローチの1つが傾向スコア(共変量を条件づけたときに個体が処置を受ける確率)であり、<span class="math inline">\(e(x)\)</span>として <a href="#eq-propensityscore" class="quarto-xref">Equation&nbsp;3</a> のように 表現される。</p>
 <p><span id="eq-propensityscore"><span class="math display">\[
 e(x) = pr(W_i = 1 \mid X_i = x)
 \tag{3}\]</span></span></p>
 </section>
 <section id="共変量および傾向スコアに基づいた分割" class="level3">
 <h3 class="anchored" data-anchor-id="共変量および傾向スコアに基づいた分割">共変量および傾向スコアに基づいた分割</h3>
-<p>社会学者が伝統的におこなっている共変量分割は条件付き因果効果(conditional average treatment effect、CATE)として <a href="#eq-catecovariates">Equation&nbsp;4</a> 、<a href="#eq-catepropscore">Equation&nbsp;5</a> のようにに表現される(それぞれ共変量と傾向スコアで表現したもの)。</p>
+<p>社会学者が伝統的におこなっている共変量分割は条件付き因果効果(conditional average treatment effect、CATE)として <a href="#eq-catecovariates" class="quarto-xref">Equation&nbsp;4</a> 、<a href="#eq-catepropscore" class="quarto-xref">Equation&nbsp;5</a> のようにに表現される(それぞれ共変量と傾向スコアで表現したもの)。</p>
 <p><span id="eq-catecovariates"><span class="math display">\[
 \tau(x) = E [ Y^1_i - Y^0_i \mid X_i = x ]
 \tag{4}\]</span></span></p>
@@ -247,7 +285,7 @@ e(x) = pr(W_i = 1 \mid X_i = x)
 <section id="因果木を使用した繰り返しの分割" class="level3">
 <h3 class="anchored" data-anchor-id="因果木を使用した繰り返しの分割">因果木を使用した繰り返しの分割</h3>
 <p>社会学的意義の大きい手法として、 <span class="citation" data-cites="Athey.2016zq5">Athey and Imbens (<a href="#ref-Athey.2016zq5" role="doc-biblioref">2016</a>)</span> が開発した潜在アウトカムのアプローチにもとづく因果木のアルゴリズムに着目する。ある木(ある分割群<span class="math inline">\(\prod\)</span>)は分割された共変量空間 <span class="math inline">\(\mathbb{X}\)</span> と一致する。<span class="math inline">\(\mathbb{X}\)</span>を相互排他的な<span class="math inline">\(M\)</span>個の葉<span class="math inline">\(l_1, \cdots, l_M\)</span>に分割し、各<span class="math inline">\(l_1, \cdots, l_{M-1}\)</span><a href="#fn2" class="footnote-ref" id="fnref2" role="doc-noteref"><sup>2</sup></a>で訓練したアウトカムの平均を<span class="math inline">\(l_M\)</span>の個体のアウトカムにたいして推定する。因果木では(観測されたアウトカム<span class="math inline">\(Y\)</span>ではなく)因果効果<span class="math inline">\(\tau\)</span>(=潜在アウトカム)を最も良く予測するような決定木を適用する。</p>
-<p><span class="citation" data-cites="Athey.2016zq5">Athey and Imbens (<a href="#ref-Athey.2016zq5" role="doc-biblioref">2016</a>)</span> はオネスト推定も提案している。データを訓練用<span class="math inline">\(S^{tr}\)</span>と検証用<span class="math inline">\(S^{es}\)</span>に分け、<span class="math inline">\(S^{tr}\)</span>で木を構築し(すなわち、最も精度良い分類をし)、<span class="math inline">\(S^{es}\)</span>で各葉<span class="math inline">\(l_1, \cdots, l_M\)</span>固有の因果効果を求める。オネスト推定と潜在アウトカムのための期待(expected)MSEとして <a href="#eq-emse">Equation&nbsp;6</a> を定義している。</p>
+<p><span class="citation" data-cites="Athey.2016zq5">Athey and Imbens (<a href="#ref-Athey.2016zq5" role="doc-biblioref">2016</a>)</span> はオネスト推定も提案している。データを訓練用<span class="math inline">\(S^{tr}\)</span>と検証用<span class="math inline">\(S^{es}\)</span>に分け、<span class="math inline">\(S^{tr}\)</span>で木を構築し(すなわち、最も精度良い分類をし)、<span class="math inline">\(S^{es}\)</span>で各葉<span class="math inline">\(l_1, \cdots, l_M\)</span>固有の因果効果を求める。オネスト推定と潜在アウトカムのための期待(expected)MSEとして <a href="#eq-emse" class="quarto-xref">Equation&nbsp;6</a> を定義している。</p>
 <p><span id="eq-emse"><span class="math display">\[
 -\hat{EMSE}_{\tau(x)} = \frac{1}{N^{tr}} \Sigma_{i \in S{tr}} \hat{\tau}^2 \left(X_i; S^{tr}, \prod \right) - \left( \frac{1}{N^{tr}} + \frac{1}{N^{es}} \right) \Sigma_{i \in \prod} \left( \frac{S^2_{S^{tr}(1)} (l)}{p(l)} + \frac{S^2_{S^{tr}(0)}(l)}{1 - p(l)} \right)
 \tag{6}\]</span></span></p>
@@ -257,7 +295,7 @@ e(x) = pr(W_i = 1 \mid X_i = x)
 <i class="callout-icon no-icon"></i>
 </div>
 <div class="callout-title-container flex-fill">
-<a href="#eq-emse">Equation&nbsp;6</a> のNotation
+<a href="#eq-emse" class="quarto-xref">Equation&nbsp;6</a> のNotation
 </div>
 <div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
 </div>
@@ -272,14 +310,18 @@ e(x) = pr(W_i = 1 \mid X_i = x)
 </div>
 </div>
 </div>
-<p>第一項は各葉の因果効果の分散を、第二項は因果効果の不確実性を示している。キモは<span class="math inline">\(N^{es}\)</span>の処置効果による不確実性を考慮しているところにある。言い換えれば、効果の異質性を適切に捉えると同時に、捉えた異質性のなかでは推定精度が高くある状況をオネスト推定は目指している。結果として捉える条件付き平均因果効果(CATE)は <a href="#eq-catetree">Equation&nbsp;7</a> のように表現される。</p>
+<p>第一項は各葉の因果効果の分散を、第二項は因果効果の不確実性を示している。キモは<span class="math inline">\(N^{es}\)</span>の処置効果による不確実性を考慮しているところにある。言い換えれば、効果の異質性を適切に捉えると同時に、捉えた異質性のなかでは推定精度が高くある状況をオネスト推定は目指している。結果として捉える条件付き平均因果効果(CATE)は <a href="#eq-catetree" class="quarto-xref">Equation&nbsp;7</a> のように表現される。</p>
 <p><span id="eq-catetree"><span class="math display">\[
 \tau(x; \prod) = E \left[ Y^1_i - Y^0_i \mid X_i \in l(x; \prod) \right]
 \tag{7}\]</span></span></p>
-<div id="fig-covpart" class="quarto-figure quarto-figure-center anchored">
-<figure class="figure">
-<p><img src="fig/fig1.jpg" class="img-fluid figure-img" style="width:80.0%"></p>
-<figcaption class="figure-caption">Figure&nbsp;1: オネスト推定の具体的な手続き<br>Source: <span class="citation" data-cites="Brand.2021">Brand et al. (<a href="#ref-Brand.2021" role="doc-biblioref">2021</a>)</span> Figure1より引用</figcaption>
+<div id="fig-covpart" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-covpart-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="fig/fig1.jpg" class="img-fluid figure-img" style="width:80.0%">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-covpart-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;1: オネスト推定の具体的な手続き<br>Source: <span class="citation" data-cites="Brand.2021">Brand et al. (<a href="#ref-Brand.2021" role="doc-biblioref">2021</a>)</span> Figure1より引用
+</figcaption>
 </figure>
 </div>
 <p>細々した議論。因果木には交絡なしの仮定が伴う。また、共変量は処置の前にあるもののみを含める必要がある。コモンサポート（マッチングにおいて、マッチしない集団が分析から除外されてしまうこと）の問題もなお残る。</p>
@@ -295,7 +337,7 @@ e(x) = pr(W_i = 1 \mid X_i = x)
 <li><p>低賃金労働に対する大学修了の効果は、我々が考慮しなかったサブグループによって異なるか？</p></li>
 <li><p>処置効果の推定値は、分割間の未観測交絡に対してどの程度敏感か？</p></li>
 </ol>
-<table class="table">
+<table class="caption-top table">
 <caption>大学修了が低賃金労働に与える総効果。括弧内は標準誤差。IPWは逆確率重み付けを示す。<br>Source: <span class="citation" data-cites="Brand.2021">Brand et al. (<a href="#ref-Brand.2021" role="doc-biblioref">2021</a>)</span> Table2より引用</caption>
 <colgroup>
 <col style="width: 35%">
@@ -323,24 +365,36 @@ e(x) = pr(W_i = 1 \mid X_i = x)
 </tr>
 </tbody>
 </table>
-<p><a href="#fig-covpart">Figure&nbsp;2</a> は傾向スコアおよび共変量別のCATEを、<a href="#fig-causaltree">Figure&nbsp;3</a> は因果木を用いた共変量分割パターンを示している。因果木は理論的予想にはない集団を同定できている：母学歴(母高卒)については考えていたが、大家族で育ち、社会的コントロールが低い高卒の母親や、高卒より学歴の高い、認知能力の高い母親については考えていなかった。</p>
-<div id="fig-covpart" class="quarto-figure quarto-figure-center anchored">
-<figure class="figure">
-<p><img src="fig/fig2.jpg" class="img-fluid figure-img" style="width:60.0%"></p>
-<figcaption class="figure-caption">Figure&nbsp;2: 傾向スコアおよび共変量でたんに分割したCATE<br>Source: <span class="citation" data-cites="Brand.2021">Brand et al. (<a href="#ref-Brand.2021" role="doc-biblioref">2021</a>)</span> Figure2より引用</figcaption>
+<p><a href="#fig-covpart" class="quarto-xref">Figure&nbsp;2</a> は傾向スコアおよび共変量別のCATEを、<a href="#fig-causaltree" class="quarto-xref">Figure&nbsp;3</a> は因果木を用いた共変量分割パターンを示している。因果木は理論的予想にはない集団を同定できている：母学歴(母高卒)については考えていたが、大家族で育ち、社会的コントロールが低い高卒の母親や、高卒より学歴の高い、認知能力の高い母親については考えていなかった。</p>
+<div id="fig-covpart" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-covpart-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="fig/fig2.jpg" class="img-fluid figure-img" style="width:60.0%">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-covpart-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;2: 傾向スコアおよび共変量でたんに分割したCATE<br>Source: <span class="citation" data-cites="Brand.2021">Brand et al. (<a href="#ref-Brand.2021" role="doc-biblioref">2021</a>)</span> Figure2より引用
+</figcaption>
 </figure>
 </div>
-<div id="fig-causaltree" class="quarto-figure quarto-figure-center anchored">
-<figure class="figure">
-<p><img src="fig/fig4.jpg" class="img-fluid figure-img" style="width:60.0%"></p>
-<figcaption class="figure-caption">Figure&nbsp;3: 因果木のアルゴリズムにもとづいて分割したCATE<br>Source: <span class="citation" data-cites="Brand.2021">Brand et al. (<a href="#ref-Brand.2021" role="doc-biblioref">2021</a>)</span> Figure4より引用</figcaption>
+<div id="fig-causaltree" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-causaltree-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="fig/fig4.jpg" class="img-fluid figure-img" style="width:60.0%">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-causaltree-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;3: 因果木のアルゴリズムにもとづいて分割したCATE<br>Source: <span class="citation" data-cites="Brand.2021">Brand et al. (<a href="#ref-Brand.2021" role="doc-biblioref">2021</a>)</span> Figure4より引用
+</figcaption>
 </figure>
 </div>
-<p>因果木の安定性を鑑みて、4000本の因果フォレストをおこない、各特徴量の相対的な重要度を <a href="#fig-importance">Figure&nbsp;4</a> に示した。上6つの変数が <a href="#fig-causaltree">Figure&nbsp;3</a> で選択共変量と大きく重なっており、 <a href="#fig-causaltree">Figure&nbsp;3</a> の因果木が重要な共変量を選択していることがわかる。</p>
-<div id="fig-importance" class="quarto-figure quarto-figure-center anchored">
-<figure class="figure">
-<p><img src="fig/fig6.jpg" class="img-fluid figure-img" style="width:60.0%"></p>
-<figcaption class="figure-caption">Figure&nbsp;4: 因果フォレストによる相対的重要度のプロット<br>Source: <span class="citation" data-cites="Brand.2021">Brand et al. (<a href="#ref-Brand.2021" role="doc-biblioref">2021</a>)</span> Figure6より引用</figcaption>
+<p>因果木の安定性を鑑みて、4000本の因果フォレストをおこない、各特徴量の相対的な重要度を <a href="#fig-importance" class="quarto-xref">Figure&nbsp;4</a> に示した。上6つの変数が <a href="#fig-causaltree" class="quarto-xref">Figure&nbsp;3</a> で選択共変量と大きく重なっており、 <a href="#fig-causaltree" class="quarto-xref">Figure&nbsp;3</a> の因果木が重要な共変量を選択していることがわかる。</p>
+<div id="fig-importance" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-importance-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="fig/fig6.jpg" class="img-fluid figure-img" style="width:60.0%">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-importance-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;4: 因果フォレストによる相対的重要度のプロット<br>Source: <span class="citation" data-cites="Brand.2021">Brand et al. (<a href="#ref-Brand.2021" role="doc-biblioref">2021</a>)</span> Figure6より引用
+</figcaption>
 </figure>
 </div>
 </section>
@@ -364,7 +418,7 @@ e(x) = pr(W_i = 1 \mid X_i = x)
 </section>
 
 
-<div id="quarto-appendix" class="default"><section class="quarto-appendix-contents" role="doc-bibliography"><h2 class="anchored quarto-appendix-heading">References</h2><div id="refs" class="references csl-bib-body hanging-indent" role="list">
+<div id="quarto-appendix" class="default"><section class="quarto-appendix-contents" role="doc-bibliography" id="quarto-bibliography"><h2 class="anchored quarto-appendix-heading">References</h2><div id="refs" class="references csl-bib-body hanging-indent" data-entry-spacing="0" role="list">
 <div id="ref-Athey.2016zq5" class="csl-entry" role="listitem">
 Athey, Susan, and Guido Imbens. 2016. <span>“<span class="nocase">Recursive partitioning for heterogeneous causal effects</span>.”</span> <em>Proceedings of the National Academy of Sciences</em> 113 (27): 7353–60. <a href="https://doi.org/10.1073/pnas.1510489113">https://doi.org/10.1073/pnas.1510489113</a>.
 </div>
@@ -413,18 +467,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     }
     return false;
   }
-  const clipboard = new window.ClipboardJS('.code-copy-button', {
-    text: function(trigger) {
-      const codeEl = trigger.previousElementSibling.cloneNode(true);
-      for (const childEl of codeEl.children) {
-        if (isCodeAnnotation(childEl)) {
-          childEl.remove();
-        }
-      }
-      return codeEl.innerText;
-    }
-  });
-  clipboard.on('success', function(e) {
+  const onCopySuccess = function(e) {
     // button target
     const button = e.trigger;
     // don't keep focus
@@ -456,11 +499,50 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     }, 1000);
     // clear code selection
     e.clearSelection();
+  }
+  const getTextToCopy = function(trigger) {
+      const codeEl = trigger.previousElementSibling.cloneNode(true);
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+  }
+  const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+    text: getTextToCopy
   });
-  function tippyHover(el, contentFn) {
+  clipboard.on('success', onCopySuccess);
+  if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+    // For code content inside modals, clipBoardJS needs to be initialized with a container option
+    // TODO: Check when it could be a function (https://github.com/zenorocha/clipboard.js/issues/860)
+    const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+      text: getTextToCopy,
+      container: window.document.getElementById('quarto-embedded-source-code-modal')
+    });
+    clipboardModal.on('success', onCopySuccess);
+  }
+    var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+    var mailtoRegex = new RegExp(/^mailto:/);
+      var filterRegex = new RegExp("https:\/\/sittaningo\.github\.io\/");
+    var isInternal = (href) => {
+        return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+    }
+    // Inspect non-navigation links and adorn them if external
+ 	var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+    for (var i=0; i<links.length; i++) {
+      const link = links[i];
+      if (!isInternal(link.href)) {
+        // undo the damage that might have been done by quarto-nav.js in the case of
+        // links that we want to consider external
+        if (link.dataset.originalHref !== undefined) {
+          link.href = link.dataset.originalHref;
+        }
+      }
+    }
+  function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
     const config = {
       allowHTML: true,
-      content: contentFn,
       maxWidth: 500,
       delay: 100,
       arrow: false,
@@ -470,8 +552,17 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
       interactive: true,
       interactiveBorder: 10,
       theme: 'quarto',
-      placement: 'bottom-start'
+      placement: 'bottom-start',
     };
+    if (contentFn) {
+      config.content = contentFn;
+    }
+    if (onTriggerFn) {
+      config.onTrigger = onTriggerFn;
+    }
+    if (onUntriggerFn) {
+      config.onUntrigger = onUntriggerFn;
+    }
     window.tippy(el, config); 
   }
   const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
@@ -483,7 +574,130 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
       try { href = new URL(href).hash; } catch {}
       const id = href.replace(/^#\/?/, "");
       const note = window.document.getElementById(id);
-      return note.innerHTML;
+      if (note) {
+        return note.innerHTML;
+      } else {
+        return "";
+      }
+    });
+  }
+  const xrefs = window.document.querySelectorAll('a.quarto-xref');
+  const processXRef = (id, note) => {
+    // Strip column container classes
+    const stripColumnClz = (el) => {
+      el.classList.remove("page-full", "page-columns");
+      if (el.children) {
+        for (const child of el.children) {
+          stripColumnClz(child);
+        }
+      }
+    }
+    stripColumnClz(note)
+    if (id === null || id.startsWith('sec-')) {
+      // Special case sections, only their first couple elements
+      const container = document.createElement("div");
+      if (note.children && note.children.length > 2) {
+        container.appendChild(note.children[0].cloneNode(true));
+        for (let i = 1; i < note.children.length; i++) {
+          const child = note.children[i];
+          if (child.tagName === "P" && child.innerText === "") {
+            continue;
+          } else {
+            container.appendChild(child.cloneNode(true));
+            break;
+          }
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(container);
+        }
+        return container.innerHTML
+      } else {
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        return note.innerHTML;
+      }
+    } else {
+      // Remove any anchor links if they are present
+      const anchorLink = note.querySelector('a.anchorjs-link');
+      if (anchorLink) {
+        anchorLink.remove();
+      }
+      if (window.Quarto?.typesetMath) {
+        window.Quarto.typesetMath(note);
+      }
+      // TODO in 1.5, we should make sure this works without a callout special case
+      if (note.classList.contains("callout")) {
+        return note.outerHTML;
+      } else {
+        return note.innerHTML;
+      }
+    }
+  }
+  for (var i=0; i<xrefs.length; i++) {
+    const xref = xrefs[i];
+    tippyHover(xref, undefined, function(instance) {
+      instance.disable();
+      let url = xref.getAttribute('href');
+      let hash = undefined; 
+      if (url.startsWith('#')) {
+        hash = url;
+      } else {
+        try { hash = new URL(url).hash; } catch {}
+      }
+      if (hash) {
+        const id = hash.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note !== null) {
+          try {
+            const html = processXRef(id, note.cloneNode(true));
+            instance.setContent(html);
+          } finally {
+            instance.enable();
+            instance.show();
+          }
+        } else {
+          // See if we can fetch this
+          fetch(url.split('#')[0])
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.getElementById(id);
+            if (note !== null) {
+              const html = processXRef(id, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      } else {
+        // See if we can fetch a full url (with no hash to target)
+        // This is a special case and we should probably do some content thinning / targeting
+        fetch(url)
+        .then(res => res.text())
+        .then(html => {
+          const parser = new DOMParser();
+          const htmlDoc = parser.parseFromString(html, "text/html");
+          const note = htmlDoc.querySelector('main.content');
+          if (note !== null) {
+            // This should only happen for chapter cross references
+            // (since there is no id in the URL)
+            // remove the first header
+            if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+              note.children[0].remove();
+            }
+            const html = processXRef(null, note);
+            instance.setContent(html);
+          } 
+        }).finally(() => {
+          instance.enable();
+          instance.show();
+        });
+      }
+    }, function(instance) {
     });
   }
       let selectedAnnoteEl;
@@ -527,6 +741,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
             }
             div.style.top = top - 2 + "px";
             div.style.height = height + 4 + "px";
+            div.style.left = 0;
             let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
             if (gutterDiv === null) {
               gutterDiv = window.document.createElement("div");
@@ -552,6 +767,32 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
         });
         selectedAnnoteEl = undefined;
       };
+        // Handle positioning of the toggle
+    window.addEventListener(
+      "resize",
+      throttle(() => {
+        elRect = undefined;
+        if (selectedAnnoteEl) {
+          selectCodeLines(selectedAnnoteEl);
+        }
+      }, 10)
+    );
+    function throttle(fn, ms) {
+    let throttle = false;
+    let timer;
+      return (...args) => {
+        if(!throttle) { // first call gets through
+            fn.apply(this, args);
+            throttle = true;
+        } else { // all the others get throttled
+            if(timer) clearTimeout(timer); // cancel #2
+            timer = setTimeout(() => {
+              fn.apply(this, args);
+              timer = throttle = false;
+            }, ms);
+        }
+      };
+    }
       // Attach click handler to the DT
       const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
       for (const annoteDlNode of annoteDls) {
@@ -612,6 +853,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 });
 </script>
 </div> <!-- /content -->
+
 
 
 
