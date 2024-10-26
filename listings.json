@@ -13,14 +13,6 @@
     ]
   },
   {
-    "listing": "/profile/index.html",
-    "items": [
-      "/profile/retirement/index.html",
-      "/profile/labormarketaging/index.html",
-      "/profile/healthdisparity/index.html"
-    ]
-  },
-  {
     "listing": "/notes/index.html",
     "items": [
       "/notes/gwg_resume/index.html",
@@ -32,6 +24,14 @@
       "/notes/dag_sociology/index.html",
       "/notes/onetstandarization/index.html",
       "/notes/bell2019/index.html"
+    ]
+  },
+  {
+    "listing": "/profile/index.html",
+    "items": [
+      "/profile/retirement/index.html",
+      "/profile/labormarketaging/index.html",
+      "/profile/healthdisparity/index.html"
     ]
   }
 ]
