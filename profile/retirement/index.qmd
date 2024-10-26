@@ -1,6 +1,6 @@
 ---
 title: 高齢者の引退と就業
-description: "高齢者の引退における規定要因や、就業高齢者の実態についての研究"
+description: "高齢者の引退、就業高齢者の実態についての研究"
 interestlink: "../research/#category=Older%20Workers"
 # icon: {{< fa solid fa people carry box >}}
 ---
