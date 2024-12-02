@@ -2,14 +2,14 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.5.57">
+<meta name="generator" content="quarto-1.3.353">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 <meta name="author" content="Shingo Nitta">
 <meta name="dcterms.date" content="2024-10-02">
 
-<title>人口学勉強会購読資料(11,12章) – Shingo Nitta</title>
+<title>Shingo Nitta - 人口学勉強会購読資料(11,12章)</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -48,13 +48,7 @@ ul.task-list li input[type="checkbox"] {
   "collapse-after": 3,
   "panel-placement": "end",
   "type": "overlay",
-  "limit": 50,
-  "keyboard-shortcut": [
-    "f",
-    "/",
-    "s"
-  ],
-  "show-item-context": false,
+  "limit": 20,
   "language": {
     "search-no-results-text": "No results",
     "search-matching-documents-text": "matching documents",
@@ -63,42 +57,13 @@ ul.task-list li input[type="checkbox"] {
     "search-more-match-text": "more match in this document",
     "search-more-matches-text": "more matches in this document",
     "search-clear-button-title": "Clear",
-    "search-text-placeholder": "",
     "search-detached-cancel-button-title": "Cancel",
-    "search-submit-button-title": "Submit",
-    "search-label": "Search"
+    "search-submit-button-title": "Submit"
   }
 }</script>
 
-  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
+  <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
   <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
-
-<script type="text/javascript">
-const typesetMath = (el) => {
-  if (window.MathJax) {
-    // MathJax Typeset
-    window.MathJax.typeset([el]);
-  } else if (window.katex) {
-    // KaTeX Render
-    var mathElements = el.getElementsByClassName("math");
-    var macros = [];
-    for (var i = 0; i < mathElements.length; i++) {
-      var texText = mathElements[i].firstChild;
-      if (mathElements[i].tagName == "SPAN") {
-        window.katex.render(texText.data, mathElements[i], {
-          displayMode: mathElements[i].classList.contains('display'),
-          throwOnError: false,
-          macros: macros,
-          fleqn: false
-        });
-      }
-    }
-  }
-}
-window.Quarto = {
-  typesetMath
-};
-</script>
 
 </head>
 
@@ -106,39 +71,39 @@ window.Quarto = {
 
 <div id="quarto-search-results"></div>
   <header id="quarto-header" class="headroom fixed-top">
-    <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
+    <nav class="navbar navbar-expand-lg navbar-dark ">
       <div class="navbar-container container-fluid">
-      <div class="navbar-brand-container mx-auto">
+      <div class="navbar-brand-container">
     <a class="navbar-brand" href="../../index.html">
     <span class="navbar-title">Shingo Nitta</span>
     </a>
   </div>
             <div id="quarto-search" class="" title="Search"></div>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" role="menu" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
   <span class="navbar-toggler-icon"></span>
 </button>
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll me-auto">
   <li class="nav-item">
-    <a class="nav-link" href="../../index.html"> 
-<span class="menu-text">HOME</span></a>
+    <a class="nav-link" href="../../index.html" rel="" target="">
+ <span class="menu-text">HOME</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="../../profile/index.html"> 
-<span class="menu-text">PROFILE</span></a>
+    <a class="nav-link" href="../../profile/index.html" rel="" target="">
+ <span class="menu-text">PROFILE</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="../../research/index.html"> 
-<span class="menu-text">RESEARCH</span></a>
+    <a class="nav-link" href="../../research/index.html" rel="" target="">
+ <span class="menu-text">RESEARCH</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="../../notes/index.html"> 
-<span class="menu-text">NOTES</span></a>
+    <a class="nav-link" href="../../notes/index.html" rel="" target="">
+ <span class="menu-text">NOTES</span></a>
   </li>  
 </ul>
-          </div> <!-- /navcollapse -->
-            <div class="quarto-navbar-tools">
+            <div class="quarto-navbar-tools ms-auto">
 </div>
+          </div> <!-- /navcollapse -->
       </div> <!-- /container-fluid -->
     </nav>
 </header>
@@ -177,9 +142,7 @@ window.Quarto = {
   </div>
   
 
-
 </header>
-
 
 <div class="callout callout-style-simple callout-none no-icon callout-titled">
 <div class="callout-header d-flex align-content-center">
@@ -203,7 +166,7 @@ window.Quarto = {
 <h3 data-number="11.1.1" class="anchored" data-anchor-id="方法の記述"><span class="header-section-number">11.1.1</span> 方法の記述</h3>
 <p>発展途上国でなお使われる方法は母親に産んだ子どもの数とを生存している子どもの数を尋ねて子どもの死亡を推定するBrass法である。Brass法は死亡割合を生命表形式での測定に変換する。</p>
 <p>具体的に確認する。以下のような人口が存在するとする。</p>
-<table class="caption-top table">
+<table class="table">
 <thead>
 <tr class="header">
 <th>年齢<span class="math inline">\(x\)</span></th>
@@ -250,7 +213,7 @@ window.Quarto = {
 </tbody>
 </table>
 <p>もしかりにすべての女性が19.5歳に出産を終えると、<span class="math inline">\(y\)</span>歳の女性の死亡した子どもの割合は<span class="math inline">\(y-19.5\)</span>歳の子どもが死亡した割合に近似できる。</p>
-<table class="caption-top table">
+<table class="table">
 <colgroup>
 <col style="width: 18%">
 <col style="width: 12%">
@@ -313,7 +276,7 @@ window.Quarto = {
 </tbody>
 </table>
 <p>出産年齢がばらつくことを考慮すると、25歳までに子どもを産んだ女性の死亡した子どもは<span class="math inline">\(D(a)\)</span>として報告される。ここから、25歳の女性での子どもの死亡割合は<span class="math inline">\(d_{25} = \frac{29.45}{200} = 0.147\)</span>という、<span class="math inline">\(q(1.9)\)</span>に近い値であることがわかる。これは年齢が上がるにつれて累積死亡率の上昇ペースが遅くなることが原因している。もし死亡率が年齢で均等に分配されていれば<span class="math inline">\(D(a)\)</span>は30.6、<span class="math inline">\(d_{25}\)</span>は<span class="math inline">\(\frac{30.6}{200} = 0.153\)</span>となり、<span class="math inline">\(q(2.3)\)</span>となる。</p>
-<table class="caption-top table">
+<table class="table">
 <colgroup>
 <col style="width: 13%">
 <col style="width: 27%">
@@ -811,42 +774,30 @@ c(a) = be^{- \int^a_0 r(x) dx} p(a) \tag{ns5}\label{eq:ns5}
 <section id="結婚と離婚" class="level3" data-number="12.2.1">
 <h3 data-number="12.2.1" class="anchored" data-anchor-id="結婚と離婚"><span class="header-section-number">12.2.1</span> 結婚と離婚</h3>
 <p>結婚と離婚は多相モデルで理解できるもっともシンプルなイベントである。多かれ少なかれすべての女性は最終的には結婚するが、同時に離死別を経験し、最終的には女性自身の死亡で結婚の状態は終了する。</p>
-<div id="fig-hivaids" class="quarto-float quarto-figure quarto-figure-center anchored">
-<figure class="quarto-float quarto-float-fig figure">
-<div aria-describedby="fig-hivaids-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-<img src="fig/marriage_multistate.png" class="img-fluid figure-img" style="width:60.0%">
-</div>
-<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-hivaids-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-Figure&nbsp;1: 結婚の多相状態<br>出所）Preston et al.(2000, figure 12.1)
-</figcaption>
+<div id="fig-hivaids" class="quarto-figure quarto-figure-center anchored">
+<figure class="figure">
+<p><img src="fig/marriage_multistate.png" class="img-fluid figure-img" style="width:60.0%"></p>
+<figcaption class="figure-caption">Figure&nbsp;1: 結婚の多相状態<br>出所）Preston et al.(2000, figure 12.1)</figcaption>
 </figure>
 </div>
 </section>
 <section id="hivaids" class="level3" data-number="12.2.2">
 <h3 data-number="12.2.2" class="anchored" data-anchor-id="hivaids"><span class="header-section-number">12.2.2</span> HIV/AIDS</h3>
 <p>HIVも陰性→陽性→AIDSという多相状態の事例である。HIV/AIDSの例は不可逆的な状態遷移であるものの、全員が感染するわけではない点で興味深い特性を持つ。その点で、感染する人々の割合の推定が重要となる。さらに、感染からAIDSへの移行には期間だけでなく年齢もかかわる。</p>
-<div id="fig-marriage" class="quarto-float quarto-figure quarto-figure-center anchored">
-<figure class="quarto-float quarto-float-fig figure">
-<div aria-describedby="fig-marriage-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-<img src="fig/hivaids_multistate.png" class="img-fluid figure-img" style="width:60.0%">
-</div>
-<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-marriage-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-Figure&nbsp;2: HIV/AIDSの多相状態<br>出所）Preston et al.(2000, figure 12.2)
-</figcaption>
+<div id="fig-marriage" class="quarto-figure quarto-figure-center anchored">
+<figure class="figure">
+<p><img src="fig/hivaids_multistate.png" class="img-fluid figure-img" style="width:60.0%"></p>
+<figcaption class="figure-caption">Figure&nbsp;2: HIV/AIDSの多相状態<br>出所）Preston et al.(2000, figure 12.2)</figcaption>
 </figure>
 </div>
 </section>
 <section id="健康慢性疾患障害" class="level3" data-number="12.2.3">
 <h3 data-number="12.2.3" class="anchored" data-anchor-id="健康慢性疾患障害"><span class="header-section-number">12.2.3</span> 健康、慢性疾患、障害</h3>
 <p>健康状態の変化はコホートや年齢、時代によって異なる。この変化を理解するためにも多相モデルは役に立つ。ほとんどの者は健康な状態から始まり、慢性疾患→障害という遷移をする(健康→障害はここでは想定しない)。それぞれの遷移確率から慢性疾患や障害の普及を学習することができる。</p>
-<div id="fig-illness" class="quarto-float quarto-figure quarto-figure-center anchored">
-<figure class="quarto-float quarto-float-fig figure">
-<div aria-describedby="fig-illness-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-<img src="fig/illness_multistate.png" class="img-fluid figure-img" style="width:60.0%">
-</div>
-<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-illness-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-Figure&nbsp;3: 健康、慢性疾患、障害の多相状態<br>出所）Preston et al.(2000, figure 12.3)
-</figcaption>
+<div id="fig-illness" class="quarto-figure quarto-figure-center anchored">
+<figure class="figure">
+<p><img src="fig/illness_multistate.png" class="img-fluid figure-img" style="width:60.0%"></p>
+<figcaption class="figure-caption">Figure&nbsp;3: 健康、慢性疾患、障害の多相状態<br>出所）Preston et al.(2000, figure 12.3)</figcaption>
 </figure>
 </div>
 </section>
@@ -856,34 +807,26 @@ Figure&nbsp;3: 健康、慢性疾患、障害の多相状態<br>出所）Preston
 <section id="結婚同棲そして破綻" class="level3" data-number="12.3.1">
 <h3 data-number="12.3.1" class="anchored" data-anchor-id="結婚同棲そして破綻"><span class="header-section-number">12.3.1</span> 結婚、同棲、そして破綻</h3>
 <p>同棲(consensual unions)は(米国で)ますます増加しており、それは婚外子の増加にもつながり、離別確率も高い。さらには子どもの経験にも影響を与える。</p>
-<p>Bumpass and Lu (2000)ではさまざまな年齢の子どもの経験を(母)親の婚姻状態の関数として要約することでこの問題に対処している。子どものいる母親を対象に、0から15歳までの子どもの経験について、ひとり親／同棲／結婚の状態との比較をしている。<span class="math inline">\(\lambda^{12}(x)\)</span>は子どもが<span class="math inline">\(x\)</span>から<span class="math inline">\(x + \delta x\)</span>歳にひとり親から同棲に移行する確率を、<span class="math inline">\(\lambda^{23}(x)\)</span>は同棲から結婚に移行する確率をそれぞれ示す。<a href="#fig-union" class="quarto-xref">Figure&nbsp;4</a> は同棲を含んでいる点では複雑となっているが、死亡を無視している点ではシンプルと言える。</p>
-<div id="fig-union" class="quarto-float quarto-figure quarto-figure-center anchored">
-<figure class="quarto-float quarto-float-fig figure">
-<div aria-describedby="fig-union-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-<img src="fig/union_multistate.png" class="img-fluid figure-img" style="width:50.0%">
-</div>
-<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-union-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-Figure&nbsp;4: 子どもから見た結婚状態の変化の多相状態<br>出所）Preston et al.(2000, figure 12.3)
-</figcaption>
+<p>Bumpass and Lu (2000)ではさまざまな年齢の子どもの経験を(母)親の婚姻状態の関数として要約することでこの問題に対処している。子どものいる母親を対象に、0から15歳までの子どもの経験について、ひとり親／同棲／結婚の状態との比較をしている。<span class="math inline">\(\lambda^{12}(x)\)</span>は子どもが<span class="math inline">\(x\)</span>から<span class="math inline">\(x + \delta x\)</span>歳にひとり親から同棲に移行する確率を、<span class="math inline">\(\lambda^{23}(x)\)</span>は同棲から結婚に移行する確率をそれぞれ示す。<a href="#fig-union">Figure&nbsp;4</a> は同棲を含んでいる点では複雑となっているが、死亡を無視している点ではシンプルと言える。</p>
+<div id="fig-union" class="quarto-figure quarto-figure-center anchored">
+<figure class="figure">
+<p><img src="fig/union_multistate.png" class="img-fluid figure-img" style="width:50.0%"></p>
+<figcaption class="figure-caption">Figure&nbsp;4: 子どもから見た結婚状態の変化の多相状態<br>出所）Preston et al.(2000, figure 12.3)</figcaption>
 </figure>
 </div>
 </section>
 <section id="率の推定" class="level3" data-number="12.3.2">
 <h3 data-number="12.3.2" class="anchored" data-anchor-id="率の推定"><span class="header-section-number">12.3.2</span> 率の推定</h3>
-<p>回顧的な調査を用いて、単年年齢(<span class="math inline">\(x\)</span>歳)固有のある状態<span class="math inline">\(i\)</span>から別の状態<span class="math inline">\(j\)</span>への遷移率<span class="math inline">\({}_1 M^{ij}_x\)</span>を <a href="#tbl-transitionrate" class="quarto-xref">Table&nbsp;1</a> として推定した。この例では出発点と到達点のみを考慮し、<span class="math inline">\(l(x)\)</span>の線形性を仮定することで、すべての年齢層について<span class="math inline">\({}_1 M_x\)</span>から<span class="math inline">\({}_1 q_x\)</span>を推定し、そこからさらに<span class="math inline">\({}_1 d_x\)</span>と<span class="math inline">\({}_1 L_x\)</span>を推定することができる。それぞれ、<span class="math inline">\(\ref{eq:12.1}\)</span> 式より求められる。それぞれの年齢<span class="math inline">\(x\)</span>において<span class="math inline">\(l(x)\)</span>は<span class="math inline">\(l(0)\)</span>の任意の基数または値より求められる。したがって、<span class="math inline">\({}_1 d_x\)</span>が<span class="math inline">\(\ref{eq:ns6}\)</span> 式より、<span class="math inline">\({}_1 q_x\)</span>が<span class="math inline">\(\ref{eq:ns7}\)</span> 式よりそれぞれ求められる。</p>
+<p>回顧的な調査を用いて、単年年齢(<span class="math inline">\(x\)</span>歳)固有のある状態<span class="math inline">\(i\)</span>から別の状態<span class="math inline">\(j\)</span>への遷移率<span class="math inline">\({}_1 M^{ij}_x\)</span>を <a href="#tbl-transitionrate">Table&nbsp;1</a> として推定した。この例では出発点と到達点のみを考慮し、<span class="math inline">\(l(x)\)</span>の線形性を仮定することで、すべての年齢層について<span class="math inline">\({}_1 M_x\)</span>から<span class="math inline">\({}_1 q_x\)</span>を推定し、そこからさらに<span class="math inline">\({}_1 d_x\)</span>と<span class="math inline">\({}_1 L_x\)</span>を推定することができる。それぞれ、<span class="math inline">\(\ref{eq:12.1}\)</span> 式より求められる。それぞれの年齢<span class="math inline">\(x\)</span>において<span class="math inline">\(l(x)\)</span>は<span class="math inline">\(l(0)\)</span>の任意の基数または値より求められる。したがって、<span class="math inline">\({}_1 d_x\)</span>が<span class="math inline">\(\ref{eq:ns6}\)</span> 式より、<span class="math inline">\({}_1 q_x\)</span>が<span class="math inline">\(\ref{eq:ns7}\)</span> 式よりそれぞれ求められる。</p>
 <!-- ここで${}_1 M^{ij}_x = \frac{{}_1 D^{ij}_x}{{}_1 N^i_x}$ -->
 <p><span class="math display">\[\begin{eqnarray}
 l(x+1) =&amp; l(x) - {}_1 d_x \\
 {}_1 d_x =&amp; {}_1 M_x \cdot {}_1 L_x \\
 {}_1 L_x =&amp; 0.5 \cdot [l(x) + l(x+1)] \tag{12.1}\label{eq:12.1}
 \end{eqnarray}\]</span></p>
-<div id="tbl-transitionrate" class="quarto-float quarto-figure quarto-figure-center anchored">
-<figure class="quarto-float quarto-float-tbl figure">
-<figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-tbl" id="tbl-transitionrate-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-Table&nbsp;1: <span class="math inline">\({}_1 M^{ij}_x\)</span>の観測値
-</figcaption>
-<div aria-describedby="tbl-transitionrate-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-<table class="caption-top table">
+<div id="tbl-transitionrate" class="anchored">
+<table class="table">
+<caption>Table&nbsp;1: <span class="math inline">\({}_1 M^{ij}_x\)</span>の観測値</caption>
 <colgroup>
 <col style="width: 11%">
 <col style="width: 29%">
@@ -998,8 +941,6 @@ Table&nbsp;1: <span class="math inline">\({}_1 M^{ij}_x\)</span>の観測値
 </tbody>
 </table>
 </div>
-</figure>
-</div>
 <p><span class="math display">\[
 {}_1 d_x = l(x) \cdot \frac{{}_1 M_x}{1 + 0.5 \cdot {}_1 M_x} \tag{ns6}\label{eq:ns6}
 \]</span></p>
@@ -1036,14 +977,10 @@ Notation
 </section>
 <section id="推定値の解釈" class="level3" data-number="12.3.3">
 <h3 data-number="12.3.3" class="anchored" data-anchor-id="推定値の解釈"><span class="header-section-number">12.3.3</span> 推定値の解釈</h3>
-<p><a href="#tbl-mortalityrate" class="quarto-xref">Table&nbsp;2</a> に示した<span class="math inline">\({}_1 q^{ij}_x\)</span>の条件付き確率の総和は1であり、子どもの死亡がないという仮定のもと、<span class="math inline">\(l^i(x)\)</span>と<span class="math inline">\({}_1 d^{ij}_x\)</span>は <a href="#tbl-mortalitynum" class="quarto-xref">Table&nbsp;3</a> として表現できる。</p>
-<div id="tbl-mortalityrate" class="quarto-float quarto-figure quarto-figure-center anchored">
-<figure class="quarto-float quarto-float-tbl figure">
-<figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-tbl" id="tbl-mortalityrate-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-Table&nbsp;2: <span class="math inline">\({}_1 q^{ij}_x\)</span>の推定値
-</figcaption>
-<div aria-describedby="tbl-mortalityrate-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-<table class="caption-top table">
+<p><a href="#tbl-mortalityrate">Table&nbsp;2</a> に示した<span class="math inline">\({}_1 q^{ij}_x\)</span>の条件付き確率の総和は1であり、子どもの死亡がないという仮定のもと、<span class="math inline">\(l^i(x)\)</span>と<span class="math inline">\({}_1 d^{ij}_x\)</span>は <a href="#tbl-mortalitynum">Table&nbsp;3</a> として表現できる。</p>
+<div id="tbl-mortalityrate" class="anchored">
+<table class="table">
+<caption>Table&nbsp;2: <span class="math inline">\({}_1 q^{ij}_x\)</span>の推定値</caption>
 <colgroup>
 <col style="width: 8%">
 <col style="width: 8%">
@@ -1182,15 +1119,9 @@ Table&nbsp;2: <span class="math inline">\({}_1 q^{ij}_x\)</span>の推定値
 </tbody>
 </table>
 </div>
-</figure>
-</div>
-<div id="tbl-mortalitynum" class="quarto-float quarto-figure quarto-figure-center anchored">
-<figure class="quarto-float quarto-float-tbl figure">
-<figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-tbl" id="tbl-mortalitynum-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-Table&nbsp;3: <span class="math inline">\(l^i(x)\)</span>および<span class="math inline">\({}_1 d^{ij}_x\)</span>の推定値
-</figcaption>
-<div aria-describedby="tbl-mortalitynum-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-<table class="caption-top table">
+<div id="tbl-mortalitynum" class="anchored">
+<table class="table">
+<caption>Table&nbsp;3: <span class="math inline">\(l^i(x)\)</span>および<span class="math inline">\({}_1 d^{ij}_x\)</span>の推定値</caption>
 <colgroup>
 <col style="width: 6%">
 <col style="width: 6%">
@@ -1341,8 +1272,6 @@ Table&nbsp;3: <span class="math inline">\(l^i(x)\)</span>および<span class="m
 </tbody>
 </table>
 </div>
-</figure>
-</div>
 <p><span class="math inline">\({}_1 d^{ij}_x\)</span>は単純に解釈できる。2歳時点でひとり親にとどまった者は966人、同棲に移行した者は87人、結婚に移行した者は37人である。<span class="math inline">\(l^i(x)\)</span>の解釈には留意が必要。すべての年齢で増加と減少を経験するため、<span class="math inline">\(l^i(0)\)</span>は<span class="math inline">\(l^i(x)\)</span>の基準としては使用できないし、<span class="math inline">\(\frac{l^i(x+k)}{l^i(x)}\)</span>もまた使用できない。ただし、<span class="math inline">\(\frac{l^i(x)}{\Sigma_i l^i(0)}\)</span>は<span class="math inline">\(x\)</span>歳で状態<span class="math inline">\(i\)</span>にある確率として表現できる。</p>
 <p>多相生命表の平均余命には2種類ある。1つは出発点に関係ない特定の状態にある平均期間として表現される条件付きでない期間であり、もう1つは条件付き期間である。前者は<span class="math inline">\(x\)</span>歳後に状態<span class="math inline">\(j\)</span>で生存した期間の数<span class="math inline">\(e^j(x)\)</span>として表現され、<span class="math inline">\(\Sigma_j e^j(0) = e(0)\)</span>が成り立つ。後者は<span class="math inline">\(x\)</span>歳で状態<span class="math inline">\(i\)</span>にある者のうち、状態<span class="math inline">\(k\)</span>で生存した期間の数<span class="math inline">\(\psi^{ij}(x)\)</span>として表現され、<span class="math inline">\(x\)</span>歳で状態<span class="math inline">\(i\)</span>を占めていたコホートが状態<span class="math inline">\(j\)</span>で過ごした期間から推定される。</p>
 </section>
@@ -1364,7 +1293,7 @@ Table&nbsp;3: <span class="math inline">\(l^i(x)\)</span>および<span class="m
 <p><span class="math display">\[
 \mathbf{l}(x+1) = \mathbf{l}(x) - \mathbf{D}(x) \tag{12.4}\label{eq:12.4}
 \]</span></p>
-<p>まとめずに示すと<span class="math inline">\(\ref{eq:ns8}\)</span> 式となる。<a href="#tbl-mortalitynum" class="quarto-xref">Table&nbsp;3</a> をみると分かる。</p>
+<p>まとめずに示すと<span class="math inline">\(\ref{eq:ns8}\)</span> 式となる。<a href="#tbl-mortalitynum">Table&nbsp;3</a> をみると分かる。</p>
 <p><span class="math display">\[\begin{eqnarray}
 
 \begin{pmatrix}
@@ -1532,7 +1461,18 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     }
     return false;
   }
-  const onCopySuccess = function(e) {
+  const clipboard = new window.ClipboardJS('.code-copy-button', {
+    text: function(trigger) {
+      const codeEl = trigger.previousElementSibling.cloneNode(true);
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+    }
+  });
+  clipboard.on('success', function(e) {
     // button target
     const button = e.trigger;
     // don't keep focus
@@ -1564,50 +1504,11 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     }, 1000);
     // clear code selection
     e.clearSelection();
-  }
-  const getTextToCopy = function(trigger) {
-      const codeEl = trigger.previousElementSibling.cloneNode(true);
-      for (const childEl of codeEl.children) {
-        if (isCodeAnnotation(childEl)) {
-          childEl.remove();
-        }
-      }
-      return codeEl.innerText;
-  }
-  const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
-    text: getTextToCopy
   });
-  clipboard.on('success', onCopySuccess);
-  if (window.document.getElementById('quarto-embedded-source-code-modal')) {
-    // For code content inside modals, clipBoardJS needs to be initialized with a container option
-    // TODO: Check when it could be a function (https://github.com/zenorocha/clipboard.js/issues/860)
-    const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
-      text: getTextToCopy,
-      container: window.document.getElementById('quarto-embedded-source-code-modal')
-    });
-    clipboardModal.on('success', onCopySuccess);
-  }
-    var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
-    var mailtoRegex = new RegExp(/^mailto:/);
-      var filterRegex = new RegExp("https:\/\/sittaningo\.github\.io\/");
-    var isInternal = (href) => {
-        return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
-    }
-    // Inspect non-navigation links and adorn them if external
- 	var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
-    for (var i=0; i<links.length; i++) {
-      const link = links[i];
-      if (!isInternal(link.href)) {
-        // undo the damage that might have been done by quarto-nav.js in the case of
-        // links that we want to consider external
-        if (link.dataset.originalHref !== undefined) {
-          link.href = link.dataset.originalHref;
-        }
-      }
-    }
-  function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+  function tippyHover(el, contentFn) {
     const config = {
       allowHTML: true,
+      content: contentFn,
       maxWidth: 500,
       delay: 100,
       arrow: false,
@@ -1617,17 +1518,8 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
       interactive: true,
       interactiveBorder: 10,
       theme: 'quarto',
-      placement: 'bottom-start',
+      placement: 'bottom-start'
     };
-    if (contentFn) {
-      config.content = contentFn;
-    }
-    if (onTriggerFn) {
-      config.onTrigger = onTriggerFn;
-    }
-    if (onUntriggerFn) {
-      config.onUntrigger = onUntriggerFn;
-    }
     window.tippy(el, config); 
   }
   const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
@@ -1639,130 +1531,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
       try { href = new URL(href).hash; } catch {}
       const id = href.replace(/^#\/?/, "");
       const note = window.document.getElementById(id);
-      if (note) {
-        return note.innerHTML;
-      } else {
-        return "";
-      }
-    });
-  }
-  const xrefs = window.document.querySelectorAll('a.quarto-xref');
-  const processXRef = (id, note) => {
-    // Strip column container classes
-    const stripColumnClz = (el) => {
-      el.classList.remove("page-full", "page-columns");
-      if (el.children) {
-        for (const child of el.children) {
-          stripColumnClz(child);
-        }
-      }
-    }
-    stripColumnClz(note)
-    if (id === null || id.startsWith('sec-')) {
-      // Special case sections, only their first couple elements
-      const container = document.createElement("div");
-      if (note.children && note.children.length > 2) {
-        container.appendChild(note.children[0].cloneNode(true));
-        for (let i = 1; i < note.children.length; i++) {
-          const child = note.children[i];
-          if (child.tagName === "P" && child.innerText === "") {
-            continue;
-          } else {
-            container.appendChild(child.cloneNode(true));
-            break;
-          }
-        }
-        if (window.Quarto?.typesetMath) {
-          window.Quarto.typesetMath(container);
-        }
-        return container.innerHTML
-      } else {
-        if (window.Quarto?.typesetMath) {
-          window.Quarto.typesetMath(note);
-        }
-        return note.innerHTML;
-      }
-    } else {
-      // Remove any anchor links if they are present
-      const anchorLink = note.querySelector('a.anchorjs-link');
-      if (anchorLink) {
-        anchorLink.remove();
-      }
-      if (window.Quarto?.typesetMath) {
-        window.Quarto.typesetMath(note);
-      }
-      // TODO in 1.5, we should make sure this works without a callout special case
-      if (note.classList.contains("callout")) {
-        return note.outerHTML;
-      } else {
-        return note.innerHTML;
-      }
-    }
-  }
-  for (var i=0; i<xrefs.length; i++) {
-    const xref = xrefs[i];
-    tippyHover(xref, undefined, function(instance) {
-      instance.disable();
-      let url = xref.getAttribute('href');
-      let hash = undefined; 
-      if (url.startsWith('#')) {
-        hash = url;
-      } else {
-        try { hash = new URL(url).hash; } catch {}
-      }
-      if (hash) {
-        const id = hash.replace(/^#\/?/, "");
-        const note = window.document.getElementById(id);
-        if (note !== null) {
-          try {
-            const html = processXRef(id, note.cloneNode(true));
-            instance.setContent(html);
-          } finally {
-            instance.enable();
-            instance.show();
-          }
-        } else {
-          // See if we can fetch this
-          fetch(url.split('#')[0])
-          .then(res => res.text())
-          .then(html => {
-            const parser = new DOMParser();
-            const htmlDoc = parser.parseFromString(html, "text/html");
-            const note = htmlDoc.getElementById(id);
-            if (note !== null) {
-              const html = processXRef(id, note);
-              instance.setContent(html);
-            } 
-          }).finally(() => {
-            instance.enable();
-            instance.show();
-          });
-        }
-      } else {
-        // See if we can fetch a full url (with no hash to target)
-        // This is a special case and we should probably do some content thinning / targeting
-        fetch(url)
-        .then(res => res.text())
-        .then(html => {
-          const parser = new DOMParser();
-          const htmlDoc = parser.parseFromString(html, "text/html");
-          const note = htmlDoc.querySelector('main.content');
-          if (note !== null) {
-            // This should only happen for chapter cross references
-            // (since there is no id in the URL)
-            // remove the first header
-            if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
-              note.children[0].remove();
-            }
-            const html = processXRef(null, note);
-            instance.setContent(html);
-          } 
-        }).finally(() => {
-          instance.enable();
-          instance.show();
-        });
-      }
-    }, function(instance) {
+      return note.innerHTML;
     });
   }
       let selectedAnnoteEl;
@@ -1806,7 +1575,6 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
             }
             div.style.top = top - 2 + "px";
             div.style.height = height + 4 + "px";
-            div.style.left = 0;
             let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
             if (gutterDiv === null) {
               gutterDiv = window.document.createElement("div");
@@ -1832,32 +1600,6 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
         });
         selectedAnnoteEl = undefined;
       };
-        // Handle positioning of the toggle
-    window.addEventListener(
-      "resize",
-      throttle(() => {
-        elRect = undefined;
-        if (selectedAnnoteEl) {
-          selectCodeLines(selectedAnnoteEl);
-        }
-      }, 10)
-    );
-    function throttle(fn, ms) {
-    let throttle = false;
-    let timer;
-      return (...args) => {
-        if(!throttle) { // first call gets through
-            fn.apply(this, args);
-            throttle = true;
-        } else { // all the others get throttled
-            if(timer) clearTimeout(timer); // cancel #2
-            timer = setTimeout(() => {
-              fn.apply(this, args);
-              timer = throttle = false;
-            }, ms);
-        }
-      };
-    }
       // Attach click handler to the DT
       const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
       for (const annoteDlNode of annoteDls) {
@@ -1918,7 +1660,6 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 });
 </script>
 </div> <!-- /content -->
-
 
 
 
