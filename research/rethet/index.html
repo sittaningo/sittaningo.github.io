@@ -42,6 +42,7 @@ ul.task-list li input[type="checkbox"] {
 <script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
 <link href="../../site_libs/bootstrap/bootstrap-4d5f6c24c9543011d7a9531111f08fc5.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<script src="../../site_libs/quarto-contrib/iconify-1.0.7/iconify-icon.min.js"></script>
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -164,6 +165,323 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
+<p><a href="2024-12-06_SSMWS.pdf"><iconify-icon inline="" icon="bxs:file-pdf"></iconify-icon> Poster PDF</a></p>
+<div id="fig-dag" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-dag-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="fig/dag.svg" class="img-fluid figure-img" style="width:30.0%">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-dag-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;1: Directed acyclic graph in this study
+</figcaption>
+</figure>
+</div>
+<div id="fig-causaltree" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-causaltree-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="fig/causaltree_subjhealth_depth3.png" class="img-fluid figure-img" style="width:95.0%">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-causaltree-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;2: A representative causal tree of subjective health
+</figcaption>
+</figure>
+</div>
+<div id="fig-featureinportance" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-featureinportance-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="fig/featureimportance_subjhealth.png" class="img-fluid figure-img" style="width:95.0%">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-featureinportance-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;3: Feature importance of subjective health
+</figcaption>
+</figure>
+</div>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 12%">
+<col style="width: 31%">
+<col style="width: 8%">
+<col style="width: 7%">
+<col style="width: 8%">
+<col style="width: 8%">
+<col style="width: 8%">
+<col style="width: 9%">
+</colgroup>
+<thead>
+<tr class="header">
+<th></th>
+<th></th>
+<th>All</th>
+<th>Percent</th>
+<th>Mean</th>
+<th>SD</th>
+<th>min</th>
+<th>max</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td></td>
+<td>Subjective Health</td>
+<td>75338.00</td>
+<td>100.00</td>
+<td>2.79</td>
+<td>1.05</td>
+<td>1.00</td>
+<td>5.00</td>
+</tr>
+<tr class="even">
+<td></td>
+<td>is_retirement</td>
+<td>75338.00</td>
+<td>100.00</td>
+<td>0.19</td>
+<td>0.39</td>
+<td>0.00</td>
+<td>1.00</td>
+</tr>
+<tr class="odd">
+<td></td>
+<td>Birth cohort</td>
+<td>75338.00</td>
+<td>100.00</td>
+<td>1944.11</td>
+<td>9.26</td>
+<td>1904.00</td>
+<td>1964.00</td>
+</tr>
+<tr class="even">
+<td></td>
+<td>Age</td>
+<td>75338.00</td>
+<td>100.00</td>
+<td>60.33</td>
+<td>6.95</td>
+<td>50.00</td>
+<td>100.00</td>
+</tr>
+<tr class="odd">
+<td>Female</td>
+<td>Male</td>
+<td>38835.00</td>
+<td>51.55</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="even">
+<td></td>
+<td>Female</td>
+<td>36503.00</td>
+<td>48.45</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="odd">
+<td>Marital status</td>
+<td>Married</td>
+<td>58986.00</td>
+<td>78.30</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="even">
+<td></td>
+<td>Partnered</td>
+<td>2345.00</td>
+<td>3.11</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="odd">
+<td></td>
+<td>Separated/Divorced</td>
+<td>8304.00</td>
+<td>11.02</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="even">
+<td></td>
+<td>Widowed</td>
+<td>4668.00</td>
+<td>6.20</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="odd">
+<td></td>
+<td>Never married</td>
+<td>1035.00</td>
+<td>1.37</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="even">
+<td></td>
+<td>Number of living siblings</td>
+<td>75338.00</td>
+<td>100.00</td>
+<td>3.21</td>
+<td>2.48</td>
+<td>0.00</td>
+<td>21.00</td>
+</tr>
+<tr class="odd">
+<td></td>
+<td>Survey year</td>
+<td>75338.00</td>
+<td>100.00</td>
+<td>2004.44</td>
+<td>7.02</td>
+<td>1992.00</td>
+<td>2014.00</td>
+</tr>
+<tr class="even">
+<td></td>
+<td>Self-employment</td>
+<td>75338.00</td>
+<td>100.00</td>
+<td>0.25</td>
+<td>0.43</td>
+<td>0.00</td>
+<td>1.00</td>
+</tr>
+<tr class="odd">
+<td></td>
+<td>Weekly working hours</td>
+<td>75338.00</td>
+<td>100.00</td>
+<td>38.18</td>
+<td>16.37</td>
+<td>0.00</td>
+<td>168.00</td>
+</tr>
+<tr class="even">
+<td>Education</td>
+<td>Less than upper secondary</td>
+<td>18626.00</td>
+<td>24.72</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="odd">
+<td></td>
+<td>Upper secondary and vocational training</td>
+<td>39562.00</td>
+<td>52.51</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="even">
+<td></td>
+<td>Tertiary</td>
+<td>17150.00</td>
+<td>22.76</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="odd">
+<td></td>
+<td>Number of Living Parents</td>
+<td>75338.00</td>
+<td>100.00</td>
+<td>0.50</td>
+<td>0.66</td>
+<td>0.00</td>
+<td>2.00</td>
+</tr>
+<tr class="even">
+<td></td>
+<td>Age(father)</td>
+<td>75338.00</td>
+<td>100.00</td>
+<td>71.44</td>
+<td>14.09</td>
+<td>12.00</td>
+<td>130.00</td>
+</tr>
+<tr class="odd">
+<td></td>
+<td>Age(mother)</td>
+<td>75338.00</td>
+<td>100.00</td>
+<td>75.59</td>
+<td>13.28</td>
+<td>14.00</td>
+<td>117.00</td>
+</tr>
+<tr class="even">
+<td></td>
+<td>Total wealth</td>
+<td>75338.00</td>
+<td>100.00</td>
+<td>300104.39</td>
+<td>471787.15</td>
+<td>-32000.00</td>
+<td>3716500.00</td>
+</tr>
+<tr class="odd">
+<td></td>
+<td>Household income</td>
+<td>75338.00</td>
+<td>100.00</td>
+<td>11193.96</td>
+<td>28187.85</td>
+<td>0.00</td>
+<td>250000.00</td>
+</tr>
+<tr class="even">
+<td></td>
+<td>Transfer to grandchildren</td>
+<td>75338.00</td>
+<td>100.00</td>
+<td>0.43</td>
+<td>0.50</td>
+<td>0.00</td>
+<td>1.00</td>
+</tr>
+<tr class="odd">
+<td></td>
+<td>Total household number</td>
+<td>75338.00</td>
+<td>100.00</td>
+<td>2.66</td>
+<td>1.36</td>
+<td>1.00</td>
+<td>21.00</td>
+</tr>
+<tr class="even">
+<td></td>
+<td>Number of living children</td>
+<td>75338.00</td>
+<td>100.00</td>
+<td>3.17</td>
+<td>1.82</td>
+<td>0.00</td>
+<td>19.00</td>
+</tr>
+</tbody>
+</table>
 
 
 
