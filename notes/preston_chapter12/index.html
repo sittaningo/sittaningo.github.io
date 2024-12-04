@@ -2,14 +2,14 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.3.353">
+<meta name="generator" content="quarto-1.6.39">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 <meta name="author" content="Shingo Nitta">
 <meta name="dcterms.date" content="2024-06-17">
 
-<title>Shingo Nitta - 人口学勉強会購読資料(1,2章)</title>
+<title>人口学勉強会購読資料(1,2章) – Shingo Nitta</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -38,17 +38,23 @@ ul.task-list li input[type="checkbox"] {
 <script src="../../site_libs/quarto-html/tippy.umd.min.js"></script>
 <script src="../../site_libs/quarto-html/anchor.min.js"></script>
 <link href="../../site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="../../site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-cc6107df646ca5ad5b0f4c970cb58fb1.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../../site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
+<link href="../../site_libs/bootstrap/bootstrap-4d5f6c24c9543011d7a9531111f08fc5.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
   "collapse-after": 3,
   "panel-placement": "end",
   "type": "overlay",
-  "limit": 20,
+  "limit": 50,
+  "keyboard-shortcut": [
+    "f",
+    "/",
+    "s"
+  ],
+  "show-item-context": false,
   "language": {
     "search-no-results-text": "No results",
     "search-matching-documents-text": "matching documents",
@@ -57,13 +63,42 @@ ul.task-list li input[type="checkbox"] {
     "search-more-match-text": "more match in this document",
     "search-more-matches-text": "more matches in this document",
     "search-clear-button-title": "Clear",
+    "search-text-placeholder": "",
     "search-detached-cancel-button-title": "Cancel",
-    "search-submit-button-title": "Submit"
+    "search-submit-button-title": "Submit",
+    "search-label": "Search"
   }
 }</script>
 
-  <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
   <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN") {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
 
 </head>
 
@@ -71,39 +106,39 @@ ul.task-list li input[type="checkbox"] {
 
 <div id="quarto-search-results"></div>
   <header id="quarto-header" class="headroom fixed-top">
-    <nav class="navbar navbar-expand-lg navbar-dark ">
+    <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
       <div class="navbar-container container-fluid">
-      <div class="navbar-brand-container">
+      <div class="navbar-brand-container mx-auto">
     <a class="navbar-brand" href="../../index.html">
     <span class="navbar-title">Shingo Nitta</span>
     </a>
   </div>
             <div id="quarto-search" class="" title="Search"></div>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" role="menu" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
   <span class="navbar-toggler-icon"></span>
 </button>
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll me-auto">
   <li class="nav-item">
-    <a class="nav-link" href="../../index.html" rel="" target="">
- <span class="menu-text">HOME</span></a>
+    <a class="nav-link" href="../../index.html"> 
+<span class="menu-text">HOME</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="../../profile/index.html" rel="" target="">
- <span class="menu-text">PROFILE</span></a>
+    <a class="nav-link" href="../../profile/index.html"> 
+<span class="menu-text">PROFILE</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="../../research/index.html" rel="" target="">
- <span class="menu-text">RESEARCH</span></a>
+    <a class="nav-link" href="../../research/index.html"> 
+<span class="menu-text">RESEARCH</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="../../notes/index.html" rel="" target="">
- <span class="menu-text">NOTES</span></a>
+    <a class="nav-link" href="../../notes/index.html"> 
+<span class="menu-text">NOTES</span></a>
   </li>  
 </ul>
-            <div class="quarto-navbar-tools ms-auto">
-</div>
           </div> <!-- /navcollapse -->
+            <div class="quarto-navbar-tools">
+</div>
       </div> <!-- /container-fluid -->
     </nav>
 </header>
@@ -147,7 +182,9 @@ ul.task-list li input[type="checkbox"] {
   </div>
   
 
+
 </header>
+
 
 <div class="callout callout-style-simple callout-none no-icon callout-titled">
 <div class="callout-header d-flex align-content-center">
@@ -172,7 +209,7 @@ ul.task-list li input[type="checkbox"] {
 <h2 data-number="1.2" class="anchored" data-anchor-id="人口変化のバランス方程式"><span class="header-section-number">1.2</span> 人口変化のバランス方程式</h2>
 <p>人口が増える経路は出生か移動(流入、in-migration)の2つしかない。人口がより社会的要素を含めるとき、移動は社会移動として言及される(高校の卒業証書を得ることで、「高卒」に移動する)。出生時に決まる属性(出身地など)は出生によってのみ決まる。</p>
 <p>人口が減る経路も死亡か流出(emigration)の2つの経路のみである。やはり出生時に決まる属性は死亡によってのみ決まる(国外へ流出しても出身地は変わらない)。</p>
-<p>以上を踏まえて、T時点の人口は@eq-balance のように表現できる。<a href="#eq-balance">Equation&nbsp;1</a> は近似ではなく恒等式という点で社会科学の最も基幹的な式であるものの、実際のデータでは閉鎖の誤差(error of closure)と呼ばれる誤差が生じることがある<a href="#fn1" class="footnote-ref" id="fnref1" role="doc-noteref"><sup>1</sup></a>。</p>
+<p>以上を踏まえて、T時点の人口は@eq-balance のように表現できる。<a href="#eq-balance" class="quarto-xref">Equation&nbsp;1</a> は近似ではなく恒等式という点で社会科学の最も基幹的な式であるものの、実際のデータでは閉鎖の誤差(error of closure)と呼ばれる誤差が生じることがある<a href="#fn1" class="footnote-ref" id="fnref1" role="doc-noteref"><sup>1</sup></a>。</p>
 <p><span id="eq-balance"><span class="math display">\[
 N(T) = N(0) + B[0,T] - D[0,T] + I[0,T] - O[0,T]
 \tag{1}\]</span></span></p>
@@ -202,7 +239,7 @@ Notation
 </section>
 <section id="人口率の構造" class="level2" data-number="1.3">
 <h2 data-number="1.3" class="anchored" data-anchor-id="人口率の構造"><span class="header-section-number">1.3</span> 人口率の構造</h2>
-<p><a href="#eq-balance">Equation&nbsp;1</a> で示された4つの要素のうち流入以外の3つのイベント(event)はその前の人口に依存する。死亡と流出は1人の人間に、出生は2人の人間(親)に関連する。イベントの発生数を人口サイズに関連づけるために人口’率’(demographic rate)を計算する。</p>
+<p><a href="#eq-balance" class="quarto-xref">Equation&nbsp;1</a> で示された4つの要素のうち流入以外の3つのイベント(event)はその前の人口に依存する。死亡と流出は1人の人間に、出生は2人の人間(親)に関連する。イベントの発生数を人口サイズに関連づけるために人口’率’(demographic rate)を計算する。</p>
 <p><span class="math display">\[
 率 = \frac{イベントの発生数}{発生リスクへの曝露のパーソンイヤー}
 \]</span></p>
@@ -211,7 +248,7 @@ Notation
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
 <p><img src="fig/lifeline_group.png" class="img-fluid figure-img"></p>
-<figcaption class="figure-caption">集団<span class="math inline">\(G\)</span>の人生線(life-line)<br>Source: Preston(2000) 4頁より引用</figcaption>
+<figcaption>集団<span class="math inline">\(G\)</span>の人生線(life-line)<br>Source: Preston(2000) 4頁より引用</figcaption>
 </figure>
 </div>
 <p>集団<span class="math inline">\(G\)</span>における率は下記式の通り。</p>
@@ -245,17 +282,21 @@ Notation
 <p><span class="math display">\[
 率[0, T] = \frac{0からT時点のイベントの発生数}{0からT時点の発生リスクへの曝露のパーソンイヤー}
 \]</span></p>
-<p>0からT時点の発生リスクへの曝露のパーソンイヤーは <a href="#fig-pyrate">Figure&nbsp;1</a> のように示される。ある個人が0からTの間にずっと観察されれば1を取り、1クォーターだけ観察されれば<span class="math inline">\(\frac{1}{4}\)</span>を取る。aのように同じ個人を複数時点で観察してパーソンイヤーを算出する方法(個人からみる)と、bのように同じ時点で個人数を観察してパーソンイヤーを算出する方法(時点からみる)がある。</p>
-<div id="fig-pyrate" class="quarto-figure quarto-figure-center anchored">
-<figure class="figure">
-<p><img src="fig/py_demonstration.png" class="img-fluid figure-img"></p>
-<figcaption class="figure-caption">Figure&nbsp;1: 0からT時点のパーソンイヤーの観察方法<br>Source: Preston(2000) Figure1.1より引用</figcaption>
+<p>0からT時点の発生リスクへの曝露のパーソンイヤーは <a href="#fig-pyrate" class="quarto-xref">Figure&nbsp;1</a> のように示される。ある個人が0からTの間にずっと観察されれば1を取り、1クォーターだけ観察されれば<span class="math inline">\(\frac{1}{4}\)</span>を取る。aのように同じ個人を複数時点で観察してパーソンイヤーを算出する方法(個人からみる)と、bのように同じ時点で個人数を観察してパーソンイヤーを算出する方法(時点からみる)がある。</p>
+<div id="fig-pyrate" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-pyrate-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="fig/py_demonstration.png" class="img-fluid figure-img">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-pyrate-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;1: 0からT時点のパーソンイヤーの観察方法<br>Source: Preston(2000) Figure1.1より引用
+</figcaption>
 </figure>
 </div>
 </section>
 <section id="人口学における主な期間率" class="level2" data-number="1.5">
 <h2 data-number="1.5" class="anchored" data-anchor-id="人口学における主な期間率"><span class="header-section-number">1.5</span> 人口学における主な期間率</h2>
-<p>これまで論じた率を <a href="#eq-balance">Equation&nbsp;1</a> の4つの要素に拡張する。</p>
+<p>これまで論じた率を <a href="#eq-balance" class="quarto-xref">Equation&nbsp;1</a> の4つの要素に拡張する。</p>
 <ul>
 <li>粗出生率(crude birth rate)</li>
 </ul>
@@ -287,7 +328,7 @@ CROM[0, T] = \frac{0からT時点の間の人口の流出数}{0からT時点の�
 <h2 data-number="1.6" class="anchored" data-anchor-id="人口学における成長率"><span class="header-section-number">1.6</span> 人口学における成長率</h2>
 <section id="粗成長率" class="level3" data-number="1.6.1">
 <h3 data-number="1.6.1" class="anchored" data-anchor-id="粗成長率"><span class="header-section-number">1.6.1</span> 粗成長率</h3>
-<p>0からT時点での粗成長率<span class="math inline">\(CGR\)</span>は <a href="#eq-cgr">Equation&nbsp;2</a> のように定義される。</p>
+<p>0からT時点での粗成長率<span class="math inline">\(CGR\)</span>は <a href="#eq-cgr" class="quarto-xref">Equation&nbsp;2</a> のように定義される。</p>
 <p><span id="eq-cgr"><span class="math display">\[
 CGR[0, T] = CRNI[0, T] + CRNM[0, T]
 \tag{2}\]</span></span></p>
@@ -335,7 +376,7 @@ Notation
 </section>
 <section id="瞬間成長率" class="level3" data-number="1.6.2">
 <h3 data-number="1.6.2" class="anchored" data-anchor-id="瞬間成長率"><span class="header-section-number">1.6.2</span> 瞬間成長率</h3>
-<p><span class="math inline">\(0\)</span>から<span class="math inline">\(T\)</span>までの代わりに、<span class="math inline">\(t\)</span>から<span class="math inline">\(t + \Delta t\)</span>までの成長率は <a href="#eq-instantaneous-growth">Equation&nbsp;3</a> に示される。</p>
+<p><span class="math inline">\(0\)</span>から<span class="math inline">\(T\)</span>までの代わりに、<span class="math inline">\(t\)</span>から<span class="math inline">\(t + \Delta t\)</span>までの成長率は <a href="#eq-instantaneous-growth" class="quarto-xref">Equation&nbsp;3</a> に示される。</p>
 <p><span id="eq-instantaneous-growth"><span class="math display">\[
 r(t) = \lim_{\Delta t \to 0} \frac{\Delta N(t)}{N(t) \Delta t} = \frac{\frac{d N(t)}{dt}}{N(t)} = \frac{d In [N(t)]}{dt}
 \tag{3}\]</span></span></p>
@@ -357,7 +398,7 @@ Notation
 </div>
 </div>
 </div>
-<p><a href="#eq-instantaneous-growth">Equation&nbsp;3</a> の概念を<span class="math inline">\(0\)</span>から<span class="math inline">\(T\)</span>時点の期間に拡張することで <a href="#eq-ntincrease">Equation&nbsp;4</a> が得られる。 <a href="#eq-ntincrease">Equation&nbsp;4</a> は<span class="math inline">\(0\)</span>から<span class="math inline">\(T\)</span>までの期間における人口の変化を瞬間成長率の総和として表現する。一般に使われる用語として「指数関数的増加(exponential term)」があるが、 <a href="#eq-ntincrease">Equation&nbsp;4</a> が示すように、すべての成長は指数関数的といえる。一般的に用いられる「指数関数的成長」はマルサスでいうところの「幾何学的成長」あるいは「定常的成長」がより妥当である。もし瞬間成長率が<span class="math inline">\(0\)</span>から<span class="math inline">\(T\)</span>まで一定であれば、 <a href="#eq-ntincrease">Equation&nbsp;4</a> は<span class="math inline">\(N(T) = N(0) e^{r^{\star} \times T}\)</span>と表現できる。<span class="math inline">\(r^{\star}\)</span>は定常的成長率を示す。</p>
+<p><a href="#eq-instantaneous-growth" class="quarto-xref">Equation&nbsp;3</a> の概念を<span class="math inline">\(0\)</span>から<span class="math inline">\(T\)</span>時点の期間に拡張することで <a href="#eq-ntincrease" class="quarto-xref">Equation&nbsp;4</a> が得られる。 <a href="#eq-ntincrease" class="quarto-xref">Equation&nbsp;4</a> は<span class="math inline">\(0\)</span>から<span class="math inline">\(T\)</span>までの期間における人口の変化を瞬間成長率の総和として表現する。一般に使われる用語として「指数関数的増加(exponential term)」があるが、 <a href="#eq-ntincrease" class="quarto-xref">Equation&nbsp;4</a> が示すように、すべての成長は指数関数的といえる。一般的に用いられる「指数関数的成長」はマルサスでいうところの「幾何学的成長」あるいは「定常的成長」がより妥当である。もし瞬間成長率が<span class="math inline">\(0\)</span>から<span class="math inline">\(T\)</span>まで一定であれば、 <a href="#eq-ntincrease" class="quarto-xref">Equation&nbsp;4</a> は<span class="math inline">\(N(T) = N(0) e^{r^{\star} \times T}\)</span>と表現できる。<span class="math inline">\(r^{\star}\)</span>は定常的成長率を示す。</p>
 <p><span id="eq-ntincrease"><span class="math display">\[
 N(T) = N(0) e^{\int^T_0 r(t) dt}
 \tag{4}\]</span></span></p>
@@ -381,7 +422,7 @@ N(T) = N(0) e^{\int^T_0 r(t) dt}
 <p><span class="math display">\[
 e^{\int^T_0 r(t) dt} = \frac{N(T)}{N(0)}
 \]</span></p>
-<p>両辺に<span class="math inline">\(N(0)\)</span>をかけて、 <a href="#eq-ntincrease">Equation&nbsp;4</a> を得る。</p>
+<p>両辺に<span class="math inline">\(N(0)\)</span>をかけて、 <a href="#eq-ntincrease" class="quarto-xref">Equation&nbsp;4</a> を得る。</p>
 </div>
 </div>
 </div>
@@ -410,21 +451,21 @@ r^{\star}[0, T] = \int^T_0 r^{\star} dt = r^{\star}
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
 <p><img src="fig/cgr_vs_aagr.png" class="img-fluid figure-img" style="width:100.0%"></p>
-<figcaption class="figure-caption">粗成長率と平均年間成長率の比較<br>Source: Preston(2000) Figure1.2より引用</figcaption>
+<figcaption>粗成長率と平均年間成長率の比較<br>Source: Preston(2000) Figure1.2より引用</figcaption>
 </figure>
 </div>
 </section>
 </section>
 <section id="パーソンイヤー期間の推定" class="level2" data-number="1.7">
 <h2 data-number="1.7" class="anchored" data-anchor-id="パーソンイヤー期間の推定"><span class="header-section-number">1.7</span> パーソンイヤー期間の推定</h2>
-<p>人口の増え方<span class="math inline">\(r(t)\)</span>(<span class="math inline">\(N(t)\)</span>)について知り得ない場合、我々は成長率の定常性を仮定して <a href="#eq-pyestimation">Equation&nbsp;5</a> のようにパーソンイヤーを計算する。実際に定常性が満たされれば <a href="#eq-pyestimation">Equation&nbsp;5</a> は真値と一致するが、それには<span class="math inline">\(0\)</span>時点と<span class="math inline">\(T\)</span>時点の観察が必要になる。普通は人口サイズ推定が特定の期間(1年の中ごろ)にのみ入手可能であることがままある。中ごろでの近似は人口の増え方<span class="math inline">\(N(t)\)</span>が線形であれば真のパーソンイヤーと一致する。定常成長率の総積であっても誤差は非常に小さい。ただし、パーソンイヤーを推定する時間間隔が1年以上になると誤差は大きくなる。1年中ごろに着目することは簡単でかなり正確だけれどもそれはパーソンイヤーの代替物ではなく<strong>推定値</strong>であることには留意が必要。</p>
+<p>人口の増え方<span class="math inline">\(r(t)\)</span>(<span class="math inline">\(N(t)\)</span>)について知り得ない場合、我々は成長率の定常性を仮定して <a href="#eq-pyestimation" class="quarto-xref">Equation&nbsp;5</a> のようにパーソンイヤーを計算する。実際に定常性が満たされれば <a href="#eq-pyestimation" class="quarto-xref">Equation&nbsp;5</a> は真値と一致するが、それには<span class="math inline">\(0\)</span>時点と<span class="math inline">\(T\)</span>時点の観察が必要になる。普通は人口サイズ推定が特定の期間(1年の中ごろ)にのみ入手可能であることがままある。中ごろでの近似は人口の増え方<span class="math inline">\(N(t)\)</span>が線形であれば真のパーソンイヤーと一致する。定常成長率の総積であっても誤差は非常に小さい。ただし、パーソンイヤーを推定する時間間隔が1年以上になると誤差は大きくなる。1年中ごろに着目することは簡単でかなり正確だけれどもそれはパーソンイヤーの代替物ではなく<strong>推定値</strong>であることには留意が必要。</p>
 <p><span id="eq-pyestimation"><span class="math display">\[
 PY[0, T] = \frac{ \left[ N(T) - N(0) \right] \times T}{In \left[ \frac{N(T)}{N(0)} \right]}
 \tag{5}\]</span></span></p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
 <p><img src="fig/midpointestimate.png" class="img-fluid figure-img" style="width:100.0%"></p>
-<figcaption class="figure-caption">中点でパーソンイヤーを計算する際の誤差<br>Source: Preston(2000) Figure1.3より引用</figcaption>
+<figcaption>中点でパーソンイヤーを計算する際の誤差<br>Source: Preston(2000) Figure1.3より引用</figcaption>
 </figure>
 </div>
 </section>
@@ -469,13 +510,17 @@ Notation
 </div>
 </div>
 <p>年齢の開始時点<span class="math inline">\(x\)</span>とその区間<span class="math inline">\(n\)</span>は一般的に聞かれる完了した年数(completed year、最後の誕生日での年齢とも呼ばれる)とは異なり、小数点以下を含める正確な年数(exact year)を示す<a href="#fn3" class="footnote-ref" id="fnref3" role="doc-noteref"><sup>3</sup></a>。</p>
-<div id="fig-agespecificrate" class="quarto-figure quarto-figure-center anchored">
-<figure class="figure">
-<p><img src="fig/agespecificrate.png" class="img-fluid figure-img" style="width:100.0%"></p>
-<figcaption class="figure-caption">Figure&nbsp;2: 1992年のスウェーデンとカザフスタンの死亡率<br>Source: Preston(2000) Table2.1より引用</figcaption>
+<div id="fig-agespecificrate" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-agespecificrate-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="fig/agespecificrate.png" class="img-fluid figure-img" style="width:100.0%">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-agespecificrate-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;2: 1992年のスウェーデンとカザフスタンの死亡率<br>Source: Preston(2000) Table2.1より引用
+</figcaption>
 </figure>
 </div>
-<p><a href="#fig-agespecificrate">Figure&nbsp;2</a> を確認する。この図からは、CDRはスウェーデンのほうが高い一方で、<span class="math inline">\(M^\star_i\)</span>はすべての年齢でスウェーデンが低いという矛盾が生じていることが見て取れる。この矛盾はCDRを <a href="#eq-cdr_asr">Equation&nbsp;6</a> のように分解することで理解できる。 <a href="#eq-cdr_asr">Equation&nbsp;6</a> より、粗死亡率は年齢固有の死亡率の集合と人口の年齢分布の関数、すなわち人口の年齢分布による年齢固有の死亡率の重みづけ平均となる。当然、<span class="math inline">\(\Sigma^{\infty}_{x=0} {}_n C_x = 1\)</span>となる。スウェーデンは年齢固有死亡率の高い高齢者人口に死亡が集中しているため、粗死亡率が高くなる。</p>
+<p><a href="#fig-agespecificrate" class="quarto-xref">Figure&nbsp;2</a> を確認する。この図からは、CDRはスウェーデンのほうが高い一方で、<span class="math inline">\(M^\star_i\)</span>はすべての年齢でスウェーデンが低いという矛盾が生じていることが見て取れる。この矛盾はCDRを <a href="#eq-cdr_asr" class="quarto-xref">Equation&nbsp;6</a> のように分解することで理解できる。 <a href="#eq-cdr_asr" class="quarto-xref">Equation&nbsp;6</a> より、粗死亡率は年齢固有の死亡率の集合と人口の年齢分布の関数、すなわち人口の年齢分布による年齢固有の死亡率の重みづけ平均となる。当然、<span class="math inline">\(\Sigma^{\infty}_{x=0} {}_n C_x = 1\)</span>となる。スウェーデンは年齢固有死亡率の高い高齢者人口に死亡が集中しているため、粗死亡率が高くなる。</p>
 <p><span id="eq-cdr_asr"><span class="math display">\[
 CDR = \frac{D}{N} = \frac{\Sigma^{\infty}_{x=0} {}_n D_x}{N} = \frac{\Sigma^{\infty}_{x=0} \frac{{}_n D_x}{{}_n N_x} {}_n N_x}{N} = \Sigma^{\infty}_{x=0} \frac{{}_n D_x}{{}_n N_x} \times \frac{{}_n N_x}{N} = \Sigma^{\infty}_{x=0} {}_n M_x \times {}_n C_x
 \tag{6}\]</span></span></p>
@@ -497,7 +542,7 @@ Notation
 </div>
 </div>
 </div>
-<p><a href="#eq-cdr_asr">Equation&nbsp;6</a> のような分解は人口をあらゆるサブ集団に分割するときにも適用できるが、以下の4つの理由からとくに年齢構成にとって意義がある。</p>
+<p><a href="#eq-cdr_asr" class="quarto-xref">Equation&nbsp;6</a> のような分解は人口をあらゆるサブ集団に分割するときにも適用できるが、以下の4つの理由からとくに年齢構成にとって意義がある。</p>
 <ol type="1">
 <li><p>死亡率は年齢によるばらつきを大きく示す</p></li>
 <li><p>人口集団において年齢構成は大きく異なる(たとえば、スウェーデンとカザフスタン)</p></li>
@@ -508,7 +553,7 @@ Notation
 </section>
 <section id="年齢標準化" class="level2" data-number="2.2">
 <h2 data-number="2.2" class="anchored" data-anchor-id="年齢標準化"><span class="header-section-number">2.2</span> 年齢標準化</h2>
-<p>2つの人口集団(上の例におけるスウェーデンとカザフスタン)を比較するうえでは、年齢構成の影響は除去することが望ましい。それを達成する最も直接的な方法は2つの人口集団における年齢構成が同じであると仮定すること。より一般的には年齢分布を標準化してその影響を小さくする。人口それ自体の年齢分布ではなく’標準的な’人口の年齢分布によって重みづけする方法は年齢標準化と呼ばれ、ある人口<span class="math inline">\(j\)</span>における年齢標準化粗死亡率(<span class="math inline">\(ASCDR\)</span>)は <a href="#eq-agestandardized_cdr">Equation&nbsp;7</a> で表現される。このような標準化のアプローチは死亡率以外にも(e.g., 識字率)、年齢以外でも(e.g., 出生順序)適用できる。</p>
+<p>2つの人口集団(上の例におけるスウェーデンとカザフスタン)を比較するうえでは、年齢構成の影響は除去することが望ましい。それを達成する最も直接的な方法は2つの人口集団における年齢構成が同じであると仮定すること。より一般的には年齢分布を標準化してその影響を小さくする。人口それ自体の年齢分布ではなく’標準的な’人口の年齢分布によって重みづけする方法は年齢標準化と呼ばれ、ある人口<span class="math inline">\(j\)</span>における年齢標準化粗死亡率(<span class="math inline">\(ASCDR\)</span>)は <a href="#eq-agestandardized_cdr" class="quarto-xref">Equation&nbsp;7</a> で表現される。このような標準化のアプローチは死亡率以外にも(e.g., 識字率)、年齢以外でも(e.g., 出生順序)適用できる。</p>
 <p><span id="eq-agestandardized_cdr"><span class="math display">\[
 ASCDR^j = \Sigma^{\infty}_{i=1} M_i^j \times C_i^s
 \tag{7}\]</span></span></p>
@@ -612,38 +657,57 @@ Notation
 <section id="レクシスダイアグラム" class="level2" data-number="2.4">
 <h2 data-number="2.4" class="anchored" data-anchor-id="レクシスダイアグラム"><span class="header-section-number">2.4</span> レクシスダイアグラム</h2>
 <p>特定のコホートにイベントの生起(e.g., 死亡)を限定することで、コホートの年齢固有率を知ることができる。レクシスダイアグラムは一方の軸に年齢を、他方の軸に暦年をプロットする、コホートの暴露区分と期間の暴露区分の関係を示す図である。あるコホートの人生は45℃線で示される。イベントの発生のカウントを、年齢固有コホート率は<span class="math inline">\(A-C\)</span>の範囲に、年齢固有期間率は<span class="math inline">\(A-P\)</span>の範囲に、コホート固有期間率は<span class="math inline">\(C-P\)</span>の範囲にそれぞれ限定することが読み取れる。</p>
-<div id="fig-lexisdiagram" class="quarto-figure quarto-figure-center anchored">
-<figure class="figure">
-<p><img src="fig/lexisdiagram.png" class="img-fluid figure-img" style="width:100.0%"></p>
-<figcaption class="figure-caption">Figure&nbsp;3: レクシスダイアグラム<br>Source: Preston(2000) Figure2.1より引用</figcaption>
+<div id="fig-lexisdiagram" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-lexisdiagram-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="fig/lexisdiagram.png" class="img-fluid figure-img" style="width:100.0%">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-lexisdiagram-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;3: レクシスダイアグラム<br>Source: Preston(2000) Figure2.1より引用
+</figcaption>
 </figure>
 </div>
 </section>
 <section id="年齢固有確率" class="level2" data-number="2.5">
 <h2 data-number="2.5" class="anchored" data-anchor-id="年齢固有確率"><span class="header-section-number">2.5</span> 年齢固有確率</h2>
-<p>率だけでなく確率も年齢固有に示すことができ、<span class="math inline">\(x\)</span>から<span class="math inline">\(x+n\)</span>までにイベントが生起する確率は慣習的に<span class="math inline">\({}_n q_x\)</span>と表現する。レクシスダイアグラムで図示できる。 <a href="#fig-agespecificprob">Figure&nbsp;5</a> を例にあげる。1995年出生コホートが0歳から1歳までに死亡する確率は<span class="math inline">\({}_1 q^{1995c}_0 = \frac{2}{6} = 0.333\)</span>である。</p>
-<div id="fig-agespecificprob" class="quarto-figure quarto-figure-center anchored">
-<figure class="figure">
-<p><img src="fig/agespecificprob.png" class="img-fluid figure-img" style="width:50.0%"></p>
-<figcaption class="figure-caption">Figure&nbsp;4: レクシスダイアグラム<br>Source: Preston(2000) Figure2.2aより引用</figcaption>
+<p>率だけでなく確率も年齢固有に示すことができ、<span class="math inline">\(x\)</span>から<span class="math inline">\(x+n\)</span>までにイベントが生起する確率は慣習的に<span class="math inline">\({}_n q_x\)</span>と表現する。レクシスダイアグラムで図示できる。 <a href="#fig-agespecificprob" class="quarto-xref">Figure&nbsp;5</a> を例にあげる。1995年出生コホートが0歳から1歳までに死亡する確率は<span class="math inline">\({}_1 q^{1995c}_0 = \frac{2}{6} = 0.333\)</span>である。</p>
+<div id="fig-agespecificprob" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-agespecificprob-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="fig/agespecificprob.png" class="img-fluid figure-img" style="width:50.0%">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-agespecificprob-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;4: レクシスダイアグラム<br>Source: Preston(2000) Figure2.2aより引用
+</figcaption>
 </figure>
 </div>
-<p>具体的な出生数とイベントの生起数を <a href="#fig-agespecificprob">Figure&nbsp;5</a> や <a href="#fig-agespecificnotation">Figure&nbsp;6</a> のように表現することができる。</p>
-<div class="quarto-layout-panel">
-<div class="quarto-layout-row quarto-layout-valign-top">
-<div class="quarto-layout-cell" style="flex-basis: 50.0%;justify-content: center;">
-<div id="fig-agespecificprob" class="quarto-figure quarto-figure-center anchored">
-<figure class="figure">
-<p><img src="fig/lexis_number.png" class="img-fluid figure-img"></p>
-<figcaption class="figure-caption">Figure&nbsp;5: 出生とイベント発生の表記<br>Source: Preston(2000) Figure2.2bより引用</figcaption>
+<p>具体的な出生数とイベントの生起数を <a href="#fig-agespecificprob" class="quarto-xref">Figure&nbsp;5</a> や <a href="#fig-agespecificnotation" class="quarto-xref">Figure&nbsp;6</a> のように表現することができる。</p>
+<div>
+
+</div>
+<div class="quarto-layout-panel" data-layout-ncol="2">
+<div class="quarto-layout-row">
+<div class="quarto-layout-cell" style="flex-basis: 50.0%;justify-content: flex-start;">
+<div id="fig-agespecificprob" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-agespecificprob-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="fig/lexis_number.png" class="img-fluid figure-img" style="width:50.0%">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-agespecificprob-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;5: 出生とイベント発生の表記<br>Source: Preston(2000) Figure2.2bより引用
+</figcaption>
 </figure>
 </div>
 </div>
-<div class="quarto-layout-cell" style="flex-basis: 50.0%;justify-content: center;">
-<div id="fig-agespecificnotation" class="quarto-figure quarto-figure-center anchored">
-<figure class="figure">
-<p><img src="fig/lexis_occurance.png" class="img-fluid figure-img"></p>
-<figcaption class="figure-caption">Figure&nbsp;6: 出生とイベント発生のノテーション<br>Source: Preston(2000) Figure2.2cより引用</figcaption>
+<div class="quarto-layout-cell" style="flex-basis: 50.0%;justify-content: flex-start;">
+<div id="fig-agespecificnotation" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-agespecificnotation-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="fig/lexis_occurance.png" class="img-fluid figure-img" style="width:50.0%">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-agespecificnotation-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;6: 出生とイベント発生のノテーション<br>Source: Preston(2000) Figure2.2cより引用
+</figcaption>
 </figure>
 </div>
 </div>
@@ -750,18 +814,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     }
     return false;
   }
-  const clipboard = new window.ClipboardJS('.code-copy-button', {
-    text: function(trigger) {
-      const codeEl = trigger.previousElementSibling.cloneNode(true);
-      for (const childEl of codeEl.children) {
-        if (isCodeAnnotation(childEl)) {
-          childEl.remove();
-        }
-      }
-      return codeEl.innerText;
-    }
-  });
-  clipboard.on('success', function(e) {
+  const onCopySuccess = function(e) {
     // button target
     const button = e.trigger;
     // don't keep focus
@@ -793,11 +846,48 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     }, 1000);
     // clear code selection
     e.clearSelection();
+  }
+  const getTextToCopy = function(trigger) {
+      const codeEl = trigger.previousElementSibling.cloneNode(true);
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+  }
+  const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+    text: getTextToCopy
   });
-  function tippyHover(el, contentFn) {
+  clipboard.on('success', onCopySuccess);
+  if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+    const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+      text: getTextToCopy,
+      container: window.document.getElementById('quarto-embedded-source-code-modal')
+    });
+    clipboardModal.on('success', onCopySuccess);
+  }
+    var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+    var mailtoRegex = new RegExp(/^mailto:/);
+      var filterRegex = new RegExp("https:\/\/sittaningo\.github\.io\/");
+    var isInternal = (href) => {
+        return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+    }
+    // Inspect non-navigation links and adorn them if external
+ 	var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+    for (var i=0; i<links.length; i++) {
+      const link = links[i];
+      if (!isInternal(link.href)) {
+        // undo the damage that might have been done by quarto-nav.js in the case of
+        // links that we want to consider external
+        if (link.dataset.originalHref !== undefined) {
+          link.href = link.dataset.originalHref;
+        }
+      }
+    }
+  function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
     const config = {
       allowHTML: true,
-      content: contentFn,
       maxWidth: 500,
       delay: 100,
       arrow: false,
@@ -807,8 +897,17 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
       interactive: true,
       interactiveBorder: 10,
       theme: 'quarto',
-      placement: 'bottom-start'
+      placement: 'bottom-start',
     };
+    if (contentFn) {
+      config.content = contentFn;
+    }
+    if (onTriggerFn) {
+      config.onTrigger = onTriggerFn;
+    }
+    if (onUntriggerFn) {
+      config.onUntrigger = onUntriggerFn;
+    }
     window.tippy(el, config); 
   }
   const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
@@ -820,7 +919,129 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
       try { href = new URL(href).hash; } catch {}
       const id = href.replace(/^#\/?/, "");
       const note = window.document.getElementById(id);
-      return note.innerHTML;
+      if (note) {
+        return note.innerHTML;
+      } else {
+        return "";
+      }
+    });
+  }
+  const xrefs = window.document.querySelectorAll('a.quarto-xref');
+  const processXRef = (id, note) => {
+    // Strip column container classes
+    const stripColumnClz = (el) => {
+      el.classList.remove("page-full", "page-columns");
+      if (el.children) {
+        for (const child of el.children) {
+          stripColumnClz(child);
+        }
+      }
+    }
+    stripColumnClz(note)
+    if (id === null || id.startsWith('sec-')) {
+      // Special case sections, only their first couple elements
+      const container = document.createElement("div");
+      if (note.children && note.children.length > 2) {
+        container.appendChild(note.children[0].cloneNode(true));
+        for (let i = 1; i < note.children.length; i++) {
+          const child = note.children[i];
+          if (child.tagName === "P" && child.innerText === "") {
+            continue;
+          } else {
+            container.appendChild(child.cloneNode(true));
+            break;
+          }
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(container);
+        }
+        return container.innerHTML
+      } else {
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        return note.innerHTML;
+      }
+    } else {
+      // Remove any anchor links if they are present
+      const anchorLink = note.querySelector('a.anchorjs-link');
+      if (anchorLink) {
+        anchorLink.remove();
+      }
+      if (window.Quarto?.typesetMath) {
+        window.Quarto.typesetMath(note);
+      }
+      if (note.classList.contains("callout")) {
+        return note.outerHTML;
+      } else {
+        return note.innerHTML;
+      }
+    }
+  }
+  for (var i=0; i<xrefs.length; i++) {
+    const xref = xrefs[i];
+    tippyHover(xref, undefined, function(instance) {
+      instance.disable();
+      let url = xref.getAttribute('href');
+      let hash = undefined; 
+      if (url.startsWith('#')) {
+        hash = url;
+      } else {
+        try { hash = new URL(url).hash; } catch {}
+      }
+      if (hash) {
+        const id = hash.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note !== null) {
+          try {
+            const html = processXRef(id, note.cloneNode(true));
+            instance.setContent(html);
+          } finally {
+            instance.enable();
+            instance.show();
+          }
+        } else {
+          // See if we can fetch this
+          fetch(url.split('#')[0])
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.getElementById(id);
+            if (note !== null) {
+              const html = processXRef(id, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      } else {
+        // See if we can fetch a full url (with no hash to target)
+        // This is a special case and we should probably do some content thinning / targeting
+        fetch(url)
+        .then(res => res.text())
+        .then(html => {
+          const parser = new DOMParser();
+          const htmlDoc = parser.parseFromString(html, "text/html");
+          const note = htmlDoc.querySelector('main.content');
+          if (note !== null) {
+            // This should only happen for chapter cross references
+            // (since there is no id in the URL)
+            // remove the first header
+            if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+              note.children[0].remove();
+            }
+            const html = processXRef(null, note);
+            instance.setContent(html);
+          } 
+        }).finally(() => {
+          instance.enable();
+          instance.show();
+        });
+      }
+    }, function(instance) {
     });
   }
       let selectedAnnoteEl;
@@ -864,6 +1085,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
             }
             div.style.top = top - 2 + "px";
             div.style.height = height + 4 + "px";
+            div.style.left = 0;
             let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
             if (gutterDiv === null) {
               gutterDiv = window.document.createElement("div");
@@ -889,6 +1111,32 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
         });
         selectedAnnoteEl = undefined;
       };
+        // Handle positioning of the toggle
+    window.addEventListener(
+      "resize",
+      throttle(() => {
+        elRect = undefined;
+        if (selectedAnnoteEl) {
+          selectCodeLines(selectedAnnoteEl);
+        }
+      }, 10)
+    );
+    function throttle(fn, ms) {
+    let throttle = false;
+    let timer;
+      return (...args) => {
+        if(!throttle) { // first call gets through
+            fn.apply(this, args);
+            throttle = true;
+        } else { // all the others get throttled
+            if(timer) clearTimeout(timer); // cancel #2
+            timer = setTimeout(() => {
+              fn.apply(this, args);
+              timer = throttle = false;
+            }, ms);
+        }
+      };
+    }
       // Attach click handler to the DT
       const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
       for (const annoteDlNode of annoteDls) {
@@ -949,6 +1197,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 });
 </script>
 </div> <!-- /content -->
+
 
 
 
