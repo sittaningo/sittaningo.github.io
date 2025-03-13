@@ -14,11 +14,109 @@
     "text": "人口高齢化に伴い，60歳以降高年齢者の職業移動に関心が集まっている．高年齢者の職業移動を検討してきた既存の研究では職業大分類間での移動障壁を明らかにしてきたものの，職業大分類内部での差異や異なる集約の可能性について十分に検討されていない．そこで本稿では，近年関心を集めている職業スキルに着目し，高年齢者は企業間移動の前後でどの程度スキルを移転しているのか，いかなるスキルが移転されやすいのかを明らかにする．SSM2015―日本版 O-NET マッチングデータによる分析の結果，若年・壮年者と比べて高年齢者はあらゆるスキルについて移転されにくく，特に男性，大卒，正規雇用など，その職業経歴において相対的に高い地位にあると想定される属性でスキル水準が大きく低下していた．以上の結果からは，職業間の結節要素として取り上げられているスキルが，高年齢期の移動においては必ずしも有効でないこと，前職の職業スキルの水準にかかわらず，押し並べてスキル水準の低い職業に再配分されていることを示唆している．"
   },
   {
-    "objectID": "research/rethet/index.html",
-    "href": "research/rethet/index.html",
+    "objectID": "research/rethet/slides.html#does-retirement-improve-health",
+    "href": "research/rethet/slides.html#does-retirement-improve-health",
     "title": "Feature-wide Effect Heterogeneity of Retirement on Subsequent Health through Causal Forests",
-    "section": "",
-    "text": "Poster PDF\n\n\n\nFigure 1: Directed acyclic graph in this study\n\n\n\n\n\nFigure 2: A representative causal tree of subjective health\n\n\n\n\n\nFigure 3: Feature importance of subjective health\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nAll\nPercent\nMean\nSD\nmin\nmax\n\n\n\n\n\nSubjective Health\n75338.00\n100.00\n2.79\n1.05\n1.00\n5.00\n\n\n\nis_retirement\n75338.00\n100.00\n0.19\n0.39\n0.00\n1.00\n\n\n\nBirth cohort\n75338.00\n100.00\n1944.11\n9.26\n1904.00\n1964.00\n\n\n\nAge\n75338.00\n100.00\n60.33\n6.95\n50.00\n100.00\n\n\nFemale\nMale\n38835.00\n51.55\n\n\n\n\n\n\n\nFemale\n36503.00\n48.45\n\n\n\n\n\n\nMarital status\nMarried\n58986.00\n78.30\n\n\n\n\n\n\n\nPartnered\n2345.00\n3.11\n\n\n\n\n\n\n\nSeparated/Divorced\n8304.00\n11.02\n\n\n\n\n\n\n\nWidowed\n4668.00\n6.20\n\n\n\n\n\n\n\nNever married\n1035.00\n1.37\n\n\n\n\n\n\n\nNumber of living siblings\n75338.00\n100.00\n3.21\n2.48\n0.00\n21.00\n\n\n\nSurvey year\n75338.00\n100.00\n2004.44\n7.02\n1992.00\n2014.00\n\n\n\nSelf-employment\n75338.00\n100.00\n0.25\n0.43\n0.00\n1.00\n\n\n\nWeekly working hours\n75338.00\n100.00\n38.18\n16.37\n0.00\n168.00\n\n\nEducation\nLess than upper secondary\n18626.00\n24.72\n\n\n\n\n\n\n\nUpper secondary and vocational training\n39562.00\n52.51\n\n\n\n\n\n\n\nTertiary\n17150.00\n22.76\n\n\n\n\n\n\n\nNumber of Living Parents\n75338.00\n100.00\n0.50\n0.66\n0.00\n2.00\n\n\n\nAge(father)\n75338.00\n100.00\n71.44\n14.09\n12.00\n130.00\n\n\n\nAge(mother)\n75338.00\n100.00\n75.59\n13.28\n14.00\n117.00\n\n\n\nTotal wealth\n75338.00\n100.00\n300104.39\n471787.15\n-32000.00\n3716500.00\n\n\n\nHousehold income\n75338.00\n100.00\n11193.96\n28187.85\n0.00\n250000.00\n\n\n\nTransfer to grandchildren\n75338.00\n100.00\n0.43\n0.50\n0.00\n1.00\n\n\n\nTotal household number\n75338.00\n100.00\n2.66\n1.36\n1.00\n21.00\n\n\n\nNumber of living children\n75338.00\n100.00\n3.17\n1.82\n0.00\n19.00"
+    "section": "Does Retirement Improve Health?",
+    "text": "Does Retirement Improve Health?\n\nExtending working lives is a growing concern for policymakers to sustain the social welfare as the life expectancies rapidly increase\n\nIf retirement improves subsequent health, extending working lives and health promotion are mutually exclusive, and policymakers need to choose one\nIf retirement worsens subsequent health, extending working lives policy results in the better health, resulting in the sustainable care system\n\n\nReseach question\nDoes retirement improve or worsen subsequent health?"
+  },
+  {
+    "objectID": "research/rethet/slides.html#theory-and-evidence-are-mixed",
+    "href": "research/rethet/slides.html#theory-and-evidence-are-mixed",
+    "title": "Feature-wide Effect Heterogeneity of Retirement on Subsequent Health through Causal Forests",
+    "section": "Theory and Evidence are Mixed",
+    "text": "Theory and Evidence are Mixed\n\nHealth capital model1\n\nRetirement improves health\n\nit decreases opportunity costs of health investment\n\nRetirement worsens health\n\nretirees no longer have benefits of investigating health, which is a linchpin of miximizing lifetime earnings2\n\n\nEvidence is also mixed\n\nPositive effect3–8, negative effect9–12, null effect13–15, both positive and negative effect16–19\n\n\n個人は健康を最大化するために行動する\nだが、それには人的資本投資とのトレードオフを伴う\n本来健康改善のために使う時間ていうのをお金を稼ぐ時間に使うと健康への投資時間そして投資結果というのは小さくなる。\n引退をするとそういったお金を稼ぐ時間っていうのがなくなるので、その分を健康に投資できるようになり、結果として健康状態が良くなる。\n原点となるヘルスキャピタルモデルのフレームワークです。\n逆の傾向を説明するためにも使えるというのがご先行研究で言われてきていru.\n例えばそもそもなぜ健康に投資をするのかと言うとよりお金を稼ぐため、病気になる時間の代わりにその時間での人的資本投資みたいなものに使う。\nなぜ健康に投資をするか、ヘルスキャピタルに投資するかと言うと、稼ぎを最大化するためだと。\n引退したっていうのは、そもそもこういくら健康に投資しても稼ぎが増えるわけではないと言うことなので、そもそも健康に投資するインセンティブってのはなくなると、そしたら健康行動をしなくなり、結果として健康が悪くなる。\nと言うような批判もあったりします。"
+  },
+  {
+    "objectID": "research/rethet/slides.html#effect-heterogeneity",
+    "href": "research/rethet/slides.html#effect-heterogeneity",
+    "title": "Feature-wide Effect Heterogeneity of Retirement on Subsequent Health through Causal Forests",
+    "section": "Effect Heterogeneity",
+    "text": "Effect Heterogeneity\n\nWhy does the effect vary? Effect heterogeneity\n\ngender7,8,10,12,16,18,20\njob before retirement3–5,13,21\n\n\nStudies partly progress, but …\n\nsome heterogeneity is still inconsistent12,18\nadditional social determinants are not considered\ninterconnectedness of social determinants are not considered"
+  },
+  {
+    "objectID": "research/rethet/slides.html#feature-wide-effect-heterogeneity",
+    "href": "research/rethet/slides.html#feature-wide-effect-heterogeneity",
+    "title": "Feature-wide Effect Heterogeneity of Retirement on Subsequent Health through Causal Forests",
+    "section": "Feature-wide Effect Heterogeneity",
+    "text": "Feature-wide Effect Heterogeneity\n\nComprehensive heterogeneity by multiple features and their interaction\n\na kind of abductive inference22,23\n\na loose set of beliefs that can be modified by subsequent evidence24\n\nachieved by causal forests25–28\n\na machine learning approach\n‘honesty’ (i.e., cross-fitting)\n\n\n\nI newly answer the research question of ‘does retirement improve or worsen subsequent health?’ by applying feature-wide effect heterogeneity approach"
+  },
+  {
+    "objectID": "research/rethet/slides.html#data-and-sample",
+    "href": "research/rethet/slides.html#data-and-sample",
+    "title": "Feature-wide Effect Heterogeneity of Retirement on Subsequent Health through Causal Forests",
+    "section": "Data and Sample",
+    "text": "Data and Sample\n\nGateway to Global Aging Data (the Gateway)29\n\nconsists of HRS in USA, MHAS in Mexico, SHARE in Europe, ELSA in Britain, CHARLS in China, and KLoSA in Korea\n272352 individuals and 983904 person-biennial observations\n\nSample\n\n50-75 years old\nindividuals with three waves\npooled cross-sectional data\nlistwise deletion (n=101314)"
+  },
+  {
+    "objectID": "research/rethet/slides.html#features",
+    "href": "research/rethet/slides.html#features",
+    "title": "Feature-wide Effect Heterogeneity of Retirement on Subsequent Health through Causal Forests",
+    "section": "Features",
+    "text": "Features\nOutcome (\\(t+1\\))\n\nsubjective health (higher score indicates worse health)\n\nTreatment (\\(t\\))\n\nworking status (retired = work at \\(t-1\\) and not work at \\(t\\), non-retired = work at \\(t-1\\) and work at \\(t\\))\n\nModifier (\\(t-1\\))\nGender, age, birth cohort, survey year, education, marital status, household income, household wealth, working hours, employment status (self-employed or not), household size, number of living parents, father’s age and mother’s age, number of living children, transfer to (grand)children, number of living siblings"
+  },
+  {
+    "objectID": "research/rethet/slides.html#causal-forests-overview",
+    "href": "research/rethet/slides.html#causal-forests-overview",
+    "title": "Feature-wide Effect Heterogeneity of Retirement on Subsequent Health through Causal Forests",
+    "section": "Causal Forests: Overview",
+    "text": "Causal Forests: Overview\n\nAn Example of causal forests\ncausal forestsは2つのことをおこなう\n\n変数で分割する＝木を生やす\n葉の因果効果を推定する"
+  },
+  {
+    "objectID": "research/rethet/slides.html#causal-forests-estimand",
+    "href": "research/rethet/slides.html#causal-forests-estimand",
+    "title": "Feature-wide Effect Heterogeneity of Retirement on Subsequent Health through Causal Forests",
+    "section": "Causal Forests: Estimand",
+    "text": "Causal Forests: Estimand\n\\[\n\\tau = \\frac{1}{\\Sigma_{i=1}^n w_i} \\Sigma_{i=1}^n w_i \\left[ Y_i(1) - Y_i(0) \\mid \\vec{X_i} \\in l(\\vec{x} ; \\Pi) \\right]\n\\qquad(1)\\]\n\n\n\nNotation\n\n\n\n\\(n\\): sample size\n\\(X\\): feature space\n\\(x\\): given features\n\\(\\Pi\\)：partition of feature space\n\\(Y(\\cdot)_i\\)：oucome of a given individual \\(i\\) under treatment \\(1\\) (treated) or \\(0\\) (control)\n\\(w_i\\): probability of treatment\n\n\n\n\n\\(w_i\\) is obtained through logistic regression model with subjective health at \\(t-1\\) and other modifiers"
+  },
+  {
+    "objectID": "research/rethet/slides.html#causal-forests-metrics",
+    "href": "research/rethet/slides.html#causal-forests-metrics",
+    "title": "Feature-wide Effect Heterogeneity of Retirement on Subsequent Health through Causal Forests",
+    "section": "Causal Forests: Metrics",
+    "text": "Causal Forests: Metrics\n\\[\n-\\widehat{EMSE}_{\\tau(\\vec{x} )} = \\frac{1}{N_{tr}} \\sum_{i \\in \\mathcal{S}^{tr}} \\widehat{\\tau}^2(\\vec{X_i}; \\mathcal{S}^{tr}, \\Pi) - \\left( \\frac{1}{N_{tr}} + \\frac{1}{N_{es}} \\right) \\sum_{l \\in \\Pi} \\left( \\frac{S^2_{\\mathcal{S}^{tr}(1)}(l)}{p(l)} + \\frac{S^2_{\\mathcal{S}^{tr}(0)}(l)}{1 - p(l)} \\right)\n\\]\n\n\n\nNotation\n\n\n\n\\(\\mathcal{S}^{tr}\\): training sample\n\\(N^{tr}\\): size of training sample\n\\(N^{es}\\): size of estimation sample\n\\(\\widehat{\\tau}^2\\): variance of CATE\n\\(S^2_{*}(l)\\): variance of outcome within a leaf \\(l\\)\n\\(p(l)\\): the proportion of treated units in leaf \\(l\\)\n\n\n\n\nThe first term considers about variance of CATE across leaves and the second terms considers about variance of outcome within leaves\n\nThe first term is the variance of treatment effects across leaves; we prefer leaves with heterogeneous effects.\nthe uncertainty about leaf treatment effects; we prefer leaves with good fit, orleaf-specific effects estimated precisely."
+  },
+  {
+    "objectID": "research/rethet/slides.html#a-representative-causal-tree",
+    "href": "research/rethet/slides.html#a-representative-causal-tree",
+    "title": "Feature-wide Effect Heterogeneity of Retirement on Subsequent Health through Causal Forests",
+    "section": "A Representative Causal Tree",
+    "text": "A Representative Causal Tree\n\nCausal Tree of Retirement and Subsequent Health"
+  },
+  {
+    "objectID": "research/rethet/slides.html#feature-importance",
+    "href": "research/rethet/slides.html#feature-importance",
+    "title": "Feature-wide Effect Heterogeneity of Retirement on Subsequent Health through Causal Forests",
+    "section": "Feature Importance",
+    "text": "Feature Importance\n\nFeature Importance"
+  },
+  {
+    "objectID": "research/rethet/slides.html#summary-and-interpretation-of-the-results",
+    "href": "research/rethet/slides.html#summary-and-interpretation-of-the-results",
+    "title": "Feature-wide Effect Heterogeneity of Retirement on Subsequent Health through Causal Forests",
+    "section": "Summary and Interpretation of the Results",
+    "text": "Summary and Interpretation of the Results\nOverall, the effect is negative\nWhat makes effect heterogeneous?\ntemporal dynamics\n\npension eligibility, extending working lives policy or Great Recession\n\nfinancial insecurity\n\ndecrease of living standards\n\nwork characteristics\n\nloss of ‘verified’ role-identity?30\n\n\nSociodemographic features (sex and education) are less important"
+  },
+  {
+    "objectID": "research/rethet/slides.html#contribution-and-future-analyses",
+    "href": "research/rethet/slides.html#contribution-and-future-analyses",
+    "title": "Feature-wide Effect Heterogeneity of Retirement on Subsequent Health through Causal Forests",
+    "section": "Contribution and Future Analyses",
+    "text": "Contribution and Future Analyses\nDeciphering what heterogenizes the effect of retirement on subsequent health through an abductive approach\n\nwith the model metric for partitioning and unbiased estimation\n\n\nDisentangling temporal dimensions\n\nPension eligibility, retirement timing, and global shock (e.g., Great Recession, COVID-19)\n\nDetailed work characteristics\n\nOccupation, industry and workplace"
+  },
+  {
+    "objectID": "research/rethet/slides.html#acknowledgement",
+    "href": "research/rethet/slides.html#acknowledgement",
+    "title": "Feature-wide Effect Heterogeneity of Retirement on Subsequent Health through Causal Forests",
+    "section": "Acknowledgement",
+    "text": "Acknowledgement\nThis work was supported by Grant-in-Aid for JSPS Fellows JP24KJ1919."
+  },
+  {
+    "objectID": "research/rethet/slides.html#references",
+    "href": "research/rethet/slides.html#references",
+    "title": "Feature-wide Effect Heterogeneity of Retirement on Subsequent Health through Causal Forests",
+    "section": "References",
+    "text": "References\n\n\n78th Japanese Association of Mathematical Sociology\n\n\n\n1. Grossman, M. On the Concept of Health Capital and the Demand for Health. Journal of Political Economy 80, 223–255 (1972).\n\n\n2. Dave, D., Rashad, I. & Spasojevic, J. The Effects of Retirement on Physical and Mental Health Outcomes. Southern Economic Journal 75, 497–523 (2008).\n\n\n3. Bogaard, L. van den, Henkens, K. & Kalmijn, M. Retirement as a Relief? The Role of Physical Job Demands and Psychological Job Stress for Effects of Retirement on Self-Rated Health. European Sociological Review 32, 295–306 (2016).\n\n\n4. Bloemen, H., Hochguertel, S. & Zweerink, J. The causal effect of retirement on mortality: Evidence from targeted incentives to retire early. Health Economics 26, e204–e218 (2017).\n\n\n5. Qvist, J. Y. Early Retirement and Social Class: A Health-Giving Choice for All? European Sociological Review 39, 132–144 (2022).\n\n\n6. Okamoto, S., Kobayashi, E. & Komamura, K. The Retirement–Health Puzzle: A Sigh of Relief at Retirement? The Journals of Gerontology: Series B 78, 167–178 (2022).\n\n\n7. Zhao, M., Konishi, Y. & Noguchi, H. Retiring for better health? Evidence from health investment behaviors in Japan. Japan and the World Economy 42, 56–63 (2017).\n\n\n8. Oshio, T. & Kan, M. The dynamic impact of retirement on health: Evidence from a nationwide ten-year panel survey in Japan. Preventive Medicine 100, 287–293 (2017).\n\n\n9. Okamoto, S., Okamura, T. & Komamura, K. Employment and health after retirement in Japanese men. Bulletin of the World Health Organization 96, 826–833 (2018).\n\n\n10. Barban, N., Luna, X. de, Lundholm, E., Svensson, I. & Billari, F. C. Causal Effects of the Timing of Life-course Events: Age at Retirement and Subsequent Health. Sociological Methods & Research 49, 216–249 (2020).\n\n\n11. Pilehvari, A., You, W. & Lin, X. Retirement’s impact on health: what role does social network play? European Journal of Ageing 20, 14 (2023).\n\n\n12. Furuya, S. & Fletcher, J. M. Retirement Makes You Old? Causal Effect of Retirement on Biological Age. Demography (2024) doi:10.1215/00703370-11380637.\n\n\n13. Grøtting, M. W. & Lillebø, O. S. Health effects of retirement: evidence from survey and register data. Journal of Population Economics 33, 671–704 (2020).\n\n\n14. Hult, C., Stattin, M., Janlert, U. & Järvholm, B. Timing of retirement and mortality - A cohort study of Swedish construction workers. Social Science & Medicine 70, 1480–1486 (2010).\n\n\n15. Gorry, D. & Slavov, S. N. The effect of retirement on health biomarkers. Economics & Human Biology 40, 100949 (2021).\n\n\n16. McDonough, P., Worts, D., Corna, L. M., McMunn, A. & Sacker, A. Later-life employment trajectories and health. Advances in Life Course Research 34, 22–33 (2017).\n\n\n17. Calvo, E., Sarkisian, N. & Tamborini, C. R. Causal Effects of Retirement Timing on Subjective Physical and Emotional Health. The Journals of Gerontology: Series B 68, 73–84 (2013).\n\n\n18. Xu, Y. The effect of retirement on health and mortality in the United States. Journal of Population Research 40, 12 (2023).\n\n\n19. Mizuochi, M. Retirement Pathways’ Effect on Physical and Mental Health: Evidence from Japan. Journal of Aging and Health 8982643231200931 (2023) doi:10.1177/08982643231200931.\n\n\n20. Quaade, T., Engholm, G., Johansen, A. M. T. & Møller, H. Mortality in relation to early retirement in Denmark: a population-based study. Scandinavian Journal of Public Health 30, 216–222 (2002).\n\n\n21. Scotti, B. Late-Career Employment Trajectories and Postretirement Mortality: Evidence From Italy. Demography 59, 2187–2213 (2022).\n\n\n22. Merton, R. K. Three Fragments From a Sociologist’s Notebooks: Establishing the Phenomenon, Specified Ignorance, and Strategic Research Materials. Annual Review of Sociology 13, 1–29 (1987).\n\n\n23. Swedberg, R. Theorizing in Sociological Research: A New Perspective, a New Departure? Annual Review of Sociology 43, 1–18 (2016).\n\n\n24. Engzell, P. & Mood, C. Understanding Patterns and Trends in Income Mobility through Multiverse Analysis. American Sociological Review 88, 600–626 (2023).\n\n\n25. Athey, S. & Imbens, G. Recursive partitioning for heterogeneous causal effects. Proceedings of the National Academy of Sciences 113, 7353–7360 (2016).\n\n\n26. Athey, S., Tibshirani, J. & Wager, S. Generalized random forests. The Annals of Statistics 47, 1148–1178 (2019).\n\n\n27. Brand, J. E., Xu, J., Koch, B. & Geraldo, P. Uncovering Sociological Effect Heterogeneity Using Tree-Based Machine Learning. Sociological Methodology 51, 189–223 (2021).\n\n\n28. Jawadekar, N. et al. Practical Guide to Honest Causal Forests for Identifying Heterogeneous Treatment Effects. American Journal of Epidemiology 192, 1155–1165 (2023).\n\n\n29. Lee, J., Phillips, D., Wilkens, J. & Team, G. to G. A. D. Gateway to Global Aging Data: Resources for Cross-National Comparisons of Family, Social Environment, and Healthy Aging. The Journals of Gerontology: Series B 76, S5–S16 (2021).\n\n\n30. Mize, T. D. & Kincaid, R. Role-Accumulation and Mental Health across the Life Course. American Sociological Review (2025) doi:10.1177/00031224241313394."
   },
   {
     "objectID": "research/skilltraj/index.html",
