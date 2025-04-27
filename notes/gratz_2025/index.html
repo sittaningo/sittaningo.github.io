@@ -6,10 +6,10 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
-<meta name="author" content="新田真悟">
-<meta name="dcterms.date" content="2022-04-04">
+<meta name="author" content="Shingo Nitta">
+<meta name="dcterms.date" content="2025-04-27">
 
-<title>Shingo Nitta - スキル指標の標準化と解釈に関するメモ</title>
+<title>Shingo Nitta - 読書メモ：Grätz et al.&nbsp;(2025)</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -119,29 +119,40 @@ ul.task-list li input[type="checkbox"] {
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">スキル指標の標準化と解釈に関するメモ</h1>
+<h1 class="title">読書メモ：Grätz et al.&nbsp;(2025)</h1>
   <div class="quarto-categories">
-    <div class="quarto-category">Data Analysis</div>
-    <div class="quarto-category">O*NET</div>
-    <div class="quarto-category">Occupation</div>
+    <div class="quarto-category">Readings</div>
+    <div class="quarto-category">Causal Inference</div>
+    <div class="quarto-category">Social Genomics</div>
+    <div class="quarto-category">Intergenerational Mobility</div>
   </div>
   </div>
 
 
+<div class="quarto-title-meta-author">
+  <div class="quarto-title-meta-heading">Author</div>
+  <div class="quarto-title-meta-heading">Affiliations</div>
+  
+    <div class="quarto-title-meta-contents">
+    <p class="author">Shingo Nitta </p>
+  </div>
+    <div class="quarto-title-meta-contents">
+        <p class="affiliation">
+            Japan Society for the Promotion of Science
+          </p>
+        <p class="affiliation">
+            Gakushuin University
+          </p>
+      </div>
+    </div>
 
 <div class="quarto-title-meta">
 
-    <div>
-    <div class="quarto-title-meta-heading">Author</div>
-    <div class="quarto-title-meta-contents">
-             <p>新田真悟 </p>
-          </div>
-  </div>
-    
+      
     <div>
     <div class="quarto-title-meta-heading">Published</div>
     <div class="quarto-title-meta-contents">
-      <p class="date">April 4, 2022</p>
+      <p class="date">April 27, 2025</p>
     </div>
   </div>
   
@@ -151,91 +162,68 @@ ul.task-list li input[type="checkbox"] {
 
 </header>
 
-<section id="はじめに" class="level1">
-<h1>はじめに</h1>
-<p>最近、日本版O-NET（以下、たんにO-NET）を用いた研究プロジェクトに取り組んでいます。O-NETでは各職業に求められるスキル要件や各職業の仕事の性質、仕事の内容などを職業間で比較可能な形式で尋ねています。それゆえ、職業小分類を尋ねているデータとマッチングすることで、個人が持つ（と職業上は期待される）スキルを知ることができるようになります。</p>
-<p>O-NETで尋ねられている項目は比較可能形式といえど、厳密な意味では比較可能ではありません。というのも、尋ねている項目ごとに頻度や重要度、比率などその中身が異なるためです。</p>
-<p>表1. O-NETの調査内容と各選択肢のタイプ</p>
-<table class="table">
-<thead>
-<tr class="header">
-<th>調査内容</th>
-<th>選択肢のタイプ</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>職業興味</td>
-<td>合致度</td>
-</tr>
-<tr class="even">
-<td>仕事価値観</td>
-<td>満足感</td>
-</tr>
-<tr class="odd">
-<td>スキル</td>
-<td>レベル</td>
-</tr>
-<tr class="even">
-<td>知識</td>
-<td>重要度</td>
-</tr>
-<tr class="odd">
-<td>仕事の性質</td>
-<td>頻度A</td>
-</tr>
-<tr class="even">
-<td></td>
-<td>頻度B</td>
-</tr>
-<tr class="odd">
-<td></td>
-<td>重要度</td>
-</tr>
-<tr class="even">
-<td></td>
-<td>責任の度合い</td>
-</tr>
-<tr class="odd">
-<td></td>
-<td>その他</td>
-</tr>
-<tr class="even">
-<td>仕事の内容</td>
-<td>重要度</td>
-</tr>
-</tbody>
-</table>
-<p>もちろん、選択肢のタイプが異なることは回答者の負担減のために行われていることなので、それ自体はごくふつうなことですが、O-NETの使用においては複数の調査項目を合算して用いることがままあるため、結果が選択肢のタイプによって歪まないように分析者が調査内容横断的な各項目を比較可能にすることがあります。それが標準化です。</p>
+<div class="callout callout-style-simple callout-none no-icon callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon no-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+購読文献
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Grätz, Michael, Felix C. Tropf, Fartein Ask Torvik, Ole A. Andreassen, and Torkild H. Lyngstad. 2025. “No Evidence of Positive Causal Effects of Maternal and Paternal Age at First Birth on Children’s Test Scores at Age 10 Years.” <em>Nature Human Behaviour</em> 1–6. doi: 10.1038/s41562-025-02108-6.</p>
+</div>
+</div>
+<section id="要約" class="level1">
+<h1>要約</h1>
+<section id="イントロダクション" class="level2">
+<h2 class="anchored" data-anchor-id="イントロダクション">イントロダクション</h2>
+<p>20世紀後半から女性の初産年齢は4、5年遅くなっている傾向がある。初産の延期は低体重出生や自閉症、統合失調症といった負の生物学的帰結をもたらす一方、高い数学の点数といった正の社会的帰結をもたらす。</p>
+<p>重要な問いは、上述した関連が因果なのかどうかである。先行研究は家族固定効果モデルを用いて母親および父親の年齢の効果を検証し、類似の結果を示してきた。ただし、きょうだい間の未観測交絡や子の出生年の位置付けなど、不明瞭な点が多い<a href="#fn1" class="footnote-ref" id="fnref1" role="doc-noteref"><sup>1</sup></a>。</p>
+<p>本研究ではメンデル無作為化デザインにもとづく遺伝操作変数法を用いて、親の出産年齢の子の教育への因果効果を推定する。具体的には、母親と父親の初産年齢の多遺伝子インデックスPGIと子どもが10歳のときのテストの成績を用いる。本研究はメンデル無作為化デザインの3つの課題を克服する。</p>
+<p>第一に、同じ遺伝的変異体が複数のアウトカムを予測するpleiotropy（多面発現）である。pleiotropyは共通の生物学的影響、第三の社会的要素の媒介によって生じる。pleiotropyは操作変数法の中核的な仮定である除外制約を侵犯する。本研究では親の初産年齢を予測するような要因、具体的には性交渉、避妊行動、喫煙行動、ADHD、教育達成のPGIを統制することでこれに対処する。</p>
+<p>第二に、もし親の初産年齢を予測する遺伝子が直接子どものテストの成績を予測するのであれば、操作変数の仮定が満たされず結果をバイアスする。本研究では、親の初産年齢のPGIと子の初産年齢のPGIを同時に統制することで、操作変数に共通する遺伝形genotypeの可能性に対処する。</p>
+<p>第三に、PGIの測定にはわずかな人口学的属性しか統制しておらず、同類結合や人口層化population stratificationといった環境要因の交絡が存在しうる。本研究では、配偶者の初産年齢のPGIを統制し、またHardy–Weinberg均衡外にあるSNPsを取り除き、さらに祖父母の学歴と主成分因子を統制する。行政データを用いることでascertainment biasにも対処する。これらのデザインは <a href="#fig-identification">Figure&nbsp;1</a> に示されている。</p>
+<div id="fig-identification" class="quarto-figure quarto-figure-center anchored">
+<figure class="figure">
+<p><img src="fig/Figure1.jpg" class="img-fluid figure-img" style="width:100.0%"></p>
+<figcaption class="figure-caption">Figure&nbsp;1: 本研究の識別戦略<br>出所）Grätz et al.&nbsp;(2025, Figure 1)</figcaption>
+</figure>
+</div>
 </section>
-<section id="標準化の支配的アプローチaccemoglu-and-autor" class="level1">
-<h1>標準化の支配的アプローチ：Accemoglu and Autor</h1>
-<p>多くの研究では、Accemoglu and Autor（2011）の手続きに倣って標準化が行われています。それは以下2回の標準化を行います。</p>
-<ol type="1">
-<li>マッチング後に就業者数で重み付け標準化</li>
-<li>合算後に再標準化</li>
+<section id="データと方法" class="level2">
+<h2 class="anchored" data-anchor-id="データと方法">データと方法</h2>
+<p><strong>MoBa</strong> (Norwegian Mother, Father and Child Cohort study)</p>
+<ul>
+<li><p>子（三つ子）114500人、母親95200人、父親75200人</p></li>
+<li><p>最終的には15670人を分析に用いる。</p></li>
+</ul>
+<p>アウトカムは数学、読解力、英語力の成績。初産年齢は両親とも回答しているケースに限定。遺伝形はすごく頑張って作成<a href="#fn2" class="footnote-ref" id="fnref2" role="doc-noteref"><sup>2</sup></a>。</p>
+</section>
+<section id="results" class="level2">
+<h2 class="anchored" data-anchor-id="results">Results</h2>
+<p>OLSでは先行研究が示したような正の因果効果が確認されたが、上述のデザインにもとづくIVでは効果は0となり、デザインによっては負の効果さえ見受けられた。</p>
+<p>共変量を段階的に投入し何によって正の因果効果が消え、負の因果効果が生じるのかを確認する。両親子どもの初産年齢のPGIを統制すると正の効果はなくなる（nurture effectとancestry effectによって正の因果効果が生じる）。親の学歴のPGIを統制すると負の効果が認められる。</p>
+</section>
+<section id="議論" class="level2">
+<h2 class="anchored" data-anchor-id="議論">議論</h2>
+<p>IVとメンデル無作為化デザインにもとづく因果効果の推定では、OLSで確認されたような正の効果は認められなかった。むしろ、親の学歴のPGIを統制すると負の効果が認められた。ただし親学歴のPGIは学歴に影響するすべて（身体の弱さ、認知スキル、非認知スキル）を捉えているので、過剰統制の可能性はある。</p>
+<p>本研究の結果は、親の年齢の高さは高い社会的地位と豊富な資源、そして良好な関係と育て方parentingによって子どもの教育にプラスの影響を与えるという社会学的な予想を支持しない。同時に、親の年齢の高さが子どもの精神疾患やDNAのメチル化によって子どもの教育に影響を与えるという生物学的な予想も支持しない。</p>
+<p>ノルウェーは一人当たり収入が高く、収入格差が比較的小さい国であり、また政府の子どもへの投資も大きい。このような国では親の年齢が子どもの教育に与える影響は小さいことが予想される。また、人口全体で初産年齢が遅れると、年齢の負の効果は緩和されることが予想される。また、ここでの負の効果は社会学的要因と生物学的要因の相殺によって生じる可能性がある。とはいえ、総じて初産年齢の遅れは必ずしも子どもの教育にプラスの影響を与えるわけではないことが示された。</p>
+
+
+</section>
+</section>
+
+
+<div id="quarto-appendix" class="default"><section id="footnotes" class="footnotes footnotes-end-of-document" role="doc-endnotes"><h2 class="anchored quarto-appendix-heading">Footnotes</h2>
+
+<ol>
+<li id="fn1"><p>家族固定効果モデルにおいては、子の出生年は親の出産年齢と完全に相関する。しかし、調整しなければ親の年齢効果と子の出生年の効果を識別できない。<a href="#fnref1" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn2"><p>Haplotype Reference Consortium release 1.1 panelに倣って作成。The MoBaPsychGen pipelineと呼ばれる代入前品質管理にもとづいて、SNPsを選択し、PGIを作成。<a href="#fnref2" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
 </ol>
-<p>1の手続きについては、主として2つの目的があります。①上述した通り、項目を統計的な意味で比較可能にする、②職業を1単位とした水準から、マッチングしたデータの分析単位を1単位とした水準に各種指標を変換する、です。②は重み付けとして行われます。今回は重み付けの話は割愛します。2の手続きは主として解釈のために行われます。すなわち、平均0、標準偏差1とならすことで、値の正負や量について解釈を容易にするためになします。逆にいえば、2を行わなかったとしても、統計的な表現としては等価なものが出力されます（1回目の標準化後にサンプルの追加や欠損が一切なかった場合は、です）。</p>
-</section>
-<section id="標準化の実質的アプローチ" class="level1">
-<h1>標準化の実質的アプローチ</h1>
-<p>※ここからはほとんど悩みと、暫定的な結論です。誤りなどの指摘を歓迎します。</p>
-<p>ここで、1の手続きでは標準化は2回、2の手続きでは1回を行うはずです。1の手続きの1回目を1-1、2回目を1-2とします。はじめに、1-1ではそれぞれの項目について標準化します。1-1の標準化を通じて、値の大小をなくし、標準偏差として表現する形式にします。0〜100の閾値をとる比率も、1〜7の値を取る重要度も、平均0標準偏差1として表現されます。おそらく、1-1だけで標準化を終え、合算に進むのは誤りです。なぜなら、統計量としては比較可能になっているけれども、項目間では比較可能になっていないためです。項目同士を比較可能、合算可能にするためには、さらにすべての項目を1度で標準化する必要があります。言い換えれば、複数列にまたがるスキル項目を1つの列に集約し、その列について標準化を行わなければならない、ということです。これが1-2に相当します。標準化後は列を分解します。1-1と1-2を通じて、尺度をならしつつ、項目を比較可能な形式に整えます。2回の標準化を通して、はじめて項目が合算可能になります。</p>
-<p>問題関心次第ですが、合算後の指標は基本的に1列に集約して標準化してはいけません。それはなぜなら、指標の間で値が大きい（小さい）ということを表現してしまうためです。すなわち、「言語スキルは計算スキルより値が大きい（小さい）」といったような、指標間での値の大きさの話に帰着してしまうためです。いわゆる標準化回帰係数Bを考えてもらうと良いと思います。「どのスキル指標が最も大きいのか？」という問いでは良いのかもしれませんが、スキル水準についてとくに個人間・時代間などでの比較を行いたい場合は、余計な情報になってしまいます。したがって、合算後のスキル指標については指標ごとに標準化を行い、指標間の標準化は行わないべきでしょう。項目がすでに比較可能であり、二度目の標準化は解釈のために行われるというこれまでの話を踏まえれば、スキル指標は合算時点で比較可能な形式になっているはずです。</p>
-</section>
-<section id="複数時点でのスキル指標" class="level1">
-<h1>複数時点でのスキル指標</h1>
-<p>ところで、自分はスキル移転の研究をしています。転職の前後でスキルはどう変化するのか、ということを記述的に明らかにしようとしています。このとき、標準化はどのように行うべきでしょうか。</p>
-<p>ポイントは複数時点の職業情報がある点です（簡単のため、前職と現職とします）。このとき、前職と現職それぞれで標準化してしまうと、やはり前職と現職とが比較可能になりません。今度は前職と現職とを1列としてマッチングを行います。各職業に紐づいた項目から、1-1をはじめます。そして、1-2では前職と現職とが1列になっている状態で、さらに項目を1列とします。person-yearデータならぬperson-occupation-itemデータのような状況です(!?)。もしパーソンイヤーデータすべての職業について行う場合は・・・、ご想像にお任せします。笑</p>
-</section>
-<section id="おわりに" class="level1">
-<h1>おわりに</h1>
-<p>O-NETは大きなポテンシャルを持つデータですが、自分自身取り扱いに苦労しています。こと標準化に関しては、やり方によっては結果を大きく変えてしまう危険性があるので、特に苦労しました。尺度の閾値の影響を取り除きつつ、厳密な意味で比較可能にすること、「項目同士」は比較可能にするけれども、「指標同士」は比較可能にしないこと、推定したい量を定義し、何と比較するのかを確定しておくことが、指標を取り扱う上では大事なのかなと思います。</p>
-
-
-</section>
-
-</main> <!-- /main -->
+</section></div></main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
 window.document.addEventListener("DOMContentLoaded", function (event) {
   const toggleBodyColorMode = (bsSheetEl) => {
