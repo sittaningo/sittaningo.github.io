@@ -1,0 +1,661 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.3.353">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+<meta name="author" content="Shingo Nitta">
+<meta name="dcterms.date" content="2026-01-23">
+
+<title>Shingo Nitta - 読書メモ：Klein et al.&nbsp;(2025)</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+</style>
+
+
+<script src="../../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../../">
+<link href="../../{{< fluent animal-turtle-20-regular >}}" rel="icon">
+<script src="../../site_libs/quarto-html/quarto.js"></script>
+<script src="../../site_libs/quarto-html/popper.min.js"></script>
+<script src="../../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../../site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
+<script id="quarto-search-options" type="application/json">{
+  "location": "navbar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "end",
+  "type": "overlay",
+  "limit": 20,
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit"
+  }
+}</script>
+<script async="" src="https://www.googletagmanager.com/gtag/js?id=G-2PTNBK5B3H"></script>
+
+<script type="text/javascript">
+
+window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
+gtag('config', 'G-2PTNBK5B3H', { 'anonymize_ip': true});
+</script>
+
+  <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
+
+</head>
+
+<body class="nav-fixed fullcontent">
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+    <nav class="navbar navbar-expand-lg navbar-dark ">
+      <div class="navbar-container container-fluid">
+      <div class="navbar-brand-container">
+    <a class="navbar-brand" href="../../index.html">
+    <span class="navbar-title">Shingo Nitta</span>
+    </a>
+  </div>
+            <div id="quarto-search" class="" title="Search"></div>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+  <span class="navbar-toggler-icon"></span>
+</button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav navbar-nav-scroll me-auto">
+  <li class="nav-item">
+    <a class="nav-link" href="../../index.html" rel="" target="">
+ <span class="menu-text">HOME</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../../profile/index.html" rel="" target="">
+ <span class="menu-text">PROFILE</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../../research/index.html" rel="" target="">
+ <span class="menu-text">RESEARCH</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../../notes/index.html" rel="" target="">
+ <span class="menu-text">NOTES</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../../cv/CV.pdf" rel="" target="">
+ <span class="menu-text">CV</span></a>
+  </li>  
+</ul>
+            <div class="quarto-navbar-tools ms-auto">
+</div>
+          </div> <!-- /navcollapse -->
+      </div> <!-- /container-fluid -->
+    </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
+<!-- sidebar -->
+<!-- margin-sidebar -->
+    
+<!-- main -->
+<main class="content" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<h1 class="title">読書メモ：Klein et al.&nbsp;(2025)</h1>
+  <div class="quarto-categories">
+    <div class="quarto-category">Wealth</div>
+    <div class="quarto-category">International Comparison</div>
+    <div class="quarto-category">Population Aging</div>
+  </div>
+  </div>
+
+
+<div class="quarto-title-meta-author">
+  <div class="quarto-title-meta-heading">Author</div>
+  <div class="quarto-title-meta-heading">Affiliations</div>
+  
+    <div class="quarto-title-meta-contents">
+    <p class="author">Shingo Nitta </p>
+  </div>
+    <div class="quarto-title-meta-contents">
+        <p class="affiliation">
+            Japan Society for the Promotion of Science
+          </p>
+        <p class="affiliation">
+            Gakushuin University
+          </p>
+      </div>
+    </div>
+
+<div class="quarto-title-meta">
+
+      
+    <div>
+    <div class="quarto-title-meta-heading">Published</div>
+    <div class="quarto-title-meta-contents">
+      <p class="date">January 23, 2026</p>
+    </div>
+  </div>
+  
+    
+  </div>
+  
+
+</header>
+
+<div class="callout callout-style-simple callout-none no-icon callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon no-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+購読文献
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Klein, Lisa, Philipp M. Lersch, and Max Longmuir. 2025. “Wealth Inequality among Families in a Changing Demographic Landscape: Evidence from Germany, 1988–2017.” doi:10.31235/osf.io/jh5xp_v1.</p>
+</div>
+</div>
+<section id="要約" class="level1">
+<h1>要約</h1>
+</section>
+<section id="introduction" class="level1">
+<h1>Introduction</h1>
+<p>資産不平等における経済的要因は検証されてきたものの、人口学的要因については十分に検証されてこなかった：具体的には、年齢、学歴、移動、婚姻状態、女性の労働市場への参入など。</p>
+<p>本研究では、世代間異動が生じうる子どものいる世帯の資産不平等を検証する。もし家族の資産が二極化していたら、子世代の資産格差も大きくなるだろう。本研究では①ほかのタイプの世帯と比較して、子どものいる世帯の資産不平等は1988年から2017年の間でどのように変化したのか、②人口学的変化は子どものいる世帯の不平等にどのような影響を与えたのか、をそれぞれ検証する。</p>
+<p>ドイツの文脈を取り扱う。ドイツは奨学金や住宅市場において米国と大きく異なっている。とくに、ドイツでは子どものいる世帯への支援が手厚く、また資産不平等は安定的に推移している。</p>
+<p>SOEPとwealth moduleとの統合データの分析の結果、ドイツの純資産の比較的安定的な傾向の背後には、高齢者のいる世帯の資産不平等の減少と子なし世帯と子あり世帯の安定的な推移があったことが明らかになった。分解分析の結果から、移動率の増加と婚姻状態の変化が資産格差の拡大に寄与したものの、人口高齢化、教育拡大、女性の労働市場への参入がそれぞれ資産不平等の縮小に寄与し、オフセットされていることが明らかになった。</p>
+<section id="背景" class="level2">
+<h2 class="anchored" data-anchor-id="背景">背景</h2>
+<p>資産不平等は所得不平等よりも一般的にたかく、ドイツはとくに高い（純資産のジニは0.75、税引後の世帯等価可処分所得は0.29）。</p>
+<p>そして、資産不平等の大きさは子どものいる世帯でより顕著と考えられる。なぜなら、子どものいる世帯は人口学的に多様で、近年不平等が拡大している勤労所得からの資産への流入が多く、奨学金などの負債が比較的少ないため。</p>
+<p>にもかかわらず、子どものいる世帯の資産不平等のトレンドは米国を除いて知見が少ない。ドイツではuniversal child benefitsやsubsidized child-care、paid parental leave benefitsなどの子育て支援や、持ち家のtargeted loansや自由主義的でない抵当権市場、低い持ち家取得率、奨学金の重要性の低さといった点で米国と異なる。</p>
+<p>ドイツの人口学的変化について。ドイツでは若年層の減少、高齢化、移民の増加、同棲や単身世帯など「非標準的」世帯の増加、大卒比率の増加。若年層の割合が21.7％から18.4％に減少し、高齢化率が14.9％から21.8％に上昇した。子どものいる世帯の母親の年齢も1990年の27.6歳から2019年の31.2歳に上昇している。移民の割合も増加している。2005年から2019年にかけて、第一世代移民の割合は12.9％から16.8％に、第二世代移民は5.3％から9.6％にそれぞれ上昇している。</p>
+<section id="人口学的変化と資産不平等との関連" class="level3">
+<h3 class="anchored" data-anchor-id="人口学的変化と資産不平等との関連">人口学的変化と資産不平等との関連</h3>
+<p>理論的には、人口学的変化は資産を蓄積しうる集団のサイズを変容させ、結果的に資産不平等にも寄与する。</p>
+<p>高齢化は若年層の減少として低資産世帯のサイズの減少に寄与するかもしれないし、高齢者世帯の増加として低資産世帯の増加に寄与するかもしれない（cf.&nbsp;引退、長期ケア）。ただし、リバースモゲージの使用が限定的なドイツにおいては、持ち家率の高い高齢者の資産は低くないと思われる。</p>
+<p>移民率の増加と婚姻状態の変容は資産分布の低い方を増加させ、資産不平等を拡大させることが想定される。高学歴化は職業的地位の向上と金融リテラシーの上昇の結果、資産分布を引き上げ、結果的に平等化につながる。女性の労働市場への参入は配偶者の収入の上昇として、資産分布の引き上げにつながる。ただし、それが子育てコストにつながるような場合は、上述の想定に繋がらない。</p>
+</section>
+</section>
+<section id="データと分析戦略" class="level2">
+<h2 class="anchored" data-anchor-id="データと分析戦略">データと分析戦略</h2>
+<ul>
+<li><p>データ：German Socio-Economic Panel (SOEP, version 38.1)</p></li>
+<li><p>サンプル：同性カップル、多世代世帯（親の資産と祖父母の資産を区別できないため）を除いた45163世帯。</p>
+<ul>
+<li><p>3種類の世帯に分類：18歳未満の子がいる世帯</p></li>
+<li><p>64歳以上の世帯員と18歳未満の子どもがいない世帯</p></li>
+<li><p>64歳以上の世帯員も18歳未満の子もいない現役世帯</p></li>
+</ul></li>
+<li><p>資産の測定：世帯の等可処分純資産、住宅資産、不動産、事業、金融資産、保険、負債。すべて位（下位）0.1％をそれらを除いた最大値（最小値）に置き換えたのち計算。</p></li>
+<li><p>要因分解の測定：基本的に夫婦レベルの情報を用いる</p>
+<ul>
+<li><p>学歴：もっとも高い学歴</p></li>
+<li><p>移民：非移民、第一世代、第二世代</p></li>
+<li><p>婚姻状態：既婚、同棲</p></li>
+<li><p>妻の就労状態：フルタイム、パートタイム、無業</p></li>
+<li><p>年齢：世帯主の年齢（10歳刻み）</p></li>
+<li><p>無回答はカテゴリとして入れ込む</p></li>
+</ul></li>
+<li><p>分析戦略：Recentered Influence Function（RIF）回帰による要因分解</p></li>
+</ul>
+<p><span class="math display">\[\begin{align}
+\Delta G &amp; = \text{E} \left[ RIF(w, G, F) \mid t = 1 \right] - \text{E} \left[ RIF(w, G, F) \mid t = 0 \right]\\
+
+&amp;= \left( \bar{X^{\prime}_1} - \bar{X^{\prime}_0} \right) \hat{\beta_1} + \bar{X^{\prime}_0} \left( \hat{\beta_1} - \hat{\beta_0}\right)
+\end{align}\]</span></p>
+<section id="notation生成ai" class="level3">
+<h3 class="anchored" data-anchor-id="notation生成ai">Notation（生成AI）</h3>
+<ul>
+<li><p><strong><span class="math inline">\(\Delta G\)</span></strong>: 観測された富の不平等性の変化。ジニ係数（Gini coefficient）によって測定されています。</p></li>
+<li><p><strong><span class="math inline">\(E[\cdot]\)</span></strong>: 期待値（Expected value）。</p></li>
+<li><p><strong><span class="math inline">\(RIF(w, G, F)\)</span></strong>: 修正された影響関数（Recentered Influence Function）。ジニ係数 <span class="math inline">\(G\)</span> のRIFであり、富 <span class="math inline">\(w\)</span> の分布 <span class="math inline">\(F\)</span> におけるRIFを指します。RIFは、統計量（ここではジニ係数）が、ある特定のデータポイント（富 <span class="math inline">\(w\)</span>）の変化によってどれだけ影響を受けるかを示すものです。</p></li>
+<li><p><strong><span class="math inline">\(w\)</span></strong>: 富（wealth）。</p></li>
+<li><p><strong><span class="math inline">\(G\)</span></strong>: ジニ係数（Gini coefficient）。富の不平等性を測定する指標。</p></li>
+<li><p><strong><span class="math inline">\(F\)</span></strong>: 富の分布（Distribution of wealth）。</p></li>
+<li><p><strong><span class="math inline">\(t\)</span></strong>: 時間（Time）。<span class="math inline">\(t=0\)</span> は初期の期間（1988年）、<span class="math inline">\(t=1\)</span> は後の期間（2002年、2007年、2012年、または2017年）を表します。</p></li>
+<li><p><strong><span class="math inline">\(X\)</span></strong>: 共変量（Covariates）のベクトル。関心のある人口統計学的変化を表す変数（例：年齢、教育、人種など）が含まれます。</p></li>
+<li><p><strong><span class="math inline">\(\bar{X}'_t\)</span></strong>: 時点 <span class="math inline">\(t\)</span> における共変量ベクトルの平均値。</p></li>
+<li><p><strong><span class="math inline">\(\hat{\beta}_t\)</span></strong>: 時点 <span class="math inline">\(t\)</span> で推定された、共変量とRIFの関係を示す回帰係数のベクトル。</p></li>
+</ul>
+<p><span class="math inline">\(\left( \bar{X^{\prime}_1} - \bar{X^{\prime}_0} \right) \hat{\beta_1}\)</span>が構成効果、<span class="math inline">\(\bar{X^{\prime}_0} \left( \hat{\beta_1} - \hat{\beta_0}\right)\)</span>が係数効果。</p>
+</section>
+</section>
+<section id="結果" class="level2">
+<h2 class="anchored" data-anchor-id="結果">結果</h2>
+<p>全体的には1988年から横ばい傾向であるものの、子どものいる世帯のジニ係数は1988年から2002年にかけて増加し、それ以降微減という傾向にある。いずれも外れ値や等可処分の操作化には頑健。</p>
+<ul>
+<li>高齢者のいる世帯がもっとも減少している。</li>
+</ul>
+<p>子どものいる世帯の不平等の減少は資産額の増加が原因ではなさそうだ。</p>
+<ul>
+<li>しかし、高齢者のいる世帯ではそうかもしれない。</li>
+</ul>
+<p>全体的なジニ係数の減少は構成の変化によってもたらされているけれども、子どものいる世帯は1988年と比較すると停滞傾向であり、その停滞は構成効果による減少と係数効果による増加が打ち消しあって生じている。2002年をreferenceにし、東ドイツを入れても結果は頑健。</p>
+<table class="table">
+<caption>要因分解の結果</caption>
+<colgroup>
+<col style="width: 20%">
+<col style="width: 20%">
+<col style="width: 20%">
+<col style="width: 20%">
+<col style="width: 20%">
+</colgroup>
+<thead>
+<tr class="header">
+<th style="text-align: left;"></th>
+<th style="text-align: left;">2002</th>
+<th style="text-align: left;">2007</th>
+<th style="text-align: left;">2012</th>
+<th style="text-align: left;">2017</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;"><strong>Households With Children</strong></td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Change in Gini Compared to 1988</td>
+<td style="text-align: left;">0.0362</td>
+<td style="text-align: left;">0.0278</td>
+<td style="text-align: left;">0.0167</td>
+<td style="text-align: left;">-0.0012</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"></td>
+<td style="text-align: left;">(0.0188)</td>
+<td style="text-align: left;">(0.0180)</td>
+<td style="text-align: left;">(0.0145)</td>
+<td style="text-align: left;">(0.0153)</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Composition Effect (Explained)</td>
+<td style="text-align: left;">-0.0045</td>
+<td style="text-align: left;">-0.0200</td>
+<td style="text-align: left;">-0.0449***</td>
+<td style="text-align: left;">-0.0295***</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"></td>
+<td style="text-align: left;">(0.0123)</td>
+<td style="text-align: left;">(0.0133)</td>
+<td style="text-align: left;">(0.0086)</td>
+<td style="text-align: left;">(0.0087)</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Return Effect (Unexplained)</td>
+<td style="text-align: left;">0.0410*</td>
+<td style="text-align: left;">0.0653*</td>
+<td style="text-align: left;">0.0517***</td>
+<td style="text-align: left;">0.0411**</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"></td>
+<td style="text-align: left;">(0.0198)</td>
+<td style="text-align: left;">(0.0271)</td>
+<td style="text-align: left;">(0.0146)</td>
+<td style="text-align: left;">(0.0153)</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Observations</td>
+<td style="text-align: left;">2,929</td>
+<td style="text-align: left;">2,372</td>
+<td style="text-align: left;">4,982</td>
+<td style="text-align: left;">4,251</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Observations, base year 1988</td>
+<td style="text-align: left;">1,583</td>
+<td style="text-align: left;">1,583</td>
+<td style="text-align: left;">1,583</td>
+<td style="text-align: left;">1,583</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><strong>All Households</strong></td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Change in Gini Compared to 1988</td>
+<td style="text-align: left;">-0.0121</td>
+<td style="text-align: left;">-0.0066</td>
+<td style="text-align: left;">-0.0220**</td>
+<td style="text-align: left;">-0.0317***</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"></td>
+<td style="text-align: left;">(0.0083)</td>
+<td style="text-align: left;">(0.0092)</td>
+<td style="text-align: left;">(0.0081)</td>
+<td style="text-align: left;">(0.0078)</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Composition Effect (Explained)</td>
+<td style="text-align: left;">-0.0083</td>
+<td style="text-align: left;">-0.0141***</td>
+<td style="text-align: left;">-0.0314***</td>
+<td style="text-align: left;">-0.0350***</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"></td>
+<td style="text-align: left;">(0.0044)</td>
+<td style="text-align: left;">(0.0038)</td>
+<td style="text-align: left;">(0.0039)</td>
+<td style="text-align: left;">(0.0043)</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Return Effect (Unexplained)</td>
+<td style="text-align: left;">-0.0042</td>
+<td style="text-align: left;">0.0069</td>
+<td style="text-align: left;">0.0034</td>
+<td style="text-align: left;">-0.0002</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"></td>
+<td style="text-align: left;">(0.0081)</td>
+<td style="text-align: left;">(0.0093)</td>
+<td style="text-align: left;">(0.0081)</td>
+<td style="text-align: left;">(0.0078)</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Observations</td>
+<td style="text-align: left;">9,124</td>
+<td style="text-align: left;">8,516</td>
+<td style="text-align: left;">11,145</td>
+<td style="text-align: left;">11,879</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Observations, base year 1988</td>
+<td style="text-align: left;">4,334</td>
+<td style="text-align: left;">4,334</td>
+<td style="text-align: left;">4,334</td>
+<td style="text-align: left;">4,334</td>
+</tr>
+</tbody>
+</table>
+<p>全世帯も子どものいる世帯も、高齢化、学歴拡大、女性の労働市場参入が資産不平等の縮小に寄与し、移民と婚姻状態が不平等の拡大に寄与した。基本的に近年ほど各要素の寄与は大きくなっている（子どものいる世帯ではまちまちだが）。</p>
+</section>
+<section id="結論" class="level2">
+<h2 class="anchored" data-anchor-id="結論">結論</h2>
+<p>全世帯の横ばい傾向は、世帯タイプの違いや人口構造の変化といった動態によって隠されている。</p>
+<p>人口学的な趨勢は重要ながらも各項目で大きく異なる仕方で資産不平等に作用する。</p>
+
+
+</section>
+</section>
+
+</main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
+window.document.addEventListener("DOMContentLoaded", function (event) {
+  const toggleBodyColorMode = (bsSheetEl) => {
+    const mode = bsSheetEl.getAttribute("data-mode");
+    const bodyEl = window.document.querySelector("body");
+    if (mode === "dark") {
+      bodyEl.classList.add("quarto-dark");
+      bodyEl.classList.remove("quarto-light");
+    } else {
+      bodyEl.classList.add("quarto-light");
+      bodyEl.classList.remove("quarto-dark");
+    }
+  }
+  const toggleBodyColorPrimary = () => {
+    const bsSheetEl = window.document.querySelector("link#quarto-bootstrap");
+    if (bsSheetEl) {
+      toggleBodyColorMode(bsSheetEl);
+    }
+  }
+  toggleBodyColorPrimary();  
+  const icon = "";
+  const anchorJS = new window.AnchorJS();
+  anchorJS.options = {
+    placement: 'right',
+    icon: icon
+  };
+  anchorJS.add('.anchored');
+  const isCodeAnnotation = (el) => {
+    for (const clz of el.classList) {
+      if (clz.startsWith('code-annotation-')) {                     
+        return true;
+      }
+    }
+    return false;
+  }
+  const clipboard = new window.ClipboardJS('.code-copy-button', {
+    text: function(trigger) {
+      const codeEl = trigger.previousElementSibling.cloneNode(true);
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+    }
+  });
+  clipboard.on('success', function(e) {
+    // button target
+    const button = e.trigger;
+    // don't keep focus
+    button.blur();
+    // flash "checked"
+    button.classList.add('code-copy-button-checked');
+    var currentTitle = button.getAttribute("title");
+    button.setAttribute("title", "Copied!");
+    let tooltip;
+    if (window.bootstrap) {
+      button.setAttribute("data-bs-toggle", "tooltip");
+      button.setAttribute("data-bs-placement", "left");
+      button.setAttribute("data-bs-title", "Copied!");
+      tooltip = new bootstrap.Tooltip(button, 
+        { trigger: "manual", 
+          customClass: "code-copy-button-tooltip",
+          offset: [0, -8]});
+      tooltip.show();    
+    }
+    setTimeout(function() {
+      if (tooltip) {
+        tooltip.hide();
+        button.removeAttribute("data-bs-title");
+        button.removeAttribute("data-bs-toggle");
+        button.removeAttribute("data-bs-placement");
+      }
+      button.setAttribute("title", currentTitle);
+      button.classList.remove('code-copy-button-checked');
+    }, 1000);
+    // clear code selection
+    e.clearSelection();
+  });
+  function tippyHover(el, contentFn) {
+    const config = {
+      allowHTML: true,
+      content: contentFn,
+      maxWidth: 500,
+      delay: 100,
+      arrow: false,
+      appendTo: function(el) {
+          return el.parentElement;
+      },
+      interactive: true,
+      interactiveBorder: 10,
+      theme: 'quarto',
+      placement: 'bottom-start'
+    };
+    window.tippy(el, config); 
+  }
+  const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+  for (var i=0; i<noterefs.length; i++) {
+    const ref = noterefs[i];
+    tippyHover(ref, function() {
+      // use id or data attribute instead here
+      let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+      try { href = new URL(href).hash; } catch {}
+      const id = href.replace(/^#\/?/, "");
+      const note = window.document.getElementById(id);
+      return note.innerHTML;
+    });
+  }
+      let selectedAnnoteEl;
+      const selectorForAnnotation = ( cell, annotation) => {
+        let cellAttr = 'data-code-cell="' + cell + '"';
+        let lineAttr = 'data-code-annotation="' +  annotation + '"';
+        const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+        return selector;
+      }
+      const selectCodeLines = (annoteEl) => {
+        const doc = window.document;
+        const targetCell = annoteEl.getAttribute("data-target-cell");
+        const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+        const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+        const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+        const lineIds = lines.map((line) => {
+          return targetCell + "-" + line;
+        })
+        let top = null;
+        let height = null;
+        let parent = null;
+        if (lineIds.length > 0) {
+            //compute the position of the single el (top and bottom and make a div)
+            const el = window.document.getElementById(lineIds[0]);
+            top = el.offsetTop;
+            height = el.offsetHeight;
+            parent = el.parentElement.parentElement;
+          if (lineIds.length > 1) {
+            const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+            const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+            height = bottom - top;
+          }
+          if (top !== null && height !== null && parent !== null) {
+            // cook up a div (if necessary) and position it 
+            let div = window.document.getElementById("code-annotation-line-highlight");
+            if (div === null) {
+              div = window.document.createElement("div");
+              div.setAttribute("id", "code-annotation-line-highlight");
+              div.style.position = 'absolute';
+              parent.appendChild(div);
+            }
+            div.style.top = top - 2 + "px";
+            div.style.height = height + 4 + "px";
+            let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+            if (gutterDiv === null) {
+              gutterDiv = window.document.createElement("div");
+              gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+              gutterDiv.style.position = 'absolute';
+              const codeCell = window.document.getElementById(targetCell);
+              const gutter = codeCell.querySelector('.code-annotation-gutter');
+              gutter.appendChild(gutterDiv);
+            }
+            gutterDiv.style.top = top - 2 + "px";
+            gutterDiv.style.height = height + 4 + "px";
+          }
+          selectedAnnoteEl = annoteEl;
+        }
+      };
+      const unselectCodeLines = () => {
+        const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+        elementsIds.forEach((elId) => {
+          const div = window.document.getElementById(elId);
+          if (div) {
+            div.remove();
+          }
+        });
+        selectedAnnoteEl = undefined;
+      };
+      // Attach click handler to the DT
+      const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+      for (const annoteDlNode of annoteDls) {
+        annoteDlNode.addEventListener('click', (event) => {
+          const clickedEl = event.target;
+          if (clickedEl !== selectedAnnoteEl) {
+            unselectCodeLines();
+            const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+            if (activeEl) {
+              activeEl.classList.remove('code-annotation-active');
+            }
+            selectCodeLines(clickedEl);
+            clickedEl.classList.add('code-annotation-active');
+          } else {
+            // Unselect the line
+            unselectCodeLines();
+            clickedEl.classList.remove('code-annotation-active');
+          }
+        });
+      }
+  const findCites = (el) => {
+    const parentEl = el.parentElement;
+    if (parentEl) {
+      const cites = parentEl.dataset.cites;
+      if (cites) {
+        return {
+          el,
+          cites: cites.split(' ')
+        };
+      } else {
+        return findCites(el.parentElement)
+      }
+    } else {
+      return undefined;
+    }
+  };
+  var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+  for (var i=0; i<bibliorefs.length; i++) {
+    const ref = bibliorefs[i];
+    const citeInfo = findCites(ref);
+    if (citeInfo) {
+      tippyHover(citeInfo.el, function() {
+        var popup = window.document.createElement('div');
+        citeInfo.cites.forEach(function(cite) {
+          var citeDiv = window.document.createElement('div');
+          citeDiv.classList.add('hanging-indent');
+          citeDiv.classList.add('csl-entry');
+          var biblioDiv = window.document.getElementById('ref-' + cite);
+          if (biblioDiv) {
+            citeDiv.innerHTML = biblioDiv.innerHTML;
+          }
+          popup.appendChild(citeDiv);
+        });
+        return popup.innerHTML;
+      });
+    }
+  }
+});
+</script>
+</div> <!-- /content -->
+
+
+
+</body></html>
