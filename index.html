@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.3.353">
+<meta name="generator" content="quarto-1.6.39">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
@@ -24,31 +24,38 @@ ul.task-list li input[type="checkbox"] {
 
 
 <script src="site_libs/quarto-nav/quarto-nav.js"></script>
-<script src="site_libs/quarto-nav/headroom.min.js"></script>
 <script src="site_libs/clipboard/clipboard.min.js"></script>
 <script src="site_libs/quarto-search/autocomplete.umd.js"></script>
 <script src="site_libs/quarto-search/fuse.min.js"></script>
 <script src="site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="./">
 <link href="./{{< fluent animal-turtle-20-regular >}}" rel="icon">
+<script src="site_libs/quarto-listing/list.min.js"></script>
+<script src="site_libs/quarto-listing/quarto-listing.js"></script>
 <script src="site_libs/quarto-html/quarto.js"></script>
 <script src="site_libs/quarto-html/popper.min.js"></script>
 <script src="site_libs/quarto-html/tippy.umd.min.js"></script>
 <link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting-cc6107df646ca5ad5b0f4c970cb58fb1.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
+<link href="site_libs/bootstrap/bootstrap-b5e516dc519c987ba0c186fc11a5c634.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <link href="site_libs/quarto-contrib/fontawesome6-0.1.0/all.css" rel="stylesheet">
 <link href="site_libs/quarto-contrib/fontawesome6-0.1.0/latex-fontsize.css" rel="stylesheet">
 <script src="site_libs/quarto-contrib/iconify-1.0.7/iconify-icon.min.js"></script>
 <script id="quarto-search-options" type="application/json">{
-  "location": "navbar",
+  "location": "sidebar",
   "copy-button": false,
   "collapse-after": 3,
-  "panel-placement": "end",
-  "type": "overlay",
-  "limit": 20,
+  "panel-placement": "start",
+  "type": "textbox",
+  "limit": 50,
+  "keyboard-shortcut": [
+    "f",
+    "/",
+    "s"
+  ],
+  "show-item-context": false,
   "language": {
     "search-no-results-text": "No results",
     "search-matching-documents-text": "matching documents",
@@ -57,10 +64,97 @@ ul.task-list li input[type="checkbox"] {
     "search-more-match-text": "more match in this document",
     "search-more-matches-text": "more matches in this document",
     "search-clear-button-title": "Clear",
+    "search-text-placeholder": "",
     "search-detached-cancel-button-title": "Cancel",
-    "search-submit-button-title": "Submit"
+    "search-submit-button-title": "Submit",
+    "search-label": "Search"
   }
 }</script>
+<script>
+
+  window.document.addEventListener("DOMContentLoaded", function (_event) {
+    const listingTargetEl = window.document.querySelector('#listing-profile-preview .list');
+    if (!listingTargetEl) {
+      // No listing discovered, do not attach.
+      return; 
+    }
+
+    const options = {
+      valueNames: ['listing-project','listing-website','listing-format','listing-language','listing-title','listing-description','listing-interestlink','listing-path','listing-outputHref','listing-author','listing-filename','listing-file-modified','listing-reading-time','listing-word-count',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-file-modified-sort'] },{ data: ['listing-reading-time-sort'] },{ data: ['listing-word-count-sort'] }],
+      
+      searchColumns: ["listing-project","listing-website","listing-format","listing-language","listing-title","listing-description","listing-interestlink","listing-path","listing-outputHref","listing-author","listing-filename","listing-file-modified","listing-reading-time","listing-word-count"],
+    };
+
+    window['quarto-listings'] = window['quarto-listings'] || {};
+    window['quarto-listings']['listing-profile-preview'] = new List('listing-profile-preview', options);
+
+    if (window['quarto-listing-loaded']) {
+      window['quarto-listing-loaded']();
+    }
+  });
+
+  window.addEventListener('hashchange',() => {
+    if (window['quarto-listing-loaded']) {
+      window['quarto-listing-loaded']();
+    }
+  })
+  
+
+  window.document.addEventListener("DOMContentLoaded", function (_event) {
+    const listingTargetEl = window.document.querySelector('#listing-research-preview .list');
+    if (!listingTargetEl) {
+      // No listing discovered, do not attach.
+      return; 
+    }
+
+    const options = {
+      valueNames: ['listing-project','listing-website','listing-format','listing-language','listing-title','listing-date','listing-author','listing-categories','listing-status','listing-paperlink','listing-pub-info','listing-hide-detail','listing-pub-status','listing-path','listing-outputHref','listing-date-modified','listing-description','listing-filename','listing-file-modified','listing-reading-time','listing-word-count','listing-subtitle','listing-execute',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-date-modified-sort'] },{ data: ['listing-file-modified-sort'] },{ data: ['listing-reading-time-sort'] },{ data: ['listing-word-count-sort'] }],
+      
+      searchColumns: ["listing-project","listing-website","listing-format","listing-language","listing-title","listing-date","listing-author","listing-categories","listing-status","listing-paperlink","listing-pub-info","listing-hide-detail","listing-pub-status","listing-path","listing-outputHref","listing-date-modified","listing-description","listing-filename","listing-file-modified","listing-reading-time","listing-word-count","listing-subtitle","listing-execute"],
+    };
+
+    window['quarto-listings'] = window['quarto-listings'] || {};
+    window['quarto-listings']['listing-research-preview'] = new List('listing-research-preview', options);
+
+    if (window['quarto-listing-loaded']) {
+      window['quarto-listing-loaded']();
+    }
+  });
+
+  window.addEventListener('hashchange',() => {
+    if (window['quarto-listing-loaded']) {
+      window['quarto-listing-loaded']();
+    }
+  })
+  
+
+  window.document.addEventListener("DOMContentLoaded", function (_event) {
+    const listingTargetEl = window.document.querySelector('#listing-notes-preview .list');
+    if (!listingTargetEl) {
+      // No listing discovered, do not attach.
+      return; 
+    }
+
+    const options = {
+      valueNames: ['listing-project','listing-website','listing-format','listing-language','listing-title','listing-date','listing-author','listing-categories','listing-path','listing-outputHref','listing-date-modified','listing-description','listing-filename','listing-file-modified','listing-reading-time','listing-word-count','listing-execute','listing-bibliography','listing-number-sections','listing-number-offset','listing-number-depth','listing-open-graph','listing-twitter-card',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-date-modified-sort'] },{ data: ['listing-file-modified-sort'] },{ data: ['listing-reading-time-sort'] },{ data: ['listing-word-count-sort'] }],
+      
+      searchColumns: ["listing-project","listing-website","listing-format","listing-language","listing-title","listing-date","listing-author","listing-categories","listing-path","listing-outputHref","listing-date-modified","listing-description","listing-filename","listing-file-modified","listing-reading-time","listing-word-count","listing-execute","listing-bibliography","listing-number-sections","listing-number-offset","listing-number-depth","listing-open-graph","listing-twitter-card"],
+    };
+
+    window['quarto-listings'] = window['quarto-listings'] || {};
+    window['quarto-listings']['listing-notes-preview'] = new List('listing-notes-preview', options);
+
+    if (window['quarto-listing-loaded']) {
+      window['quarto-listing-loaded']();
+    }
+  });
+
+  window.addEventListener('hashchange',() => {
+    if (window['quarto-listing-loaded']) {
+      window['quarto-listing-loaded']();
+    }
+  })
+  </script>
 <script async="" src="https://www.googletagmanager.com/gtag/js?id=G-2PTNBK5B3H"></script>
 
 <script type="text/javascript">
@@ -71,88 +165,78 @@ gtag('js', new Date());
 gtag('config', 'G-2PTNBK5B3H', { 'anonymize_ip': true});
 </script>
 
+  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN") {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
 
 <meta property="og:title" content="Shingo Nitta">
-<meta property="og:description" content="">
-<meta property="og:image" content="https://shingonitta.com/image/profile.png">
-<meta property="og:site-name" content="Shingo Nitta">
-<meta property="og:image:height" content="534">
-<meta property="og:image:width" content="534">
+<meta property="og:description" content="Lecturer, Institute of Urban Innovation, Yokohama National University">
+<meta property="og:image" content="https://shingonitta.com/image/profile.jpg">
+<meta property="og:site_name" content="Shingo Nitta">
 <meta name="twitter:title" content="Shingo Nitta">
-<meta name="twitter:description" content="">
-<meta name="twitter:image" content="https://shingonitta.com/image/profile.png">
+<meta name="twitter:description" content="Lecturer, Institute of Urban Innovation, Yokohama National University">
+<meta name="twitter:image" content="https://shingonitta.com/image/profile.jpg">
 <meta name="twitter:site" content="@shingo_nitta">
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:image-height" content="534">
-<meta name="twitter:image-width" content="534">
 </head>
 
-<body class="nav-fixed fullcontent">
+<body class="fullcontent">
 
 <div id="quarto-search-results"></div>
-  <header id="quarto-header" class="headroom fixed-top">
-    <nav class="navbar navbar-expand-lg navbar-dark ">
-      <div class="navbar-container container-fluid">
-      <div class="navbar-brand-container">
-    <a class="navbar-brand" href="./index.html">
-    <span class="navbar-title">Shingo Nitta</span>
-    </a>
-  </div>
-            <div id="quarto-search" class="" title="Search"></div>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
-  <span class="navbar-toggler-icon"></span>
-</button>
-          <div class="collapse navbar-collapse" id="navbarCollapse">
-            <ul class="navbar-nav navbar-nav-scroll me-auto">
-  <li class="nav-item">
-    <a class="nav-link active" href="./index.html" rel="" target="" aria-current="page">
- <span class="menu-text">HOME</span></a>
-  </li>  
-  <li class="nav-item">
-    <a class="nav-link" href="./profile/index.html" rel="" target="">
- <span class="menu-text">PROFILE</span></a>
-  </li>  
-  <li class="nav-item">
-    <a class="nav-link" href="./research/index.html" rel="" target="">
- <span class="menu-text">RESEARCH</span></a>
-  </li>  
-  <li class="nav-item">
-    <a class="nav-link" href="./notes/index.html" rel="" target="">
- <span class="menu-text">NOTES</span></a>
-  </li>  
-  <li class="nav-item">
-    <a class="nav-link" href="./cv/CV.pdf" rel="" target="">
- <span class="menu-text">CV</span></a>
-  </li>  
-</ul>
-            <div class="quarto-navbar-tools ms-auto">
-</div>
-          </div> <!-- /navcollapse -->
-      </div> <!-- /container-fluid -->
-    </nav>
-</header>
 <!-- content -->
-<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article">
 <!-- sidebar -->
 <!-- margin-sidebar -->
     
 <!-- main -->
-<div class="quarto-about-jolla">
-  <img src="image/profile.png" class="about-image
+<main class="content" id="quarto-document-content">
+
+
+
+
+<div class="quarto-about-trestles">
+  <div class="about-entity">
+    <img src="image/profile.jpg" class="about-image
   round " style="height: 15em; width: 15em;">
- <header id="title-block-header" class="quarto-title-block default">
+<header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
 <h1 class="title">Shingo Nitta</h1>
+<p class="subtitle lead">Lecturer, Institute of Urban Innovation, Yokohama National University</p>
 </div>
 <div class="quarto-title-meta">
   </div>
-</header><main class="content" id="quarto-document-content">
-<p>日本学術振興会特別研究員PD（学習院大学法学部政治学科）</p>
-
-
-</main> 
-  <hr class="about-sep">
-   <div class="about-links">
+</header>
+    <div class="about-links">
+  <a href="mailto:shingonitta.mail@gmail.com" class="about-link" rel="" target="">
+    <i class="bi bi-envelope"></i>
+     <span class="about-link-text">Email</span>
+  </a>
   <a href="https://twitter.com/shingo_nitta" class="about-link" rel="" target="">
      <span class="about-link-text"><i class="fa-brands fa-x-twitter" aria-label="x-twitter"></i> X</span>
   </a>
@@ -169,9 +253,254 @@ gtag('config', 'G-2PTNBK5B3H', { 'anonymize_ip': true});
   <a href="https://scholar.google.com/citations?user=KrrAMdcAAAAJ&amp;hl=ja" class="about-link" rel="" target="">
      <span class="about-link-text"><iconify-icon inline="" icon="simple-icons:googlescholar"></iconify-icon> Google Scholar</span>
   </a>
+  <a href="https://orcid.org/0009-0003-0643-0271" class="about-link" rel="" target="">
+     <span class="about-link-text"><i class="fa-brands fa-orcid" aria-label="orcid"></i> ORCID</span>
+  </a>
+</div>
+  </div>
+  <div class="about-contents"><div id="hero-heading">
+<p>I am a scholar of social inequality, aging, and health, with a special emphasis on Japanese context. My research interests lie in how social inequality changes across the life course, including in old age. I use causal inference and machine learning methods to study the social processes of aging and the mechanisms that generate inequality.</p>
+<p>My work is published in <em>Social Science &amp; Medicine</em> and journals in Japanese.</p>
+<div style="text-align: center; margin-top: 10px;">
+<p><a href="cv/cv.pdf" target="_blank" class="read-more-btn">CV</a></p>
+</div>
+</div></div>
+</div>
+
+<section id="profile" class="level2" style="text-align: left;">
+<h2 style="text-align: left;" data-anchor-id="profile">PROFILE</h2>
+<section id="research-interest" class="level3">
+<h3 data-anchor-id="research-interest">RESEARCH INTEREST</h3>
+<!-- My research interests lie in the sociology of aging and the life course, as well as social stratification. I employ quantitative methods to study the social processes of aging and the mechanisms that generate inequality. -->
+<div id="listing-profile-preview" class="quarto-listing quarto-listing-container-custom">
+<div class="list profile">
+    
+        <div class="research-interest" id="col" data-index="0" data-listing-file-modified-sort="1774147141666" data-listing-reading-time-sort="1" data-listing-word-count-sort="1">
+                <a href="research/index.html#category=Retirement" class="body">
+                            <p class="title">
+                                 Work and Retirement
+                            </p>
+                            <span class="description">
+                                Retirement processes and extending working lives
+                            </span>
+                </a>
+        </div>
+            
+        <div class="research-interest" id="col" data-index="1" data-listing-file-modified-sort="1774146130466" data-listing-reading-time-sort="1" data-listing-word-count-sort="1">
+                <a href="research/index.html#category=Health" class="body">
+                            <p class="title">
+                                 Health Inequality
+                            </p>
+                            <span class="description">
+                                How health is stratified and differentiated
+                            </span>
+                </a>
+        </div>
+            
+        <div class="research-interest" id="col" data-index="2" data-listing-file-modified-sort="1774146128460" data-listing-reading-time-sort="1" data-listing-word-count-sort="1">
+                <a href="research/index.html#category=Family" class="body">
+                            <p class="title">
+                                 Family dynamics
+                            </p>
+                            <span class="description">
+                                Family-related events and the generating process
+                            </span>
+                </a>
+        </div>
+            
+</div>
+<div class="listing-no-matching d-none">
+No matching items
 </div>
 </div>
- <!-- /main -->
+</section>
+<section id="career" class="level3">
+<h3 data-anchor-id="career">CAREER</h3>
+<ul>
+<li>April 2026 – Present: Lecturer, Faculty of Urban Innovation, Yokohama National University</li>
+<li>April 2024 – March 2026: JSPS Post-doctral Research Fellow, Department of Political Science, Faculty of Law, Gakushuin University</li>
+</ul>
+</section>
+<section id="education" class="level3">
+<h3 data-anchor-id="education">EDUCATION</h3>
+<ul>
+<li>April 2021 – March 2024: Ph.D.&nbsp;in Sociology, Graduate School of Humanities and Sociology, The University of Tokyo</li>
+<li>April 2019 – March 2021: M.A.&nbsp;in Sociology, Graduate School of Humanities and Sociology, The University of Tokyo</li>
+<li>April 2015 – March 2019: B.A., School of Culture, Media and Society, Waseda University</li>
+</ul>
+</section>
+</section>
+<div style="max-width: 800px; margin: 0 auto;">
+<section id="research" class="level2" style="text-align: left;">
+<h2 style="text-align: left;" data-anchor-id="research">RESEARCH</h2>
+<div id="listing-research-preview" class="quarto-listing quarto-listing-container-custom">
+<div class="list research">
+    
+    
+        
+            
+                <h2>PEER-REVIEWED PAPERS</h2>
+            
+            
+                <div class="research-entry" data-index="0" data-categories="SGVhbHRoJTJDTXVsdGlnZW5lcmF0aW9uJTJDQ2F1c2FsJTIwSW5mZXJlbmNl" data-listing-date-sort="1741878000000" data-listing-file-modified-sort="1745748647798" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="17">
+                    <div class="body">
+                        <p class="title listing-title">
+                            
+                                <a href="https://doi.org/10.1016/j.socscimed.2025.117966">Covering The Long Shadow</a>
+                            
+                        </p>
+                        <p class="subtitle listing-subtitle">
+                            
+                                <a href="https://doi.org/10.1016/j.socscimed.2025.117966">The Moderating Role of Children’s Education to Health Disparity by Social Origin in Japan</a>
+                            
+                        </p>
+                        
+                        
+                            <div class="item-categories listing-categories">
+                                
+                                <div class="item-category listing-category" onclick="window.quartoListingCategory('Health'); return false;">
+                                    Health
+                                </div>
+                                
+                                <div class="item-category listing-category" onclick="window.quartoListingCategory('Multigeneration'); return false;">
+                                    Multigeneration
+                                </div>
+                                
+                                <div class="item-category listing-category" onclick="window.quartoListingCategory('Causal Inference'); return false;">
+                                    Causal Inference
+                                </div>
+                                
+                            </div>
+                        
+                        <div class="research-journal">
+                            
+                                <div>
+                                    Social Science &amp; Medicine
+                                </div>
+                            
+                            </div>
+                    </div>
+                    
+                </div>
+            
+                    
+    
+</div>
+<div class="listing-no-matching d-none">
+No matching items
+</div>
+</div>
+<div style="text-align: right; margin-top: 10px;">
+<p><a href="./research/index.html" class="read-more-btn">→ View All</a></p>
+</div>
+</section>
+<section id="notes-in-japanese" class="level2" style="text-align: left;">
+<h2 style="text-align: left;" data-anchor-id="notes-in-japanese">NOTES (in Japanese)</h2>
+<div id="listing-notes-preview" class="quarto-listing quarto-listing-container-custom">
+<div class="list blog">
+    
+    <div class="blog-entry" data-index="0" data-categories="U29jaW9sb2d5JTJDVGhlb3J5" data-listing-date-sort="1770044400000" data-listing-file-modified-sort="1770105185604" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="240">
+        <div class="metadata">          
+            <p class="date listing-date">Feb 3, 2026</p>
+        </div>
+        <div class="body">
+            <p class="title listing-title"><a href="./notes/theory_sociology/index.html">理論とは何かを学ぶための論文9報</a></p>
+            
+            <div class="post-categories listing-categories">
+                
+                <div class="post-category listing-category" onclick="window.quartoListingCategory('Sociology'); return false;">
+                    Sociology
+                </div>
+                
+                <div class="post-category listing-category" onclick="window.quartoListingCategory('Theory'); return false;">
+                    Theory
+                </div>
+                
+            </div>
+            
+            <p class="description listing-description">社会学における理論の位置付けと考え方</p>
+        </div>
+    </div>
+    
+    <div class="blog-entry" data-index="1" data-categories="V2VhbHRoJTJDSW50ZXJuYXRpb25hbCUyMENvbXBhcmlzb24lMkNQb3B1bGF0aW9uJTIwQWdpbmc=" data-listing-date-sort="1769094000000" data-listing-file-modified-sort="1769162873235" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="3" data-listing-word-count-sort="401">
+        <div class="metadata">          
+            <p class="date listing-date">Jan 23, 2026</p>
+        </div>
+        <div class="body">
+            <p class="title listing-title"><a href="./notes/klein_2025/index.html">読書メモ：Klein et al. (2025)</a></p>
+            
+            <div class="post-categories listing-categories">
+                
+                <div class="post-category listing-category" onclick="window.quartoListingCategory('Wealth'); return false;">
+                    Wealth
+                </div>
+                
+                <div class="post-category listing-category" onclick="window.quartoListingCategory('International Comparison'); return false;">
+                    International Comparison
+                </div>
+                
+                <div class="post-category listing-category" onclick="window.quartoListingCategory('Population Aging'); return false;">
+                    Population Aging
+                </div>
+                
+            </div>
+            
+            <p class="description listing-description">Klein, Lisa, Philipp M. Lersch, and Max Longmuir. 2025. “Wealth Inequality among Families in a Changing Demographic Landscape: Evidence from Germany, 1988–2017.”…</p>
+        </div>
+    </div>
+    
+    <div class="blog-entry" data-index="2" data-categories="SW50ZXJnZW5lcmF0aW9uYWwlMjBNb2JpbGl0eSUyQ1F1YW50aXRhdGl2ZSUyME1ldGhvZHMlMkNSZWFkaW5ncw==" data-listing-date-sort="1769094000000" data-listing-file-modified-sort="1769162805249" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="387">
+        <div class="metadata">          
+            <p class="date listing-date">Jan 23, 2026</p>
+        </div>
+        <div class="body">
+            <p class="title listing-title"><a href="./notes/wei_2025/index.html">読書メモ：Wei and Xie (2025)</a></p>
+            
+            <div class="post-categories listing-categories">
+                
+                <div class="post-category listing-category" onclick="window.quartoListingCategory('Intergenerational Mobility'); return false;">
+                    Intergenerational Mobility
+                </div>
+                
+                <div class="post-category listing-category" onclick="window.quartoListingCategory('Quantitative Methods'); return false;">
+                    Quantitative Methods
+                </div>
+                
+                <div class="post-category listing-category" onclick="window.quartoListingCategory('Readings'); return false;">
+                    Readings
+                </div>
+                
+            </div>
+            
+            <p class="description listing-description">Wei, Lai, and Yu Xie. 2025. “Social Mobility as Causal Intervention.” <em>Sociological Methods &amp; Research</em>. doi:10.1177/00491241251320963.</p>
+        </div>
+    </div>
+    
+</div>
+<div class="listing-no-matching d-none">
+No matching items
+</div>
+</div>
+<div style="text-align: right; margin-top: 10px;">
+<p><a href="./notes/index.html" class="read-more-btn">→ View All</a></p>
+</div>
+</section>
+<section id="cv" class="level2" style="text-align: left;">
+<h2 style="text-align: left;" data-anchor-id="cv">CV</h2>
+<div class="cv-iframe-container" style="text-align: center; margin-top: 20px;">
+<p><iframe class="cv-iframe" src="cv/cv.pdf" style="border: 1px solid #ccc; border-radius: 8px;"></iframe></p>
+</div>
+<div style="text-align: right; margin-top: 10px;">
+<p><a href="cv/cv.pdf" target="_blank" class="read-more-btn">↗ Open CV in New Tab</a></p>
+</div>
+</section>
+</div>
+
+
+
+
+
+</main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
 window.document.addEventListener("DOMContentLoaded", function (event) {
   const toggleBodyColorMode = (bsSheetEl) => {
@@ -200,18 +529,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     }
     return false;
   }
-  const clipboard = new window.ClipboardJS('.code-copy-button', {
-    text: function(trigger) {
-      const codeEl = trigger.previousElementSibling.cloneNode(true);
-      for (const childEl of codeEl.children) {
-        if (isCodeAnnotation(childEl)) {
-          childEl.remove();
-        }
-      }
-      return codeEl.innerText;
-    }
-  });
-  clipboard.on('success', function(e) {
+  const onCopySuccess = function(e) {
     // button target
     const button = e.trigger;
     // don't keep focus
@@ -243,11 +561,48 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     }, 1000);
     // clear code selection
     e.clearSelection();
+  }
+  const getTextToCopy = function(trigger) {
+      const codeEl = trigger.previousElementSibling.cloneNode(true);
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+  }
+  const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+    text: getTextToCopy
   });
-  function tippyHover(el, contentFn) {
+  clipboard.on('success', onCopySuccess);
+  if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+    const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+      text: getTextToCopy,
+      container: window.document.getElementById('quarto-embedded-source-code-modal')
+    });
+    clipboardModal.on('success', onCopySuccess);
+  }
+    var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+    var mailtoRegex = new RegExp(/^mailto:/);
+      var filterRegex = new RegExp("https:\/\/shingonitta\.com");
+    var isInternal = (href) => {
+        return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+    }
+    // Inspect non-navigation links and adorn them if external
+ 	var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+    for (var i=0; i<links.length; i++) {
+      const link = links[i];
+      if (!isInternal(link.href)) {
+        // undo the damage that might have been done by quarto-nav.js in the case of
+        // links that we want to consider external
+        if (link.dataset.originalHref !== undefined) {
+          link.href = link.dataset.originalHref;
+        }
+      }
+    }
+  function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
     const config = {
       allowHTML: true,
-      content: contentFn,
       maxWidth: 500,
       delay: 100,
       arrow: false,
@@ -257,8 +612,17 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
       interactive: true,
       interactiveBorder: 10,
       theme: 'quarto',
-      placement: 'bottom-start'
+      placement: 'bottom-start',
     };
+    if (contentFn) {
+      config.content = contentFn;
+    }
+    if (onTriggerFn) {
+      config.onTrigger = onTriggerFn;
+    }
+    if (onUntriggerFn) {
+      config.onUntrigger = onUntriggerFn;
+    }
     window.tippy(el, config); 
   }
   const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
@@ -270,7 +634,129 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
       try { href = new URL(href).hash; } catch {}
       const id = href.replace(/^#\/?/, "");
       const note = window.document.getElementById(id);
-      return note.innerHTML;
+      if (note) {
+        return note.innerHTML;
+      } else {
+        return "";
+      }
+    });
+  }
+  const xrefs = window.document.querySelectorAll('a.quarto-xref');
+  const processXRef = (id, note) => {
+    // Strip column container classes
+    const stripColumnClz = (el) => {
+      el.classList.remove("page-full", "page-columns");
+      if (el.children) {
+        for (const child of el.children) {
+          stripColumnClz(child);
+        }
+      }
+    }
+    stripColumnClz(note)
+    if (id === null || id.startsWith('sec-')) {
+      // Special case sections, only their first couple elements
+      const container = document.createElement("div");
+      if (note.children && note.children.length > 2) {
+        container.appendChild(note.children[0].cloneNode(true));
+        for (let i = 1; i < note.children.length; i++) {
+          const child = note.children[i];
+          if (child.tagName === "P" && child.innerText === "") {
+            continue;
+          } else {
+            container.appendChild(child.cloneNode(true));
+            break;
+          }
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(container);
+        }
+        return container.innerHTML
+      } else {
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        return note.innerHTML;
+      }
+    } else {
+      // Remove any anchor links if they are present
+      const anchorLink = note.querySelector('a.anchorjs-link');
+      if (anchorLink) {
+        anchorLink.remove();
+      }
+      if (window.Quarto?.typesetMath) {
+        window.Quarto.typesetMath(note);
+      }
+      if (note.classList.contains("callout")) {
+        return note.outerHTML;
+      } else {
+        return note.innerHTML;
+      }
+    }
+  }
+  for (var i=0; i<xrefs.length; i++) {
+    const xref = xrefs[i];
+    tippyHover(xref, undefined, function(instance) {
+      instance.disable();
+      let url = xref.getAttribute('href');
+      let hash = undefined; 
+      if (url.startsWith('#')) {
+        hash = url;
+      } else {
+        try { hash = new URL(url).hash; } catch {}
+      }
+      if (hash) {
+        const id = hash.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note !== null) {
+          try {
+            const html = processXRef(id, note.cloneNode(true));
+            instance.setContent(html);
+          } finally {
+            instance.enable();
+            instance.show();
+          }
+        } else {
+          // See if we can fetch this
+          fetch(url.split('#')[0])
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.getElementById(id);
+            if (note !== null) {
+              const html = processXRef(id, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      } else {
+        // See if we can fetch a full url (with no hash to target)
+        // This is a special case and we should probably do some content thinning / targeting
+        fetch(url)
+        .then(res => res.text())
+        .then(html => {
+          const parser = new DOMParser();
+          const htmlDoc = parser.parseFromString(html, "text/html");
+          const note = htmlDoc.querySelector('main.content');
+          if (note !== null) {
+            // This should only happen for chapter cross references
+            // (since there is no id in the URL)
+            // remove the first header
+            if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+              note.children[0].remove();
+            }
+            const html = processXRef(null, note);
+            instance.setContent(html);
+          } 
+        }).finally(() => {
+          instance.enable();
+          instance.show();
+        });
+      }
+    }, function(instance) {
     });
   }
       let selectedAnnoteEl;
@@ -314,6 +800,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
             }
             div.style.top = top - 2 + "px";
             div.style.height = height + 4 + "px";
+            div.style.left = 0;
             let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
             if (gutterDiv === null) {
               gutterDiv = window.document.createElement("div");
@@ -339,6 +826,32 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
         });
         selectedAnnoteEl = undefined;
       };
+        // Handle positioning of the toggle
+    window.addEventListener(
+      "resize",
+      throttle(() => {
+        elRect = undefined;
+        if (selectedAnnoteEl) {
+          selectCodeLines(selectedAnnoteEl);
+        }
+      }, 10)
+    );
+    function throttle(fn, ms) {
+    let throttle = false;
+    let timer;
+      return (...args) => {
+        if(!throttle) { // first call gets through
+            fn.apply(this, args);
+            throttle = true;
+        } else { // all the others get throttled
+            if(timer) clearTimeout(timer); // cancel #2
+            timer = setTimeout(() => {
+              fn.apply(this, args);
+              timer = throttle = false;
+            }, ms);
+        }
+      };
+    }
       // Attach click handler to the DT
       const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
       for (const annoteDlNode of annoteDls) {
@@ -399,6 +912,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 });
 </script>
 </div> <!-- /content -->
+
 
 
 

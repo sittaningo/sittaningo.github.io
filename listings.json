@@ -1,5 +1,26 @@
 [
   {
+    "listing": "/notes/index.html",
+    "items": [
+      "/notes/theory_sociology/index.html",
+      "/notes/klein_2025/index.html",
+      "/notes/wei_2025/index.html",
+      "/notes/gratz_2025/index.html",
+      "/notes/hong_2025/index.html",
+      "/notes/parolin_2024/index.html",
+      "/notes/yorker_2025/index.html",
+      "/notes/gwg_resume/index.html",
+      "/notes/preston_chapter1112/index.html",
+      "/notes/preston_chapter910/index.html",
+      "/notes/preston_chapter56/index.html",
+      "/notes/hte_resume/index.html",
+      "/notes/preston_chapter12/index.html",
+      "/notes/dag_sociology/index.html",
+      "/notes/onetstandarization/index.html",
+      "/notes/bell2019/index.html"
+    ]
+  },
+  {
     "listing": "/research/index.html",
     "items": [
       "/research/rethet/index.html",
@@ -14,8 +35,20 @@
     ]
   },
   {
-    "listing": "/notes/index.html",
+    "listing": "/index.html",
     "items": [
+      "/profile/retirement/index.html",
+      "/profile/healthdisparity/index.html",
+      "/profile/family_dynamics/index.html",
+      "/research/rethet/index.html",
+      "/research/gapclose/index.html",
+      "/research/wealth/index.html",
+      "/research/widowtransfer/index.html",
+      "/research/jsei_work/index.html",
+      "/research/skilltraj/index.html",
+      "/research/sktransfer/index.html",
+      "/research/family/index.html",
+      "/research/selfseek/index.html",
       "/notes/theory_sociology/index.html",
       "/notes/klein_2025/index.html",
       "/notes/wei_2025/index.html",
@@ -38,8 +71,8 @@
     "listing": "/profile/index.html",
     "items": [
       "/profile/retirement/index.html",
-      "/profile/labormarketaging/index.html",
-      "/profile/healthdisparity/index.html"
+      "/profile/healthdisparity/index.html",
+      "/profile/family_dynamics/index.html"
     ]
   }
 ]

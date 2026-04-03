@@ -2,13 +2,13 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.3.353">
+<meta name="generator" content="quarto-1.6.39">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 <meta name="description" content="読んだ論文の要約や研究についてのメモ">
 
-<title>Shingo Nitta - NOTES</title>
+<title>NOTES – Shingo Nitta</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -25,7 +25,6 @@ ul.task-list li input[type="checkbox"] {
 
 
 <script src="../site_libs/quarto-nav/quarto-nav.js"></script>
-<script src="../site_libs/quarto-nav/headroom.min.js"></script>
 <script src="../site_libs/clipboard/clipboard.min.js"></script>
 <script src="../site_libs/quarto-search/autocomplete.umd.js"></script>
 <script src="../site_libs/quarto-search/fuse.min.js"></script>
@@ -39,17 +38,23 @@ ul.task-list li input[type="checkbox"] {
 <script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
 <script src="../site_libs/quarto-html/anchor.min.js"></script>
 <link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="../site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-cc6107df646ca5ad5b0f4c970cb58fb1.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
+<link href="../site_libs/bootstrap/bootstrap-b5e516dc519c987ba0c186fc11a5c634.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
-  "location": "navbar",
+  "location": "sidebar",
   "copy-button": false,
   "collapse-after": 3,
-  "panel-placement": "end",
-  "type": "overlay",
-  "limit": 20,
+  "panel-placement": "start",
+  "type": "textbox",
+  "limit": 50,
+  "keyboard-shortcut": [
+    "f",
+    "/",
+    "s"
+  ],
+  "show-item-context": false,
   "language": {
     "search-no-results-text": "No results",
     "search-matching-documents-text": "matching documents",
@@ -58,8 +63,10 @@ ul.task-list li input[type="checkbox"] {
     "search-more-match-text": "more match in this document",
     "search-more-matches-text": "more matches in this document",
     "search-clear-button-title": "Clear",
+    "search-text-placeholder": "",
     "search-detached-cancel-button-title": "Cancel",
-    "search-submit-button-title": "Submit"
+    "search-submit-button-title": "Submit",
+    "search-label": "Search"
   }
 }</script>
 <script>
@@ -72,9 +79,9 @@ ul.task-list li input[type="checkbox"] {
     }
 
     const options = {
-      valueNames: ['listing-project','listing-website','listing-format','listing-language','listing-title','listing-date','listing-author','listing-categories','listing-path','listing-outputHref','listing-date-modified','listing-description','listing-filename','listing-file-modified','listing-reading-time','listing-execute','listing-bibliography','listing-number-sections','listing-number-offset','listing-number-depth','listing-open-graph','listing-twitter-card',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-date-modified-sort'] },{ data: ['listing-file-modified-sort'] },{ data: ['listing-reading-time-sort'] }],
+      valueNames: ['listing-project','listing-website','listing-format','listing-language','listing-title','listing-date','listing-author','listing-categories','listing-path','listing-outputHref','listing-date-modified','listing-description','listing-filename','listing-file-modified','listing-reading-time','listing-word-count','listing-execute','listing-bibliography','listing-number-sections','listing-number-offset','listing-number-depth','listing-open-graph','listing-twitter-card',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-date-modified-sort'] },{ data: ['listing-file-modified-sort'] },{ data: ['listing-reading-time-sort'] },{ data: ['listing-word-count-sort'] }],
       
-      searchColumns: ["listing-project","listing-website","listing-format","listing-language","listing-title","listing-date","listing-author","listing-categories","listing-path","listing-outputHref","listing-date-modified","listing-description","listing-filename","listing-file-modified","listing-reading-time","listing-execute","listing-bibliography","listing-number-sections","listing-number-offset","listing-number-depth","listing-open-graph","listing-twitter-card"],
+      searchColumns: ["listing-project","listing-website","listing-format","listing-language","listing-title","listing-date","listing-author","listing-categories","listing-path","listing-outputHref","listing-date-modified","listing-description","listing-filename","listing-file-modified","listing-reading-time","listing-word-count","listing-execute","listing-bibliography","listing-number-sections","listing-number-offset","listing-number-depth","listing-open-graph","listing-twitter-card"],
     };
 
     window['quarto-listings'] = window['quarto-listings'] || {};
@@ -101,69 +108,55 @@ gtag('js', new Date());
 gtag('config', 'G-2PTNBK5B3H', { 'anonymize_ip': true});
 </script>
 
-  <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
   <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
 
-<meta property="og:title" content="Shingo Nitta - NOTES">
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN") {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
+
+<meta property="og:title" content="NOTES – Shingo Nitta">
 <meta property="og:description" content="読んだ論文の要約や研究についてのメモ">
-<meta property="og:site-name" content="Shingo Nitta">
-<meta name="twitter:title" content="Shingo Nitta - NOTES">
+<meta property="og:site_name" content="Shingo Nitta">
+<meta name="twitter:title" content="NOTES – Shingo Nitta">
 <meta name="twitter:description" content="読んだ論文の要約や研究についてのメモ">
 <meta name="twitter:site" content="@shingo_nitta">
 <meta name="twitter:card" content="summary_large_image">
 </head>
 
-<body class="nav-fixed">
+<body>
 
 <div id="quarto-search-results"></div>
-  <header id="quarto-header" class="headroom fixed-top">
-    <nav class="navbar navbar-expand-lg navbar-dark ">
-      <div class="navbar-container container-fluid">
-      <div class="navbar-brand-container">
-    <a class="navbar-brand" href="../index.html">
-    <span class="navbar-title">Shingo Nitta</span>
-    </a>
-  </div>
-            <div id="quarto-search" class="" title="Search"></div>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
-  <span class="navbar-toggler-icon"></span>
-</button>
-          <div class="collapse navbar-collapse" id="navbarCollapse">
-            <ul class="navbar-nav navbar-nav-scroll me-auto">
-  <li class="nav-item">
-    <a class="nav-link" href="../index.html" rel="" target="">
- <span class="menu-text">HOME</span></a>
-  </li>  
-  <li class="nav-item">
-    <a class="nav-link" href="../profile/index.html" rel="" target="">
- <span class="menu-text">PROFILE</span></a>
-  </li>  
-  <li class="nav-item">
-    <a class="nav-link" href="../research/index.html" rel="" target="">
- <span class="menu-text">RESEARCH</span></a>
-  </li>  
-  <li class="nav-item">
-    <a class="nav-link active" href="../notes/index.html" rel="" target="" aria-current="page">
- <span class="menu-text">NOTES</span></a>
-  </li>  
-  <li class="nav-item">
-    <a class="nav-link" href="../cv/CV.pdf" rel="" target="">
- <span class="menu-text">CV</span></a>
-  </li>  
-</ul>
-            <div class="quarto-navbar-tools ms-auto">
-</div>
-          </div> <!-- /navcollapse -->
-      </div> <!-- /container-fluid -->
-    </nav>
-</header>
 <!-- content -->
-<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article">
 <!-- sidebar -->
 <!-- margin-sidebar -->
     <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
         
-    <h5 class="quarto-listing-category-title">Categories</h5><div class="quarto-listing-category category-default"><div class="category" data-category="">All <span class="quarto-category-count">(16)</span></div><div class="category" data-category="Causal Inference">Causal Inference <span class="quarto-category-count">(1)</span></div><div class="category" data-category="Data Analysis">Data Analysis <span class="quarto-category-count">(1)</span></div><div class="category" data-category="Demography">Demography <span class="quarto-category-count">(2)</span></div><div class="category" data-category="Gender">Gender <span class="quarto-category-count">(2)</span></div><div class="category" data-category="Intergenerational Mobility">Intergenerational Mobility <span class="quarto-category-count">(4)</span></div><div class="category" data-category="International Comparison">International Comparison <span class="quarto-category-count">(2)</span></div><div class="category" data-category="Machine Learning">Machine Learning <span class="quarto-category-count">(1)</span></div><div class="category" data-category="O*NET">O*NET <span class="quarto-category-count">(2)</span></div><div class="category" data-category="Occupation">Occupation <span class="quarto-category-count">(2)</span></div><div class="category" data-category="Population Aging">Population Aging <span class="quarto-category-count">(1)</span></div><div class="category" data-category="Quantitative Method">Quantitative Method <span class="quarto-category-count">(6)</span></div><div class="category" data-category="Quantitative Methods">Quantitative Methods <span class="quarto-category-count">(1)</span></div><div class="category" data-category="Readings">Readings <span class="quarto-category-count">(10)</span></div><div class="category" data-category="Social Genomics">Social Genomics <span class="quarto-category-count">(1)</span></div><div class="category" data-category="Social Inequality">Social Inequality <span class="quarto-category-count">(3)</span></div><div class="category" data-category="Social Networks">Social Networks <span class="quarto-category-count">(1)</span></div><div class="category" data-category="Sociology">Sociology <span class="quarto-category-count">(1)</span></div><div class="category" data-category="Theory">Theory <span class="quarto-category-count">(1)</span></div><div class="category" data-category="Wealth">Wealth <span class="quarto-category-count">(2)</span></div></div></div>
+    <h5 class="quarto-listing-category-title">Categories</h5><div class="quarto-listing-category category-default"><div class="category" data-category="">All <span class="quarto-category-count">(16)</span></div><div class="category" data-category="Q2F1c2FsJTIwSW5mZXJlbmNl">Causal Inference <span class="quarto-category-count">(1)</span></div><div class="category" data-category="RGF0YSUyMEFuYWx5c2lz">Data Analysis <span class="quarto-category-count">(1)</span></div><div class="category" data-category="RGVtb2dyYXBoeQ==">Demography <span class="quarto-category-count">(2)</span></div><div class="category" data-category="R2VuZGVy">Gender <span class="quarto-category-count">(2)</span></div><div class="category" data-category="SW50ZXJnZW5lcmF0aW9uYWwlMjBNb2JpbGl0eQ==">Intergenerational Mobility <span class="quarto-category-count">(4)</span></div><div class="category" data-category="SW50ZXJuYXRpb25hbCUyMENvbXBhcmlzb24=">International Comparison <span class="quarto-category-count">(2)</span></div><div class="category" data-category="TWFjaGluZSUyMExlYXJuaW5n">Machine Learning <span class="quarto-category-count">(1)</span></div><div class="category" data-category="TypORVQ=">O*NET <span class="quarto-category-count">(2)</span></div><div class="category" data-category="T2NjdXBhdGlvbg==">Occupation <span class="quarto-category-count">(2)</span></div><div class="category" data-category="UG9wdWxhdGlvbiUyMEFnaW5n">Population Aging <span class="quarto-category-count">(1)</span></div><div class="category" data-category="UXVhbnRpdGF0aXZlJTIwTWV0aG9k">Quantitative Method <span class="quarto-category-count">(6)</span></div><div class="category" data-category="UXVhbnRpdGF0aXZlJTIwTWV0aG9kcw==">Quantitative Methods <span class="quarto-category-count">(1)</span></div><div class="category" data-category="UmVhZGluZ3M=">Readings <span class="quarto-category-count">(10)</span></div><div class="category" data-category="U29jaWFsJTIwR2Vub21pY3M=">Social Genomics <span class="quarto-category-count">(1)</span></div><div class="category" data-category="U29jaWFsJTIwSW5lcXVhbGl0eQ==">Social Inequality <span class="quarto-category-count">(3)</span></div><div class="category" data-category="U29jaWFsJTIwTmV0d29ya3M=">Social Networks <span class="quarto-category-count">(1)</span></div><div class="category" data-category="U29jaW9sb2d5">Sociology <span class="quarto-category-count">(1)</span></div><div class="category" data-category="VGhlb3J5">Theory <span class="quarto-category-count">(1)</span></div><div class="category" data-category="V2VhbHRo">Wealth <span class="quarto-category-count">(2)</span></div></div></div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
@@ -187,321 +180,429 @@ gtag('config', 'G-2PTNBK5B3H', { 'anonymize_ip': true});
   </div>
   
 
+
 </header>
+
 
 <div id="notes">
 
 </div>
+<p><br> <a href="../index.html" style="display: inline-block; margin-top: 40px; font-weight: bold; text-decoration: none; color: #444;">← Home</a></p>
 
 
 
 
 <div class="quarto-listing quarto-listing-container-custom" id="listing-posts_2023">
 <div class="list blog">
-    <div class="blog-entry" data-index="0" data-categories="Sociology,Theory" data-listing-date-sort="1770044400000" data-listing-file-modified-sort="1770105185604" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2">
+    
+    <div class="blog-entry" data-index="0" data-categories="U29jaW9sb2d5JTJDVGhlb3J5" data-listing-date-sort="1770044400000" data-listing-file-modified-sort="1770105185604" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="240">
         <div class="metadata">          
             <p class="date listing-date">Feb 3, 2026</p>
         </div>
         <div class="body">
             <p class="title listing-title"><a href="../notes/theory_sociology/index.html">理論とは何かを学ぶための論文9報</a></p>
+            
             <div class="post-categories listing-categories">
+                
                 <div class="post-category listing-category" onclick="window.quartoListingCategory('Sociology'); return false;">
                     Sociology
                 </div>
+                
                 <div class="post-category listing-category" onclick="window.quartoListingCategory('Theory'); return false;">
                     Theory
                 </div>
+                
             </div>
+            
             <p class="description listing-description">社会学における理論の位置付けと考え方</p>
         </div>
     </div>
-    <div class="blog-entry" data-index="1" data-categories="Wealth,International Comparison,Population Aging" data-listing-date-sort="1769094000000" data-listing-file-modified-sort="1769162873235" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="3">
+    
+    <div class="blog-entry" data-index="1" data-categories="V2VhbHRoJTJDSW50ZXJuYXRpb25hbCUyMENvbXBhcmlzb24lMkNQb3B1bGF0aW9uJTIwQWdpbmc=" data-listing-date-sort="1769094000000" data-listing-file-modified-sort="1769162873235" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="3" data-listing-word-count-sort="401">
         <div class="metadata">          
             <p class="date listing-date">Jan 23, 2026</p>
         </div>
         <div class="body">
             <p class="title listing-title"><a href="../notes/klein_2025/index.html">読書メモ：Klein et al. (2025)</a></p>
+            
             <div class="post-categories listing-categories">
+                
                 <div class="post-category listing-category" onclick="window.quartoListingCategory('Wealth'); return false;">
                     Wealth
                 </div>
+                
                 <div class="post-category listing-category" onclick="window.quartoListingCategory('International Comparison'); return false;">
                     International Comparison
                 </div>
+                
                 <div class="post-category listing-category" onclick="window.quartoListingCategory('Population Aging'); return false;">
                     Population Aging
                 </div>
+                
             </div>
-            <p class="description listing-description">Klein, Lisa…</p>
+            
+            <p class="description listing-description">Klein, Lisa, Philipp M. Lersch, and Max Longmuir. 2025. “Wealth Inequality among Families in a Changing Demographic Landscape: Evidence from Germany, 1988–2017.”…</p>
         </div>
     </div>
-    <div class="blog-entry" data-index="2" data-categories="Intergenerational Mobility,Quantitative Methods,Readings" data-listing-date-sort="1769094000000" data-listing-file-modified-sort="1769162805249" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2">
+    
+    <div class="blog-entry" data-index="2" data-categories="SW50ZXJnZW5lcmF0aW9uYWwlMjBNb2JpbGl0eSUyQ1F1YW50aXRhdGl2ZSUyME1ldGhvZHMlMkNSZWFkaW5ncw==" data-listing-date-sort="1769094000000" data-listing-file-modified-sort="1769162805249" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="387">
         <div class="metadata">          
             <p class="date listing-date">Jan 23, 2026</p>
         </div>
         <div class="body">
             <p class="title listing-title"><a href="../notes/wei_2025/index.html">読書メモ：Wei and Xie (2025)</a></p>
+            
             <div class="post-categories listing-categories">
+                
                 <div class="post-category listing-category" onclick="window.quartoListingCategory('Intergenerational Mobility'); return false;">
                     Intergenerational Mobility
                 </div>
+                
                 <div class="post-category listing-category" onclick="window.quartoListingCategory('Quantitative Methods'); return false;">
                     Quantitative Methods
                 </div>
+                
                 <div class="post-category listing-category" onclick="window.quartoListingCategory('Readings'); return false;">
                     Readings
                 </div>
+                
             </div>
+            
             <p class="description listing-description">Wei, Lai, and Yu Xie. 2025. “Social Mobility as Causal Intervention.” <em>Sociological Methods &amp; Research</em>. doi:10.1177/00491241251320963.</p>
         </div>
     </div>
-    <div class="blog-entry" data-index="3" data-categories="Readings,Causal Inference,Social Genomics,Intergenerational Mobility" data-listing-date-sort="1745679600000" data-listing-file-modified-sort="1745750238258" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1">
+    
+    <div class="blog-entry" data-index="3" data-categories="UmVhZGluZ3MlMkNDYXVzYWwlMjBJbmZlcmVuY2UlMkNTb2NpYWwlMjBHZW5vbWljcyUyQ0ludGVyZ2VuZXJhdGlvbmFsJTIwTW9iaWxpdHk=" data-listing-date-sort="1745679600000" data-listing-file-modified-sort="1745750238258" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="80">
         <div class="metadata">          
             <p class="date listing-date">Apr 27, 2025</p>
         </div>
         <div class="body">
             <p class="title listing-title"><a href="../notes/gratz_2025/index.html">読書メモ：Grätz et al. (2025)</a></p>
+            
             <div class="post-categories listing-categories">
+                
                 <div class="post-category listing-category" onclick="window.quartoListingCategory('Readings'); return false;">
                     Readings
                 </div>
+                
                 <div class="post-category listing-category" onclick="window.quartoListingCategory('Causal Inference'); return false;">
                     Causal Inference
                 </div>
+                
                 <div class="post-category listing-category" onclick="window.quartoListingCategory('Social Genomics'); return false;">
                     Social Genomics
                 </div>
+                
                 <div class="post-category listing-category" onclick="window.quartoListingCategory('Intergenerational Mobility'); return false;">
                     Intergenerational Mobility
                 </div>
+                
             </div>
-            <p class="description listing-description">Grätz, Michael, Felix C. Tropf, Fartein Ask Torvik…<em></em></p>
+            
+            <p class="description listing-description">Grätz, Michael, Felix C. Tropf, Fartein Ask Torvik, Ole A. Andreassen, and Torkild H. Lyngstad. 2025. “No Evidence of Positive Causal Effects of Maternal and Paternal Age at…<em></em></p>
         </div>
     </div>
-    <div class="blog-entry" data-index="4" data-categories="Readings,Gender,Social Networks,Machine Learning" data-listing-date-sort="1745679600000" data-listing-file-modified-sort="1753429224326" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1">
+    
+    <div class="blog-entry" data-index="4" data-categories="UmVhZGluZ3MlMkNHZW5kZXIlMkNTb2NpYWwlMjBOZXR3b3JrcyUyQ01hY2hpbmUlMjBMZWFybmluZw==" data-listing-date-sort="1745679600000" data-listing-file-modified-sort="1753429224326" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="95">
         <div class="metadata">          
             <p class="date listing-date">Apr 27, 2025</p>
         </div>
         <div class="body">
             <p class="title listing-title"><a href="../notes/hong_2025/index.html">読書メモ：Hong (2025)</a></p>
+            
             <div class="post-categories listing-categories">
+                
                 <div class="post-category listing-category" onclick="window.quartoListingCategory('Readings'); return false;">
                     Readings
                 </div>
+                
                 <div class="post-category listing-category" onclick="window.quartoListingCategory('Gender'); return false;">
                     Gender
                 </div>
+                
                 <div class="post-category listing-category" onclick="window.quartoListingCategory('Social Networks'); return false;">
                     Social Networks
                 </div>
+                
                 <div class="post-category listing-category" onclick="window.quartoListingCategory('Machine Learning'); return false;">
                     Machine Learning
                 </div>
+                
             </div>
+            
             <p class="description listing-description">Hong, Chen-Shuo. 2025. “Networks Beyond Categories: A Computational Approach to Examining Gender Homophily.” <em>Sociological Methods &amp; Research</em>. doi:10.1177/00491241251321152.</p>
         </div>
     </div>
-    <div class="blog-entry" data-index="5" data-categories="Readings,Intergenerational Mobility,International Comparison,Social Inequality" data-listing-date-sort="1745679600000" data-listing-file-modified-sort="1745749519016" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2">
+    
+    <div class="blog-entry" data-index="5" data-categories="UmVhZGluZ3MlMkNJbnRlcmdlbmVyYXRpb25hbCUyME1vYmlsaXR5JTJDSW50ZXJuYXRpb25hbCUyMENvbXBhcmlzb24lMkNTb2NpYWwlMjBJbmVxdWFsaXR5" data-listing-date-sort="1745679600000" data-listing-file-modified-sort="1745749519016" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="388">
         <div class="metadata">          
             <p class="date listing-date">Apr 27, 2025</p>
         </div>
         <div class="body">
             <p class="title listing-title"><a href="../notes/parolin_2024/index.html">読書メモ：Parolin et al. (2024)</a></p>
+            
             <div class="post-categories listing-categories">
+                
                 <div class="post-category listing-category" onclick="window.quartoListingCategory('Readings'); return false;">
                     Readings
                 </div>
+                
                 <div class="post-category listing-category" onclick="window.quartoListingCategory('Intergenerational Mobility'); return false;">
                     Intergenerational Mobility
                 </div>
+                
                 <div class="post-category listing-category" onclick="window.quartoListingCategory('International Comparison'); return false;">
                     International Comparison
                 </div>
+                
                 <div class="post-category listing-category" onclick="window.quartoListingCategory('Social Inequality'); return false;">
                     Social Inequality
                 </div>
+                
             </div>
+            
             <p class="description listing-description">Parolin, Zachary, Rafael Pintro-Schmitt, Gøsta Esping-Andersen, and Peter Fallesen. 2024. “Intergenerational Persistence of Poverty in Five High-Income Countries.” <em>Nature…</em></p>
         </div>
     </div>
-    <div class="blog-entry" data-index="6" data-categories="Readings,Intergenerational Mobility,O*NET,Occupation" data-listing-date-sort="1745679600000" data-listing-file-modified-sort="1745749918114" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="17">
+    
+    <div class="blog-entry" data-index="6" data-categories="UmVhZGluZ3MlMkNJbnRlcmdlbmVyYXRpb25hbCUyME1vYmlsaXR5JTJDTypORVQlMkNPY2N1cGF0aW9u" data-listing-date-sort="1745679600000" data-listing-file-modified-sort="1745749918114" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="17" data-listing-word-count-sort="3374">
         <div class="metadata">          
             <p class="date listing-date">Apr 27, 2025</p>
         </div>
         <div class="body">
             <p class="title listing-title"><a href="../notes/yorker_2025/index.html">読書メモ：York et al. (2025)</a></p>
+            
             <div class="post-categories listing-categories">
+                
                 <div class="post-category listing-category" onclick="window.quartoListingCategory('Readings'); return false;">
                     Readings
                 </div>
+                
                 <div class="post-category listing-category" onclick="window.quartoListingCategory('Intergenerational Mobility'); return false;">
                     Intergenerational Mobility
                 </div>
+                
                 <div class="post-category listing-category" onclick="window.quartoListingCategory('O*NET'); return false;">
                     O*NET
                 </div>
+                
                 <div class="post-category listing-category" onclick="window.quartoListingCategory('Occupation'); return false;">
                     Occupation
                 </div>
+                
             </div>
-            <p class="description listing-description">York, Hunter, Xi Song, and Yu Xie. 2025. “Gradationalism Revisited: Intergenerational Occupational Mobility Along Axes of Occupational Characteristics.” <em>Americ…</em></p>
+            
+            <p class="description listing-description">York, Hunter, Xi Song, and Yu Xie. 2025. “Gradationalism Revisited: Intergenerational Occupational Mobility Along Axes of Occupational Characteristics.” <em>American Journal of…</em></p>
         </div>
     </div>
-    <div class="blog-entry" data-index="7" data-categories="Readings,Social Inequality,Quantitative Method,Gender,Wealth" data-listing-date-sort="1729868400000" data-listing-file-modified-sort="1729920289217" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1">
+    
+    <div class="blog-entry" data-index="7" data-categories="UmVhZGluZ3MlMkNTb2NpYWwlMjBJbmVxdWFsaXR5JTJDUXVhbnRpdGF0aXZlJTIwTWV0aG9kJTJDR2VuZGVyJTJDV2VhbHRo" data-listing-date-sort="1729868400000" data-listing-file-modified-sort="1729920289217" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="62">
         <div class="metadata">          
             <p class="date listing-date">Oct 26, 2024</p>
         </div>
         <div class="body">
             <p class="title listing-title"><a href="../notes/gwg_resume/index.html">読書メモ：Trinh (2024)</a></p>
+            
             <div class="post-categories listing-categories">
+                
                 <div class="post-category listing-category" onclick="window.quartoListingCategory('Readings'); return false;">
                     Readings
                 </div>
+                
                 <div class="post-category listing-category" onclick="window.quartoListingCategory('Social Inequality'); return false;">
                     Social Inequality
                 </div>
+                
                 <div class="post-category listing-category" onclick="window.quartoListingCategory('Quantitative Method'); return false;">
                     Quantitative Method
                 </div>
+                
                 <div class="post-category listing-category" onclick="window.quartoListingCategory('Gender'); return false;">
                     Gender
                 </div>
+                
                 <div class="post-category listing-category" onclick="window.quartoListingCategory('Wealth'); return false;">
                     Wealth
                 </div>
+                
             </div>
+            
             <p class="description listing-description">Trinh, Nhat An. 2024. “Class Origin, Intergenerational Transfers, and the Gender Wealth Gap.” <em>Socio-Economic Review</em> mwae054. doi: 10.1093/ser/mwae054.</p>
         </div>
     </div>
-    <div class="blog-entry" data-index="8" data-listing-date-sort="1727794800000" data-listing-file-modified-sort="1727859792364" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="30">
+    
+    <div class="blog-entry" data-index="8" data-listing-date-sort="1727794800000" data-listing-file-modified-sort="1727859792364" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="30" data-listing-word-count-sort="5936">
         <div class="metadata">          
             <p class="date listing-date">Oct 2, 2024</p>
         </div>
         <div class="body">
             <p class="title listing-title"><a href="../notes/preston_chapter1112/index.html">人口学勉強会購読資料(11,12章)</a></p>
+            
             <p class="description listing-description">Preston, Samuel H, Patrick Heuveline, and Michel Guillot. 2000. <em>Demography: Measuring and Modeling Population Processes</em>, Blackwell Publishing.</p>
         </div>
     </div>
-    <div class="blog-entry" data-index="9" data-listing-date-sort="1726066800000" data-listing-file-modified-sort="1726125688118" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="6">
+    
+    <div class="blog-entry" data-index="9" data-listing-date-sort="1726066800000" data-listing-file-modified-sort="1726125688118" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="6" data-listing-word-count-sort="1016">
         <div class="metadata">          
             <p class="date listing-date">Sep 12, 2024</p>
         </div>
         <div class="body">
             <p class="title listing-title"><a href="../notes/preston_chapter910/index.html">人口学勉強会購読資料(9, 10章)</a></p>
+            
             <p class="description listing-description">Preston, Samuel H, Patrick Heuveline, and Michel Guillot. 2000. <em>Demography: Measuring and Modeling Population Processes</em>, Blackwell Publishing.</p>
         </div>
     </div>
-    <div class="blog-entry" data-index="10" data-categories="Readings,Quantitative Method,Demography" data-listing-date-sort="1722524400000" data-listing-file-modified-sort="1726118856305" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="9">
+    
+    <div class="blog-entry" data-index="10" data-categories="UmVhZGluZ3MlMkNRdWFudGl0YXRpdmUlMjBNZXRob2QlMkNEZW1vZ3JhcGh5" data-listing-date-sort="1722524400000" data-listing-file-modified-sort="1726118856305" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="9" data-listing-word-count-sort="1661">
         <div class="metadata">          
             <p class="date listing-date">Aug 2, 2024</p>
         </div>
         <div class="body">
             <p class="title listing-title"><a href="../notes/preston_chapter56/index.html">人口学勉強会購読資料(5,6章)</a></p>
+            
             <div class="post-categories listing-categories">
+                
                 <div class="post-category listing-category" onclick="window.quartoListingCategory('Readings'); return false;">
                     Readings
                 </div>
+                
                 <div class="post-category listing-category" onclick="window.quartoListingCategory('Quantitative Method'); return false;">
                     Quantitative Method
                 </div>
+                
                 <div class="post-category listing-category" onclick="window.quartoListingCategory('Demography'); return false;">
                     Demography
                 </div>
+                
             </div>
+            
             <p class="description listing-description">Preston, Samuel H. 2000. <em>Demography: Measuring and Modeling Population Processes</em>, Blackwell Publishing.</p>
         </div>
     </div>
-    <div class="blog-entry" data-index="11" data-categories="Readings,Social Inequality,Quantitative Method" data-listing-date-sort="1719327600000" data-listing-file-modified-sort="1727859397268" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2">
+    
+    <div class="blog-entry" data-index="11" data-categories="UmVhZGluZ3MlMkNTb2NpYWwlMjBJbmVxdWFsaXR5JTJDUXVhbnRpdGF0aXZlJTIwTWV0aG9k" data-listing-date-sort="1719327600000" data-listing-file-modified-sort="1727859397268" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="325">
         <div class="metadata">          
             <p class="date listing-date">Jun 26, 2024</p>
         </div>
         <div class="body">
             <p class="title listing-title"><a href="../notes/hte_resume/index.html">読書メモ：Brand et al.(2021)</a></p>
+            
             <div class="post-categories listing-categories">
+                
                 <div class="post-category listing-category" onclick="window.quartoListingCategory('Readings'); return false;">
                     Readings
                 </div>
+                
                 <div class="post-category listing-category" onclick="window.quartoListingCategory('Social Inequality'); return false;">
                     Social Inequality
                 </div>
+                
                 <div class="post-category listing-category" onclick="window.quartoListingCategory('Quantitative Method'); return false;">
                     Quantitative Method
                 </div>
+                
             </div>
-            <p class="description listing-description">Brand, Jennie E., Jiahui Xu, Bernard Koch, and Pablo Geraldo. 2021. “Uncovering Sociological Effect Heterogeneity Using Tree-Based Machine Learning.” <em>Sociological Methodology</em> 51(2):189–223. doi…</p>
+            
+            <p class="description listing-description">Brand, Jennie E., Jiahui Xu, Bernard Koch, and Pablo Geraldo. 2021. “Uncovering Sociological Effect Heterogeneity Using Tree-Based Machine Learning.” <em>Sociological Methodology</em>…</p>
         </div>
     </div>
-    <div class="blog-entry" data-index="12" data-categories="Readings,Quantitative Method,Demography" data-listing-date-sort="1718550000000" data-listing-file-modified-sort="1726118824593" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="4">
+    
+    <div class="blog-entry" data-index="12" data-categories="UmVhZGluZ3MlMkNRdWFudGl0YXRpdmUlMjBNZXRob2QlMkNEZW1vZ3JhcGh5" data-listing-date-sort="1718550000000" data-listing-file-modified-sort="1726118824593" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="4" data-listing-word-count-sort="716">
         <div class="metadata">          
             <p class="date listing-date">Jun 17, 2024</p>
         </div>
         <div class="body">
             <p class="title listing-title"><a href="../notes/preston_chapter12/index.html">人口学勉強会購読資料(1,2章)</a></p>
+            
             <div class="post-categories listing-categories">
+                
                 <div class="post-category listing-category" onclick="window.quartoListingCategory('Readings'); return false;">
                     Readings
                 </div>
+                
                 <div class="post-category listing-category" onclick="window.quartoListingCategory('Quantitative Method'); return false;">
                     Quantitative Method
                 </div>
+                
                 <div class="post-category listing-category" onclick="window.quartoListingCategory('Demography'); return false;">
                     Demography
                 </div>
+                
             </div>
+            
             <p class="description listing-description">Preston, Samuel H. 2000. <em>Demography: Measuring and Modeling Population Processes</em>, Blackwell Publishing.</p>
         </div>
     </div>
-    <div class="blog-entry" data-index="13" data-categories="Quantitative Method" data-listing-date-sort="1708441200000" data-listing-file-modified-sort="1719296285044" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2">
+    
+    <div class="blog-entry" data-index="13" data-categories="UXVhbnRpdGF0aXZlJTIwTWV0aG9k" data-listing-date-sort="1708441200000" data-listing-file-modified-sort="1719296285044" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="296">
         <div class="metadata">          
             <p class="date listing-date">Feb 21, 2024</p>
         </div>
         <div class="body">
             <p class="title listing-title"><a href="../notes/dag_sociology/index.html">DAGを学ぶための論文10報（社会学向け）</a></p>
+            
             <div class="post-categories listing-categories">
+                
                 <div class="post-category listing-category" onclick="window.quartoListingCategory('Quantitative Method'); return false;">
                     Quantitative Method
                 </div>
+                
             </div>
+            
             <p class="description listing-description">DAGとはDirected Acyclic Graphの略称で、日本語では有向非巡回グラフと呼ばれます。DAGはJudia…</p>
         </div>
     </div>
-    <div class="blog-entry" data-index="14" data-categories="Data Analysis,O*NET,Occupation" data-listing-date-sort="1648998000000" data-listing-file-modified-sort="1745749594934" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1">
+    
+    <div class="blog-entry" data-index="14" data-categories="RGF0YSUyMEFuYWx5c2lzJTJDTypORVQlMkNPY2N1cGF0aW9u" data-listing-date-sort="1648998000000" data-listing-file-modified-sort="1745749594934" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="56">
         <div class="metadata">          
             <p class="date listing-date">Apr 4, 2022</p>
         </div>
         <div class="body">
             <p class="title listing-title"><a href="../notes/onetstandarization/index.html">スキル指標の標準化と解釈に関するメモ</a></p>
+            
             <div class="post-categories listing-categories">
+                
                 <div class="post-category listing-category" onclick="window.quartoListingCategory('Data Analysis'); return false;">
                     Data Analysis
                 </div>
+                
                 <div class="post-category listing-category" onclick="window.quartoListingCategory('O*NET'); return false;">
                     O*NET
                 </div>
+                
                 <div class="post-category listing-category" onclick="window.quartoListingCategory('Occupation'); return false;">
                     Occupation
                 </div>
+                
             </div>
+            
             <p class="description listing-description">最近、日本版O-NET（以下、たんにO-NET）を用いた研究プロジェクトに取り組んでいます。O-NETでは各職業に求められるスキル要件や各職業の仕事の性質、仕事の内容などを職業間で比較可能な形式で尋ねています。それゆえ、職業小分類を尋ねているデータとマッチングすることで、個人が持つ（と職業上は期待される）スキルを知ることができるようになります。</p>
         </div>
     </div>
-    <div class="blog-entry" data-index="15" data-categories="Readings,Quantitative Method" data-listing-date-sort="1648134000000" data-listing-file-modified-sort="1719296285043" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2">
+    
+    <div class="blog-entry" data-index="15" data-categories="UmVhZGluZ3MlMkNRdWFudGl0YXRpdmUlMjBNZXRob2Q=" data-listing-date-sort="1648134000000" data-listing-file-modified-sort="1719296285043" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="213">
         <div class="metadata">          
             <p class="date listing-date">Mar 25, 2022</p>
         </div>
         <div class="body">
             <p class="title listing-title"><a href="../notes/bell2019/index.html">Bell et al.（2019）の要約</a></p>
+            
             <div class="post-categories listing-categories">
+                
                 <div class="post-category listing-category" onclick="window.quartoListingCategory('Readings'); return false;">
                     Readings
                 </div>
+                
                 <div class="post-category listing-category" onclick="window.quartoListingCategory('Quantitative Method'); return false;">
                     Quantitative Method
                 </div>
+                
             </div>
-            <p class="description listing-description">Bell…</p>
+            
+            <p class="description listing-description">Bell, Andrew, Malcolm Fairbrother, and Kelvyn Jones. 2019. “Fixed and Random Effects Models: Making an Informed Choice.” Quality &amp; Quantity 53(2):1051–74. doi…</p>
         </div>
     </div>
+    
 </div>
 <div class="listing-no-matching d-none">
 No matching items
@@ -542,18 +643,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     }
     return false;
   }
-  const clipboard = new window.ClipboardJS('.code-copy-button', {
-    text: function(trigger) {
-      const codeEl = trigger.previousElementSibling.cloneNode(true);
-      for (const childEl of codeEl.children) {
-        if (isCodeAnnotation(childEl)) {
-          childEl.remove();
-        }
-      }
-      return codeEl.innerText;
-    }
-  });
-  clipboard.on('success', function(e) {
+  const onCopySuccess = function(e) {
     // button target
     const button = e.trigger;
     // don't keep focus
@@ -585,11 +675,48 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     }, 1000);
     // clear code selection
     e.clearSelection();
+  }
+  const getTextToCopy = function(trigger) {
+      const codeEl = trigger.previousElementSibling.cloneNode(true);
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+  }
+  const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+    text: getTextToCopy
   });
-  function tippyHover(el, contentFn) {
+  clipboard.on('success', onCopySuccess);
+  if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+    const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+      text: getTextToCopy,
+      container: window.document.getElementById('quarto-embedded-source-code-modal')
+    });
+    clipboardModal.on('success', onCopySuccess);
+  }
+    var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+    var mailtoRegex = new RegExp(/^mailto:/);
+      var filterRegex = new RegExp("https:\/\/shingonitta\.com");
+    var isInternal = (href) => {
+        return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+    }
+    // Inspect non-navigation links and adorn them if external
+ 	var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+    for (var i=0; i<links.length; i++) {
+      const link = links[i];
+      if (!isInternal(link.href)) {
+        // undo the damage that might have been done by quarto-nav.js in the case of
+        // links that we want to consider external
+        if (link.dataset.originalHref !== undefined) {
+          link.href = link.dataset.originalHref;
+        }
+      }
+    }
+  function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
     const config = {
       allowHTML: true,
-      content: contentFn,
       maxWidth: 500,
       delay: 100,
       arrow: false,
@@ -599,8 +726,17 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
       interactive: true,
       interactiveBorder: 10,
       theme: 'quarto',
-      placement: 'bottom-start'
+      placement: 'bottom-start',
     };
+    if (contentFn) {
+      config.content = contentFn;
+    }
+    if (onTriggerFn) {
+      config.onTrigger = onTriggerFn;
+    }
+    if (onUntriggerFn) {
+      config.onUntrigger = onUntriggerFn;
+    }
     window.tippy(el, config); 
   }
   const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
@@ -612,7 +748,129 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
       try { href = new URL(href).hash; } catch {}
       const id = href.replace(/^#\/?/, "");
       const note = window.document.getElementById(id);
-      return note.innerHTML;
+      if (note) {
+        return note.innerHTML;
+      } else {
+        return "";
+      }
+    });
+  }
+  const xrefs = window.document.querySelectorAll('a.quarto-xref');
+  const processXRef = (id, note) => {
+    // Strip column container classes
+    const stripColumnClz = (el) => {
+      el.classList.remove("page-full", "page-columns");
+      if (el.children) {
+        for (const child of el.children) {
+          stripColumnClz(child);
+        }
+      }
+    }
+    stripColumnClz(note)
+    if (id === null || id.startsWith('sec-')) {
+      // Special case sections, only their first couple elements
+      const container = document.createElement("div");
+      if (note.children && note.children.length > 2) {
+        container.appendChild(note.children[0].cloneNode(true));
+        for (let i = 1; i < note.children.length; i++) {
+          const child = note.children[i];
+          if (child.tagName === "P" && child.innerText === "") {
+            continue;
+          } else {
+            container.appendChild(child.cloneNode(true));
+            break;
+          }
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(container);
+        }
+        return container.innerHTML
+      } else {
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        return note.innerHTML;
+      }
+    } else {
+      // Remove any anchor links if they are present
+      const anchorLink = note.querySelector('a.anchorjs-link');
+      if (anchorLink) {
+        anchorLink.remove();
+      }
+      if (window.Quarto?.typesetMath) {
+        window.Quarto.typesetMath(note);
+      }
+      if (note.classList.contains("callout")) {
+        return note.outerHTML;
+      } else {
+        return note.innerHTML;
+      }
+    }
+  }
+  for (var i=0; i<xrefs.length; i++) {
+    const xref = xrefs[i];
+    tippyHover(xref, undefined, function(instance) {
+      instance.disable();
+      let url = xref.getAttribute('href');
+      let hash = undefined; 
+      if (url.startsWith('#')) {
+        hash = url;
+      } else {
+        try { hash = new URL(url).hash; } catch {}
+      }
+      if (hash) {
+        const id = hash.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note !== null) {
+          try {
+            const html = processXRef(id, note.cloneNode(true));
+            instance.setContent(html);
+          } finally {
+            instance.enable();
+            instance.show();
+          }
+        } else {
+          // See if we can fetch this
+          fetch(url.split('#')[0])
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.getElementById(id);
+            if (note !== null) {
+              const html = processXRef(id, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      } else {
+        // See if we can fetch a full url (with no hash to target)
+        // This is a special case and we should probably do some content thinning / targeting
+        fetch(url)
+        .then(res => res.text())
+        .then(html => {
+          const parser = new DOMParser();
+          const htmlDoc = parser.parseFromString(html, "text/html");
+          const note = htmlDoc.querySelector('main.content');
+          if (note !== null) {
+            // This should only happen for chapter cross references
+            // (since there is no id in the URL)
+            // remove the first header
+            if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+              note.children[0].remove();
+            }
+            const html = processXRef(null, note);
+            instance.setContent(html);
+          } 
+        }).finally(() => {
+          instance.enable();
+          instance.show();
+        });
+      }
+    }, function(instance) {
     });
   }
       let selectedAnnoteEl;
@@ -656,6 +914,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
             }
             div.style.top = top - 2 + "px";
             div.style.height = height + 4 + "px";
+            div.style.left = 0;
             let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
             if (gutterDiv === null) {
               gutterDiv = window.document.createElement("div");
@@ -681,6 +940,32 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
         });
         selectedAnnoteEl = undefined;
       };
+        // Handle positioning of the toggle
+    window.addEventListener(
+      "resize",
+      throttle(() => {
+        elRect = undefined;
+        if (selectedAnnoteEl) {
+          selectCodeLines(selectedAnnoteEl);
+        }
+      }, 10)
+    );
+    function throttle(fn, ms) {
+    let throttle = false;
+    let timer;
+      return (...args) => {
+        if(!throttle) { // first call gets through
+            fn.apply(this, args);
+            throttle = true;
+        } else { // all the others get throttled
+            if(timer) clearTimeout(timer); // cancel #2
+            timer = setTimeout(() => {
+              fn.apply(this, args);
+              timer = throttle = false;
+            }, ms);
+        }
+      };
+    }
       // Attach click handler to the DT
       const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
       for (const annoteDlNode of annoteDls) {
@@ -741,6 +1026,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 });
 </script>
 </div> <!-- /content -->
+
 
 
 
