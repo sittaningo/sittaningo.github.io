@@ -164,6 +164,7 @@ function gtag(){dataLayer.push(arguments);}
 gtag('js', new Date());
 gtag('config', 'G-2PTNBK5B3H', { 'anonymize_ip': true});
 </script>
+<link rel="apple-touch-icon" href="./image/icon.png">
 
   <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
   <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
@@ -487,9 +488,19 @@ No matching items
 </section>
 <section id="cv" class="level2" style="text-align: left;">
 <h2 style="text-align: left;" data-anchor-id="cv">CV</h2>
-<div class="cv-iframe-container" style="text-align: center; margin-top: 20px;">
-<p><iframe class="cv-iframe" src="cv/cv.pdf" style="border: 1px solid #ccc; border-radius: 8px;"></iframe></p>
+<div id="cv-iframe-container" class="cv-iframe-container" style="text-align: center; margin-top: 20px;">
+
 </div>
+<script>
+document.addEventListener("DOMContentLoaded", function() {
+    var container = document.getElementById('cv-iframe-container');
+    if (window.innerWidth >= 768) {
+        container.innerHTML = '<iframe class="cv-iframe" src="cv/cv.pdf" style="border: 1px solid #ccc; border-radius: 8px; width: 100%; height: 600px;"></iframe>';
+    } else {
+        container.innerHTML = '<p style="color: #666; font-size: 0.9em; margin-bottom: 0;">スマートフォンではCVのプレビューを省略しています。<br>下のリンクからご確認ください。</p>';
+    }
+});
+</script>
 <div style="text-align: right; margin-top: 10px;">
 <p><a href="cv/cv.pdf" target="_blank" class="read-more-btn">↗ Open CV in New Tab</a></p>
 </div>
